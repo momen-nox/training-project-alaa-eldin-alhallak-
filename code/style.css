@@ -1,0 +1,46 @@
+.green-bg{
+    background-color: rgba(112, 181, 112, 0.23);
+    border-radius: 15px;
+}
+.yellow{
+     background-color: rgba(239, 183, 94, 0.23);
+    border-radius: 15px;
+}
+.blou{
+     background-color: rgba(94, 174, 239, 0.23);
+    border-radius: 15px;
+}
+
+.title{
+    color: rgba(52, 52, 116, 0.809);
+  font-family: "Sintony", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.discription{
+    font-size: 14px;
+}
+
+.small-titel{
+    color: rgba(52, 52, 116, 0.809);
+    font-family: "Sintony", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 25px;
+}
+
+.small-discription{
+    font-size: 20px;
+    color: rgba(52, 52, 116, 0.809);
+}
+
+.btn-b{
+    background-color: rgba(52, 52, 116, 0.809);
+    color: aliceblue;
+
+}
+.btn-b:hover{
+    background-color: rgb(255, 174, 43);
+    color: black;
+}
