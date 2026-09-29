@@ -1,0 +1,784 @@
+  /* 1. Header Styles (القسم العلوي) */
+  body {
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      background-color: #f8f9fa;
+      color: #212529;
+  }
+
+  
+  /* ====== Hero Slider & Side Banners ====== */
+  .hero-slider-container {
+      background: linear-gradient(135deg, #0d6efd 0%, #0a58ca 100%);
+      border-radius: 12px;
+      color: #ffffff;
+      position: relative;
+      overflow: hidden;
+      min-height: 380px;
+  }
+
+  .badge-discount-hero {
+      position: absolute;
+      top: 0;
+      left: 20px;
+      background-color: #fd7e14;
+      color: #fff;
+      font-weight: bold;
+      padding: 8px 12px;
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+      font-size: 14px;
+      z-index: 10;
+  }
+
+  .side-card {
+      border-radius: 12px;
+      padding: 20px;
+      height: 180px;
+      background-color: #e7f1ff;
+      transition: transform 0.2s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      overflow: hidden;
+  }
+
+  .side-card:hover {
+      transform: translateY(-3px);
+  }
+
+  /* ====== 5 Product Cards Grid ====== */
+  .product-card {
+      position: relative;
+      background-color: #ffffff;
+      border: 1px solid #e5e7eb;
+      border-radius: 10px;
+      padding: 12px;
+      transition: all 0.3s ease;
+      height: 100%;
+  }
+
+  .product-card:hover {
+      border-color: #0d6efd;
+      box-shadow: 0 6px 18px rgba(13, 110, 253, 0.12);
+  }
+
+  .badge-card-discount {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background-color: #fd7e14;
+      color: #ffffff;
+      font-size: 10px;
+      font-weight: bold;
+      padding: 2px 7px;
+      border-radius: 10px;
+      z-index: 2;
+  }
+
+  .hover-actions {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateX(10px);
+      transition: all 0.3s ease;
+      z-index: 3;
+  }
+
+  .product-card:hover .hover-actions {
+      opacity: 1;
+      visibility: visible;
+      transform: translateX(0);
+  }
+
+  .action-btn {
+      width: 28px;
+      height: 28px;
+      border-radius: 6px;
+      background-color: #f8f9fa;
+      border: 1px solid #dee2e6;
+      color: #6c757d;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      font-size: 12px;
+      transition: all 0.2s ease;
+  }
+
+  .action-btn:hover {
+      background-color: #0d6efd;
+      color: #ffffff;
+      border-color: #0d6efd;
+  }
+
+  .btn-add-cart {
+      width: 100%;
+      padding: 6px 0;
+      border-radius: 6px;
+      background-color: #f8f9fa;
+      border: 1px solid #dee2e6;
+      color: #212529;
+      font-weight: 600;
+      font-size: 12px;
+      text-align: center;
+      text-decoration: none;
+      display: block;
+      transition: all 0.2s ease;
+  }
+
+  .btn-add-cart:hover {
+      background-color: #0d6efd;
+      color: #ffffff;
+      border-color: #0d6efd;
+  }
+
+  /* 2. Sidebar & Banner Styles */
+  .left-sidebar {
+      width: 58px;
+      background-color: #ffffff;
+  }
+
+  .sidebar-item {
+      position: relative;
+      width: 100%;
+  }
+
+  .icon-btn {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      border: none;
+      background: transparent;
+      color: #555;
+      font-size: 1.15rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      cursor: pointer;
+  }
+
+  .sidebar-item:hover .icon-btn {
+      background-color: #f0f7ff;
+      color: #0d6efd;
+  }
+
+  .submenu-dropdown {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 100%;
+      margin-left: 10px;
+      width: 210px;
+      z-index: 1050;
+      border-radius: 12px !important;
+      background-color: #ffffff;
+  }
+
+  .sidebar-item:hover .submenu-dropdown {
+      display: block;
+  }
+
+  .submenu-dropdown a {
+      display: block;
+      text-decoration: none;
+      color: #495057;
+      padding: 6px 10px;
+      font-size: 0.88rem;
+  }
+
+  .submenu-dropdown a:hover {
+      color: #0d6efd;
+  }
+
+  /* Carousel Banner */
+  .banner-slide {
+      background-color: #007fd3ec !important;
+      min-height: 380px;
+      border-radius: 16px;
+  }
+
+  .discount-badge-circle {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 80px;
+      height: 80px;
+      background-color: #f7931e;
+      color: #ffffff;
+      font-weight: bold;
+      border-bottom-right-radius: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 10;
+  }
+
+  /* Sub-banners */
+  .sub-banner {
+      min-height: 180px;
+  }
+
+  .banner-blue {
+      background-color: #e3f2fd !important;
+  }
+
+  .banner-green {
+      background-color: #e0f2f1 !important;
+  }
+
+  .banner-cream {
+      background-color: #fdf6ec !important;
+  }
+
+  .banner-gray {
+      background-color: #f1f3f5 !important;
+  }
+
+  /* ====== Flash Deals Custom Styling ====== */
+
+  .flash-deals-card {
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      background-color: #ffffff;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .flash-deals-card:hover {
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  }
+
+  .badge-top-deals {
+      position: absolute;
+      top: 18px;
+      left: -32px;
+      background-color: #4f46e5;
+      color: #ffffff;
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 4px 35px;
+      transform: rotate(-45deg);
+      z-index: 5;
+      letter-spacing: 0.5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .stars-rating {
+      color: #ffb800;
+      font-size: 13px;
+  }
+
+  .countdown-box {
+      background-color: #f97316;
+
+      color: #ffffff;
+      border-radius: 6px;
+      padding: 6px 4px;
+      text-align: center;
+      flex: 1;
+  }
+
+  .countdown-box .num {
+      font-weight: 700;
+      font-size: 15px;
+      line-height: 1;
+  }
+
+  .countdown-box .label {
+      font-size: 9px;
+      text-transform: uppercase;
+      margin-top: 3px;
+      opacity: 0.9;
+  }
+
+  .progress-bar-custom {
+      height: 7px;
+      background-color: #e2e8f0;
+      border-radius: 10px;
+      overflow: hidden;
+  }
+
+  .progress-bar-custom .progress-fill {
+      height: 100%;
+      background-color: #f97316;
+      border-radius: 10px;
+  }
+
+  .side-banner-card {
+      background-color: #dbeafe;
+      border: none;
+      border-radius: 12px;
+      padding: 24px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+  }
+
+  .side-banner-card .badge-new {
+      background-color: #ffffff;
+      color: #2563eb;
+      font-weight: 600;
+      font-size: 12px;
+      padding: 5px 12px;
+      border-radius: 20px;
+      display: inline-block;
+  }
+
+  /* ====== Product Card Hover Design ====== */
+  .product-card {
+      position: relative;
+      background-color: #ffffff;
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      padding: 16px;
+      transition: all 0.3s ease-in-out;
+      overflow: hidden;
+  }
+
+  .product-card:hover {
+      border-color: #0d6efd;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  }
+
+  .badge-discount {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      background-color: #fd7e14;
+      color: #fff;
+      font-size: 11px;
+      font-weight: bold;
+      padding: 3px 8px;
+      border-radius: 12px;
+      z-index: 2;
+  }
+
+  .hover-actions {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateX(15px);
+      transition: all 0.3s ease-in-out;
+      z-index: 3;
+  }
+
+  .product-card:hover .hover-actions {
+      opacity: 1;
+      visibility: visible;
+      transform: translateX(0);
+
+  }
+
+  .action-btn {
+      width: 34px;
+      height: 34px;
+      border-radius: 8px;
+      background-color: #f3f4f6;
+      border: 1px solid #e5e7eb;
+      color: #4b5563;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      font-size: 14px;
+      transition: all 0.2s ease;
+  }
+
+  .action-btn:hover {
+      background-color: #0d6efd;
+      color: #ffffff;
+      border-color: #0d6efd;
+  }
+
+  .timer-pill {
+      background-color: #1a253f;
+      color: #ffffff;
+      border-radius: 20px;
+      padding: 6px 16px;
+      font-size: 12px;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 12px;
+      margin-bottom: 12px;
+  }
+
+  .progress-bar-custom {
+      height: 6px;
+      background-color: #e5e7eb;
+      border-radius: 10px;
+      overflow: hidden;
+  }
+
+  .progress-bar-custom .fill {
+      height: 100%;
+      background-color: #fd7e14;
+  }
+
+  .btn-add-cart {
+      width: 100%;
+      padding: 8px 0;
+      border-radius: 8px;
+      background-color: #f3f4f6;
+      border: 1px solid #e5e7eb;
+      color: #1f2937;
+      font-weight: 600;
+      font-size: 13px;
+      transition: all 0.2s ease;
+      text-align: center;
+      text-decoration: none;
+      display: block;
+  }
+
+  .btn-add-cart:hover {
+      background-color: #0d6efd;
+      color: #ffffff;
+      border-color: #0d6efd;
+  }
+
+  .product-card {
+      position: relative;
+      border-radius: 10px;
+      transition: 0.3s;
+  }
+
+  .product-card:hover {
+      border-color: #0d6efd !important;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .hover-actions {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      opacity: 0;
+      transition: 0.3s;
+      z-index: 10;
+  }
+
+  .product-card:hover .hover-actions {
+      opacity: 1;
+  }
+
+  .action-btn {
+      width: 30px;
+      height: 30px;
+      border-radius: 5px;
+      background: #f8f9fa;
+      border: 1px solid #dee2e6;
+      color: #6c757d;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+  }
+
+  .action-btn:hover {
+      background: #0d6efd;
+      color: #fff;
+  }
+
+  .product-card {
+      border: 1px solid transparent !important;
+
+      transition: all 0.3s ease-in-out;
+  }
+
+  .product-card:hover {
+      border-color: #e0e0e0 !important;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08) !important;
+      background-color: #ffffff;
+      z-index: 5;
+  }
+
+  .product-card:hover .hover-content {
+      display: block;
+  }
+
+  .card-1 {
+      background-color: #f4ede4 !important;
+  }
+
+  .card-2 {
+      background-color: #f2f3f5 !important;
+  }
+
+  .card-3 {
+      background-color: #eaf3e8 !important;
+  }
+
+  .btn-warning {
+      background-color: #f36b22 !important;
+      border: none !important;
+  }
+
+  .banner-card {
+      height: 240px !important;
+  }
+
+  .banner-headphone {
+      background-color: #f3eedf !important;
+  }
+
+  .banner-weekly {
+      background-color: #eaf3f2 !important;
+  }
+
+  .banner-surface {
+      background-color: #eaf3e8 !important;
+  }
+
+  .banner-headphone img {
+      width: auto !important;
+      max-width: 160px !important;
+      max-height: 180px !important;
+      object-fit: contain !important;
+  }
+
+  .banner-weekly img,
+  .banner-surface img {
+      max-height: 120px !important;
+      width: auto !important;
+      object-fit: contain !important;
+  }
+
+  .btn-shop {
+      background-color: #f36b22 !important;
+      border-color: #f36b22 !important;
+      color: #ffffff !important;
+  }
+
+  .bg-banner-1 {
+      background-color: #f3eedf !important;
+  }
+
+  .bg-banner-2 {
+      background-color: #eaf3f2 !important;
+  }
+
+  .bg-banner-3 {
+      background-color: #eaf3e8 !important;
+  }
+
+  .btn-orange {
+      background-color: #f36b22 !important;
+      color: #fff !important;
+  }
+
+  .btn-orange:hover {
+      background-color: #d95813 !important;
+      color: #fff !important;
+  }
+
+  .text-warning-star {
+      color: #ffb800 !important;
+  }
+
+  .banner-headphone-img {
+      max-width: 150px;
+      max-height: 170px;
+      object-fit: contain;
+  }
+
+  .banner-fit-img {
+      max-height: 120px;
+      object-fit: contain;
+  }
+
+  .product-card-item:hover {
+      border-color: #f36b22 !important;
+  }
+
+  .top-selling-section {
+      background-color: #f8f9fa;
+      padding: 30px 20px;
+  }
+
+  .product-item-card {
+      background-color: #ffffff !important;
+      border: 1px solid #e5e7eb !important;
+      border-radius: 6px !important;
+      padding: 15px !important;
+      height: 100%;
+      transition: border-color 0.2s ease;
+  }
+
+  .product-item-card:hover {
+      border-color: #d1d5db !important;
+  }
+
+  .product-img-box {
+      width: 70px;
+      height: 70px;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .product-img-box img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+  }
+
+  .brand-name {
+      color: #9ca3af;
+      font-size: 11px;
+      margin-bottom: 2px;
+  }
+
+  .product-title {
+      color: #25282b;
+      font-size: 13px;
+      font-weight: 600;
+      line-height: 1.3;
+      margin-bottom: 4px;
+  }
+
+  .star-rating {
+      color: #fdab04;
+      font-size: 11px;
+      margin-bottom: 6px;
+  }
+
+  .star-count {
+      color: #9ca3af;
+      font-size: 10px;
+  }
+
+  .price-new {
+      color: #25282b;
+      font-weight: 700;
+      font-size: 15px;
+  }
+
+  .price-old {
+      color: #9ca3af;
+      text-decoration: line-through;
+      font-size: 12px;
+      margin-left: 6px;
+  }
+
+  .arrow-btn {
+      width: 32px;
+      height: 32px;
+      border: 1px solid #d1d5db;
+      background: white;
+      border-radius: 4px;
+      color: #6b7280;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .arrow-btn:hover {
+      background-color: #f3f4f6;
+      color: #111827;
+  }
+
+  .category-card {
+      transition: all 0.3s ease;
+      border-color: #e9ecef !important;
+  }
+
+  .category-card:hover {
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+
+  .category-img-box img {
+      width: 75px;
+      height: 75px;
+      object-fit: contain;
+  }
+
+  .category-list li {
+      font-size: 13px;
+      margin-bottom: 6px;
+      position: relative;
+      padding-left: 10px;
+  }
+
+  .category-list li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: #a0aec0;
+  }
+
+  .category-list li a:hover {
+      color: #0d6efd !important;
+  }
+
+  .view-all-btn {
+      background-color: #eef2f7;
+      color: #495057 !important;
+      font-size: 12px;
+  }
+
+  .view-all-btn:hover {
+      background-color: #dbe2ea;
+  }
+
+  .brand-img {
+      width: 60px;
+      height: 60px;
+      object-fit: contain;
+      background-color: #ffffff;
+      padding: 4px;
+  }
+
+  .hover-shadow {
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .hover-shadow:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08) !important;
+  }
+
+  .brand-tabs .nav-link {
+      font-size: 12px;
+      border-radius: 4px;
+  }
+
+  .brand-tabs .nav-link.active {
+      background-color: #e2e8f0;
+      color: #0f172a !important;
+  }
+
+  /* كلاسات مساعدة لأحجام الخطوط الصغرى */
+  .fs-7 {
+      font-size: 0.85rem !important;
+  }
+
+  .fs-8 {
+      font-size: 0.75rem !important;
+  }
+
+  /* تحسين شكل أزرار الأسهم عند التمرير */
+  .carousel-controls .btn:hover {
+      background-color: #0d6efd !important;
+      color: #fff !important;
+      border-color: #0d6efd !important;
+  }

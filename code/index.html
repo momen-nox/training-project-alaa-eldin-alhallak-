@@ -56,231 +56,383 @@
 
 
     <!--================================== الناف الرئيسية يلي تحت ======================== -->
-    <div class="border-bottom sticky-top bg-light">
+    <!-- ================= NAVBAR ================= -->
 
-    <div class="container-fuld ms-5 me-5">
+<!-- ========================= NAVBAR ========================= -->
 
-        <div class="row align-items-center py-2">
+<nav class="navbar navbar-expand-xl bg-light border-bottom sticky-top">
 
-            <!-- LOGO -->
-            <div class="col-1">
+    <div class="container-fluid px-4">
 
-                <div class="d-flex align-items-center text-primary">
-                    <i class="bi bi-shop fs-4"></i>
-                    <span class="fw-bold ms-1">Ecom</span>
-                </div>
-
+        <!-- LOGO -->
+        <a class="navbar-brand" href="">
+            <div class="d-flex align-items-center text-primary">
+                <i class="bi bi-shop fs-4"></i>
+                <span class="fw-bold ms-1">Ecom</span>
             </div>
+        </a>
 
 
-            <!-- =============== مستطيل البحث ======================-->
-            <div class="col-3">
+        <!-- ============ الزر المخصص للهاتف=========== -->
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mainNavbar"
+                aria-controls="mainNavbar"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
 
-                <form action="">
+            <span class="navbar-toggler-icon"></span>
 
-                    <div class="input-group">
+        </button>
 
-                        <ul class="navbar-nav gap-md-4 border rounded-start ps-1">
 
-                            <li class="nav-item dropdown">
+        <!-- EVERYTHING THAT COLLAPSES -->
+        <div class="collapse navbar-collapse" id="mainNavbar">
 
-                                <a class="nav-link dropdown-toggle"
-                                   href="#"
-                                   data-bs-toggle="dropdown">
-                                    All categories
+
+            <!-- ================= SEARCH ================= -->
+
+            <form class="my-3 my-xl-0 me-xl-4">
+
+                <div class="input-group">
+
+                    <!-- الدروبداون -->
+                    <div class="dropdown">
+
+                        <button class="btn btn-light border dropdown-toggle"
+                                type="button"
+                                data-bs-toggle="dropdown">
+
+                            All categories
+
+                        </button>
+
+                        <ul class="dropdown-menu">
+
+                            <li>
+                                <a href="" class="dropdown-item">
+                                    ABOUT
                                 </a>
+                            </li>
 
-                                <ul class="dropdown-menu">
+                            <li>
+                                <a href="" class="dropdown-item">
+                                    BLOG
+                                </a>
+                            </li>
 
-                                    <li>
-                                        <a href="" class="dropdown-item">
-                                            ABOUT
-                                        </a>
-                                    </li>
+                            <li>
+                                <a href="" class="dropdown-item">
+                                    SHOP
+                                </a>
+                            </li>
 
-                                    <li>
-                                        <a href="" class="dropdown-item">
-                                            BLOG
-                                        </a>
-                                    </li>
+                            <li>
+                                <a href="" class="dropdown-item">
+                                    CART
+                                </a>
+                            </li>
 
-                                    <li>
-                                        <a href="" class="dropdown-item">
-                                            SHOP
-                                        </a>
-                                    </li>
+                            <li>
+                                <a href="" class="dropdown-item">
+                                    CHECKOUT
+                                </a>
+                            </li>
 
-                                    <li>
-                                        <a href="" class="dropdown-item">
-                                            CART
-                                        </a>
-                                    </li>
-
-                                    <li>
-                                        <a href="" class="dropdown-item">
-                                            CHECKOUT
-                                        </a>
-                                    </li>
-
-                                    <li>
-                                        <a href="" class="dropdown-item">
-                                            SINGLE POST
-                                        </a>
-                                    </li>
-
-                                </ul>
-
+                            <li>
+                                <a href="" class="dropdown-item">
+                                    SINGLE POST
+                                </a>
                             </li>
 
                         </ul>
 
-                        <input type="text"
-                               class="form-control"
-                               placeholder="SEARCH">
-
                     </div>
 
-                </form>
 
-            </div>
-
-
-            <!-- =================================== الروابط يل بالنصف تحت =====================-->
-
-<div class="col-4">
-
-    <div class="d-flex align-items-center gap-3">
-
-
-        <div class="dropdown">
-            <a href="" class="text-decoration-none text-secondary dropdown-toggle"
-               data-bs-toggle="dropdown">
-                Home
-            </a>
-
-            <ul class="dropdown-menu">
-                <li><a href="" class="dropdown-item">Home 1</a></li>
-                <li><a href="" class="dropdown-item">Home 2</a></li>
-                <li><a href="" class="dropdown-item">Home 3</a></li>
-            </ul>
-        </div>
-
-
-
-        <div class="dropdown">
-            <a href="" class="text-decoration-none text-secondary dropdown-toggle"
-               data-bs-toggle="dropdown">
-                Shop
-            </a>
-
-            <ul class="dropdown-menu">
-                <li><a href="" class="dropdown-item">Shop</a></li>
-                <li><a href="" class="dropdown-item">Shop Grid</a></li>
-                <li><a href="" class="dropdown-item">Shop Grid 2</a></li>
-            </ul>
-        </div>
-
-
-
-        <div class="dropdown">
-            <a href="" class="text-decoration-none text-secondary dropdown-toggle"
-               data-bs-toggle="dropdown">
-                Vendors
-            </a>
-
-            <ul class="dropdown-menu">
-                <li><a href="" class="dropdown-item">Vendor singel</a></li>
-                <li><a href="" class="dropdown-item">Vendor listing</a></li>
-            </ul>
-        </div>
-
-
-
-        <div class="dropdown">
-            <a href="" class="text-decoration-none text-secondary dropdown-toggle"
-               data-bs-toggle="dropdown">
-                Pages
-            </a>
-
-            <ul class="dropdown-menu">
-                <li><a href="" class="dropdown-item">About us</a></li>
-                <li><a href="" class="dropdown-item">Blog</a></li>
-                <li><a href="" class="dropdown-item">Careers</a></li>
-                <li><a href="" class="dropdown-item">Register</a></li>
-                <li><a href="" class="dropdown-item">Login</a></li>
-                <li><a href="" class="dropdown-item">Error 404</a></li>
-            </ul>
-        </div>
-
-
-
-        <div class="dropdown">
-            <a href="" class="text-decoration-none text-secondary dropdown-toggle"
-               data-bs-toggle="dropdown">
-                Blog
-            </a>
-
-            <ul class="dropdown-menu">
-                <li><a href="" class="dropdown-item">Blog</a></li>
-                <li><a href="" class="dropdown-item">Blog Grid</a></li>
-                <li><a href="" class="dropdown-item">Single Post</a></li>
-            </ul>
-        </div>
-
-
-
-        <a href="" class="text-decoration-none text-secondary">
-            Contact Us
-        </a>
-
-    </div>
-
-</div>
-
-
-            <!-- ============================== الروابط على اليسار تحت ============================== -->
-            <div class="col-2">
-
-                <div class="d-flex align-items-center gap-4">
-
-                    
-                        <a class="text-secondary text-decoration-none small d-inline-flex align-items-center gap-1" href=""><i class="bi bi-person-fill"></i>
-                        <span> Account  </span></a>
-                    
-
-                    
-                            <a href="" class="text-secondary small d-inline-flex align-items-center text-decoration-none gap-1">
-                                <i class="bi bi-heart-fill"></i>
-                                <span>Wishlist</span>
-                            </a>
-                        
-
-                    
-
-                    
-                            <a href="" class="text-secondary small d-inline-flex align-items-center gap-1 text-decoration-none">
-                                <i class="bi bi-cart-fill "></i>
-                                <span>Cart</span>
-                             </a>
-                        
-
-                    
-
-                             <a href="" class="text-secondary small d-inline-flex align-items-center text-decoration-none gap-1"><i class="bi bi-circle-half"></i>
-                        <span>Compare</span> 
-                    </a>
-                        
-                    
+                    <input type="text"
+                           class="form-control"
+                           placeholder="SEARCH">
 
                 </div>
 
+            </form>
+
+
+            <!-- ================= الروابط الرئيسية ================= -->
+
+            <ul class="navbar-nav me-auto mb-3 mb-xl-0">
+
+
+                <!-- HOME -->
+                <li class="nav-item dropdown">
+
+                    <a href=""
+                       class="nav-link dropdown-toggle"
+                       data-bs-toggle="dropdown">
+
+                        Home
+
+                    </a>
+
+                    <ul class="dropdown-menu">
+
+                        <li>
+                            <a href="" class="dropdown-item">
+                                Home 1
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="home2.html" class="dropdown-item">
+                                Home 2
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="" class="dropdown-item">
+                                Home 3
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </li>
+
+
+                <!-- SHOP -->
+                <li class="nav-item dropdown">
+
+                    <a href=""
+                       class="nav-link dropdown-toggle"
+                       data-bs-toggle="dropdown">
+
+                        Shop
+
+                    </a>
+
+                    <ul class="dropdown-menu">
+
+                        <li>
+                            <a href="" class="dropdown-item">
+                                Shop
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="" class="dropdown-item">
+                                Shop Grid
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="" class="dropdown-item">
+                                Shop Grid 2
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </li>
+
+
+                <!-- VENDORS -->
+                <li class="nav-item dropdown">
+
+                    <a href=""
+                       class="nav-link dropdown-toggle"
+                       data-bs-toggle="dropdown">
+
+                        Vendors
+
+                    </a>
+
+                    <ul class="dropdown-menu">
+
+                        <li>
+                            <a href="" class="dropdown-item">
+                                Vendor singel
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="" class="dropdown-item">
+                                Vendor listing
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </li>
+
+
+                <!-- PAGES -->
+                <li class="nav-item dropdown">
+
+                    <a href=""
+                       class="nav-link dropdown-toggle"
+                       data-bs-toggle="dropdown">
+
+                        Pages
+
+                    </a>
+
+                    <ul class="dropdown-menu">
+
+                        <li>
+                            <a href="" class="dropdown-item">
+                                About us
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="" class="dropdown-item">
+                                Blog
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="" class="dropdown-item">
+                                Careers
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="" class="dropdown-item">
+                                Register
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="" class="dropdown-item">
+                                Login
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="" class="dropdown-item">
+                                Error 404
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </li>
+
+
+                <!-- BLOG -->
+                <li class="nav-item dropdown">
+
+                    <a href=""
+                       class="nav-link dropdown-toggle"
+                       data-bs-toggle="dropdown">
+
+                        Blog
+
+                    </a>
+
+                    <ul class="dropdown-menu">
+
+                        <li>
+                            <a href="" class="dropdown-item">
+                                Blog
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="" class="dropdown-item">
+                                Blog Grid
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="" class="dropdown-item">
+                                Single Post
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </li>
+
+
+                <!-- CONTACT US -->
+                <li class="nav-item">
+
+                    <a href=""
+                       class="nav-link">
+
+                        Contact Us
+
+                    </a>
+
+                </li>
+
+            </ul>
+
+
+            <!-- ================= RIGHT SIDE ================= -->
+
+            <div class="d-flex flex-column flex-xl-row
+                        align-items-start align-items-xl-center
+                        gap-3">
+
+
+                <!-- ACCOUNT -->
+                <a href=""
+                   class="text-secondary text-decoration-none
+                          d-inline-flex align-items-center gap-1">
+
+                    <i class="bi bi-person-fill"></i>
+
+                    <span>Account</span>
+
+                </a>
+
+
+                <!-- WISHLIST -->
+                <a href=""
+                   class="text-secondary text-decoration-none
+                          d-inline-flex align-items-center gap-1">
+
+                    <i class="bi bi-heart-fill"></i>
+
+                    <span>Wishlist</span>
+
+                </a>
+
+
+                <!-- CART -->
+                <a href=""
+                   class="text-secondary text-decoration-none
+                          d-inline-flex align-items-center gap-1">
+
+                    <i class="bi bi-cart-fill"></i>
+
+                    <span>Cart</span>
+
+                </a>
+
+
+                <!-- COMPARE -->
+                <a href=""
+                   class="text-secondary text-decoration-none
+                          d-inline-flex align-items-center gap-1">
+
+                    <i class="bi bi-circle-half"></i>
+
+                    <span>Compare</span>
+
+                </a>
+
             </div>
 
         </div>
 
     </div>
 
-    </div>
+</nav>
 
     <!-- ==================== القسم الاوي يلي فيه سلايدر ================= -->
 
@@ -4161,5 +4313,6 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
