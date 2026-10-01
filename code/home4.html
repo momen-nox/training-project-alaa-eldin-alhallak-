@@ -1,0 +1,2876 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./style4.css">
+</head>
+
+
+<body>
+    <!-- 1. الشريط العلوي الداكن -->
+    <header class="bg-dark text-white py-2">
+        <div class="container-fluid px-3 px-lg-4">
+            <div class="row align-items-center gy-2">
+
+                <div class="col-12 col-md-4 text-center text-md-start">
+                    <a href="#" class="text-white text-decoration-none me-2">About Us</a>
+                    <span class="opacity-50">|</span>
+                    <a href="#" class="text-white text-decoration-none mx-2">Careers</a>
+                    <span class="opacity-50">|</span>
+                    <a href="#" class="text-white text-decoration-none ms-2">Open a shop</a>
+                </div>
+
+                <div class="col-12 col-md-4 text-center">
+                    <span class="text-white-50">Free shipping for all orders over <strong
+                            class="text-info">$75.00</strong></span>
+                </div>
+
+                <div
+                    class="col-12 col-md-4 d-flex justify-content-center justify-content-md-end align-items-center gap-3">
+                    <span class="small">Need help? Call Us: <strong class="text-info">+1 1800 900</strong></span>
+
+                    <div class="dropdown">
+                        <button class="btn btn-link text-white text-decoration-none dropdown-toggle p-0 small"
+                            type="button" data-bs-toggle="dropdown">
+                            English
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end shadow border-0">
+                            <li><a class="dropdown-item" href="#">English</a></li>
+                            <li><a class="dropdown-item" href="#">العربية</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="dropdown">
+                        <button class="btn btn-link text-white text-decoration-none dropdown-toggle p-0 small"
+                            type="button" data-bs-toggle="dropdown">
+                            USD
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end shadow border-0">
+                            <li><a class="dropdown-item" href="#">USD</a></li>
+                            <li><a class="dropdown-item" href="#">EUR</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. قسم اللوجو والبحث والأيقونات -->
+    <div class="py-3 bg-white border-bottom">
+        <div class="container-fluid px-3 px-lg-4">
+            <div class="row align-items-center gy-3">
+
+                <div class="col-6 col-lg-2">
+                    <a href="#" class="navbar-brand fw-bold fs-3 text-primary d-flex align-items-center gap-2">
+                        <i class="bi bi-robot text-info fs-2"></i> Ecom
+                    </a>
+                </div>
+
+                <div class="col-12 col-lg-7 order-3 order-lg-2">
+                    <div class="input-group border rounded-3 bg-light overflow-hidden">
+                        <button class="btn btn-light dropdown-toggle border-end text-muted px-3" type="button"
+                            data-bs-toggle="dropdown">
+                            All categories
+                        </button>
+                        <ul class="dropdown-menu shadow border-0">
+                            <li><a class="dropdown-item" href="#">Electronics</a></li>
+                            <li><a class="dropdown-item" href="#">Fashion</a></li>
+                            <li><a class="dropdown-item" href="#">Home & Garden</a></li>
+                        </ul>
+                        <input type="text" class="form-control bg-transparent border-0 px-3"
+                            placeholder="Search for items...">
+                        <button class="btn btn-white border-0 text-muted px-3" type="button">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div
+                    class="col-6 col-lg-3 order-2 order-lg-3 d-flex align-items-center justify-content-end gap-3 gap-xl-4 small fw-semibold text-secondary">
+                    <a href="#" class="nav-link d-none d-xl-block">Flash Deals</a>
+                    <a href="#" class="nav-link d-none d-xl-block">Special</a>
+                    <a href="#" class="nav-link d-none d-xl-block">Top Sellers</a>
+
+                    <div class="d-flex align-items-center gap-3 ms-2">
+                        <a href="#" class="text-dark position-relative fs-4">
+                            <i class="bi bi-person"></i>
+                        </a>
+                        <a href="#" class="text-dark position-relative fs-4">
+                            <i class="bi bi-heart"></i>
+                            <span
+                                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning text-white">5</span>
+                        </a>
+                        <a href="#" class="text-dark position-relative fs-4">
+                            <i class="bi bi-bag"></i>
+                            <span
+                                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning text-white">2</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- 3. شريط التنقل الرئيسي والقوائم المنسدلة -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom py-2v sticky-top">
+        <div class="container-fluid px-3 px-lg-4">
+
+            <div class="dropdown me-3">
+                <button
+                    class="btn btn-warning text-white fw-bold px-3 py-2 dropdown-toggle d-flex align-items-center gap-2 rounded-2"
+                    type="button" data-bs-toggle="dropdown">
+                    <i class="bi bi-grid-fill"></i> Shop By Categories
+                </button>
+                <ul class="dropdown-menu shadow border-0 mt-2">
+                    <li><a class="dropdown-item py-2" href="#">Computers & Laptops</a></li>
+                    <li><a class="dropdown-item py-2" href="#">Smartphones & Tablets</a></li>
+                    <li><a class="dropdown-item py-2" href="#">TV & Audio</a></li>
+                    <li><a class="dropdown-item py-2" href="#">Gadgets & Electronics</a></li>
+                </ul>
+            </div>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainMenu">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-lg-2 fw-semibold">
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-dark" href="#" data-bs-toggle="dropdown">Home</a>
+                        <ul class="dropdown-menu shadow border-0">
+                            <li><a class="dropdown-item" href="#">Homepage - 1</a></li>
+                            <li><a class="dropdown-item" href="#">Homepage - 2</a></li>
+                            <li><a class="dropdown-item" href="#">Homepage - 3</a></li>
+                            <li><a class="dropdown-item" href="#">Homepage - 4</a></li>
+                            <li><a class="dropdown-item" href="#">Homepage - 5</a></li>
+                            <li><a class="dropdown-item" href="#">Homepage - 6</a></li>
+                            <li><a class="dropdown-item" href="#">Homepage - 7</a></li>
+                            <li><a class="dropdown-item" href="#">Homepage - 8</a></li>
+                            <li><a class="dropdown-item" href="#">Homepage - 9</a></li>
+                            <li><a class="dropdown-item" href="#">Homepage - 10</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-dark" href="#" data-bs-toggle="dropdown">Shop</a>
+                        <ul class="dropdown-menu shadow border-0">
+                            <li><a class="dropdown-item" href="#">Shop Grid</a></li>
+                            <li><a class="dropdown-item" href="#">Shop Grid 2</a></li>
+                            <li><a class="dropdown-item" href="#">Shop list - Left sidebar</a></li>
+                            <li><a class="dropdown-item" href="#">Shop list - Right sidebar</a></li>
+                            <li><a class="dropdown-item" href="#">Shop Fullwidth</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Single Product</a></li>
+                            <li><a class="dropdown-item" href="#">Single Product 2</a></li>
+                            <li><a class="dropdown-item" href="#">Single Product 3</a></li>
+                            <li><a class="dropdown-item" href="#">Single Product 4</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Shop Cart</a></li>
+                            <li><a class="dropdown-item" href="#">Shop Checkout</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-dark" href="#" data-bs-toggle="dropdown">Vendors</a>
+                        <ul class="dropdown-menu shadow border-0">
+                            <li><a class="dropdown-item" href="#">Vendors Listing</a></li>
+                            <li><a class="dropdown-item" href="#">Vendor Single</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-dark" href="#" data-bs-toggle="dropdown">Pages</a>
+                        <ul class="dropdown-menu shadow border-0">
+                            <li><a class="dropdown-item" href="#">About Us</a></li>
+                            <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                            <li><a class="dropdown-item" href="#">Careers</a></li>
+                            <li><a class="dropdown-item" href="#">Term and Condition</a></li>
+                            <li><a class="dropdown-item" href="#">Register</a></li>
+                            <li><a class="dropdown-item" href="#">Login</a></li>
+                            <li><a class="dropdown-item" href="#">Error 404</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-dark" href="#" data-bs-toggle="dropdown">Blog</a>
+                        <ul class="dropdown-menu shadow border-0">
+                            <li><a class="dropdown-item" href="#">Blog - No Sidebar</a></li>
+                            <li><a class="dropdown-item" href="#">Blog - Right Sidebar</a></li>
+                            <li><a class="dropdown-item" href="#">Blog List</a></li>
+                            <li><a class="dropdown-item" href="#">Blog category big</a></li>
+                            <li><a class="dropdown-item" href="#">Blog Single - Left sidebar</a></li>
+                            <li><a class="dropdown-item" href="#">Blog Single - Right sidebar</a></li>
+                            <li><a class="dropdown-item" href="#">Blog Single - No sidebar</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">Contact Us</a>
+                    </li>
+
+                </ul>
+
+                <div class="d-flex align-items-center gap-2 text-danger fw-bold ms-auto">
+                    <i class="bi bi-percent fs-5"></i>
+                    <span>SPECIAL OFFER</span>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+    <section class="py-4 bg-light">
+        <div class="container-fluid px-3 px-lg-4">
+            <div class="row g-3">
+
+                <!-- 1. البانر الرئيسي الكبير (Carousel مع 3 عناصر Slide) -->
+                <div class="col-12 col-xl-7">
+                    <div id="heroCarousel" class="carousel slide h-100 rounded-3 overflow-hidden shadow-sm"
+                        data-bs-ride="carousel">
+
+                        <!-- مؤشرات السلايدر (Carousel Indicators) -->
+                        <div class="carousel-indicators justify-content-start ms-4 mb-3">
+                            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0"
+                                class="active rounded-circle" style="width: 10px; height: 10px;"></button>
+                            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"
+                                class="rounded-circle" style="width: 10px; height: 10px;"></button>
+                            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"
+                                class="rounded-circle" style="width: 10px; height: 10px;"></button>
+                        </div>
+
+                        <div class="carousel-inner h-100 bg-info-subtle">
+
+                            <!-- Slide 1: ENJOY THE MUSIC -->
+                            <div class="carousel-item active h-100 p-4 p-md-5">
+                                <div class="row align-items-center h-100">
+                                    <div class="col-12 col-md-6 z-1">
+                                        <h1 class="fw-bold text-dark display-5 mb-3">ENJOY<br><span
+                                                class="text-primary">THE MUSIC</span></h1>
+                                        <ul class="list-unstyled text-secondary small mb-4">
+                                            <li class="mb-1"><i class="bi bi-dot"></i> Free Shipping. Secure Payment
+                                            </li>
+                                            <li class="mb-1"><i class="bi bi-dot"></i> Contact us 24hrs a day</li>
+                                            <li class="mb-1"><i class="bi bi-dot"></i> Support gift service</li>
+                                        </ul>
+                                        <div class="d-flex gap-3 align-items-center">
+                                            <a href="#" class="btn btn-dark px-4 py-2">Shop now</a>
+                                            <a href="#" class="text-decoration-underline text-secondary small">Learn
+                                                more</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6  mt-3 mt-md-0 position-relative "
+                                        style="height:400px ;">
+                                        <img src="./imgs/bg-banner.png" alt="Slide 1 Image"
+                                            class=" position-absolute end-0 bottom-0">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Slide 2: 360 DEGREE VIRTUAL REALITY -->
+                            <div class="carousel-item h-100 p-4 p-md-5">
+                                <div class="row align-items-center h-100">
+                                    <div class="col-12 col-md-6 z-1">
+                                        <h1 class="fw-bold text-dark display-6 mb-3">360 DEGREE<br><span
+                                                class="text-info">VIRTUAL REALITY</span></h1>
+                                        <ul class="list-unstyled text-secondary small mb-4">
+                                            <li class="mb-1"><i class="bi bi-dot"></i> Free Shipping. Secure Payment
+                                            </li>
+                                            <li class="mb-1"><i class="bi bi-dot"></i> Contact us 24hrs a day</li>
+                                            <li class="mb-1"><i class="bi bi-dot"></i> Support gift service</li>
+                                        </ul>
+                                        <div class="d-flex gap-3 align-items-center">
+                                            <a href="#" class="btn btn-dark px-4 py-2">Shop now</a>
+                                            <a href="#" class="text-decoration-underline text-secondary small">Learn
+                                                more</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6  mt-3 mt-md-0 position-relative" style="height:400px">
+                                        <img src="./imgs/bg-banner-2.png" alt="Slide 2 Image"
+                                            class="position-absolute bottom-0 end-0 rounded">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Slide 3: ENJOY THE MUSIC 2 -->
+                            <div class="carousel-item h-100 p-4 p-md-5">
+                                <div class="row align-items-center h-100">
+                                    <div class="col-12 col-md-6 z-1">
+                                        <h1 class="fw-bold text-dark display-5 mb-3">ENJOY<br><span
+                                                class="text-warning">THE MUSIC</span></h1>
+                                        <ul class="list-unstyled text-secondary small mb-4">
+                                            <li class="mb-1"><i class="bi bi-dot"></i> Free Shipping. Secure Payment
+                                            </li>
+                                            <li class="mb-1"><i class="bi bi-dot"></i> Contact us 24hrs a day</li>
+                                            <li class="mb-1"><i class="bi bi-dot"></i> Support gift service</li>
+                                        </ul>
+                                        <div class="d-flex gap-3 align-items-center">
+                                            <a href="#" class="btn btn-dark px-4 py-2">Shop now</a>
+                                            <a href="#" class="text-decoration-underline text-secondary small">Learn
+                                                more</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6  mt-3 mt-md-0 position-relative" style="height:400px">
+                                        <img src="./imgs/bg-banner-3.png" alt="Slide 3 Image"
+                                            class="position-absolute end-0 bottom-0 rounded">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. البطاقات الوسطية (الميتافيرس والسماعات) -->
+                <div class="col-12 col-md-8 col-xl-3">
+                    <div class="d-flex flex-column gap-3 h-100">
+
+                        <!-- بطاقة Metaverse -->
+                        <div
+                            class="bg-white p-3 p-xl-4 rounded-3 shadow-sm flex-fill d-flex align-items-center justify-content-between overflow-hidden">
+                            <div>
+                                <h4 class="fw-bold mb-1">Metaverse</h4>
+                                <p class="text-muted small mb-2">The Future of Creativity</p>
+                                <a href="#" class="text-warning text-decoration-none fw-bold small">LEARN MORE &gt;</a>
+                            </div>
+                            <div class="w-40 text-end">
+                                <img src="./imgs/bg-slide-2.png" alt="Metaverse Image" class="img-fluid rounded">
+                            </div>
+                        </div>
+
+                        <!-- بطاقة Headphone Rockez 547 -->
+                        <div
+                            class="bg-white p-3 p-xl-4 rounded-3 shadow-sm flex-fill d-flex align-items-center justify-content-between overflow-hidden">
+                            <div class="">
+                                <p class="text-muted small mb-1">Headphone</p>
+                                <h5 class="fw-bold mb-1">Rockez 547</h5>
+                                <p class="text-muted fs-8 mb-3">MUSIC EVERYWHERE<br>ANYTIME</p>
+                                <a href="#" class="btn btn-warning text-white btn-sm px-3 fw-bold">Shop Now &gt;</a>
+                            </div>
+                            <div class="w-40 text-end">
+                                <img src="./imgs/headphone.png" alt="Headphone Image" class="img-fluid rounded">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- 3. العمود الأخير اليمني (قائمة البانرات الصغيرة) -->
+                <div class="col-12 col-md-4 col-xl-2">
+                    <div
+                        class="d-flex flex-column gap-2 bg-white p-2 rounded-3 shadow-sm h-100 justify-content-between">
+                        <a href="#" class="d-block text-center border rounded p-1">
+                            <img src="./imgs/promotion1.png" alt="Banner 1" class="img-fluid rounded">
+                        </a>
+                        <a href="#" class="d-block text-center border rounded p-1">
+                            <img src="./imgs/promotion2.png" alt="Banner 2" class="img-fluid rounded">
+                        </a>
+                        <a href="#" class="d-block text-center border rounded p-1">
+                            <img src="./imgs/promotion3.png" alt="Banner 3" class="img-fluid rounded">
+                        </a>
+                        <a href="#" class="d-block text-center border rounded p-1">
+                            <img src="./imgs/promotion4.png" alt="Banner 4" class="img-fluid rounded">
+                        </a>
+                        <a href="#" class="d-block text-center border rounded p-1">
+                            <img src="./imgs/promotion5.png" alt="Banner 5" class="img-fluid rounded">
+                        </a>
+                        <a href="#" class="d-block text-center border rounded p-1">
+                            <img src="./imgs/promotion6.png" alt="Banner 6" class="img-fluid rounded">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- قسم شعارات العلامات التجارية (Brands Carousel) -->
+    <section class="py-4 bg-white border-top border-bottom">
+        <div class="container-fluid px-3 px-lg-4">
+
+            <div id="brandsCarousel" class="carousel slide" data-bs-ride="carousel">
+
+                <div class="carousel-inner">
+
+                    <!-- المجموعة الأولى -->
+                    <div class="carousel-item active">
+                        <div class="row align-items-center justify-content-center text-center g-3 opacity-75">
+                            <div class="col-4 col-sm-3 col-md-2">
+                                <img src="./imgs/microsoft.svg" alt="Microsoft" class="img-fluid"
+                                    style="max-height: 30px;">
+                            </div>
+                            <div class="col-4 col-sm-3 col-md-2">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/Sony_logo.svg" alt="SONY"
+                                    class="img-fluid" style="max-height: 25px;">
+                            </div>
+                            <div class="col-4 col-sm-3 col-md-2">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a1/Acer_Logo.svg" alt="acer"
+                                    class="img-fluid" style="max-height: 25px;">
+                            </div>
+                            <div class="col-4 col-sm-3 col-md-2 d-none d-sm-block">
+                                <img src="./imgs/nokia.svg" alt="NOKIA" class="img-fluid" style="max-height: 25px;">
+                            </div>
+                            <div class="col-4 col-sm-3 col-md-2 d-none d-md-block">
+                                <img src="./imgs/assus.svg" alt="ASUS" class="img-fluid" style="max-height: 25px;">
+                            </div>
+                            <div class="col-4 col-sm-3 col-md-2 d-none d-md-block">
+                                <img src="./imgs/casio.svg" alt="CASIO" class="img-fluid" style="max-height: 25px;">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- المجموعة الثانية -->
+                    <div class="carousel-item">
+                        <div class="row align-items-center justify-content-center text-center g-3 opacity-75">
+                            <div class="col-4 col-sm-3 col-md-2">
+                                <img src="./imgs/dell.svg" alt="DELL" class="img-fluid" style="max-height: 30px;">
+                            </div>
+                            <div class="col-4 col-sm-3 col-md-2">
+                                <img src="./imgs/casio.svg" alt="HP" class="img-fluid" style="max-height: 30px;">
+                            </div>
+                            <div class="col-4 col-sm-3 col-md-2">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/Lenovo_logo_2015.svg"
+                                    alt="Lenovo" class="img-fluid" style="max-height: 25px;">
+                            </div>
+                            <div class="col-4 col-sm-3 col-md-2 d-none d-sm-block">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg"
+                                    alt="Apple" class="img-fluid" style="max-height: 30px;">
+                            </div>
+                            <div class="col-4 col-sm-3 col-md-2 d-none d-md-block">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Samsung_Logo.svg"
+                                    alt="Samsung" class="img-fluid" style="max-height: 25px;">
+                            </div>
+                            <div class="col-4 col-sm-3 col-md-2 d-none d-md-block">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/b/bf/LG_logo_%282015%29.svg"
+                                    alt="LG" class="img-fluid" style="max-height: 30px;">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- أزرار الأسهم للتنقل -->
+                <button class="carousel-control-prev w-auto d-none d-md-flex" type="button"
+                    data-bs-target="#brandsCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon bg-secondary rounded-circle p-2" aria-hidden="true"></span>
+                </button>
+                <button class="carousel-control-next w-auto d-none d-md-flex" type="button"
+                    data-bs-target="#brandsCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon bg-secondary rounded-circle p-2" aria-hidden="true"></span>
+                </button>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="category-cards-section py-4">
+        <div class="container-fluid px-3">
+            <div class="row g-3">
+
+                <!-- Card 1: Smart Phone -->
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div
+                        class="category-card p-3 bg-white rounded border h-100 d-flex flex-column justify-content-between">
+                        <div>
+                            <h6 class="fw-bold text-dark mb-3">Smart Phone</h6>
+                            <div class="d-flex gap-3 align-items-start">
+                                <div class="category-img-box flex-shrink-0">
+                                    <img src="./imgs/smartphone.png" alt="Smart Phone" class="img-fluid rounded">
+                                </div>
+                                <ul class="list-unstyled category-list mb-0">
+                                    <li><a href="#" class="text-decoration-none text-muted">Phone Accessories</a>
+                                    </li>
+                                    <li><a href="#" class="text-decoration-none text-muted">Phone Cases</a></li>
+                                    <li><a href="#" class="text-decoration-none text-muted">Postpaid Phones</a></li>
+                                    <li><a href="#" class="text-decoration-none text-muted">Refurbished Phones</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="mt-3">
+                            <a href="#"
+                                class="btn btn-sm btn-light text-primary border-0 rounded-1 px-3 fw-semibold view-all-btn">View
+                                all</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2: Television -->
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div
+                        class="category-card p-3 bg-white rounded border h-100 d-flex flex-column justify-content-between">
+                        <div>
+                            <h6 class="fw-bold text-dark mb-3">Television</h6>
+                            <div class="d-flex gap-3 align-items-start">
+                                <div class="category-img-box flex-shrink-0">
+                                    <img src="./imgs/television.png" alt="Television" class="img-fluid rounded">
+                                </div>
+                                <ul class="list-unstyled category-list mb-0">
+                                    <li><a href="#" class="text-decoration-none text-muted">HD DVD Players</a></li>
+                                    <li><a href="#" class="text-decoration-none text-muted">Projection Screens</a>
+                                    </li>
+                                    <li><a href="#" class="text-decoration-none text-muted">Television
+                                            Accessories</a></li>
+                                    <li><a href="#" class="text-decoration-none text-muted">TV-DVD Combos</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="mt-3">
+                            <a href="#"
+                                class="btn btn-sm btn-light text-primary border-0 rounded-1 px-3 fw-semibold view-all-btn">View
+                                all</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3: Computers -->
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div
+                        class="category-card p-3 bg-white rounded border h-100 d-flex flex-column justify-content-between">
+                        <div>
+                            <h6 class="fw-bold text-dark mb-3">Computers</h6>
+                            <div class="d-flex gap-3 align-items-start">
+                                <div class="category-img-box flex-shrink-0">
+                                    <img src="./imgs/computer.png" alt="Computers" class="img-fluid rounded">
+                                </div>
+                                <ul class="list-unstyled category-list mb-0">
+                                    <li><a href="#" class="text-decoration-none text-muted">Computer Components</a>
+                                    </li>
+                                    <li><a href="#" class="text-decoration-none text-muted">Computer Accessories</a>
+                                    </li>
+                                    <li><a href="#" class="text-decoration-none text-muted">Desktops</a></li>
+                                    <li><a href="#" class="text-decoration-none text-muted">Monitors</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="mt-3">
+                            <a href="#"
+                                class="btn btn-sm btn-light text-primary border-0 rounded-1 px-3 fw-semibold view-all-btn">View
+                                all</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4: Electronics -->
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div
+                        class="category-card p-3 bg-white rounded border h-100 d-flex flex-column justify-content-between">
+                        <div>
+                            <h6 class="fw-bold text-dark mb-3">Electronics</h6>
+                            <div class="d-flex gap-3 align-items-start">
+                                <div class="category-img-box flex-shrink-0">
+                                    <img src="./imgs/electric.png" alt="Electronics" class="img-fluid rounded">
+                                </div>
+                                <ul class="list-unstyled category-list mb-0">
+                                    <li><a href="#" class="text-decoration-none text-muted">Office Electronics</a>
+                                    </li>
+                                    <li><a href="#" class="text-decoration-none text-muted">Portable Audio &
+                                            Video</a></li>
+                                    <li><a href="#" class="text-decoration-none text-muted">Washing Machine</a></li>
+                                    <li><a href="#" class="text-decoration-none text-muted">Accessories &
+                                            Supplies</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="mt-3">
+                            <a href="#"
+                                class="btn btn-sm btn-light text-primary border-0 rounded-1 px-3 fw-semibold view-all-btn">View
+                                all</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="py-5 bg-light">
+        <div class="container-fluid px-3">
+            <div class="row g-2 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5">
+
+                <!-- كارت 1 -->
+                <div class="col">
+                    <div class="product-card card p-2 bg-white border">
+
+                        <span class="badge bg-warning position-absolute top-0 start-0 m-2">-17%</span>
+
+                        <div class="hover-actions">
+                            <a href="#" class="action-btn"><i class="bi bi-heart"></i></a>
+                            <a href="#" class="action-btn"><i class="bi bi-arrow-repeat"></i></a>
+                            <!-- <a href="#" class="action-btn"><i class="bi bi-eye"></i></a> -->
+                            <a href="#" class="btn-icon" data-tooltip="Quick View" data-bs-toggle="modal"
+                                data-bs-target="#quickViewModal">
+                                <i class="bi bi-eye"></i>
+                            </a>
+                        </div>
+
+                        <div class="text-center py-2">
+                            <img src="./imgs/watch.png" class="img-fluid overflow-hidden"
+                                style="height: 100px; object-fit: contain;" alt="Product">
+                        </div>
+
+                        <div class="text-center my-1">
+                            <span class="badge bg-dark rounded-pill px-2 py-1" style="font-size: 10px;">
+                                00 Day : 00 Hour : 00 Min : 00 Sec
+                            </span>
+                        </div>
+
+                        <small class="text-muted d-block">Apple</small>
+                        <h6 class="fw-bold text-dark fs-6 mb-1 text-truncate">2022 Apple
+                            iMac 5K Display</h6>
+
+                        <div class="text-warning mb-1" style="font-size: 11px;">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <span class="text-muted ms-1">(65)</span>
+                        </div>
+
+                        <div class="d-flex align-items-center gap-2 mb-2">
+                            <span class="fw-bold text-primary fs-6">$2856.3</span>
+                            <span class="text-muted text-decoration-line-through small">$3225.6</span>
+                        </div>
+
+                        <a href="#" class="btn btn-light border btn-sm w-100 fw-bold mb-2">Add To
+                            Cart</a>
+
+                        <div class="progress" style="height: 5px;">
+                            <div class="progress-bar bg-warning" style="width: 45%;"></div>
+                        </div>
+                        <div class="d-flex justify-content-between text-muted mt-1" style="font-size: 10px;">
+                            <span>Available: <strong>568</strong></span>
+                            <span>Sold: <strong>289</strong></span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- كارت 2 -->
+                <div class="col">
+                    <div class="product-card card p-2 bg-white border">
+                        <span class="badge bg-warning position-absolute top-0 start-0 m-2">-17%</span>
+                        <div class="hover-actions">
+                            <a href="#" class="action-btn"><i class="bi bi-heart"></i></a>
+                            <a href="#" class="action-btn"><i class="bi bi-arrow-repeat"></i></a>
+                            <a href="#" class="btn-icon" data-tooltip="Quick View" data-bs-toggle="modal"
+                                data-bs-target="#quickViewModal">
+                                <i class="bi bi-eye"></i>
+                            </a>
+                        </div>
+                        <div class="text-center py-2">
+                            <img src="./imgs/television.png" class="img-fluid overflow-hidden"
+                                style="height: 100px; object-fit: contain;" alt="Product">
+                        </div>
+                        <div class="text-center my-1">
+                            <span class="badge bg-dark rounded-pill px-2 py-1" style="font-size: 10px;">00 Day :
+                                00 Hour
+                                : 00 Min : 00 Sec</span>
+                        </div>
+                        <small class="text-muted d-block">Apple</small>
+                        <h6 class="fw-bold text-dark fs-6 mb-1 text-truncate">2022 Apple
+                            iMac 5K Display</h6>
+                        <div class="text-warning mb-1" style="font-size: 11px;">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i>
+                            <span class="text-muted ms-1">(65)</span>
+                        </div>
+                        <div class="d-flex align-items-center gap-2 mb-2">
+                            <span class="fw-bold text-primary fs-6">$2856.3</span>
+                            <span class="text-muted text-decoration-line-through small">$3225.6</span>
+                        </div>
+                        <a href="#" class="btn btn-light border btn-sm w-100 fw-bold mb-2">Add To
+                            Cart</a>
+                        <div class="progress" style="height: 5px;">
+                            <div class="progress-bar bg-warning" style="width: 45%;"></div>
+                        </div>
+                        <div class="d-flex justify-content-between text-muted mt-1" style="font-size: 10px;">
+                            <span>Available: <strong>568</strong></span><span>Sold:
+                                <strong>289</strong></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- كارت 3 -->
+                <div class="col">
+                    <div class="product-card card p-2 bg-white border">
+                        <span class="badge bg-warning position-absolute top-0 start-0 m-2">-17%</span>
+                        <div class="hover-actions">
+                            <a href="#" class="action-btn"><i class="bi bi-heart"></i></a>
+                            <a href="#" class="action-btn"><i class="bi bi-arrow-repeat"></i></a>
+                            <a href="#" class="btn-icon" data-tooltip="Quick View" data-bs-toggle="modal"
+                                data-bs-target="#quickViewModal">
+                                <i class="bi bi-eye"></i>
+                            </a>
+                        </div>
+                        <div class="text-center py-2">
+                            <img src="./imgs/screen-2.png" class="img-fluid overflow-hidden"
+                                style="height: 100px; object-fit: contain;" alt="Product">
+                        </div>
+                        <div class="text-center my-1">
+                            <span class="badge bg-dark rounded-pill px-2 py-1" style="font-size: 10px;">00 Day :
+                                00 Hour
+                                : 00 Min : 00 Sec</span>
+                        </div>
+                        <small class="text-muted d-block">Apple</small>
+                        <h6 class="fw-bold text-dark fs-6 mb-1 text-truncate">2022 Apple
+                            iMac 5K Display</h6>
+                        <div class="text-warning mb-1" style="font-size: 11px;">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i>
+                            <span class="text-muted ms-1">(65)</span>
+                        </div>
+                        <div class="d-flex align-items-center gap-2 mb-2">
+                            <span class="fw-bold text-primary fs-6">$2856.3</span>
+                            <span class="text-muted text-decoration-line-through small">$3225.6</span>
+                        </div>
+                        <a href="#" class="btn btn-light border btn-sm w-100 fw-bold mb-2">Add To
+                            Cart</a>
+                        <div class="progress" style="height: 5px;">
+                            <div class="progress-bar bg-warning" style="width: 45%;"></div>
+                        </div>
+                        <div class="d-flex justify-content-between text-muted mt-1" style="font-size: 10px;">
+                            <span>Available: <strong>568</strong></span><span>Sold:
+                                <strong>289</strong></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- كارت 4 -->
+                <div class="col">
+                    <div class="product-card card p-2 bg-white border">
+                        <span class="badge bg-warning position-absolute top-0 start-0 m-2">-17%</span>
+                        <div class="hover-actions">
+                            <a href="#" class="action-btn"><i class="bi bi-heart"></i></a>
+                            <a href="#" class="action-btn"><i class="bi bi-arrow-repeat"></i></a>
+                            <a href="#" class="btn-icon" data-tooltip="Quick View" data-bs-toggle="modal"
+                                data-bs-target="#quickViewModal">
+                                <i class="bi bi-eye"></i>
+                            </a>
+                        </div>
+                        <div class="text-center py-2">
+                            <img src="./imgs/screen-2.png " class="img-fluid overflow-hidden"
+                                style="height: 100px; object-fit: contain;" alt="Product">
+                        </div>
+                        <div class="text-center my-1">
+                            <span class="badge bg-dark rounded-pill px-2 py-1" style="font-size: 10px;">00 Day :
+                                00 Hour
+                                : 00 Min : 00 Sec</span>
+                        </div>
+                        <small class="text-muted d-block">Apple</small>
+                        <h6 class="fw-bold text-dark fs-6 mb-1 text-truncate">2022 Apple
+                            iMac 5K Display</h6>
+                        <div class="text-warning mb-1" style="font-size: 11px;">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i>
+                            <span class="text-muted ms-1">(65)</span>
+                        </div>
+                        <div class="d-flex align-items-center gap-2 mb-2">
+                            <span class="fw-bold text-primary fs-6">$2856.3</span>
+                            <span class="text-muted text-decoration-line-through small">$3225.6</span>
+                        </div>
+                        <a href="#" class="btn btn-light border btn-sm w-100 fw-bold mb-2">Add To
+                            Cart</a>
+                        <div class="progress" style="height: 5px;">
+                            <div class="progress-bar bg-warning" style="width: 45%;"></div>
+                        </div>
+                        <div class="d-flex justify-content-between text-muted mt-1" style="font-size: 10px;">
+                            <span>Available: <strong>568</strong></span><span>Sold:
+                                <strong>289</strong></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- كارت 5 -->
+                <div class="col">
+                    <div class="product-card card p-2 bg-white border">
+                        <span class="badge bg-warning position-absolute top-0 start-0 m-2">-17%</span>
+                        <div class="hover-actions">
+                            <a href="#" class="action-btn"><i class="bi bi-heart"></i></a>
+                            <a href="#" class="action-btn"><i class="bi bi-arrow-repeat"></i></a>
+                            <a href="#" class="btn-icon" data-tooltip="Quick View" data-bs-toggle="modal"
+                                data-bs-target="#quickViewModal">
+                                <i class="bi bi-eye"></i>
+                            </a>
+                        </div>
+                        <div class="text-center py-2">
+                            <img src="./imgs/apple-day.png" class="img-fluid overflow-hidden"
+                                style="height: 100px; object-fit: contain;" alt="Product">
+                        </div>
+                        <div class="text-center my-1">
+                            <span class="badge bg-dark rounded-pill px-2 py-1" style="font-size: 10px;">00 Day :
+                                00 Hour
+                                : 00 Min : 00 Sec</span>
+                        </div>
+                        <small class="text-muted d-block">Apple</small>
+                        <h6 class="fw-bold text-dark fs-6 mb-1 text-truncate">2022 Apple
+                            iMac 5K Display</h6>
+                        <div class="text-warning mb-1" style="font-size: 11px;">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i>
+                            <span class="text-muted ms-1">(65)</span>
+                        </div>
+                        <div class="d-flex align-items-center gap-2 mb-2">
+                            <span class="fw-bold text-primary fs-6">$2856.3</span>
+                            <span class="text-muted text-decoration-line-through small">$3225.6</span>
+                        </div>
+                        <a href="#" class="btn btn-light border btn-sm w-100 fw-bold mb-2">Add To
+                            Cart</a>
+                        <div class="progress" style="height: 5px;">
+                            <div class="progress-bar bg-warning" style="width: 45%;"></div>
+                        </div>
+                        <div class="d-flex justify-content-between text-muted mt-1" style="font-size: 10px;">
+                            <span>Available: <strong>568</strong></span><span>Sold:
+                                <strong>289</strong></span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <div class="container my-4">
+        <div class="row g-4">
+
+            <!-- القسم الرئيسي للمنتجات -->
+            <div class="col-lg-9">
+
+                <!-- Carousel Wrapper -->
+                <div id="trendingCarousel" class="carousel slide" data-bs-ride="false">
+
+                    <!-- الهيدر مع أزرار التنقل -->
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h4 class="fw-bold m-0">Trending Products</h4>
+                        <div>
+                            <button class="btn btn-outline-secondary btn-sm rounded-circle me-1" type="button"
+                                data-bs-target="#trendingCarousel" data-bs-slide="prev">
+                                <i class="bi bi-chevron-left"></i>
+                            </button>
+                            <button class="btn btn-outline-secondary btn-sm rounded-circle" type="button"
+                                data-bs-target="#trendingCarousel" data-bs-slide="next">
+                                <i class="bi bi-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- محتوى الشرائح -->
+                    <div class="carousel-inner">
+
+                        <!-- ================= الشريحة الأولى (Slide 1) ================= -->
+                        <div class="carousel-item active">
+                            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 g-3">
+
+                                <!-- منتج 1 -->
+                                <div class="col">
+                                    <div class="card h-100 border-light shadow-sm product-card position-relative">
+                                        <span class="badge bg-danger position-absolute top-0 start-0 m-2">-17%</span>
+                                        <div
+                                            class="product-img-holder d-flex align-items-center justify-content-center p-3 bg-light">
+                                            <img src="./imgs/television.png" alt="Product" class="img-fluid product-img"
+                                                style="height: 120px; object-fit: contain;">
+                                        </div>
+                                        <div class="card-body d-flex flex-column p-2 text-start">
+                                            <small class="text-muted">SAMSUNG</small>
+                                            <h6 class="card-title fs-6 fw-semibold text-truncate mb-1">SAMSUNG Galaxy
+                                                Tab A7 Lite, 8.7" Tablet 32GB</h6>
+                                            <div class="text-warning small mb-2"><i class="bi bi-star-fill"></i><i
+                                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i> <span
+                                                    class="text-muted">(65)</span></div>
+                                            <div class="mb-2"><span class="fw-bold text-primary fs-6">$2856.3</span>
+                                                <span
+                                                    class="text-muted text-decoration-line-through small">$3225.6</span>
+                                            </div>
+                                            <button
+                                                class="btn btn-light btn-sm text-primary w-100 mt-auto border mb-2">Add
+                                                To Cart</button>
+                                            <ul class="list-unstyled small text-muted mb-0 border-top pt-2"
+                                                style="font-size: 0.75rem;">
+                                                <li>• 27-inch (diagonal) Retina 5K display</li>
+                                                <li>• 3.1GHz 6-core 10th-generation Intel Core i5</li>
+                                                <li>• AMD Radeon Pro 5300 graphics</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- منتج 2 -->
+                                <div class="col">
+                                    <div
+                                        class="card h-100 border-light-subtle shadow-sm product-card position-relative">
+                                        <span class="badge bg-danger position-absolute top-0 start-0 m-2">-17%</span>
+                                        <div
+                                            class="product-img-holder d-flex align-items-center justify-content-center p-3 ">
+                                            <img src="./imgs/headphone.png" alt="Product" class="img-fluid product-img"
+                                                style="height: 120px; object-fit: contain;">
+                                        </div>
+                                        <div class="card-body d-flex flex-column p-2 text-start">
+                                            <small class="text-muted">Dell</small>
+                                            <h6 class="card-title fs-6 fw-semibold text-truncate mb-1">Dell Optiplex
+                                                9020 Small Form Business Desktop</h6>
+                                            <div class="text-warning small mb-2"><i class="bi bi-star-fill"></i><i
+                                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i> <span
+                                                    class="text-muted">(65)</span></div>
+                                            <div class="mb-2"><span class="fw-bold text-primary fs-6">$2856.3</span>
+                                                <span
+                                                    class="text-muted text-decoration-line-through small">$3225.6</span>
+                                            </div>
+                                            <button
+                                                class="btn btn-light btn-sm text-primary w-100 mt-auto border mb-2">Add
+                                                To Cart</button>
+                                            <ul class="list-unstyled small text-muted mb-0 border-top pt-2"
+                                                style="font-size: 0.75rem;">
+                                                <li>• 27-inch (diagonal) Retina 5K display</li>
+                                                <li>• 3.1GHz 6-core 10th-generation Intel Core i5</li>
+                                                <li>• AMD Radeon Pro 5300 graphics</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- منتج 3 -->
+                                <div class="col">
+                                    <div
+                                        class="card h-100 border-light-subtle shadow-sm product-card position-relative">
+                                        <span class="badge bg-danger position-absolute top-0 start-0 m-2">-17%</span>
+                                        <div
+                                            class="product-img-holder d-flex align-items-center justify-content-center p-3 bg-light">
+                                            <img src="./imgs/laptop.png" alt="Product" class="img-fluid product-img"
+                                                style="height: 120px; object-fit: contain;">
+                                        </div>
+                                        <div class="card-body d-flex flex-column p-2 text-start">
+                                            <small class="text-muted">Gateway</small>
+                                            <h6 class="card-title fs-6 fw-semibold text-truncate mb-1">Gateway 23.8"
+                                                All-in-one Desktop, Fully Adjustable</h6>
+                                            <div class="text-warning small mb-2"><i class="bi bi-star-fill"></i><i
+                                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i> <span
+                                                    class="text-muted">(65)</span></div>
+                                            <div class="mb-2"><span class="fw-bold text-primary fs-6">$2856.3</span>
+                                                <span
+                                                    class="text-muted text-decoration-line-through small">$3225.6</span>
+                                            </div>
+                                            <button
+                                                class="btn btn-light btn-sm text-primary w-100 mt-auto border mb-2">Add
+                                                To Cart</button>
+                                            <ul class="list-unstyled small text-muted mb-0 border-top pt-2"
+                                                style="font-size: 0.75rem;">
+                                                <li>• 27-inch (diagonal) Retina 5K display</li>
+                                                <li>• 3.1GHz 6-core 10th-generation Intel Core i5</li>
+                                                <li>• AMD Radeon Pro 5300 graphics</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- منتج 4 -->
+                                <div class="col">
+                                    <div
+                                        class="card h-100 border-light-subtle shadow-sm product-card position-relative">
+                                        <span class="badge bg-danger position-absolute top-0 start-0 m-2">-17%</span>
+                                        <div
+                                            class="product-img-holder d-flex align-items-center justify-content-center p-3 bg-light">
+                                            <img src="./imgs/smartwatches.png" alt="Product"
+                                                class="img-fluid product-img"
+                                                style="height: 120px; object-fit: contain;">
+                                        </div>
+                                        <div class="card-body d-flex flex-column p-2 text-start">
+                                            <small class="text-muted">HP</small>
+                                            <h6 class="card-title fs-6 fw-semibold text-truncate mb-1">HP 22 All-in-One
+                                                PC, Intel Pentium J5040, 4GB RAM</h6>
+                                            <div class="text-warning small mb-2"><i class="bi bi-star-fill"></i><i
+                                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i> <span
+                                                    class="text-muted">(65)</span></div>
+                                            <div class="mb-2"><span class="fw-bold text-primary fs-6">$2856.3</span>
+                                                <span
+                                                    class="text-muted text-decoration-line-through small">$3225.6</span>
+                                            </div>
+                                            <button
+                                                class="btn btn-light btn-sm text-primary w-100 mt-auto border mb-2">Add
+                                                To Cart</button>
+                                            <ul class="list-unstyled small text-muted mb-0 border-top pt-2"
+                                                style="font-size: 0.75rem;">
+                                                <li>• 27-inch (diagonal) Retina 5K display</li>
+                                                <li>• 3.1GHz 6-core 10th-generation Intel Core i5</li>
+                                                <li>• AMD Radeon Pro 5300 graphics</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- ================= الشريحة الثانية (Slide 2 عند الضغط على الزر) ================= -->
+                        <div class="carousel-item">
+                            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 g-3">
+
+                                <!-- منتج 5 (من الصورة 3) -->
+                                <div class="col">
+                                    <div
+                                        class="card h-100 border-light-subtle shadow-sm product-card position-relative">
+                                        <span class="badge bg-danger position-absolute top-0 start-0 m-2">-17%</span>
+                                        <div
+                                            class="product-img-holder d-flex align-items-center justify-content-center p-3 bg-light">
+                                            <img src="./imgs/laptop.png" alt="Product" class="img-fluid product-img"
+                                                style="height: 120px; object-fit: contain;">
+                                        </div>
+                                        <div class="card-body d-flex flex-column p-2 text-start">
+                                            <small class="text-muted">Roku</small>
+                                            <h6 class="card-title fs-6 fw-semibold text-truncate mb-1">Class 4K UHD
+                                                (2160P) LED Roku Smart TV HDR</h6>
+                                            <div class="text-warning small mb-2"><i class="bi bi-star-fill"></i><i
+                                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i> <span
+                                                    class="text-muted">(65)</span></div>
+                                            <div class="mb-2"><span class="fw-bold text-primary fs-6">$2856.3</span>
+                                                <span
+                                                    class="text-muted text-decoration-line-through small">$3225.6</span>
+                                            </div>
+                                            <button
+                                                class="btn btn-light btn-sm text-primary w-100 mt-auto border mb-2">Add
+                                                To Cart</button>
+                                            <ul class="list-unstyled small text-muted mb-0 border-top pt-2"
+                                                style="font-size: 0.75rem;">
+                                                <li>• 27-inch (diagonal) Retina 5K display</li>
+                                                <li>• 3.1GHz 6-core 10th-generation Intel Core i5</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- منتج 6 (من الصورة 3) -->
+                                <div class="col">
+                                    <div
+                                        class="card h-100 border-light-subtle shadow-sm product-card position-relative">
+                                        <span class="badge bg-danger position-absolute top-0 start-0 m-2">-17%</span>
+                                        <div
+                                            class="product-img-holder d-flex align-items-center justify-content-center p-3 bg-light">
+                                            <img src="./imgs/smartwatches.png" alt="Product"
+                                                class="img-fluid product-img"
+                                                style="height: 120px; object-fit: contain;">
+                                        </div>
+                                        <div class="card-body d-flex flex-column p-2 text-start">
+                                            <small class="text-muted">SAMSUNG</small>
+                                            <h6 class="card-title fs-6 fw-semibold text-truncate mb-1">SAMSUNG Galaxy
+                                                Tab S7 Plus 12.4" 128GB Mystic Black</h6>
+                                            <div class="text-warning small mb-2"><i class="bi bi-star-fill"></i><i
+                                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i> <span
+                                                    class="text-muted">(65)</span></div>
+                                            <div class="mb-2"><span class="fw-bold text-primary fs-6">$2856.3</span>
+                                                <span
+                                                    class="text-muted text-decoration-line-through small">$3225.6</span>
+                                            </div>
+                                            <button
+                                                class="btn btn-light btn-sm text-primary w-100 mt-auto border mb-2">Add
+                                                To Cart</button>
+                                            <ul class="list-unstyled small text-muted mb-0 border-top pt-2"
+                                                style="font-size: 0.75rem;">
+                                                <li>• 27-inch (diagonal) Retina 5K display</li>
+                                                <li>• 3.1GHz 6-core 10th-generation Intel Core i5</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- منتج 7 (من الصورة 3) -->
+                                <div class="col">
+                                    <div
+                                        class="card h-100 border-light-subtle shadow-sm product-card position-relative">
+                                        <span class="badge bg-danger position-absolute top-0 start-0 m-2">-17%</span>
+                                        <div
+                                            class="product-img-holder d-flex align-items-center justify-content-center p-3 bg-light">
+                                            <img src="./imgs/television.png" alt="Product" class="img-fluid product-img"
+                                                style="height: 120px; object-fit: contain;">
+                                        </div>
+                                        <div class="card-body d-flex flex-column p-2 text-start">
+                                            <small class="text-muted">MSI</small>
+                                            <h6 class="card-title fs-6 fw-semibold text-truncate mb-1">MSI Optix G272
+                                                27" Full HD LED Gaming LCD Monitor</h6>
+                                            <div class="text-warning small mb-2"><i class="bi bi-star-fill"></i><i
+                                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i> <span
+                                                    class="text-muted">(65)</span></div>
+                                            <div class="mb-2"><span class="fw-bold text-primary fs-6">$2856.3</span>
+                                                <span
+                                                    class="text-muted text-decoration-line-through small">$3225.6</span>
+                                            </div>
+                                            <button
+                                                class="btn btn-light btn-sm text-primary w-100 mt-auto border mb-2">Add
+                                                To Cart</button>
+                                            <ul class="list-unstyled small text-muted mb-0 border-top pt-2"
+                                                style="font-size: 0.75rem;">
+                                                <li>• 27-inch (diagonal) Retina 5K display</li>
+                                                <li>• 3.1GHz 6-core 10th-generation Intel Core i5</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- منتج 8 (من الصورة 3) -->
+                                <div class="col">
+                                    <div
+                                        class="card h-100 border-light-subtle shadow-sm product-card position-relative">
+                                        <span class="badge bg-danger position-absolute top-0 start-0 m-2">-17%</span>
+                                        <div
+                                            class="product-img-holder d-flex align-items-center justify-content-center p-3 bg-light">
+                                            <img src="./imgs/headphone.png" alt="Product" class="img-fluid product-img"
+                                                style="height: 120px; object-fit: contain;">
+                                        </div>
+                                        <div class="card-body d-flex flex-column p-2 text-start">
+                                            <small class="text-muted">Apple</small>
+                                            <h6 class="card-title fs-6 fw-semibold text-truncate mb-1">Apple AirPods Pro
+                                                with MagSafe Charging Case</h6>
+                                            <div class="text-warning small mb-2"><i class="bi bi-star-fill"></i><i
+                                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i> <span
+                                                    class="text-muted">(65)</span></div>
+                                            <div class="mb-2"><span class="fw-bold text-primary fs-6">$2856.3</span>
+                                                <span
+                                                    class="text-muted text-decoration-line-through small">$3225.6</span>
+                                            </div>
+                                            <button
+                                                class="btn btn-light btn-sm text-primary w-100 mt-auto border mb-2">Add
+                                                To Cart</button>
+                                            <ul class="list-unstyled small text-muted mb-0 border-top pt-2"
+                                                style="font-size: 0.75rem;">
+                                                <li>• 27-inch (diagonal) Retina 5K display</li>
+                                                <li>• 3.1GHz 6-core 10th-generation Intel Core i5</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- الإعلان السفلي العريض (Note 9) -->
+                <!-- الإعلان السفلي العريض (صورة بانر كاملة) -->
+                <div class="banner-box mt-4 rounded overflow-hidden">
+                    <a href="#">
+                        <img src="./imgs/banner-ads.png" alt="Note 9 Banner" class="img-fluid w-100 d-block">
+                    </a>
+                </div>
+            </div>
+
+            <!-- الشريط الجانبي Sidebar -->
+            <div class="col-lg-3">
+                <div class="card border-0 bg-light p-3 shadow-sm h-100">
+
+                    <!-- الهيدر الخاص بالشريط الجانبي Best seller مع أزرار التنقل كما بالصورة 1 -->
+                    <div
+                        class="bg-warning text-white p-2 rounded d-flex justify-content-between align-items-center fw-bold mb-3">
+                        <span>Best seller</span>
+                        <div class="small">
+                            <i class="bi bi-chevron-left me-1 style-pointer"></i>
+                            <i class="bi bi-chevron-right style-pointer"></i>
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-column gap-3">
+
+                        <!-- عنصر جانبي 1 -->
+                        <div class="d-flex align-items-center gap-2">
+                            <div class="sidebar-img-holder bg-white rounded border d-flex align-items-center justify-content-center flex-shrink-0 overflow-hidden"
+                                style="width: 60px; height: 60px;">
+                                <img src="./imgs/smartwatches.png" alt="LG Smart TV" class="img-fluid">
+                            </div>
+                            <div>
+                                <h6 class="mb-0 fs-6 text-truncate" style="max-width: 150px;">LG 65" Class 4K UHD Smart
+                                    TV OLED A1 Series</h6>
+                                <div class="text-warning small" style="font-size: 0.7rem;"><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i> <span class="text-muted">(65)</span></div>
+                                <div><span class="fw-bold text-primary small">$2556.3</span> <span
+                                        class="text-muted text-decoration-line-through style-xs">$3225.6</span></div>
+                            </div>
+                        </div>
+
+                        <!-- عنصر جانبي 2 -->
+                        <div class="d-flex align-items-center gap-2">
+                            <div class="sidebar-img-holder bg-white rounded border d-flex align-items-center justify-content-center flex-shrink-0 overflow-hidden"
+                                style="width: 60px; height: 60px;">
+                                <img src="./imgs/watch.png" alt="Chromecast" class="img-fluid">
+                            </div>
+                            <div>
+                                <h6 class="mb-0 fs-6 text-truncate" style="max-width: 150px;">Chromecast with Google TV
+                                    - Streaming Entertainment</h6>
+                                <div class="text-warning small" style="font-size: 0.7rem;"><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i> <span class="text-muted">(65)</span></div>
+                                <div><span class="fw-bold text-primary small">$2556.3</span> <span
+                                        class="text-muted text-decoration-line-through style-xs">$3225.6</span></div>
+                            </div>
+                        </div>
+
+                        <!-- عنصر جانبي 3 -->
+                        <div class="d-flex align-items-center gap-2">
+                            <div class="sidebar-img-holder bg-white rounded border d-flex align-items-center justify-content-center flex-shrink-0 overflow-hidden"
+                                style="width: 60px; height: 60px;">
+                                <img src="./imgs/banner-small-1.png" alt="Apple iMac" class="img-fluid">
+                            </div>
+                            <div>
+                                <h6 class="mb-0 fs-6 text-truncate" style="max-width: 150px;">2022 Apple iMac with
+                                    Retina 5K Display</h6>
+                                <div class="text-warning small" style="font-size: 0.7rem;"><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i> <span class="text-muted">(65)</span></div>
+                                <div><span class="fw-bold text-primary small">$2556.3</span></div>
+                            </div>
+                        </div>
+
+                        <!-- الإعلان الجانبي السماوي (إعلان الساعة الذكية - صورة 4) -->
+                        <!-- البطاقة الجانبية مع خلفية الصورة وتنسيق متجاوب بدون ملف CSS خارجي -->
+                        <div class="side-banner rounded text-center position-relative overflow-hidden d-flex flex-column align-items-center p-4 border"
+                            style="background-image: url('https://wp.alithemes.com/html/ecom/demo/assets/imgs/page/homepage1/bg-topsell.png'); background-size: cover; background-position: center bottom; min-height: 380px;">
+
+                            <span class="badge bg-info text-dark mb-2 position-relative z-1">No.9</span>
+                            <h5 class="fw-bold fs-5 text-dark mb-2 position-relative z-1">Sensitive Touch<br>without
+                                fingerprint</h5>
+                            <p class="small text-muted mb-0 position-relative z-1">Smooth handle and accurate click</p>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <div class="container my-4">
+        <div class="row g-4">
+
+            <!-- القسم الأيسر: 8 كروت داخل Carousel يضم أزرار السلايدر -->
+            <div class="col-lg-9">
+                <div id="productsCarousel" class="carousel slide" data-bs-ride="false">
+
+                    <!-- هيدر القسم مع الأزرار المفعّلة -->
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h4 class="fw-bold m-0 fs-5">Featured Products</h4>
+                        <div>
+                            <button class="btn btn-sm btn-outline-secondary rounded-circle me-1" type="button"
+                                data-bs-target="#productsCarousel" data-bs-slide="prev">
+                                <i class="bi bi-chevron-left"></i>
+                            </button>
+                            <button class="btn btn-sm btn-outline-secondary rounded-circle" type="button"
+                                data-bs-target="#productsCarousel" data-bs-slide="next">
+                                <i class="bi bi-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- محتوى الشرائح -->
+                    <div class="carousel-inner">
+
+                        <!-- ================= الشريحة الأولى (Slide 1: 8 كروت) ================= -->
+                        <div class="carousel-item active">
+                            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
+
+                                <!-- كرت 1 -->
+                                <div class="col">
+                                    <div
+                                        class="card h-100 border-light-subtle shadow-sm product-card position-relative overflow-hidden">
+                                        <span
+                                            class="badge bg-danger position-absolute top-0 start-0 m-2 z-1">-17%</span>
+
+                                        <!-- القائمة التفاعلية الجانبية (تظهر فقط عند الـ Hover) -->
+                                        <div
+                                            class="product-actions position-absolute top-0 end-0 m-2 d-flex flex-column gap-1 z-2">
+                                            <button
+                                                class="btn btn-light btn-sm rounded-circle shadow-sm p-1 d-flex align-items-center justify-content-center"
+                                                style="width:28px; height:28px;"><i
+                                                    class="bi bi-lightning small"></i></button>
+                                            <button
+                                                class="btn btn-light btn-sm rounded-circle shadow-sm p-1 d-flex align-items-center justify-content-center"
+                                                style="width:28px; height:28px;"><i
+                                                    class="bi bi-heart small"></i></button>
+                                            <button
+                                                class="btn btn-light btn-sm rounded-circle shadow-sm p-1 d-flex align-items-center justify-content-center"
+                                                style="width:28px; height:28px;"><i
+                                                    class="bi bi-arrow-repeat small"></i></button>
+                                            <button
+                                                class="btn btn-light btn-sm rounded-circle shadow-sm p-1 d-flex align-items-center justify-content-center"
+                                                style="width:28px; height:28px;"><i
+                                                    class="bi bi-eye small"></i></button>
+                                        </div>
+
+                                        <div
+                                            class="product-img-holder d-flex align-items-center justify-content-center p-3 bg-light">
+                                            <img src="./imgs/headphone.png" alt="Product" class="img-fluid product-img"
+                                                style="height: 120px; object-fit: contain;">
+                                        </div>
+                                        <div class="card-body d-flex flex-column p-2 text-start">
+                                            <small class="text-muted">Apple</small>
+                                            <h6 class="card-title fs-6 fw-semibold text-truncate mb-1">Apple AirPods Pro
+                                                with MagSafe Charging Case</h6>
+                                            <div class="text-warning small mb-1"><i class="bi bi-star-fill"></i><i
+                                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i> <span
+                                                    class="text-muted">(65)</span></div>
+                                            <div class="mb-2"><span class="fw-bold text-primary fs-6">$2856.3</span>
+                                                <span
+                                                    class="text-muted text-decoration-line-through small">$3225.6</span>
+                                            </div>
+                                            <button
+                                                class="btn btn-light btn-sm text-primary w-100 mt-auto border mb-2">Add
+                                                To Cart</button>
+                                            <ul class="list-unstyled small text-muted mb-0 border-top pt-2"
+                                                style="font-size: 0.7rem;">
+                                                <li>• 27-inch Retina 5K display</li>
+                                                <li>• 3.1GHz 6-core Intel Core i5</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- كرت 2 -->
+                                <div class="col">
+                                    <div
+                                        class="card h-100 border-light-subtle shadow-sm product-card position-relative overflow-hidden">
+                                        <span
+                                            class="badge bg-danger position-absolute top-0 start-0 m-2 z-1">-17%</span>
+                                        <div
+                                            class="product-actions position-absolute top-0 end-0 m-2 d-flex flex-column gap-1 z-2">
+                                            <button
+                                                class="btn btn-light btn-sm rounded-circle shadow-sm p-1 d-flex align-items-center justify-content-center"
+                                                style="width:28px; height:28px;"><i
+                                                    class="bi bi-lightning small"></i></button>
+                                            <button
+                                                class="btn btn-light btn-sm rounded-circle shadow-sm p-1 d-flex align-items-center justify-content-center"
+                                                style="width:28px; height:28px;"><i
+                                                    class="bi bi-heart small"></i></button>
+                                            <button
+                                                class="btn btn-light btn-sm rounded-circle shadow-sm p-1 d-flex align-items-center justify-content-center"
+                                                style="width:28px; height:28px;"><i
+                                                    class="bi bi-arrow-repeat small"></i></button>
+                                            <button
+                                                class="btn btn-light btn-sm rounded-circle shadow-sm p-1 d-flex align-items-center justify-content-center"
+                                                style="width:28px; height:28px;"><i
+                                                    class="bi bi-eye small"></i></button>
+                                        </div>
+                                        <div
+                                            class="product-img-holder d-flex align-items-center justify-content-center p-3 bg-light">
+                                            <img src="./imgs/laptop.png" alt="Product" class="img-fluid product-img"
+                                                style="height: 120px; object-fit: contain;">
+                                        </div>
+                                        <div class="card-body d-flex flex-column p-2 text-start">
+                                            <small class="text-muted">Apple</small>
+                                            <h6 class="card-title fs-6 fw-semibold text-truncate mb-1">2022 Apple iMac
+                                                with Retina 5K Display</h6>
+                                            <div class="text-warning small mb-1"><i class="bi bi-star-fill"></i><i
+                                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i> <span
+                                                    class="text-muted">(65)</span></div>
+                                            <div class="mb-2"><span class="fw-bold text-primary fs-6">$2856.3</span>
+                                                <span
+                                                    class="text-muted text-decoration-line-through small">$3225.6</span>
+                                            </div>
+                                            <button
+                                                class="btn btn-light btn-sm text-primary w-100 mt-auto border mb-2">Add
+                                                To Cart</button>
+                                            <ul class="list-unstyled small text-muted mb-0 border-top pt-2"
+                                                style="font-size: 0.7rem;">
+                                                <li>• 27-inch Retina 5K display</li>
+                                                <li>• 3.1GHz 6-core Intel Core i5</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- كرت 3 -->
+                                <div class="col">
+                                    <div
+                                        class="card h-100 border-light-subtle shadow-sm product-card position-relative overflow-hidden">
+                                        <span
+                                            class="badge bg-danger position-absolute top-0 start-0 m-2 z-1">-17%</span>
+                                        <div
+                                            class="product-actions position-absolute top-0 end-0 m-2 d-flex flex-column gap-1 z-2">
+                                            <button
+                                                class="btn btn-light btn-sm rounded-circle shadow-sm p-1 d-flex align-items-center justify-content-center"
+                                                style="width:28px; height:28px;"><i
+                                                    class="bi bi-lightning small"></i></button>
+                                            <button
+                                                class="btn btn-light btn-sm rounded-circle shadow-sm p-1 d-flex align-items-center justify-content-center"
+                                                style="width:28px; height:28px;"><i
+                                                    class="bi bi-heart small"></i></button>
+                                            <button
+                                                class="btn btn-light btn-sm rounded-circle shadow-sm p-1 d-flex align-items-center justify-content-center"
+                                                style="width:28px; height:28px;"><i
+                                                    class="bi bi-arrow-repeat small"></i></button>
+                                            <button
+                                                class="btn btn-light btn-sm rounded-circle shadow-sm p-1 d-flex align-items-center justify-content-center"
+                                                style="width:28px; height:28px;"><i
+                                                    class="bi bi-eye small"></i></button>
+                                        </div>
+                                        <div
+                                            class="product-img-holder d-flex align-items-center justify-content-center p-3 bg-light">
+                                            <img src="./imgs/television.png" alt="Product" class="img-fluid product-img"
+                                                style="height: 120px; object-fit: contain;">
+                                        </div>
+                                        <div class="card-body d-flex flex-column p-2 text-start">
+                                            <small class="text-muted">Apple</small>
+                                            <h6 class="card-title fs-6 fw-semibold text-truncate mb-1">Chromecast with
+                                                Google TV - Streaming</h6>
+                                            <div class="text-warning small mb-1"><i class="bi bi-star-fill"></i><i
+                                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i> <span
+                                                    class="text-muted">(65)</span></div>
+                                            <div class="mb-2"><span class="fw-bold text-primary fs-6">$2856.3</span>
+                                                <span
+                                                    class="text-muted text-decoration-line-through small">$3225.6</span>
+                                            </div>
+                                            <button
+                                                class="btn btn-light btn-sm text-primary w-100 mt-auto border mb-2">Add
+                                                To Cart</button>
+                                            <ul class="list-unstyled small text-muted mb-0 border-top pt-2"
+                                                style="font-size: 0.7rem;">
+                                                <li>• 27-inch Retina 5K display</li>
+                                                <li>• 3.1GHz 6-core Intel Core i5</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- كرت 4 -->
+                                <div class="col">
+                                    <div
+                                        class="card h-100 border-light-subtle shadow-sm product-card position-relative overflow-hidden">
+                                        <span
+                                            class="badge bg-danger position-absolute top-0 start-0 m-2 z-1">-17%</span>
+                                        <div
+                                            class="product-actions position-absolute top-0 end-0 m-2 d-flex flex-column gap-1 z-2">
+                                            <button
+                                                class="btn btn-light btn-sm rounded-circle shadow-sm p-1 d-flex align-items-center justify-content-center"
+                                                style="width:28px; height:28px;"><i
+                                                    class="bi bi-lightning small"></i></button>
+                                            <button
+                                                class="btn btn-light btn-sm rounded-circle shadow-sm p-1 d-flex align-items-center justify-content-center"
+                                                style="width:28px; height:28px;"><i
+                                                    class="bi bi-heart small"></i></button>
+                                            <button
+                                                class="btn btn-light btn-sm rounded-circle shadow-sm p-1 d-flex align-items-center justify-content-center"
+                                                style="width:28px; height:28px;"><i
+                                                    class="bi bi-arrow-repeat small"></i></button>
+                                            <button
+                                                class="btn btn-light btn-sm rounded-circle shadow-sm p-1 d-flex align-items-center justify-content-center"
+                                                style="width:28px; height:28px;"><i
+                                                    class="bi bi-eye small"></i></button>
+                                        </div>
+                                        <div
+                                            class="product-img-holder d-flex align-items-center justify-content-center p-3 bg-light">
+                                            <img src="./imgs/smartwatches.png" alt="Product"
+                                                class="img-fluid product-img"
+                                                style="height: 120px; object-fit: contain;">
+                                        </div>
+                                        <div class="card-body d-flex flex-column p-2 text-start">
+                                            <small class="text-muted">Apple</small>
+                                            <h6 class="card-title fs-6 fw-semibold text-truncate mb-1">2HDR Smart
+                                                Portable Projector - SP-LSP3BL</h6>
+                                            <div class="text-warning small mb-1"><i class="bi bi-star-fill"></i><i
+                                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i> <span
+                                                    class="text-muted">(65)</span></div>
+                                            <div class="mb-2"><span class="fw-bold text-primary fs-6">$2856.3</span>
+                                                <span
+                                                    class="text-muted text-decoration-line-through small">$3225.6</span>
+                                            </div>
+                                            <button
+                                                class="btn btn-light btn-sm text-primary w-100 mt-auto border mb-2">Add
+                                                To Cart</button>
+                                            <ul class="list-unstyled small text-muted mb-0 border-top pt-2"
+                                                style="font-size: 0.7rem;">
+                                                <li>• 27-inch Retina 5K display</li>
+                                                <li>• 3.1GHz 6-core Intel Core i5</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- كرت 5 (السطر الثاني) -->
+                                <div class="col">
+                                    <div
+                                        class="card h-100 border-light-subtle shadow-sm product-card position-relative overflow-hidden">
+                                        <span
+                                            class="badge bg-danger position-absolute top-0 start-0 m-2 z-1">-17%</span>
+                                        <div
+                                            class="product-actions position-absolute top-0 end-0 m-2 d-flex flex-column gap-1 z-2">
+                                            <button
+                                                class="btn btn-light btn-sm rounded-circle shadow-sm p-1 d-flex align-items-center justify-content-center"
+                                                style="width:28px; height:28px;"><i
+                                                    class="bi bi-lightning small"></i></button>
+                                            <button
+                                                class="btn btn-light btn-sm rounded-circle shadow-sm p-1 d-flex align-items-center justify-content-center"
+                                                style="width:28px; height:28px;"><i
+                                                    class="bi bi-heart small"></i></button>
+                                            <button
+                                                class="btn btn-light btn-sm rounded-circle shadow-sm p-1 d-flex align-items-center justify-content-center"
+                                                style="width:28px; height:28px;"><i
+                                                    class="bi bi-arrow-repeat small"></i></button>
+                                            <button
+                                                class="btn btn-light btn-sm rounded-circle shadow-sm p-1 d-flex align-items-center justify-content-center"
+                                                style="width:28px; height:28px;"><i
+                                                    class="bi bi-eye small"></i></button>
+                                        </div>
+                                        <div
+                                            class="product-img-holder d-flex align-items-center justify-content-center p-3 bg-light">
+                                            <img src="./imgs/smartwatches.png" alt="Product"
+                                                class="img-fluid product-img"
+                                                style="height: 120px; object-fit: contain;">
+                                        </div>
+                                        <div class="card-body d-flex flex-column p-2 text-start">
+                                            <small class="text-muted">Apple</small>
+                                            <h6 class="card-title fs-6 fw-semibold text-truncate mb-1">SAMSUNG Galaxy
+                                                Tab A7 Lite, 8.7" Tablet</h6>
+                                            <div class="text-warning small mb-1"><i class="bi bi-star-fill"></i><i
+                                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i> <span
+                                                    class="text-muted">(65)</span></div>
+                                            <div class="mb-2"><span class="fw-bold text-primary fs-6">$2856.3</span>
+                                                <span
+                                                    class="text-muted text-decoration-line-through small">$3225.6</span>
+                                            </div>
+                                            <button
+                                                class="btn btn-light btn-sm text-primary w-100 mt-auto border mb-2">Add
+                                                To Cart</button>
+                                            <ul class="list-unstyled small text-muted mb-0 border-top pt-2"
+                                                style="font-size: 0.7rem;">
+                                                <li>• 27-inch Retina 5K display</li>
+                                                <li>• 3.1GHz 6-core Intel Core i5</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- كرت 6 (السطر الثاني) -->
+                                <div class="col">
+                                    <div
+                                        class="card h-100 border-light-subtle shadow-sm product-card position-relative overflow-hidden">
+                                        <span
+                                            class="badge bg-danger position-absolute top-0 start-0 m-2 z-1">-17%</span>
+                                        <div
+                                            class="product-actions position-absolute top-0 end-0 m-2 d-flex flex-column gap-1 z-2">
+                                            <button
+                                                class="btn btn-light btn-sm rounded-circle shadow-sm p-1 d-flex align-items-center justify-content-center"
+                                                style="width:28px; height:28px;"><i
+                                                    class="bi bi-lightning small"></i></button>
+                                            <button
+                                                class="btn btn-light btn-sm rounded-circle shadow-sm p-1 d-flex align-items-center justify-content-center"
+                                                style="width:28px; height:28px;"><i
+                                                    class="bi bi-heart small"></i></button>
+                                            <button
+                                                class="btn btn-light btn-sm rounded-circle shadow-sm p-1 d-flex align-items-center justify-content-center"
+                                                style="width:28px; height:28px;"><i
+                                                    class="bi bi-arrow-repeat small"></i></button>
+                                            <button
+                                                class="btn btn-light btn-sm rounded-circle shadow-sm p-1 d-flex align-items-center justify-content-center"
+                                                style="width:28px; height:28px;"><i
+                                                    class="bi bi-eye small"></i></button>
+                                        </div>
+                                        <div
+                                            class="product-img-holder d-flex align-items-center justify-content-center p-3 bg-light ">
+                                            <img src="./imgs/television.png" alt="Product"
+                                                class="img-fluid product-img "
+                                                style="height: 100px; object-fit: contain;">
+                                        </div>
+                                        <div class="card-body d-flex flex-column p-2 text-start">
+                                            <small class="text-muted">Apple</small>
+                                            <h6 class="card-title fs-6 fw-semibold text-truncate mb-1">Class 4K UHD
+                                                (2160P) LED Roku Smart TV</h6>
+                                            <div class="text-warning small mb-1"><i class="bi bi-star-fill"></i><i
+                                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i> <span
+                                                    class="text-muted">(65)</span></div>
+                                            <div class="mb-2"><span class="fw-bold text-primary fs-6">$2856.3</span>
+                                                <span
+                                                    class="text-muted text-decoration-line-through small">$3225.6</span>
+                                            </div>
+                                            <button
+                                                class="btn btn-light btn-sm text-primary w-100 mt-auto border mb-2">Add
+                                                To Cart</button>
+                                            <ul class="list-unstyled small text-muted mb-0 border-top pt-2"
+                                                style="font-size: 0.7rem;">
+                                                <li>• 27-inch Retina 5K display</li>
+                                                <li>• 3.1GHz 6-core Intel Core i5</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- كرت 7 (السطر الثاني) -->
+                                <div class="col">
+                                    <div
+                                        class="card h-100 border-light-subtle shadow-sm product-card position-relative overflow-hidden">
+                                        <span
+                                            class="badge bg-danger position-absolute top-0 start-0 m-2 z-1">-17%</span>
+                                        <div
+                                            class="product-actions position-absolute top-0 end-0 m-2 d-flex flex-column gap-1 z-2">
+                                            <button
+                                                class="btn btn-light btn-sm rounded-circle shadow-sm p-1 d-flex align-items-center justify-content-center"
+                                                style="width:28px; height:28px;"><i
+                                                    class="bi bi-lightning small"></i></button>
+                                            <button
+                                                class="btn btn-light btn-sm rounded-circle shadow-sm p-1 d-flex align-items-center justify-content-center"
+                                                style="width:28px; height:28px;"><i
+                                                    class="bi bi-heart small"></i></button>
+                                            <button
+                                                class="btn btn-light btn-sm rounded-circle shadow-sm p-1 d-flex align-items-center justify-content-center"
+                                                style="width:28px; height:28px;"><i
+                                                    class="bi bi-arrow-repeat small"></i></button>
+                                            <button
+                                                class="btn btn-light btn-sm rounded-circle shadow-sm p-1 d-flex align-items-center justify-content-center"
+                                                style="width:28px; height:28px;"><i
+                                                    class="bi bi-eye small"></i></button>
+                                        </div>
+                                        <div
+                                            class="product-img-holder d-flex align-items-center justify-content-center p-3 bg-light">
+                                            <img src="./imgs/headphone.png" alt="Product" class="img-fluid product-img"
+                                                style="height: 120px; object-fit: contain;">
+                                        </div>
+                                        <div class="card-body d-flex flex-column p-2 text-start">
+                                            <small class="text-muted">Apple</small>
+                                            <h6 class="card-title fs-6 fw-semibold text-truncate mb-1">HP 24 All-in-One
+                                                PC, Intel Core i3-1115G4</h6>
+                                            <div class="text-warning small mb-1"><i class="bi bi-star-fill"></i><i
+                                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i> <span
+                                                    class="text-muted">(65)</span></div>
+                                            <div class="mb-2"><span class="fw-bold text-primary fs-6">$2856.3</span>
+                                                <span
+                                                    class="text-muted text-decoration-line-through small">$3225.6</span>
+                                            </div>
+                                            <button
+                                                class="btn btn-light btn-sm text-primary w-100 mt-auto border mb-2">Add
+                                                To Cart</button>
+                                            <ul class="list-unstyled small text-muted mb-0 border-top pt-2"
+                                                style="font-size: 0.7rem;">
+                                                <li>• 27-inch Retina 5K display</li>
+                                                <li>• 3.1GHz 6-core Intel Core i5</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- كرت 8 (السطر الثاني) -->
+                                <div class="col">
+                                    <div
+                                        class="card h-100 border-light-subtle shadow-sm product-card position-relative overflow-hidden">
+                                        <span
+                                            class="badge bg-danger position-absolute top-0 start-0 m-2 z-1">-17%</span>
+                                        <div
+                                            class="product-actions position-absolute top-0 end-0 m-2 d-flex flex-column gap-1 z-2">
+                                            <button
+                                                class="btn btn-light btn-sm rounded-circle shadow-sm p-1 d-flex align-items-center justify-content-center"
+                                                style="width:28px; height:28px;"><i
+                                                    class="bi bi-lightning small"></i></button>
+                                            <button
+                                                class="btn btn-light btn-sm rounded-circle shadow-sm p-1 d-flex align-items-center justify-content-center"
+                                                style="width:28px; height:28px;"><i
+                                                    class="bi bi-heart small"></i></button>
+                                            <button
+                                                class="btn btn-light btn-sm rounded-circle shadow-sm p-1 d-flex align-items-center justify-content-center"
+                                                style="width:28px; height:28px;"><i
+                                                    class="bi bi-arrow-repeat small"></i></button>
+                                            <button
+                                                class="btn btn-light btn-sm rounded-circle shadow-sm p-1 d-flex align-items-center justify-content-center"
+                                                style="width:28px; height:28px;"><i
+                                                    class="bi bi-eye small"></i></button>
+                                        </div>
+                                        <div
+                                            class="product-img-holder d-flex align-items-center justify-content-center p-3 bg-light">
+                                            <img src="./imgs/laptop.png" alt="Product" class="img-fluid product-img"
+                                                style="height: 120px; object-fit: contain;">
+                                        </div>
+                                        <div class="card-body d-flex flex-column p-2 text-start">
+                                            <small class="text-muted">Apple</small>
+                                            <h6 class="card-title fs-6 fw-semibold text-truncate mb-1">Dell Optiplex
+                                                9020 Small Form Business Desktop</h6>
+                                            <div class="text-warning small mb-1"><i class="bi bi-star-fill"></i><i
+                                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i> <span
+                                                    class="text-muted">(65)</span></div>
+                                            <div class="mb-2"><span class="fw-bold text-primary fs-6">$2856.3</span>
+                                                <span
+                                                    class="text-muted text-decoration-line-through small">$3225.6</span>
+                                            </div>
+                                            <button
+                                                class="btn btn-light btn-sm text-primary w-100 mt-auto border mb-2">Add
+                                                To Cart</button>
+                                            <ul class="list-unstyled small text-muted mb-0 border-top pt-2"
+                                                style="font-size: 0.7rem;">
+                                                <li>• 27-inch Retina 5K display</li>
+                                                <li>• 3.1GHz 6-core Intel Core i5</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- ================= الشريحة الثانية (Slide 2 عند ضغط الأسهم) ================= -->
+                        <div class="carousel-item">
+                            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
+                                <!-- يمكن تكرار الكروت هنا لتحديث الشريحة الثانية -->
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- القسم الأيمن: الكرت الجانبي (New Products) -->
+            <div class="col-lg-3">
+                <div class="border rounded p-3 h-100 bg-white shadow-sm d-flex flex-column">
+                    <!-- هيدر New Products البرتقالي -->
+                    <div
+                        class="bg-warning text-white p-2 rounded d-flex justify-content-between align-items-center mb-3">
+                        <span class="fw-bold fs-6">New Products</span>
+                        <div class="small">
+                            <i class="bi bi-chevron-left me-1"></i>
+                            <i class="bi bi-chevron-right"></i>
+                        </div>
+                    </div>
+
+                    <!-- قائمة المنتجات العمودية المصغرة -->
+                    <div class="d-flex flex-column gap-3">
+
+                        <!-- عنصر مصغر 1 -->
+                        <div class="d-flex align-items-center gap-2 border-bottom pb-2">
+                            <img src="./imgs/smartwatches.png" alt="Product" class="img-fluid rounded bg-light p-1"
+                                style="width: 60px; height: 60px; object-fit: contain;">
+                            <div class="text-start">
+                                <span class="badge bg-danger mb-1" style="font-size: 0.65rem;">-17%</span>
+                                <h6 class="mb-0 text-truncate small fw-semibold" style="max-width: 150px;">2022 Apple
+                                    iMac Retina 5K</h6>
+                                <div class="text-warning extra-small" style="font-size: 0.7rem;"><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i> <span class="text-muted">(65)</span></div>
+                                <div class="fw-bold text-primary small">$2556.3 <span
+                                        class="text-muted text-decoration-line-through extra-small fw-normal">$3225</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- عنصر مصغر 2 -->
+                        <div class="d-flex align-items-center gap-2 border-bottom pb-2">
+                            <img src="./imgs/laptop.png" alt="Product" class="img-fluid rounded bg-light p-1"
+                                style="width: 60px; height: 60px; object-fit: contain;">
+                            <div class="text-start">
+                                <h6 class="mb-0 text-truncate small fw-semibold" style="max-width: 150px;">HP 11.6"
+                                    Chromebook</h6>
+                                <div class="text-warning extra-small" style="font-size: 0.7rem;"><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i> <span class="text-muted">(65)</span></div>
+                                <div class="fw-bold text-primary small">$2556.3 <span
+                                        class="text-muted text-decoration-line-through extra-small fw-normal">$3225</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- عنصر مصغر 3 -->
+                        <div class="d-flex align-items-center gap-2 border-bottom pb-2">
+                            <img src="./imgs/television.png" alt="Product" class="img-fluid rounded bg-light p-1"
+                                style="width: 60px; height: 60px; object-fit: contain;">
+                            <div class="text-start">
+                                <h6 class="mb-0 text-truncate small fw-semibold" style="max-width: 150px;">MSI Optix
+                                    G272 Gaming Monitor</h6>
+                                <div class="text-warning extra-small" style="font-size: 0.7rem;"><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i> <span class="text-muted">(65)</span></div>
+                                <div class="fw-bold text-primary small">$2556.3</div>
+                            </div>
+                        </div>
+
+                        <!-- عنصر مصغر 4 -->
+                        <div class="d-flex align-items-center gap-2">
+                            <img src="./imgs/headphone.png" alt="Product" class="img-fluid rounded bg-light p-1"
+                                style="width: 60px; height: 60px; object-fit: contain;">
+                            <div class="text-start">
+                                <h6 class="mb-0 text-truncate small fw-semibold" style="max-width: 150px;">LG 65" Class
+                                    4K OLED TV</h6>
+                                <div class="text-warning extra-small" style="font-size: 0.7rem;"><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i> <span class="text-muted">(65)</span></div>
+                                <div class="fw-bold text-primary small">$2556.3</div>
+                            </div>
+                        </div>
+
+                        <div class="side-banner rounded text-center position-relative overflow-hidden d-flex flex-column align-items-center p-4 border"
+                            style="background-image: url('https://wp.alithemes.com/html/ecom/demo/assets/imgs/page/homepage1/bg-topsell.png'); background-size: cover; background-position: center bottom; min-height: 380px;">
+
+                            <span class="badge bg-info text-dark mb-2 position-relative z-1">No.9</span>
+                            <h5 class="fw-bold fs-5 text-dark mb-2 position-relative z-1">Sensitive Touch<br>without
+                                fingerprint</h5>
+                            <p class="small text-muted mb-0 position-relative z-1">Smooth handle and accurate click</p>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container my-4">
+        <div class="row g-3">
+
+            <!-- Card 1: iPhone -->
+            <div class="col-12 col-md-4 col-lg-3">
+                <div class="card-1 rounded p-3 d-flex justify-content-between align-items-center h-100">
+                    <div>
+                        <span class="text-muted small d-block mb-1">Starting from $899</span>
+                        <h5 class="fw-bold fs-6 text-dark mb-1">iPhone 12 Pro<br>128Gb</h5>
+                        <p class="text-muted small mb-3">Special Sale</p>
+                        <a href="#" class="text-dark fw-bold small text-decoration-none">LEARN MORE <i
+                                class="bi bi-chevron-right"></i></a>
+                    </div>
+                    <div>
+                        <img src="./imgs/iphone-12.png" alt="iPhone" class="img-fluid"
+                            style="max-height: 120px; object-fit: contain;">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2: Samsung TV -->
+            <div class="col-12 col-md-4 col-lg-4">
+                <div class="card-2 rounded p-3 d-flex justify-content-between align-items-center h-100">
+                    <div>
+                        <span class="text-muted small d-block mb-1">New Arrivals</span>
+                        <h5 class="fw-bold fs-6 text-dark mb-1">Samsung 2022<br>Led TV</h5>
+                        <p class="text-muted small mb-3">Special Sale</p>
+                        <a href="#" class="btn btn-orange text-white btn-sm px-3">learn more <i
+                                class="bi bi-chevron-right"></i></a>
+                    </div>
+                    <div>
+                        <img src="./imgs/samsung.png" alt="TV" class="img-fluid"
+                            style="max-height: 120px; object-fit: contain;">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3: Drone -->
+            <div class="col-12 col-md-4 col-lg-5">
+                <div class="card-3 rounded p-3 d-flex justify-content-between align-items-center h-100">
+                    <div>
+                        <h4 class="fw-bold fs-5 text-dark mb-2">Drone Quadcopter<br>UAV - DJI Air 2S</h4>
+                        <p class="text-primary small mb-3">Gimbal Camera, 5.4K Video</p>
+                        <a href="#" class="btn btn-orange text-white btn-sm px-3">learn more <i
+                                class="bi bi-chevron-right"></i></a>
+                    </div>
+                    <div>
+                        <img src="./imgs/drone.png" alt="Drone" class="img-fluid"
+                            style="max-height: 120px; object-fit: contain;">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container my-5">
+
+        <!-- عنوان القسم -->
+        <div class="mb-4">
+            <h3 class="fw-bold text-dark m-0">Top Selling Products</h3>
+            <p class="text-muted small m-0">Special products in this month.</p>
+        </div>
+
+        <!-- شبكة المنتجات (Grid System) -->
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-3">
+
+            <!-- Card 1 -->
+            <div class="col">
+                <div class="card h-100 border rounded-3 p-3 shadow-sm bg-white">
+                    <div class="d-flex align-items-center gap-3">
+                        <div class="flex-shrink-0 bg-light p-2 rounded d-flex align-items-center justify-content-center"
+                            style="width: 80px; height: 80px;">
+                            <img src="./imgs/img-acer.png" alt="Product" class="img-fluid mh-100"
+                                style="object-fit: contain;">
+                        </div>
+                        <div class="flex-grow-1 overflow-hidden">
+                            <small class="text-muted text-uppercase d-block mb-1"
+                                style="font-size: 0.7rem;">SAMSUNG</small>
+                            <h6 class="fw-semibold text-dark text-truncate mb-1" style="font-size: 0.85rem;"
+                                title="SAMSUNG Galaxy Tab S7 Plus 12.4' 128GB">SAMSUNG Galaxy Tab S7 Plus 12.4" 128GB
+                                Mystic Black</h6>
+                            <div class="text-warning mb-1" style="font-size: 0.75rem;">
+                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                    class="bi bi-star-fill"></i>
+                                <span class="text-muted ms-1">(65)</span>
+                            </div>
+                            <div>
+                                <span class="fw-bold text-primary fs-6 me-2">$2556.3</span>
+                                <span class="text-muted text-decoration-line-through small"
+                                    style="font-size: 0.75rem;">$3225.6</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col">
+                <div class="card h-100 border rounded-3 p-3 shadow-sm bg-white">
+                    <div class="d-flex align-items-center gap-3">
+                        <div class="flex-shrink-0 bg-light p-2 rounded d-flex align-items-center justify-content-center"
+                            style="width: 80px; height: 80px;">
+                            <img src="./imgs/smartwatches.png" alt="Product" class="img-fluid mh-100"
+                                style="object-fit: contain;">
+                        </div>
+                        <div class="flex-grow-1 overflow-hidden">
+                            <small class="text-muted text-uppercase d-block mb-1" style="font-size: 0.7rem;">HP</small>
+                            <h6 class="fw-semibold text-dark text-truncate mb-1" style="font-size: 0.85rem;"
+                                title="HP 11.6' Chromebook, AMD A4">HP 11.6" Chromebook, AMD A4, 4GB RAM, 32GB Storage
+                            </h6>
+                            <div class="text-warning mb-1" style="font-size: 0.75rem;">
+                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                    class="bi bi-star-fill"></i>
+                                <span class="text-muted ms-1">(65)</span>
+                            </div>
+                            <div>
+                                <span class="fw-bold text-primary fs-6 me-2">$2556.3</span>
+                                <span class="text-muted text-decoration-line-through small"
+                                    style="font-size: 0.75rem;">$3225.6</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col">
+                <div class="card h-100 border rounded-3 p-3 shadow-sm bg-white">
+                    <div class="d-flex align-items-center gap-3">
+                        <div class="flex-shrink-0 bg-light p-2 rounded d-flex align-items-center justify-content-center"
+                            style="width: 80px; height: 80px;">
+                            <img src="./imgs/img-acer.png" alt="Product" class="img-fluid mh-100"
+                                style="object-fit: contain;">
+                        </div>
+                        <div class="flex-grow-1 overflow-hidden">
+                            <small class="text-muted text-uppercase d-block mb-1" style="font-size: 0.7rem;">RCA</small>
+                            <h6 class="fw-semibold text-dark text-truncate mb-1" style="font-size: 0.85rem;"
+                                title="RCA 43' Class 4K Ultra HD">RCA 43" Class 4K Ultra HD (2160P) HDR Roku Smart</h6>
+                            <div class="text-warning mb-1" style="font-size: 0.75rem;">
+                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                    class="bi bi-star-fill"></i>
+                                <span class="text-muted ms-1">(65)</span>
+                            </div>
+                            <div>
+                                <span class="fw-bold text-primary fs-6 me-2">$2556.3</span>
+                                <span class="text-muted text-decoration-line-through small"
+                                    style="font-size: 0.75rem;">$3225.6</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col">
+                <div class="card h-100 border rounded-3 p-3 shadow-sm bg-white">
+                    <div class="d-flex align-items-center gap-3">
+                        <div class="flex-shrink-0 bg-light p-2 rounded d-flex align-items-center justify-content-center"
+                            style="width: 80px; height: 80px;">
+                            <img src="./imgs/smartwatches.png" alt="Product" class="img-fluid mh-100"
+                                style="object-fit: contain;">
+                        </div>
+                        <div class="flex-grow-1 overflow-hidden">
+                            <small class="text-muted text-uppercase d-block mb-1"
+                                style="font-size: 0.7rem;">ASUS</small>
+                            <h6 class="fw-semibold text-dark text-truncate mb-1" style="font-size: 0.85rem;"
+                                title="ASUS VivoBook 15.6' 1080p">ASUS VivoBook 15.6" 1080p PC Laptops, Intel Core i3
+                            </h6>
+                            <div class="text-warning mb-1" style="font-size: 0.75rem;">
+                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                    class="bi bi-star-fill"></i>
+                                <span class="text-muted ms-1">(65)</span>
+                            </div>
+                            <div>
+                                <span class="fw-bold text-primary fs-6 me-2">$2556.3</span>
+                                <span class="text-muted text-decoration-line-through small"
+                                    style="font-size: 0.75rem;">$3225.6</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="col">
+                <div class="card h-100 border rounded-3 p-3 shadow-sm bg-white">
+                    <div class="d-flex align-items-center gap-3">
+                        <div class="flex-shrink-0 bg-light p-2 rounded d-flex align-items-center justify-content-center"
+                            style="width: 80px; height: 80px;">
+                            <img src="./imgs/img-acer.png" alt="Product" class="img-fluid mh-100"
+                                style="object-fit: contain;">
+                        </div>
+                        <div class="flex-grow-1 overflow-hidden">
+                            <small class="text-muted text-uppercase d-block mb-1" style="font-size: 0.7rem;">LG</small>
+                            <h6 class="fw-semibold text-dark text-truncate mb-1" style="font-size: 0.85rem;"
+                                title="LG 65' Class 4K UHD Smart">LG 65" Class 4K UHD Smart TV OLED A1 Series</h6>
+                            <div class="text-warning mb-1" style="font-size: 0.75rem;">
+                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                    class="bi bi-star-fill"></i>
+                                <span class="text-muted ms-1">(65)</span>
+                            </div>
+                            <div>
+                                <span class="fw-bold text-primary fs-6 me-2">$2556.3</span>
+                                <span class="text-muted text-decoration-line-through small"
+                                    style="font-size: 0.75rem;">$3225.6</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="col">
+                <div class="card h-100 border rounded-3 p-3 shadow-sm bg-white">
+                    <div class="d-flex align-items-center gap-3">
+                        <div class="flex-shrink-0 bg-light p-2 rounded d-flex align-items-center justify-content-center"
+                            style="width: 80px; height: 80px;">
+                            <img src="./imgs/smartwatches.png" alt="Product" class="img-fluid mh-100"
+                                style="object-fit: contain;">
+                        </div>
+                        <div class="flex-grow-1 overflow-hidden">
+                            <small class="text-muted text-uppercase d-block mb-1"
+                                style="font-size: 0.7rem;">SAMSUNG</small>
+                            <h6 class="fw-semibold text-dark text-truncate mb-1" style="font-size: 0.85rem;"
+                                title="SAMSUNG Galaxy Tab A7">SAMSUNG Galaxy Tab A7 Lite, 8.7" Tablet 32GB</h6>
+                            <div class="text-warning mb-1" style="font-size: 0.75rem;">
+                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                    class="bi bi-star-fill"></i>
+                                <span class="text-muted ms-1">(65)</span>
+                            </div>
+                            <div>
+                                <span class="fw-bold text-primary fs-6 me-2">$2556.3</span>
+                                <span class="text-muted text-decoration-line-through small"
+                                    style="font-size: 0.75rem;">$3225.6</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 border rounded-3 p-3 shadow-sm bg-white">
+                    <div class="d-flex align-items-center gap-3">
+                        <div class="flex-shrink-0 bg-light p-2 rounded d-flex align-items-center justify-content-center"
+                            style="width: 80px; height: 80px;">
+                            <!-- 7 -->
+                            <img src="./imgs/img-acer.png" alt="Product" class="img-fluid mh-100"
+                                style="object-fit: contain;">
+                        </div>
+                        <div class="flex-grow-1 overflow-hidden">
+                            <small class="text-muted text-uppercase d-block mb-1"
+                                style="font-size: 0.7rem;">SAMSUNG</small>
+                            <h6 class="fw-semibold text-dark text-truncate mb-1" style="font-size: 0.85rem;"
+                                title="SAMSUNG Galaxy Tab A7">SAMSUNG Galaxy Tab A7 Lite, 8.7" Tablet 32GB</h6>
+                            <div class="text-warning mb-1" style="font-size: 0.75rem;">
+                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                    class="bi bi-star-fill"></i>
+                                <span class="text-muted ms-1">(65)</span>
+                            </div>
+                            <div>
+                                <span class="fw-bold text-primary fs-6 me-2">$2556.3</span>
+                                <span class="text-muted text-decoration-line-through small"
+                                    style="font-size: 0.75rem;">$3225.6</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 8 -->
+            <div class="col">
+                <div class="card h-100 border rounded-3 p-3 shadow-sm bg-white">
+                    <div class="d-flex align-items-center gap-3">
+                        <div class="flex-shrink-0 bg-light p-2 rounded d-flex align-items-center justify-content-center"
+                            style="width: 80px; height: 80px;">
+                            <img src="./imgs/smartwatches.png" alt="Product" class="img-fluid mh-100"
+                                style="object-fit: contain;">
+                        </div>
+                        <div class="flex-grow-1 overflow-hidden">
+                            <small class="text-muted text-uppercase d-block mb-1"
+                                style="font-size: 0.7rem;">SAMSUNG</small>
+                            <h6 class="fw-semibold text-dark text-truncate mb-1" style="font-size: 0.85rem;"
+                                title="SAMSUNG Galaxy Tab A7">SAMSUNG Galaxy Tab A7 Lite, 8.7" Tablet 32GB</h6>
+                            <div class="text-warning mb-1" style="font-size: 0.75rem;">
+                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                    class="bi bi-star-fill"></i>
+                                <span class="text-muted ms-1">(65)</span>
+                            </div>
+                            <div>
+                                <span class="fw-bold text-primary fs-6 me-2">$2556.3</span>
+                                <span class="text-muted text-decoration-line-through small"
+                                    style="font-size: 0.75rem;">$3225.6</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 9 -->
+            <div class="col">
+                <div class="card h-100 border rounded-3 p-3 shadow-sm bg-white">
+                    <div class="d-flex align-items-center gap-3">
+                        <div class="flex-shrink-0 bg-light p-2 rounded d-flex align-items-center justify-content-center"
+                            style="width: 80px; height: 80px;">
+                            <img src="./imgs/img-acer.png" alt="Product" class="img-fluid mh-100"
+                                style="object-fit: contain;">
+                        </div>
+                        <div class="flex-grow-1 overflow-hidden">
+                            <small class="text-muted text-uppercase d-block mb-1"
+                                style="font-size: 0.7rem;">SAMSUNG</small>
+                            <h6 class="fw-semibold text-dark text-truncate mb-1" style="font-size: 0.85rem;"
+                                title="SAMSUNG Galaxy Tab A7">SAMSUNG Galaxy Tab A7 Lite, 8.7" Tablet 32GB</h6>
+                            <div class="text-warning mb-1" style="font-size: 0.75rem;">
+                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                    class="bi bi-star-fill"></i>
+                                <span class="text-muted ms-1">(65)</span>
+                            </div>
+                            <div>
+                                <span class="fw-bold text-primary fs-6 me-2">$2556.3</span>
+                                <span class="text-muted text-decoration-line-through small"
+                                    style="font-size: 0.75rem;">$3225.6</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container my-4">
+        <div class="row g-3">
+
+            <!-- Card 1: Power Bank -->
+            <div class="col-12 col-md-4 col-lg-3">
+                <div
+                    class="card-powerbank rounded p-3 d-flex justify-content-between align-items-center h-100 overflow-hidden">
+                    <div>
+                        <span class="text-muted small d-block mb-1">Power Bank</span>
+                        <h5 class="fw-bold fs-6 text-dark mb-2">Quick<br>Charge</h5>
+                        <p class="text-secondary lh-sm mb-3" style="font-size: 0.75rem;">
+                            Lightweight and<br>Portable<br>Dual port fast<br>charge
+                        </p>
+                        <a href="#" class="btn btn-orange text-white btn-sm px-3 shadow-sm">Shop Now <i
+                                class="bi bi-chevron-right"></i></a>
+                    </div>
+                    <div class="w-50 text-end">
+                        <img src="./imgs/laptop.png" alt="Power Bank" class="img-fluid mh-100"
+                            style="max-height: 130px; object-fit: contain;">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2: Xbox Controller -->
+            <div class="col-12 col-md-4 col-lg-5">
+                <div
+                    class="card-xbox rounded p-3 d-flex justify-content-between align-items-center h-100 overflow-hidden">
+                    <div>
+                        <h4 class="fw-bold fs-5 text-dark mb-2">Xbox Series<br>XS Game<br>Controller</h4>
+                        <p class="text-muted small mb-3">
+                            Replacement Kit D-pad<br>ABXY Keys
+                        </p>
+                        <a href="#" class="btn btn-navy text-white btn-sm px-3 shadow-sm">learn more <i
+                                class="bi bi-chevron-right"></i></a>
+                    </div>
+                    <div class="w-50 text-end">
+                        <img src="./imgs/xbox.png" alt="Xbox Controller" class="img-fluid mh-100"
+                            style="max-height: 140px; object-fit: contain;">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3: iPhone -->
+            <div class="col-12 col-md-4 col-lg-4">
+                <div
+                    class="card-iphone rounded p-3 d-flex justify-content-between align-items-center h-100 overflow-hidden">
+                    <div>
+                        <span class="text-muted small d-block mb-1">Starting from $899</span>
+                        <h5 class="fw-bold fs-6 text-dark mb-1">iPhone 12 Pro<br>128Gb</h5>
+                        <p class="text-muted small mb-3">Special Sale</p>
+                        <a href="#" class="text-primary fw-bold small text-decoration-none">LEARN MORE <i
+                                class="bi bi-chevron-right"></i></a>
+                    </div>
+                    <div class="w-50 text-end">
+                        <img src="./imgs/iphone-12.png" alt="iPhone" class="img-fluid mh-100"
+                            style="max-height: 130px; object-fit: contain;">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <section class="py-5 bg-white">
+        <div class="container">
+
+            <!-- الكاروسيل الرئيسي -->
+            <div id="newsCarousel" class="carousel slide" data-bs-ride="false">
+
+                <!-- الهيدر العلوي: العنوان وأزرار التحكم -->
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <div>
+                        <h2 class="fw-bold mb-1 fs-3 text-dark">Latest News & Events</h2>
+                        <p class="text-muted mb-0 fs-6">From our blog, forum</p>
+                    </div>
+                    <!-- أزرار التبديل -->
+                    <div class="d-flex gap-2">
+                        <button
+                            class="btn btn-outline-secondary rounded-circle d-flex align-items-center justify-content-center p-0"
+                            type="button" data-bs-target="#newsCarousel" data-bs-slide="prev"
+                            style="width: 36px; height: 36px;">
+                            <i class="bi bi-chevron-left"></i>
+                        </button>
+                        <button
+                            class="btn btn-outline-secondary rounded-circle d-flex align-items-center justify-content-center p-0"
+                            type="button" data-bs-target="#newsCarousel" data-bs-slide="next"
+                            style="width: 36px; height: 36px;">
+                            <i class="bi bi-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- عناصر الكاروسيل -->
+                <div class="carousel-inner">
+
+                    <!-- الشريحة الأولى (ترتيب الصورة الأولى) -->
+                    <div class="carousel-item active">
+                        <div class="row g-4">
+
+                            <!-- الخبر 1: Blockchain Gaming -->
+                            <div class="col-12 col-sm-6 col-lg-3">
+                                <div class="card h-100 border-0">
+                                    <div class="position-relative mb-3">
+                                        <img src="./imgs/blog-4.jpg" alt="News Image"
+                                            class="card-img-top rounded-3 bg-secondary-subtle"
+                                            style="height: 180px; object-fit: cover;">
+                                        <span
+                                            class="badge bg-light text-dark position-absolute bottom-0 start-0 m-2 border rounded-pill px-2 py-1 fs-8 fw-normal">
+                                            <span class="text-primary me-1">•</span> Blockchain
+                                        </span>
+                                    </div>
+                                    <div class="card-body p-0">
+                                        <h5 class="card-title fw-bold fs-6 mb-2">
+                                            <a href="#" class="text-dark text-decoration-none link-primary">Blockchain
+                                                Gaming And Its Three Challenges</a>
+                                        </h5>
+                                        <div class="d-flex align-items-center gap-3 text-muted fs-8">
+                                            <span>August 15, 2022</span>
+                                            <span>7 Mins read</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- الخبر 2: HTML5 Mobile App -->
+                            <div class="col-12 col-sm-6 col-lg-3 d-none d-sm-block">
+                                <div class="card h-100 border-0">
+                                    <div class="position-relative mb-3">
+                                        <img src="./imgs/blog-5.jpg" alt="News Image"
+                                            class="card-img-top rounded-3 bg-secondary-subtle"
+                                            style="height: 180px; object-fit: cover;">
+                                        <span
+                                            class="badge bg-light text-dark position-absolute bottom-0 start-0 m-2 border rounded-pill px-2 py-1 fs-8 fw-normal">
+                                            <span class="text-primary me-1">•</span> Development
+                                        </span>
+                                    </div>
+                                    <div class="card-body p-0">
+                                        <h5 class="card-title fw-bold fs-6 mb-2">
+                                            <a href="#" class="text-dark text-decoration-none link-primary">HTML5 – The
+                                                Future of Mobile App Development</a>
+                                        </h5>
+                                        <div class="d-flex align-items-center gap-3 text-muted fs-8">
+                                            <span>August 12, 2022</span>
+                                            <span>9 Mins read</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- الخبر 3: VR Technologies -->
+                            <div class="col-12 col-sm-6 col-lg-3 d-none d-lg-block">
+                                <div class="card h-100 border-0">
+                                    <div class="position-relative mb-3">
+                                        <img src="./imgs/blog-1.jpg" alt="News Image"
+                                            class="card-img-top rounded-3 bg-secondary-subtle"
+                                            style="height: 180px; object-fit: cover;">
+                                        <span
+                                            class="badge bg-light text-dark position-absolute bottom-0 start-0 m-2 border rounded-pill px-2 py-1 fs-8 fw-normal">
+                                            <span class="text-primary me-1">•</span> Technology
+                                        </span>
+                                    </div>
+                                    <div class="card-body p-0">
+                                        <h5 class="card-title fw-bold fs-6 mb-2">
+                                            <a href="#" class="text-dark text-decoration-none link-primary">The latest
+                                                technologies to be used for VR in 2022</a>
+                                        </h5>
+                                        <div class="d-flex align-items-center gap-3 text-muted fs-8">
+                                            <span>September 02, 2022</span>
+                                            <span>4 Mins read</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- الخبر 4: Web 3.0 Gaming -->
+                            <div class="col-12 col-sm-6 col-lg-3 d-none d-lg-block">
+                                <div class="card h-100 border-0">
+                                    <div class="position-relative mb-3">
+                                        <img src="./imgs/blog-2.jpg" alt="News Image"
+                                            class="card-img-top rounded-3 bg-secondary-subtle"
+                                            style="height: 180px; object-fit: cover;">
+                                        <span
+                                            class="badge bg-light text-dark position-absolute bottom-0 start-0 m-2 border rounded-pill px-2 py-1 fs-8 fw-normal">
+                                            <span class="text-primary me-1">•</span> Technology
+                                        </span>
+                                    </div>
+                                    <div class="card-body p-0">
+                                        <h5 class="card-title fw-bold fs-6 mb-2">
+                                            <a href="#" class="text-dark text-decoration-none link-primary">How can Web
+                                                3.0 Bring Changes to the Gaming?</a>
+                                        </h5>
+                                        <div class="d-flex align-items-center gap-3 text-muted fs-8">
+                                            <span>August 30, 2022</span>
+                                            <span>5 Mins read</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- الشريحة الثانية -->
+                    <div class="carousel-item">
+                        <div class="row g-4">
+                            <!-- الخبر 1 (الشريحة الثانية): VR Technologies -->
+                            <div class="col-12 col-sm-6 col-lg-3">
+                                <div class="card h-100 border-0">
+                                    <div class="position-relative mb-3">
+                                        <img src="./imgs/blog-1.jpg" alt="News Image"
+                                            class="card-img-top rounded-3 bg-secondary-subtle"
+                                            style="height: 180px; object-fit: cover;">
+                                        <span
+                                            class="badge bg-light text-dark position-absolute bottom-0 start-0 m-2 border rounded-pill px-2 py-1 fs-8 fw-normal">
+                                            <span class="text-primary me-1">•</span> Technology
+                                        </span>
+                                    </div>
+                                    <div class="card-body p-0">
+                                        <h5 class="card-title fw-bold fs-6 mb-2">
+                                            <a href="#" class="text-dark text-decoration-none link-primary">The latest
+                                                technologies to be used for VR in 2022</a>
+                                        </h5>
+                                        <div class="d-flex align-items-center gap-3 text-muted fs-8">
+                                            <span>September 02, 2022</span>
+                                            <span>4 Mins read</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- الخبر 2 (الشريحة الثانية): Web 3.0 Gaming -->
+                            <div class="col-12 col-sm-6 col-lg-3 d-none d-sm-block">
+                                <div class="card h-100 border-0">
+                                    <div class="position-relative mb-3">
+                                        <img src="./imgs/blog-2.jpg" alt="News Image"
+                                            class="card-img-top rounded-3 bg-secondary-subtle"
+                                            style="height: 180px; object-fit: cover;">
+                                        <span
+                                            class="badge bg-light text-dark position-absolute bottom-0 start-0 m-2 border rounded-pill px-2 py-1 fs-8 fw-normal">
+                                            <span class="text-primary me-1">•</span> Technology
+                                        </span>
+                                    </div>
+                                    <div class="card-body p-0">
+                                        <h5 class="card-title fw-bold fs-6 mb-2">
+                                            <a href="#" class="text-dark text-decoration-none link-primary">How can Web
+                                                3.0 Bring Changes to the Gaming?</a>
+                                        </h5>
+                                        <div class="d-flex align-items-center gap-3 text-muted fs-8">
+                                            <span>August 30, 2022</span>
+                                            <span>5 Mins read</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- الخبر 3 (الشريحة الثانية): NFT Blockchain Games -->
+                            <div class="col-12 col-sm-6 col-lg-3 d-none d-lg-block">
+                                <div class="card h-100 border-0">
+                                    <div class="position-relative mb-3">
+                                        <img src="./imgs/blog-3.jpg" alt="News Image"
+                                            class="card-img-top rounded-3 bg-secondary-subtle"
+                                            style="height: 180px; object-fit: cover;">
+                                        <span
+                                            class="badge bg-light text-dark position-absolute bottom-0 start-0 m-2 border rounded-pill px-2 py-1 fs-8 fw-normal">
+                                            <span class="text-primary me-1">•</span> Gaming
+                                        </span>
+                                    </div>
+                                    <div class="card-body p-0">
+                                        <h5 class="card-title fw-bold fs-6 mb-2">
+                                            <a href="#" class="text-dark text-decoration-none link-primary">NFT
+                                                Blockchain Games That Might Take Off</a>
+                                        </h5>
+                                        <div class="d-flex align-items-center gap-3 text-muted fs-8">
+                                            <span>August 25, 2022</span>
+                                            <span>3 Mins read</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- الخبر 4 (الشريحة الثانية): Blockchain Gaming -->
+                            <div class="col-12 col-sm-6 col-lg-3 d-none d-lg-block">
+                                <div class="card h-100 border-0">
+                                    <div class="position-relative mb-3">
+                                        <img src="./imgs/blog-4.jpg" alt="News Image"
+                                            class="card-img-top rounded-3 bg-secondary-subtle"
+                                            style="height: 180px; object-fit: cover;">
+                                        <span
+                                            class="badge bg-light text-dark position-absolute bottom-0 start-0 m-2 border rounded-pill px-2 py-1 fs-8 fw-normal">
+                                            <span class="text-primary me-1">•</span> Blockchain
+                                        </span>
+                                    </div>
+                                    <div class="card-body p-0">
+                                        <h5 class="card-title fw-bold fs-6 mb-2">
+                                            <a href="#" class="text-dark text-decoration-none link-primary">Blockchain
+                                                Gaming And Its Three Challenges</a>
+                                        </h5>
+                                        <div class="d-flex align-items-center gap-3 text-muted fs-8">
+                                            <span>August 15, 2022</span>
+                                            <span>7 Mins read</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <section class="py-4 bg-light border-bottom">
+        <div class="container">
+            <div class="row g-3 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5">
+
+                <!-- Feature 1: Free Delivery -->
+                <div class="col">
+                    <div class="d-flex align-items-center gap-3 p-3 bg-white rounded border h-100">
+                        <div class="flex-shrink-0 d-flex align-items-center justify-content-center bg-primary-subtle text-primary rounded-circle"
+                            style="width: 48px; height: 48px;">
+                            <i class="bi bi-truck fs-4"></i>
+                        </div>
+                        <div>
+                            <h6 class="fw-bold mb-1 fs-7 text-dark">Free Delivery</h6>
+                            <p class="text-muted mb-0 fs-8">From all orders over $10</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature 2: Support 24/7 -->
+                <div class="col">
+                    <div class="d-flex align-items-center gap-3 p-3 bg-white rounded border h-100">
+                        <div class="flex-shrink-0 d-flex align-items-center justify-content-center bg-primary-subtle text-primary rounded-circle"
+                            style="width: 48px; height: 48px;">
+                            <i class="bi bi-headset fs-4"></i>
+                        </div>
+                        <div>
+                            <h6 class="fw-bold mb-1 fs-7 text-dark">Support 24/7</h6>
+                            <p class="text-muted mb-0 fs-8">Shop with an expert</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature 3: Gift Voucher -->
+                <div class="col">
+                    <div class="d-flex align-items-center gap-3 p-3 bg-white rounded border h-100">
+                        <div class="flex-shrink-0 d-flex align-items-center justify-content-center bg-primary-subtle text-primary rounded-circle"
+                            style="width: 48px; height: 48px;">
+                            <i class="bi bi-gift fs-4"></i>
+                        </div>
+                        <div>
+                            <h6 class="fw-bold mb-1 fs-7 text-dark">Gift voucher</h6>
+                            <p class="text-muted mb-0 fs-8">Refer a friend</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature 4: Return & Refund -->
+                <div class="col">
+                    <div class="d-flex align-items-center gap-3 p-3 bg-white rounded border h-100">
+                        <div class="flex-shrink-0 d-flex align-items-center justify-content-center bg-primary-subtle text-primary rounded-circle"
+                            style="width: 48px; height: 48px;">
+                            <i class="bi bi-arrow-counterclockwise fs-4"></i>
+                        </div>
+                        <div>
+                            <h6 class="fw-bold mb-1 fs-7 text-dark">Return & Refund</h6>
+                            <p class="text-muted mb-0 fs-8">Free return over $200</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature 5: Secure Payment -->
+                <div class="col">
+                    <div class="d-flex align-items-center gap-3 p-3 bg-white rounded border h-100">
+                        <div class="flex-shrink-0 d-flex align-items-center justify-content-center bg-primary-subtle text-primary rounded-circle"
+                            style="width: 48px; height: 48px;">
+                            <i class="bi bi-shield-check fs-4"></i>
+                        </div>
+                        <div>
+                            <h6 class="fw-bold mb-1 fs-7 text-dark">Secure payment</h6>
+                            <p class="text-muted mb-0 fs-8">100% Protected</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-4">
+        <div class="container">
+            <div class="card border-0 rounded-4 overflow-hidden text-white" style="background-color: #1a4d8c;">
+                <div class="card-body p-4 p-lg-5">
+                    <div class="row align-items-center g-4">
+
+                        <!-- النص والعنوان جهة اليسار -->
+                        <div class="col-12 col-lg-6">
+                            <h3 class="fw-bold mb-2 fs-2">
+                                Subscribe & Get <span class="text-warning">10% Discount</span>
+                            </h3>
+                            <p class="mb-0 text-white-50 fs-6">
+                                Get E-mail updates about our latest shop and special offers.
+                            </p>
+                        </div>
+
+                        <!-- حقل الإدخال والصورة جهة اليمين -->
+                        <div class="col-12 col-lg-6">
+                            <div class="row align-items-center g-3">
+
+                                <!-- حقل البريد الإلكتروني والزر (فوق الصورة/بجانبها) -->
+                                <div class="col-12 col-sm-8 col-lg-7">
+                                    <div class="input-group">
+                                        <input type="email" class="form-control border-0 py-2 px-3 fs-7"
+                                            placeholder="Your email Address" aria-label="Your email Address">
+                                        <button class="btn btn-warning text-white fw-semibold px-4 py-2 fs-7"
+                                            type="button">Sign Up</button>
+                                    </div>
+                                </div>
+
+                                <!-- صورة المنتجات الإضافية جهة اليمين -->
+                                <div class="col-12 col-sm-4 col-lg-5 text-center text-sm-end">
+                                    <img src="./imgs/iphone-12.png" alt="Gadgets & Devices" class="img-fluid"
+                                        style="max-height: 120px; object-fit: contain;">
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="bg-light pt-5 pb-4 text-dark border-top fs-7">
+        <div class="container">
+            <div class="row g-4">
+
+                <!-- Column 1: Contact -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h5 class="fw-bold mb-3 fs-6">Contact</h5>
+                    <p class="mb-2"><strong class="text-dark">Address:</strong> <span class="text-muted">502 New
+                            Design Str, Melbourne, San Francisco, CA 94110, United States</span></p>
+                    <p class="mb-2"><strong class="text-dark">Phone:</strong> <span class="text-muted">(+01)
+                            123-456-789</span></p>
+                    <p class="mb-2"><strong class="text-dark">E-mail:</strong> <span
+                            class="text-muted">contact@ecom-market.com</span></p>
+                    <p class="mb-3"><strong class="text-dark">Hours:</strong> <span class="text-muted">8:00 - 17:00,
+                            Mon - Sat</span></p>
+
+                    <!-- Social Icons -->
+                    <div class="d-flex gap-2">
+                        <a href="#"
+                            class="btn btn-sm btn-outline-secondary rounded-circle d-flex align-items-center justify-content-center p-0"
+                            style="width: 32px; height: 32px;"><i class="bi bi-facebook"></i></a>
+                        <a href="#"
+                            class="btn btn-sm btn-outline-secondary rounded-circle d-flex align-items-center justify-content-center p-0"
+                            style="width: 32px; height: 32px;"><i class="bi bi-pinterest"></i></a>
+                        <a href="#"
+                            class="btn btn-sm btn-outline-secondary rounded-circle d-flex align-items-center justify-content-center p-0"
+                            style="width: 32px; height: 32px;"><i class="bi bi-twitter"></i></a>
+                        <a href="#"
+                            class="btn btn-sm btn-outline-secondary rounded-circle d-flex align-items-center justify-content-center p-0"
+                            style="width: 32px; height: 32px;"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <!-- Column 2: Make Money with Us -->
+                <div class="col-6 col-md-3 col-lg-2">
+                    <h5 class="fw-bold mb-3 fs-6">Make Money with Us</h5>
+                    <ul class="list-unstyled d-flex flex-column gap-2 text-muted mb-0">
+                        <li><a href="#" class="text-decoration-none text-muted">› Mission & Vision</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">› Our Team</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">› Careers</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">› Press & Media</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">› Advertising</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">› Testimonials</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Company -->
+                <div class="col-6 col-md-3 col-lg-2">
+                    <h5 class="fw-bold mb-3 fs-6">Company</h5>
+                    <ul class="list-unstyled d-flex flex-column gap-2 text-muted mb-0">
+                        <li><a href="#" class="text-decoration-none text-muted">› Our Blog</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">› Plans & Pricing</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">› Knowledge Base</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">› Cookie Policy</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">› Office Center</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">› News & Events</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: My account -->
+                <div class="col-6 col-md-3 col-lg-2">
+                    <h5 class="fw-bold mb-3 fs-6">My account</h5>
+                    <ul class="list-unstyled d-flex flex-column gap-2 text-muted mb-0">
+                        <li><a href="#" class="text-decoration-none text-muted">› FAQs</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">› Editor Help</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">› Community</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">› Live Chatting</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">› Contact Us</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">› Support Center</a></li>
+                    </ul>
+                </div>
+                <!-- Column 5: App & Payment -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h5 class="fw-bold mb-3 fs-6">App & Payment</h5>
+                    <p class="text-muted mb-3 fs-7">Download our Apps and get extra 15% Discount on your first
+                        Order...!</p>
+
+                    <!-- App Badges -->
+                    <div class="d-flex flex-wrap gap-2 mb-4">
+                        <a href="#"><img src="./imgs/appstore.png" alt="App Store"
+                                class="bg-secondary-subtle rounded border"
+                                style="width: 120px; height: 38px; object-fit: contain;"></a>
+                        <a href="#"><img src="./imgs/google-play.png" alt="Google Play"
+                                class="bg-secondary-subtle rounded border"
+                                style="width: 120px; height: 38px; object-fit: contain;"></a>
+                    </div>
+
+                    <p class="text-muted mb-2 fs-7">Secured Payment Gateways</p>
+
+                    <!-- Payment Gateways -->
+                    <div class="d-flex align-items-center gap-2">
+                        <img src="./imgs/toshiba.svg" alt="" class="bg-secondary-subtle rounded border"
+                            style="width: 40px; height: 26px; object-fit: contain;">
+                        <img src="./imgs/microsoft.svg" alt="" class="bg-secondary-subtle rounded border"
+                            style="width: 40px; height: 26px; object-fit: contain;">
+                        <img src="./imgs/acer.svg" alt="" class="bg-secondary-subtle rounded border"
+                            style="width: 40px; height: 26px; object-fit: contain;">
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <div class="bg-light border-top py-4 fs-7 text-muted">
+        <div class="container">
+
+            <!-- Top Row: Logo & Main Domain Links -->
+            <div class="d-flex flex-wrap align-items-center gap-3 mb-3">
+                <!-- Logo Image -->
+                <a href="#"><img src="./imgs/logo-2.svg" alt="Ecom Logo" style="height: 30px; object-fit: contain;"></a>
+
+                <div class="d-flex flex-wrap align-items-center gap-2 text-secondary">
+                    <a href="#" class="text-decoration-none text-muted">EcomMarket.com</a>
+                    <span>|</span>
+                    <a href="#" class="text-decoration-none text-muted">Ecom Partners</a>
+                    <span>|</span>
+                    <a href="#" class="text-decoration-none text-muted">Ecom Business</a>
+                    <span>|</span>
+                    <a href="#" class="text-decoration-none text-muted">Ecom Factory</a>
+                </div>
+            </div>
+
+            <!-- Category Links: Electronic -->
+            <div class="mb-2">
+                <strong class="text-dark">Electronic:</strong>
+                <a href="#" class="text-decoration-none text-muted ms-1">Cell Phones</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Headphones</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Television & Video</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Game Controller</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Apple Watch</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">HTC</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Ipad</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Keyboard</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Samsung</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Wireless Speaker</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Samsung Galaxy</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Gaming Mouse</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">eBook Readers</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Service Plans</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Home Audio</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Office Electronics</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Lenovo</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Macbook Pro M1</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">HD Videos Player</a>
+            </div>
+
+            <!-- Category Links: Furniture -->
+            <div class="mb-4">
+                <strong class="text-dark">Furniture:</strong>
+                <a href="#" class="text-decoration-none text-muted ms-1">Sofa</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Chair</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Dining Table</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Living Room</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Table Lamp</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Night Stand</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Computer Desk</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Bar Table</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Pillow</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Radio</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Clock</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Bad Room</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Stool</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Television</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Wardrobe</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Living Room Tables</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Dressers</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Patio Sofas</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Nursery</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Kitchen</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Accent Furniture</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Replacement Parts</a>
+            </div>
+
+            <hr class="my-3 text-secondary opacity-25">
+
+            <!-- Bottom Copyright & Policies -->
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+                <p class="mb-0">Copyright © 2022 Ecom Market. All rights reserved.</p>
+
+                <div class="d-flex align-items-center gap-3">
+                    <a href="#" class="text-decoration-none text-muted">Conditions of Use</a>
+                    <a href="#" class="text-decoration-none text-muted">Privacy Notice</a>
+                    <a href="#" class="text-decoration-none text-muted">Interest-Based Ads</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="quickViewModal" tabindex="-1" aria-labelledby="quickViewModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+
+                <!-- رأس المودال -->
+                <div class="modal-header">
+                    <h5 class="modal-title" id="quickViewModalLabel">Quick View</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <!-- جسم المودال -->
+                <div class="modal-body p-4">
+                    <div class="row g-4 align-items-center">
+
+                        <!-- صورة المنتج -->
+                        <div class="col-md-5 text-center">
+                            <img src="./imges/sp8.png" alt="Product" class="img-fluid"
+                                style="max-height: 250px; object-fit: contain;">
+                        </div>
+
+                        <!-- تفاصيل المنتج -->
+                        <div class="col-md-7">
+                            <p class="text-secondary small mb-1">Apple</p>
+                            <h5 class="fw-bold mb-2" style="color: #2c3e6b;">
+                                Hamilton Beach Smoothie Electric Blender
+                            </h5>
+
+                            <!-- التقييم -->
+                            <div class="mb-2">
+                                <i class="ti ti-star-filled" style="color: #f5a623;"></i>
+                                <i class="ti ti-star-filled" style="color: #f5a623;"></i>
+                                <i class="ti ti-star-filled" style="color: #f5a623;"></i>
+                                <i class="ti ti-star-filled" style="color: #f5a623;"></i>
+                                <i class="ti ti-star-filled" style="color: #f5a623;"></i>
+                                <span class="text-secondary small ms-1">(65)</span>
+                            </div>
+
+                            <!-- السعر -->
+                            <div class="d-flex align-items-baseline gap-2 mb-3">
+                                <span class="fw-bold fs-4" style="color: #2c3e6b;">$2856.3</span>
+                                <span class="text-secondary text-decoration-line-through small">$3225.6</span>
+                            </div>
+
+                            <!-- الوصف -->
+                            <p class="text-secondary small mb-3">
+                                High-quality electric blender perfect for smoothies, juices, and more.
+                                Comes with multiple speeds and a durable BPA-free jar.
+                            </p>
+
+                            <!-- زر الإضافة للسلة -->
+                            <button class="btn fw-bold px-4 py-2" style="background-color: #2c3e6b; color: #fff;">
+                                <i class="ti ti-shopping-cart me-1"></i> Add To Cart
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
