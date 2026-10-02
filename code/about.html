@@ -1,0 +1,1219 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Chelsea+Market&family=Parisienne&family=Sintony:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!-- في ملف الـ head -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./styleAbout.css">
+</head>
+
+<body>
+
+
+    <aside class="sidebar-categories d-none d-lg-flex flex-column align-items-center pt-2">
+        <div class="sidebar-item w-100">
+            <a href="#" class="d-flex justify-content-center align-items-center py-2 text-primary fs-5"><i
+                    class="bi bi-grid-fill"></i></a>
+            <div class="sidebar-popup p-2">
+                <a class="dropdown-item py-1" href="#">All Categories</a>
+                <a class="dropdown-item py-1" href="#">Featured Products</a>
+            </div>
+        </div>
+
+        <div class="sidebar-item w-100">
+            <a href="#" class="d-flex justify-content-center align-items-center py-2 text-secondary fs-5"><i
+                    class="bi bi-display"></i></a>
+            <div class="sidebar-popup p-2">
+                <a class="dropdown-item py-1" href="#">Computers & Laptops</a>
+                <a class="dropdown-item py-1" href="#">Monitors</a>
+            </div>
+        </div>
+
+        <div class="sidebar-item w-100">
+            <a href="#" class="d-flex justify-content-center align-items-center py-2 text-secondary fs-5"><i
+                    class="bi bi-smartwatch"></i></a>
+            <div class="sidebar-popup p-2">
+                <a class="dropdown-item py-1" href="#">Smart Watches</a>
+                <a class="dropdown-item py-1" href="#">Fashion Smart Watches</a>
+                <a class="dropdown-item py-1" href="#">Smart Bracelets</a>
+                <a class="dropdown-item py-1" href="#">Pocket Watches</a>
+                <a class="dropdown-item py-1" href="#">Smart Rings</a>
+                <a class="dropdown-item py-1" href="#">Other Watches</a>
+            </div>
+        </div>
+
+        <div class="sidebar-item w-100">
+            <a href="#" class="d-flex justify-content-center align-items-center py-2 text-secondary fs-5"><i
+                    class="bi bi-headphones"></i></a>
+            <div class="sidebar-popup p-2">
+                <a class="dropdown-item py-1" href="#">Headphones</a>
+                <a class="dropdown-item py-1" href="#">Earbuds</a>
+            </div>
+        </div>
+
+        <div class="sidebar-item w-100">
+            <a href="#" class="d-flex justify-content-center align-items-center py-2 text-secondary fs-5"><i
+                    class="bi bi-bluetooth"></i></a>
+            <div class="sidebar-popup p-2">
+                <a class="dropdown-item py-1" href="#">Bluetooth Devices</a>
+            </div>
+        </div>
+    </aside>
+    <!-- 1. Top Bar -->
+    <div class="container">
+        <div class="row align-items-center">
+
+            <!-- ========================= الروابط على اليسار =====================-->
+            <div class="col-4 text-start small">
+                <a href="" class="text-decoration-none text-secondary">About Us</a>
+                <span>|</span>
+                <a href="" class="text-decoration-none text-secondary">Careers</a>
+                <span>|</span>
+                <a href="" class="text-decoration-none text-secondary">Open a shop</a>
+            </div>
+
+            <!-- CENTER -->
+            <div class="col-4 text-center small">
+                <p class="mb-0">
+                    Free shipping for all orders over
+                    <strong class="text-info">$75.00</strong>
+                </p>
+            </div>
+
+            <!-- ========================= الروابط يلي على اليمين ===================-->
+            <div class="col-4 text-end small ">
+                <p class="mb-0">
+                    Need help? Call Us: +963 931615417
+                    <span class="ms-1">|</span>
+                    <span class="ms-1"> English </span>
+                    <span class="ms-1">|</span>
+                    <span class="ms-1">USD</span>
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    </div>
+
+
+    <!--================================== الناف الرئيسية يلي تحت ======================== -->
+    <!-- ================= NAVBAR ================= -->
+
+    <!-- ========================= NAVBAR ========================= -->
+
+    <nav class="navbar navbar-expand-xl bg-light border-bottom sticky-top">
+
+        <div class="container-fluid px-4">
+
+            <!-- LOGO -->
+            <a class="navbar-brand" href="">
+                <div class="d-flex align-items-center text-primary">
+                    <i class="bi bi-shop fs-4"></i>
+                    <span class="fw-bold ms-1">Ecom</span>
+                </div>
+            </a>
+
+
+            <!-- ============ الزر المخصص للهاتف=========== -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+                aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+
+            <!-- EVERYTHING THAT COLLAPSES -->
+            <div class="collapse navbar-collapse" id="mainNavbar">
+
+
+                <!-- ================= SEARCH ================= -->
+
+                <form class="my-3 my-xl-0 me-xl-4">
+
+                    <div class="input-group">
+
+                        <!-- الدروبداون -->
+                        <div class="dropdown">
+
+                            <button class="btn btn-light border dropdown-toggle" type="button"
+                                data-bs-toggle="dropdown">
+
+                                All categories
+
+                            </button>
+
+                            <ul class="dropdown-menu">
+
+                                <li>
+                                    <a href="" class="dropdown-item">
+                                        ABOUT
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="" class="dropdown-item">
+                                        BLOG
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="" class="dropdown-item">
+                                        SHOP
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="" class="dropdown-item">
+                                        CART
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="" class="dropdown-item">
+                                        CHECKOUT
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="" class="dropdown-item">
+                                        SINGLE POST
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+
+                        <input type="text" class="form-control" placeholder="SEARCH">
+
+                    </div>
+
+                </form>
+
+
+                <!-- ================= الروابط الرئيسية ================= -->
+
+                <ul class="navbar-nav me-auto mb-3 mb-xl-0">
+
+
+                    <!-- HOME -->
+                    <li class="nav-item dropdown">
+
+                        <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+
+                            Home
+
+                        </a>
+
+                        <ul class="dropdown-menu">
+
+                            <li>
+                                <a href="" class="dropdown-item">
+                                    Home 1
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="home2.html" class="dropdown-item">
+                                    Home 2
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="" class="dropdown-item">
+                                    Home 3
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </li>
+
+
+                    <!-- SHOP -->
+                    <li class="nav-item dropdown">
+
+                        <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+
+                            Shop
+
+                        </a>
+
+                        <ul class="dropdown-menu">
+
+                            <li>
+                                <a href="" class="dropdown-item">
+                                    Shop
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="" class="dropdown-item">
+                                    Shop Grid
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="" class="dropdown-item">
+                                    Shop Grid 2
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </li>
+
+
+                    <!-- VENDORS -->
+                    <li class="nav-item dropdown">
+
+                        <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+
+                            Vendors
+
+                        </a>
+
+                        <ul class="dropdown-menu">
+
+                            <li>
+                                <a href="" class="dropdown-item">
+                                    Vendor singel
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="" class="dropdown-item">
+                                    Vendor listing
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </li>
+
+
+                    <!-- PAGES -->
+                    <li class="nav-item dropdown">
+
+                        <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+
+                            Pages
+
+                        </a>
+
+                        <ul class="dropdown-menu">
+
+                            <li>
+                                <a href="" class="dropdown-item">
+                                    About us
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="" class="dropdown-item">
+                                    Blog
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="" class="dropdown-item">
+                                    Careers
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="" class="dropdown-item">
+                                    Register
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="" class="dropdown-item">
+                                    Login
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="" class="dropdown-item">
+                                    Error 404
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </li>
+
+
+                    <!-- BLOG -->
+                    <li class="nav-item dropdown">
+
+                        <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+
+                            Blog
+
+                        </a>
+
+                        <ul class="dropdown-menu">
+
+                            <li>
+                                <a href="" class="dropdown-item">
+                                    Blog
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="" class="dropdown-item">
+                                    Blog Grid
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="" class="dropdown-item">
+                                    Single Post
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </li>
+
+
+                    <!-- CONTACT US -->
+                    <li class="nav-item">
+
+                        <a href="" class="nav-link">
+
+                            Contact Us
+
+                        </a>
+
+                    </li>
+
+                </ul>
+
+
+                <!-- ================= RIGHT SIDE ================= -->
+
+                <div class="d-flex flex-column flex-xl-row
+                        align-items-start align-items-xl-center
+                        gap-3">
+
+
+                    <!-- ACCOUNT -->
+                    <a href="" class="text-secondary text-decoration-none
+                          d-inline-flex align-items-center gap-1">
+
+                        <i class="bi bi-person-fill"></i>
+
+                        <span>Account</span>
+
+                    </a>
+
+
+                    <!-- WISHLIST -->
+                    <a href="" class="text-secondary text-decoration-none
+                          d-inline-flex align-items-center gap-1">
+
+                        <i class="bi bi-heart-fill"></i>
+
+                        <span>Wishlist</span>
+
+                    </a>
+
+
+                    <!-- CART -->
+                    <a href="" class="text-secondary text-decoration-none
+                          d-inline-flex align-items-center gap-1">
+
+                        <i class="bi bi-cart-fill"></i>
+
+                        <span>Cart</span>
+
+                    </a>
+
+
+                    <!-- COMPARE -->
+                    <a href="" class="text-secondary text-decoration-none
+                          d-inline-flex align-items-center gap-1">
+
+                        <i class="bi bi-circle-half"></i>
+
+                        <span>Compare</span>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+
+    <section class="py-5 bg-white">
+        <div class="container">
+            <div class="row align-items-center g-4">
+
+                <!-- العمود الأيسر: النصوص والخصائص -->
+                <div class="col-lg-6">
+                    <span class="text-secondary fw-semibold text-uppercase small">About us</span>
+                    <h1 class="fw-bold text-dark my-3 display-6" style="color: #1a253f;">Global Leading Online Shop</h1>
+
+                    <p class="text-muted mb-3" style="font-size: 15px; line-height: 1.7;">
+                        Ecom expands global footprint, delivering entertaining experiences customised to each user.
+                        Branches are expanding both in size and number.
+                    </p>
+
+                    <p class="text-muted mb-3" style="font-size: 14px; line-height: 1.7;">
+                        Nunc vel risus commodo viverra maecenas accumsan lacus vel facilisis. Lacus vel facilisis
+                        volutpat est velit. Urna neque viverra justo nec. Suspendisse faucibus interdum posuere lorem
+                        ipsum dolor. Ut aliquam purus sit amet luctus venenatis lectus magna fringilla. Tortor vitae
+                        purus faucibus ornare.
+                    </p>
+
+                    <p class="text-muted mb-4" style="font-size: 14px; line-height: 1.7;">
+                        Tempus iaculis urna id volutpat lacus laoreet. Id neque aliquam vestibulum morbi blandit.
+                        Lacinia quis vel eros donec ac odio tempor orci. Lectus sit amet est placerat in egestas erat
+                        imperdiet. Nunc congue nisi vitae suscipit. Sed adipiscing diam donec adipiscing tristique
+                        risus.
+                    </p>
+
+                    <!-- صندوق الميزات (Checkboxes) -->
+                    <div class="row g-3 pt-2">
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-start gap-2">
+                                <i class="bi bi-check-square-fill text-primary fs-5"></i>
+                                <span class="fw-semibold text-dark fs-6" style="line-height: 1.3;">We provide qualified
+                                    & expert</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-start gap-2">
+                                <i class="bi bi-check-square-fill text-primary fs-5"></i>
+                                <span class="fw-semibold text-dark fs-6" style="line-height: 1.3;">Modern tools &
+                                    technology use</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- العمود الأيمن: الصورة -->
+                <div class="col-lg-6">
+                    <div class="overflow-hidden rounded-3 shadow-sm">
+                        <img src="./imgs/img.png" class="img-fluid w-100 object-fit-cover" alt="About us team"
+                            style="max-height: 480px;">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="py-4">
+        <div class="container">
+            <div class="stats-box bg-light rounded-4 p-4 p-md-5">
+                <div class="row g-4">
+
+                    <!-- العنصر الأول: 12 Years -->
+                    <div class="col-6 col-md-3">
+                        <h3 class="fw-bold text-dark mb-2">12 Years</h3>
+                        <p class="text-muted small mb-0">We've more than 12 years working experience.</p>
+                    </div>
+
+                    <!-- العنصر الثاني: 2000+ Employee -->
+                    <div class="col-6 col-md-3">
+                        <h3 class="fw-bold text-dark mb-2">2000+ Employee</h3>
+                        <p class="text-muted small mb-0">We've more than 2000 employees working near you.</p>
+                    </div>
+
+                    <!-- العنصر الثالث: 68 Branches -->
+                    <div class="col-6 col-md-3">
+                        <h3 class="fw-bold text-dark mb-2">68 Branches</h3>
+                        <p class="text-muted small mb-0">We have 68 branches across the country and are expanding.</p>
+                    </div>
+
+                    <!-- العنصر الرابع: 15 Countries -->
+                    <div class="col-6 col-md-3">
+                        <h3 class="fw-bold text-dark mb-2">15 Countries</h3>
+                        <p class="text-muted small mb-0">We are present in 15 countries around the world.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-5 bg-white">
+        <div class="container">
+
+            <!-- العنوان الرئيسي والعنوان الفرعي -->
+            <div class="mb-5">
+                <span class="text-secondary fw-semibold text-uppercase small">Behind The Brands</span>
+                <h2 class="fw-bold text-dark mt-2 display-6" style="color: #1a253f; max-width: 850px;">
+                    The people who work at Ecom share the vision and values of our community.
+                </h2>
+            </div>
+
+            <!-- شبكة أعضاء الفريق (Team Grid) -->
+            <div class="row g-4">
+
+                <!-- العضو 1 -->
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="team-card">
+                        <div class="team-img-wrapper mb-3">
+                            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=500&q=80"
+                                alt="Ronald Richards" class="img-fluid w-100 rounded-3">
+                        </div>
+                        <h5 class="fw-bold text-dark mb-1 fs-6">Ronald Richards</h5>
+                        <p class="text-muted small mb-0">Chief Executive Officer</p>
+                    </div>
+                </div>
+
+                <!-- العضو 2 -->
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="team-card">
+                        <div class="team-img-wrapper mb-3">
+                            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=500&q=80"
+                                alt="Jenny Wilson" class="img-fluid w-100 rounded-3">
+                        </div>
+                        <h5 class="fw-bold text-dark mb-1 fs-6">Jenny Wilson</h5>
+                        <p class="text-muted small mb-0">Chief Financial Officer</p>
+                    </div>
+                </div>
+
+                <!-- العضو 3 -->
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="team-card">
+                        <div class="team-img-wrapper mb-3">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=500&q=80"
+                                alt="Cody Fisher" class="img-fluid w-100 rounded-3">
+                        </div>
+                        <h5 class="fw-bold text-dark mb-1 fs-6">Cody Fisher</h5>
+                        <p class="text-muted small mb-0">Chief Operating Officer</p>
+                    </div>
+                </div>
+
+                <!-- العضو 4 -->
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="team-card">
+                        <div class="team-img-wrapper mb-3">
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=500&q=80"
+                                alt="Jacob Jones" class="img-fluid w-100 rounded-3">
+                        </div>
+                        <h5 class="fw-bold text-dark mb-1 fs-6">Jacob Jones</h5>
+                        <p class="text-muted small mb-0">Chief Technology Officer</p>
+                    </div>
+                </div>
+
+                <!-- العضو 5 -->
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="team-card">
+                        <div class="team-img-wrapper mb-3">
+                            <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=500&q=80"
+                                alt="Leslie Alexander" class="img-fluid w-100 rounded-3">
+                        </div>
+                        <h5 class="fw-bold text-dark mb-1 fs-6">Leslie Alexander</h5>
+                        <p class="text-muted small mb-0">Chief Marketing Officer</p>
+                    </div>
+                </div>
+
+                <!-- العضو 6 -->
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="team-card">
+                        <div class="team-img-wrapper mb-3">
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=500&q=80"
+                                alt="Ralph Edwards" class="img-fluid w-100 rounded-3">
+                        </div>
+                        <h5 class="fw-bold text-dark mb-1 fs-6">Ralph Edwards</h5>
+                        <p class="text-muted small mb-0">Chief Human Resources Officer</p>
+                    </div>
+                </div>
+
+                <!-- العضو 7 -->
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="team-card">
+                        <div class="team-img-wrapper mb-3">
+                            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=500&q=80"
+                                alt="Eleanor Pena" class="img-fluid w-100 rounded-3">
+                        </div>
+                        <h5 class="fw-bold text-dark mb-1 fs-6">Eleanor Pena</h5>
+                        <p class="text-muted small mb-0">Chief Legal Officer</p>
+                    </div>
+                </div>
+                <!-- العضو 8 -->
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="team-card">
+                        <div class="team-img-wrapper mb-3">
+                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=500&q=80"
+                                alt="Theresa Webb" class="img-fluid w-100 rounded-3">
+                        </div>
+                        <h5 class="fw-bold text-dark mb-1 fs-6">Theresa Webb</h5>
+                        <p class="text-muted small mb-0">Chief Product Officer</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="py-5 bg-light border-top border-bottom">
+        <div class="container">
+
+            <!-- العنوان الرئيسي والعنوان الفرعي -->
+            <div class="mb-4">
+                <span class="text-secondary fw-semibold text-uppercase small">Our Partners</span>
+                <h2 class="fw-bold text-dark mt-2 display-6" style="color: #1a253f;">
+                    Trusted by 18.000+ Vendors
+                </h2>
+            </div>
+
+            <!-- شبكة الشعارات (Brand Logos Grid) -->
+            <div class="row row-cols-2 row-cols-sm-3 row-cols-md-5 g-4 align-items-center text-center partner-logos">
+
+                <!-- SONY -->
+                <div class="col">
+                    <div class="p-2">
+                        <span class="brand-logo fw-bold fs-3 text-secondary">SONY</span>
+                    </div>
+                </div>
+
+                <!-- Microsoft -->
+                <div class="col">
+                    <div class="p-2">
+                        <span class="brand-logo fw-bold fs-3 text-secondary">Microsoft</span>
+                    </div>
+                </div>
+
+                <!-- acer -->
+                <div class="col">
+                    <div class="p-2">
+                        <span class="brand-logo fw-semibold fs-3 text-secondary">acer</span>
+                    </div>
+                </div>
+
+                <!-- NOKIA -->
+                <div class="col">
+                    <div class="p-2">
+                        <span class="brand-logo fw-bold fs-3 text-secondary">NOKIA</span>
+                    </div>
+                </div>
+
+                <!-- ASUS -->
+                <div class="col">
+                    <div class="p-2">
+                        <span class="brand-logo fw-bold fs-3 text-secondary">ASUS</span>
+                    </div>
+                </div>
+
+                <!-- CASIO -->
+                <div class="col">
+                    <div class="p-2">
+                        <span class="brand-logo fw-bold fs-3 text-secondary">CASIO</span>
+                    </div>
+                </div>
+
+                <!-- DELL -->
+                <div class="col">
+                    <div class="p-2">
+                        <span class="brand-logo fw-bold fs-3 text-secondary">DELL</span>
+                    </div>
+                </div>
+
+                <!-- Panasonic -->
+                <div class="col">
+                    <div class="p-2">
+                        <span class="brand-logo fw-medium fs-3 text-secondary">Panasonic</span>
+                    </div>
+                </div>
+
+                <!-- VAIO -->
+                <div class="col">
+                    <div class="p-2">
+                        <span class="brand-logo fw-bold fs-3 text-secondary">VAIO</span>
+                    </div>
+                </div>
+
+                <!-- SHARP -->
+                <div class="col">
+                    <div class="p-2">
+                        <span class="brand-logo fw-bold fs-3 text-secondary">SHARP</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="py-5 ">
+        <div class="container">
+
+            <!-- العنوان الرئيسي والعنوان الفرعي -->
+            <div class="mb-5">
+                <h2 class="fw-bold text-dark display-6" style="color: #1a253f;">Visit our stores</h2>
+                <p class="text-muted small">Find us at these locations</p>
+            </div>
+
+            <!-- شبكة الفروع (Store Locations Grid) -->
+            <div class="row g-4 g-lg-5">
+
+                <!-- الفرع 1: Melbourne -->
+                <div class="col-12 col-sm-6 col-md-4">
+                    <div class="location-card">
+                        <h5 class="fw-bold text-dark mb-2">Melbourne</h5>
+                        <p class="text-muted small mb-0">205 North Michigan Avenue, Suite 810<br>Chicago, 60601, USA</p>
+                    </div>
+                </div>
+
+                <!-- الفرع 2: Sydney -->
+                <div class="col-12 col-sm-6 col-md-4">
+                    <div class="location-card">
+                        <h5 class="fw-bold text-dark mb-2">Sydney</h5>
+                        <p class="text-muted small mb-0">205 North Michigan Avenue, Suite 810<br>Chicago, 60601, USA</p>
+                    </div>
+                </div>
+
+                <!-- الفرع 3: Bangkok -->
+                <div class="col-12 col-sm-6 col-md-4">
+                    <div class="location-card">
+                        <h5 class="fw-bold text-dark mb-2">Bangkok</h5>
+                        <p class="text-muted small mb-0">205 North Michigan Avenue, Suite 810<br>Chicago, 60601, USA</p>
+                    </div>
+                </div>
+
+                <!-- الفرع 4: San Francisco -->
+                <div class="col-12 col-sm-6 col-md-4">
+                    <div class="location-card">
+                        <h5 class="fw-bold text-dark mb-2">San Francisco</h5>
+                        <p class="text-muted small mb-0">205 North Michigan Avenue, Suite 810<br>Chicago, 60601, USA</p>
+                    </div>
+                </div>
+
+                <!-- الفرع 5: Sweden -->
+                <div class="col-12 col-sm-6 col-md-4">
+                    <div class="location-card">
+                        <h5 class="fw-bold text-dark mb-2">Sweden</h5>
+                        <p class="text-muted small mb-0">205 North Michigan Avenue, Suite 810<br>Chicago, 60601, USA</p>
+                    </div>
+                </div>
+
+                <!-- الفرع 6: Seoul -->
+                <div class="col-12 col-sm-6 col-md-4">
+                    <div class="location-card">
+                        <h5 class="fw-bold text-dark mb-2">Seoul</h5>
+                        <p class="text-muted small mb-0">205 North Michigan Avenue, Suite 810<br>Chicago, 60601, USA</p>
+                    </div>
+                </div>
+
+                <!-- الفرع 7: Byron Bay -->
+                <div class="col-12 col-sm-6 col-md-4">
+                    <div class="location-card">
+                        <h5 class="fw-bold text-dark mb-2">Byron Bay</h5>
+                        <p class="text-muted small mb-0">205 North Michigan Avenue, Suite 810<br>Chicago, 60601, USA</p>
+                    </div>
+                </div>
+
+                <!-- الفرع 8: Ha Noi -->
+                <div class="col-12 col-sm-6 col-md-4">
+                    <div class="location-card">
+                        <h5 class="fw-bold text-dark mb-2">Ha Noi</h5>
+                        <p class="text-muted small mb-0">205 North Michigan Avenue, Suite 810<br>Chicago, 60601, USA</p>
+                    </div>
+                </div>
+
+                <!-- الفرع 9: Paris -->
+                <div class="col-12 col-sm-6 col-md-4">
+                    <div class="location-card">
+                        <h5 class="fw-bold text-dark mb-2">Paris</h5>
+                        <p class="text-muted small mb-0">205 North Michigan Avenue, Suite 810<br>Chicago, 60601, USA</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 ">
+        <div class="container bg-light">
+            <div class="row g-4 align-items-start">
+
+                <!-- العمود الأول: العنوان الرئيسي -->
+                <div class="col-12 col-lg-3">
+                    <h2 class="fw-bold text-dark mb-2" style="color: #1a253f; font-size: 1.8rem;">We'd love to hear from
+                        you</h2>
+                    <p class="text-muted small mb-0">Chat with our friendly team</p>
+                </div>
+
+                <!-- العمود الثاني: Chat to sales -->
+                <div class="col-12 col-sm-4 col-lg-3">
+                    <div class="contact-card">
+                        <div class="mb-3">
+                            <i class="bi bi-chat-text fs-2 text-dark"></i>
+                        </div>
+                        <h5 class="fw-bold text-dark mb-2 fs-6">Chat to sales</h5>
+                        <p class="text-muted small mb-1">Speak to our team.</p>
+                        <a href="mailto:sales@ecom.com"
+                            class="text-dark fw-medium small text-decoration-underline">sales@ecom.com</a>
+                    </div>
+                </div>
+
+                <!-- العمود الثالث: Call us -->
+                <div class="col-12 col-sm-4 col-lg-3">
+                    <div class="contact-card">
+                        <div class="mb-3">
+                            <i class="bi bi-telephone fs-2 text-dark"></i>
+                        </div>
+                        <h5 class="fw-bold text-dark mb-2 fs-6">Call us</h5>
+                        <p class="text-muted small mb-1">Mon-Fri from 8am to 5pm</p>
+                        <a href="tel:+15550000000"
+                            class="text-dark fw-medium small text-decoration-none">+1(555)000-0000</a>
+                    </div>
+                </div>
+
+                <!-- العمود الرابع: Visit us -->
+                <div class="col-12 col-sm-4 col-lg-3">
+                    <div class="contact-card">
+                        <div class="mb-3">
+                            <i class="bi bi-map fs-2 text-dark"></i>
+                        </div>
+                        <h5 class="fw-bold text-dark mb-2 fs-6">Visit us</h5>
+                        <p class="text-muted small mb-1">Visit our office</p>
+                        <p class="text-muted small mb-0">205 North Michigan Avenue,<br>Suite 810<br>Chicago, 60601, USA
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-4 bg-light border-bottom">
+        <div class="container">
+            <div class="row g-3 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5">
+
+                <!-- Feature 1: Free Delivery -->
+                <div class="col">
+                    <div class="d-flex align-items-center gap-3 p-3 bg-white rounded border h-100">
+                        <div class="flex-shrink-0 d-flex align-items-center justify-content-center bg-primary-subtle text-primary rounded-circle"
+                            style="width: 48px; height: 48px;">
+                            <i class="bi bi-truck fs-4"></i>
+                        </div>
+                        <div>
+                            <h6 class="fw-bold mb-1 fs-7 text-dark">Free Delivery</h6>
+                            <p class="text-muted mb-0 fs-8">From all orders over $10</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature 2: Support 24/7 -->
+                <div class="col">
+                    <div class="d-flex align-items-center gap-3 p-3 bg-white rounded border h-100">
+                        <div class="flex-shrink-0 d-flex align-items-center justify-content-center bg-primary-subtle text-primary rounded-circle"
+                            style="width: 48px; height: 48px;">
+                            <i class="bi bi-headset fs-4"></i>
+                        </div>
+                        <div>
+                            <h6 class="fw-bold mb-1 fs-7 text-dark">Support 24/7</h6>
+                            <p class="text-muted mb-0 fs-8">Shop with an expert</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature 3: Gift Voucher -->
+                <div class="col">
+                    <div class="d-flex align-items-center gap-3 p-3 bg-white rounded border h-100">
+                        <div class="flex-shrink-0 d-flex align-items-center justify-content-center bg-primary-subtle text-primary rounded-circle"
+                            style="width: 48px; height: 48px;">
+                            <i class="bi bi-gift fs-4"></i>
+                        </div>
+                        <div>
+                            <h6 class="fw-bold mb-1 fs-7 text-dark">Gift voucher</h6>
+                            <p class="text-muted mb-0 fs-8">Refer a friend</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature 4: Return & Refund -->
+                <div class="col">
+                    <div class="d-flex align-items-center gap-3 p-3 bg-white rounded border h-100">
+                        <div class="flex-shrink-0 d-flex align-items-center justify-content-center bg-primary-subtle text-primary rounded-circle"
+                            style="width: 48px; height: 48px;">
+                            <i class="bi bi-arrow-counterclockwise fs-4"></i>
+                        </div>
+                        <div>
+                            <h6 class="fw-bold mb-1 fs-7 text-dark">Return & Refund</h6>
+                            <p class="text-muted mb-0 fs-8">Free return over $200</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature 5: Secure Payment -->
+                <div class="col">
+                    <div class="d-flex align-items-center gap-3 p-3 bg-white rounded border h-100">
+                        <div class="flex-shrink-0 d-flex align-items-center justify-content-center bg-primary-subtle text-primary rounded-circle"
+                            style="width: 48px; height: 48px;">
+                            <i class="bi bi-shield-check fs-4"></i>
+                        </div>
+                        <div>
+                            <h6 class="fw-bold mb-1 fs-7 text-dark">Secure payment</h6>
+                            <p class="text-muted mb-0 fs-8">100% Protected</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-4">
+        <div class="container">
+            <div class="card border-0 rounded-4 overflow-hidden text-white" style="background-color: #1a4d8c;">
+                <div class="card-body p-4 p-lg-5">
+                    <div class="row align-items-center g-4">
+
+                        <!-- النص والعنوان جهة اليسار -->
+                        <div class="col-12 col-lg-6">
+                            <h3 class="fw-bold mb-2 fs-2">
+                                Subscribe & Get <span class="text-warning">10% Discount</span>
+                            </h3>
+                            <p class="mb-0 text-white-50 fs-6">
+                                Get E-mail updates about our latest shop and special offers.
+                            </p>
+                        </div>
+
+                        <!-- حقل الإدخال والصورة جهة اليمين -->
+                        <div class="col-12 col-lg-6">
+                            <div class="row align-items-center g-3">
+
+                                <!-- حقل البريد الإلكتروني والزر (فوق الصورة/بجانبها) -->
+                                <div class="col-12 col-sm-8 col-lg-7">
+                                    <div class="input-group">
+                                        <input type="email" class="form-control border-0 py-2 px-3 fs-7"
+                                            placeholder="Your email Address" aria-label="Your email Address">
+                                        <button class="btn btn-warning text-white fw-semibold px-4 py-2 fs-7"
+                                            type="button">Sign Up</button>
+                                    </div>
+                                </div>
+
+                                <!-- صورة المنتجات الإضافية جهة اليمين -->
+                                <div class="col-12 col-sm-4 col-lg-5 text-center text-sm-end">
+                                    <img src="./imgs/iphone-12.png" alt="Gadgets & Devices" class="img-fluid"
+                                        style="max-height: 120px; object-fit: contain;">
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="bg-light pt-5 pb-4 text-dark border-top fs-7">
+        <div class="container">
+            <div class="row g-4">
+
+                <!-- Column 1: Contact -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h5 class="fw-bold mb-3 fs-6">Contact</h5>
+                    <p class="mb-2"><strong class="text-dark">Address:</strong> <span class="text-muted">502 New
+                            Design Str, Melbourne, San Francisco, CA 94110, United States</span></p>
+                    <p class="mb-2"><strong class="text-dark">Phone:</strong> <span class="text-muted">(+01)
+                            123-456-789</span></p>
+                    <p class="mb-2"><strong class="text-dark">E-mail:</strong> <span
+                            class="text-muted">contact@ecom-market.com</span></p>
+                    <p class="mb-3"><strong class="text-dark">Hours:</strong> <span class="text-muted">8:00 - 17:00,
+                            Mon - Sat</span></p>
+
+                    <!-- Social Icons -->
+                    <div class="d-flex gap-2">
+                        <a href="#"
+                            class="btn btn-sm btn-outline-secondary rounded-circle d-flex align-items-center justify-content-center p-0"
+                            style="width: 32px; height: 32px;"><i class="bi bi-facebook"></i></a>
+                        <a href="#"
+                            class="btn btn-sm btn-outline-secondary rounded-circle d-flex align-items-center justify-content-center p-0"
+                            style="width: 32px; height: 32px;"><i class="bi bi-pinterest"></i></a>
+                        <a href="#"
+                            class="btn btn-sm btn-outline-secondary rounded-circle d-flex align-items-center justify-content-center p-0"
+                            style="width: 32px; height: 32px;"><i class="bi bi-twitter"></i></a>
+                        <a href="#"
+                            class="btn btn-sm btn-outline-secondary rounded-circle d-flex align-items-center justify-content-center p-0"
+                            style="width: 32px; height: 32px;"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <!-- Column 2: Make Money with Us -->
+                <div class="col-6 col-md-3 col-lg-2">
+                    <h5 class="fw-bold mb-3 fs-6">Make Money with Us</h5>
+                    <ul class="list-unstyled d-flex flex-column gap-2 text-muted mb-0">
+                        <li><a href="#" class="text-decoration-none text-muted">› Mission & Vision</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">› Our Team</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">› Careers</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">› Press & Media</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">› Advertising</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">› Testimonials</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Company -->
+                <div class="col-6 col-md-3 col-lg-2">
+                    <h5 class="fw-bold mb-3 fs-6">Company</h5>
+                    <ul class="list-unstyled d-flex flex-column gap-2 text-muted mb-0">
+                        <li><a href="#" class="text-decoration-none text-muted">› Our Blog</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">› Plans & Pricing</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">› Knowledge Base</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">› Cookie Policy</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">› Office Center</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">› News & Events</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: My account -->
+                <div class="col-6 col-md-3 col-lg-2">
+                    <h5 class="fw-bold mb-3 fs-6">My account</h5>
+                    <ul class="list-unstyled d-flex flex-column gap-2 text-muted mb-0">
+                        <li><a href="#" class="text-decoration-none text-muted">› FAQs</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">› Editor Help</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">› Community</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">› Live Chatting</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">› Contact Us</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">› Support Center</a></li>
+                    </ul>
+                </div>
+                <!-- Column 5: App & Payment -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h5 class="fw-bold mb-3 fs-6">App & Payment</h5>
+                    <p class="text-muted mb-3 fs-7">Download our Apps and get extra 15% Discount on your first
+                        Order...!</p>
+
+                    <!-- App Badges -->
+                    <div class="d-flex flex-wrap gap-2 mb-4">
+                        <a href="#"><img src="./imgs/appstore.png" alt="App Store"
+                                class="bg-secondary-subtle rounded border"
+                                style="width: 120px; height: 38px; object-fit: contain;"></a>
+                        <a href="#"><img src="./imgs/google-play.png" alt="Google Play"
+                                class="bg-secondary-subtle rounded border"
+                                style="width: 120px; height: 38px; object-fit: contain;"></a>
+                    </div>
+
+                    <p class="text-muted mb-2 fs-7">Secured Payment Gateways</p>
+
+                    <!-- Payment Gateways -->
+                    <div class="d-flex align-items-center gap-2">
+                        <img src="./imgs/toshiba.svg" alt="" class="bg-secondary-subtle rounded border"
+                            style="width: 40px; height: 26px; object-fit: contain;">
+                        <img src="./imgs/microsoft.svg" alt="" class="bg-secondary-subtle rounded border"
+                            style="width: 40px; height: 26px; object-fit: contain;">
+                        <img src="./imgs/acer.svg" alt="" class="bg-secondary-subtle rounded border"
+                            style="width: 40px; height: 26px; object-fit: contain;">
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <div class="bg-light border-top py-4 fs-7 text-muted">
+        <div class="container">
+
+            <!-- Top Row: Logo & Main Domain Links -->
+            <div class="d-flex flex-wrap align-items-center gap-3 mb-3">
+                <!-- Logo Image -->
+                <a href="#"><img src="./imgs/logo-2.svg" alt="Ecom Logo" style="height: 30px; object-fit: contain;"></a>
+
+                <div class="d-flex flex-wrap align-items-center gap-2 text-secondary">
+                    <a href="#" class="text-decoration-none text-muted">EcomMarket.com</a>
+                    <span>|</span>
+                    <a href="#" class="text-decoration-none text-muted">Ecom Partners</a>
+                    <span>|</span>
+                    <a href="#" class="text-decoration-none text-muted">Ecom Business</a>
+                    <span>|</span>
+                    <a href="#" class="text-decoration-none text-muted">Ecom Factory</a>
+                </div>
+            </div>
+
+            <!-- Category Links: Electronic -->
+            <div class="mb-2">
+                <strong class="text-dark">Electronic:</strong>
+                <a href="#" class="text-decoration-none text-muted ms-1">Cell Phones</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Headphones</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Television & Video</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Game Controller</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Apple Watch</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">HTC</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Ipad</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Keyboard</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Samsung</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Wireless Speaker</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Samsung Galaxy</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Gaming Mouse</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">eBook Readers</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Service Plans</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Home Audio</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Office Electronics</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Lenovo</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Macbook Pro M1</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">HD Videos Player</a>
+            </div>
+
+            <!-- Category Links: Furniture -->
+            <div class="mb-4">
+                <strong class="text-dark">Furniture:</strong>
+                <a href="#" class="text-decoration-none text-muted ms-1">Sofa</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Chair</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Dining Table</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Living Room</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Table Lamp</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Night Stand</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Computer Desk</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Bar Table</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Pillow</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Radio</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Clock</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Bad Room</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Stool</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Television</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Wardrobe</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Living Room Tables</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Dressers</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Patio Sofas</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Nursery</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Kitchen</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Accent Furniture</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Replacement Parts</a>
+            </div>
+
+            <hr class="my-3 text-secondary opacity-25">
+
+            <!-- Bottom Copyright & Policies -->
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+                <p class="mb-0">Copyright © 2022 Ecom Market. All rights reserved.</p>
+
+                <div class="d-flex align-items-center gap-3">
+                    <a href="#" class="text-decoration-none text-muted">Conditions of Use</a>
+                    <a href="#" class="text-decoration-none text-muted">Privacy Notice</a>
+                    <a href="#" class="text-decoration-none text-muted">Interest-Based Ads</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> -->
+</body>
+
+</html>

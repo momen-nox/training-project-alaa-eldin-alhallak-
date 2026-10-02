@@ -15,7 +15,7 @@
 
 <body>
     <!-- 1. الشريط العلوي الداكن -->
-    <header class="bg-dark text-white py-2">
+    <!-- <header class="bg-dark text-white py-2">
         <div class="container-fluid px-3 px-lg-4">
             <div class="row align-items-center gy-2">
 
@@ -61,10 +61,10 @@
 
             </div>
         </div>
-    </header>
+    </header> -->
 
     <!-- 2. قسم اللوجو والبحث والأيقونات -->
-    <div class="py-3 bg-white border-bottom">
+    <!-- <div class="py-3 bg-white border-bottom">
         <div class="container-fluid px-3 px-lg-4">
             <div class="row align-items-center gy-3">
 
@@ -118,10 +118,10 @@
 
             </div>
         </div>
-    </div>
+    </div> -->
 
     <!-- 3. شريط التنقل الرئيسي والقوائم المنسدلة -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom py-2v sticky-top">
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom py-2v sticky-top">
         <div class="container-fluid px-3 px-lg-4">
 
             <div class="dropdown me-3">
@@ -230,7 +230,235 @@
 
             </div>
         </div>
+    </nav> -->
+
+    <header class="bg-dark text-white py-2">
+        <div class="container-fluid px-3 px-lg-4">
+            <div class="row align-items-center gy-2">
+
+                <div class="col-12 col-md-4 text-center text-md-start">
+                    <a href="#" class="text-white text-decoration-none me-2">About Us</a>
+                    <span class="opacity-50">|</span>
+                    <a href="#" class="text-white text-decoration-none mx-2">Careers</a>
+                    <span class="opacity-50">|</span>
+                    <a href="#" class="text-white text-decoration-none ms-2">Open a shop</a>
+                </div>
+
+                <div class="col-12 col-md-4 text-center">
+                    <span class="text-white-50">Free shipping for all orders over <strong
+                            class="text-info">$75.00</strong></span>
+                </div>
+
+                <div
+                    class="col-12 col-md-4 d-flex justify-content-center justify-content-md-end align-items-center gap-3">
+                    <span class="small">Need help? Call Us: <strong class="text-info">+1 1800 900</strong></span>
+
+                    <div class="dropdown">
+                        <button class="btn btn-link text-white text-decoration-none dropdown-toggle p-0 small"
+                            type="button" data-bs-toggle="dropdown">
+                            English
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end shadow border-0">
+                            <li><a class="dropdown-item" href="#">English</a></li>
+                            <li><a class="dropdown-item" href="#">العربية</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="dropdown">
+                        <button class="btn btn-link text-white text-decoration-none dropdown-toggle p-0 small"
+                            type="button" data-bs-toggle="dropdown">
+                            USD
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end shadow border-0">
+                            <li><a class="dropdown-item" href="#">USD</a></li>
+                            <li><a class="dropdown-item" href="#">EUR</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. قسم اللوجو والبحث والأيقونات -->
+    <div class="py-3 bg-white border-bottom">
+        <div class="container-fluid px-3 px-lg-4">
+            <div class="row align-items-center gy-3">
+
+                <div class="col-6 col-lg-2">
+                    <!-- 🔴 تعديل: ربط اللوجو بالصفحة الرئيسية index.html -->
+                    <a href="index.html" class="navbar-brand fw-bold fs-3 text-primary d-flex align-items-center gap-2">
+                        <i class="bi bi-robot text-info fs-2"></i> Ecom
+                    </a>
+                </div>
+
+                <div class="col-12 col-lg-7 order-3 order-lg-2">
+                    <div class="input-group border rounded-3 bg-light overflow-hidden">
+                        <button class="btn btn-light dropdown-toggle border-end text-muted px-3" type="button"
+                            data-bs-toggle="dropdown">
+                            All categories
+                        </button>
+                        <ul class="dropdown-menu shadow border-0">
+                            <li><a class="dropdown-item" href="#">Electronics</a></li>
+                            <li><a class="dropdown-item" href="#">Fashion</a></li>
+                            <li><a class="dropdown-item" href="#">Home & Garden</a></li>
+                        </ul>
+                        <input type="text" class="form-control bg-transparent border-0 px-3"
+                            placeholder="Search for items...">
+                        <button class="btn btn-white border-0 text-muted px-3" type="button">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </div>
+                </div>
+                <div
+                    class="col-6 col-lg-3 order-2 order-lg-3 d-flex align-items-center justify-content-end gap-3 gap-xl-4 small fw-semibold text-secondary">
+                    <a href="#" class="nav-link d-none d-xl-block">Flash Deals</a>
+                    <a href="#" class="nav-link d-none d-xl-block">Special</a>
+                    <a href="#" class="nav-link d-none d-xl-block">Top Sellers</a>
+
+                    <div class="d-flex align-items-center gap-3 ms-2">
+                        <a href="#" class="text-dark position-relative fs-4">
+                            <i class="bi bi-person"></i>
+                        </a>
+
+                        <!-- 🔴 تعديل: إضافة id="wishlist-count" وربطه برابط صفحة المفضلة shop-wishlist.html -->
+                        <a href="shop-wishlist.html" class="text-dark position-relative fs-4">
+                            <i class="bi bi-heart"></i>
+                            <span id="wishlist-count"
+                                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning text-white">0</span>
+                        </a>
+
+                        <!-- 🔴 تعديل: إضافة id="cart-count" وربطه برابط صفحة السلة shop-cart.html -->
+                        <a href="shop-cart.html" class="text-dark position-relative fs-4">
+                            <i class="bi bi-bag"></i>
+                            <span id="cart-count"
+                                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning text-white">0</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- 3. شريط التنقل الرئيسي والقوائم المنسدلة -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom py-2 sticky-top">
+        <div class="container-fluid px-3 px-lg-4">
+
+            <div class="dropdown me-3">
+                <button
+                    class="btn btn-warning text-white fw-bold px-3 py-2 dropdown-toggle d-flex align-items-center gap-2 rounded-2"
+                    type="button" data-bs-toggle="dropdown">
+                    <i class="bi bi-grid-fill"></i> Shop By Categories
+                </button>
+                <ul class="dropdown-menu shadow border-0 mt-2">
+                    <li><a class="dropdown-item py-2" href="#">Computers & Laptops</a></li>
+                    <li><a class="dropdown-item py-2" href="#">Smartphones & Tablets</a></li>
+                    <li><a class="dropdown-item py-2" href="#">TV & Audio</a></li>
+                    <li><a class="dropdown-item py-2" href="#">Gadgets & Electronics</a></li>
+                </ul>
+            </div>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainMenu">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-lg-2 fw-semibold">
+
+                    <li class="nav-item dropdown">
+                        <!-- 🔴 تعديل: جعل الرابط الرئيسي يوجه لـ index.html -->
+                        <a class="nav-link dropdown-toggle text-dark" href="index.html"
+                            data-bs-toggle="dropdown">Home</a>
+                        <ul class="dropdown-menu shadow border-0">
+                            <li><a class="dropdown-item" href="index.html">Homepage - 1</a></li>
+                            <li><a class="dropdown-item" href="#">Homepage - 2</a></li>
+                            <li><a class="dropdown-item" href="#">Homepage - 3</a></li>
+                            <li><a class="dropdown-item" href="#">Homepage - 4</a></li>
+                            <li><a class="dropdown-item" href="#">Homepage - 5</a></li>
+                            <li><a class="dropdown-item" href="#">Homepage - 6</a></li>
+                            <li><a class="dropdown-item" href="#">Homepage - 7</a></li>
+                            <li><a class="dropdown-item" href="#">Homepage - 8</a></li>
+                            <li><a class="dropdown-item" href="#">Homepage - 9</a></li>
+                            <li><a class="dropdown-item" href="#">Homepage - 10</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-dark" href="#" data-bs-toggle="dropdown">Shop</a>
+                        <ul class="dropdown-menu shadow border-0">
+                            <li><a class="dropdown-item" href="#">Shop Grid</a></li>
+                            <li><a class="dropdown-item" href="#">Shop Grid 2</a></li>
+                            <li><a class="dropdown-item" href="#">Shop list - Left sidebar</a></li>
+                            <li><a class="dropdown-item" href="#">Shop list - Right sidebar</a></li>
+                            <li><a class="dropdown-item" href="#">Shop Fullwidth</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Single Product</a></li>
+                            <li><a class="dropdown-item" href="#">Single Product 2</a></li>
+                            <li><a class="dropdown-item" href="#">Single Product 3</a></li>
+                            <li><a class="dropdown-item" href="#">Single Product 4</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <!-- 🔴 تعديل: ربط روابط السلة بالشاشات الفعلية -->
+                            <li><a class="dropdown-item" href="shop-cart.html">Shop Cart</a></li>
+                            <li><a class="dropdown-item" href="#">Shop Checkout</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-dark" href="#" data-bs-toggle="dropdown">Vendors</a>
+                        <ul class="dropdown-menu shadow border-0">
+                            <li><a class="dropdown-item" href="#">Vendors Listing</a></li>
+                            <li><a class="dropdown-item" href="#">Vendor Single</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-dark" href="#" data-bs-toggle="dropdown">Pages</a>
+                        <ul class="dropdown-menu shadow border-0">
+                            <li><a class="dropdown-item" href="#">About Us</a></li>
+                            <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                            <li><a class="dropdown-item" href="#">Careers</a></li>
+                            <li><a class="dropdown-item" href="#">Term and Condition</a></li>
+                            <li><a class="dropdown-item" href="#">Register</a></li>
+                            <li><a class="dropdown-item" href="#">Login</a></li>
+                            <li><a class="dropdown-item" href="#">Error 404</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-dark" href="#" data-bs-toggle="dropdown">Blog</a>
+                        <ul class="dropdown-menu shadow border-0">
+                            <li><a class="dropdown-item" href="#">Blog - No Sidebar</a></li>
+                            <li><a class="dropdown-item" href="#">Blog - Right Sidebar</a></li>
+                            <li><a class="dropdown-item" href="#">Blog List</a></li>
+                            <li><a class="dropdown-item" href="#">Blog category big</a></li>
+                            <li><a class="dropdown-item" href="#">Blog Single - Left sidebar</a></li>
+                            <li><a class="dropdown-item" href="#">Blog Single - Right sidebar</a></li>
+                            <li><a class="dropdown-item" href="#">Blog Single - No sidebar</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">Contact Us</a>
+                    </li>
+
+                </ul>
+
+                <div class="d-flex align-items-center gap-2 text-danger fw-bold ms-auto">
+                    <i class="bi bi-percent fs-5"></i>
+                    <span>SPECIAL OFFER</span>
+                </div>
+
+            </div>
+        </div>
     </nav>
+
+
+
 
     <section class="py-4 bg-light">
         <div class="container-fluid px-3 px-lg-4">
@@ -609,7 +837,9 @@
                         <span class="badge bg-warning position-absolute top-0 start-0 m-2">-17%</span>
 
                         <div class="hover-actions">
-                            <a href="#" class="action-btn"><i class="bi bi-heart"></i></a>
+                            <!-- 🔴 تعديل: إضافة class="btn-add-wishlist" وتوجيه الرابط لـ shop-wishlist.html -->
+                            <a href="shop-wishlist.html" class="action-btn btn-add-wishlist"><i
+                                    class="bi bi-heart"></i></a>
                             <a href="#" class="action-btn"><i class="bi bi-arrow-repeat"></i></a>
                             <!-- <a href="#" class="action-btn"><i class="bi bi-eye"></i></a> -->
                             <a href="#" class="btn-icon" data-tooltip="Quick View" data-bs-toggle="modal"
@@ -647,7 +877,9 @@
                             <span class="text-muted text-decoration-line-through small">$3225.6</span>
                         </div>
 
-                        <a href="#" class="btn btn-light border btn-sm w-100 fw-bold mb-2">Add To
+                        <!-- 🔴 تعديل: إضافة class="btn-add-cart" وتوجيه الرابط لـ shop-cart.html -->
+                        <a href="shop-cart.html" class="btn btn-light border btn-sm w-100 fw-bold mb-2 btn-add-cart">Add
+                            To
                             Cart</a>
 
                         <div class="progress" style="height: 5px;">
@@ -666,7 +898,9 @@
                     <div class="product-card card p-2 bg-white border">
                         <span class="badge bg-warning position-absolute top-0 start-0 m-2">-17%</span>
                         <div class="hover-actions">
-                            <a href="#" class="action-btn"><i class="bi bi-heart"></i></a>
+                            <!-- 🔴 تعديل: إضافة class="btn-add-wishlist" وتوجيه الرابط لـ shop-wishlist.html -->
+                            <a href="shop-wishlist.html" class="action-btn btn-add-wishlist"><i
+                                    class="bi bi-heart"></i></a>
                             <a href="#" class="action-btn"><i class="bi bi-arrow-repeat"></i></a>
                             <a href="#" class="btn-icon" data-tooltip="Quick View" data-bs-toggle="modal"
                                 data-bs-target="#quickViewModal">
@@ -695,7 +929,9 @@
                             <span class="fw-bold text-primary fs-6">$2856.3</span>
                             <span class="text-muted text-decoration-line-through small">$3225.6</span>
                         </div>
-                        <a href="#" class="btn btn-light border btn-sm w-100 fw-bold mb-2">Add To
+                        <!-- 🔴 تعديل: إضافة class="btn-add-cart" وتوجيه الرابط لـ shop-cart.html -->
+                        <a href="shop-cart.html" class="btn btn-light border btn-sm w-100 fw-bold mb-2 btn-add-cart">Add
+                            To
                             Cart</a>
                         <div class="progress" style="height: 5px;">
                             <div class="progress-bar bg-warning" style="width: 45%;"></div>
@@ -712,7 +948,9 @@
                     <div class="product-card card p-2 bg-white border">
                         <span class="badge bg-warning position-absolute top-0 start-0 m-2">-17%</span>
                         <div class="hover-actions">
-                            <a href="#" class="action-btn"><i class="bi bi-heart"></i></a>
+                            <!-- 🔴 تعديل: إضافة class="btn-add-wishlist" وتوجيه الرابط لـ shop-wishlist.html -->
+                            <a href="shop-wishlist.html" class="action-btn btn-add-wishlist"><i
+                                    class="bi bi-heart"></i></a>
                             <a href="#" class="action-btn"><i class="bi bi-arrow-repeat"></i></a>
                             <a href="#" class="btn-icon" data-tooltip="Quick View" data-bs-toggle="modal"
                                 data-bs-target="#quickViewModal">
@@ -741,7 +979,9 @@
                             <span class="fw-bold text-primary fs-6">$2856.3</span>
                             <span class="text-muted text-decoration-line-through small">$3225.6</span>
                         </div>
-                        <a href="#" class="btn btn-light border btn-sm w-100 fw-bold mb-2">Add To
+                        <!-- 🔴 تعديل: إضافة class="btn-add-cart" وتوجيه الرابط لـ shop-cart.html -->
+                        <a href="shop-cart.html" class="btn btn-light border btn-sm w-100 fw-bold mb-2 btn-add-cart">Add
+                            To
                             Cart</a>
                         <div class="progress" style="height: 5px;">
                             <div class="progress-bar bg-warning" style="width: 45%;"></div>
@@ -758,7 +998,9 @@
                     <div class="product-card card p-2 bg-white border">
                         <span class="badge bg-warning position-absolute top-0 start-0 m-2">-17%</span>
                         <div class="hover-actions">
-                            <a href="#" class="action-btn"><i class="bi bi-heart"></i></a>
+                            <!-- 🔴 تعديل: إضافة class="btn-add-wishlist" وتوجيه الرابط لـ shop-wishlist.html -->
+                            <a href="shop-wishlist.html" class="action-btn btn-add-wishlist"><i
+                                    class="bi bi-heart"></i></a>
                             <a href="#" class="action-btn"><i class="bi bi-arrow-repeat"></i></a>
                             <a href="#" class="btn-icon" data-tooltip="Quick View" data-bs-toggle="modal"
                                 data-bs-target="#quickViewModal">
@@ -766,7 +1008,7 @@
                             </a>
                         </div>
                         <div class="text-center py-2">
-                            <img src="./imgs/screen-2.png " class="img-fluid overflow-hidden"
+                            <img src="./imgs/screen-2.png" class="img-fluid overflow-hidden"
                                 style="height: 100px; object-fit: contain;" alt="Product">
                         </div>
                         <div class="text-center my-1">
@@ -787,7 +1029,9 @@
                             <span class="fw-bold text-primary fs-6">$2856.3</span>
                             <span class="text-muted text-decoration-line-through small">$3225.6</span>
                         </div>
-                        <a href="#" class="btn btn-light border btn-sm w-100 fw-bold mb-2">Add To
+                        <!-- 🔴 تعديل: إضافة class="btn-add-cart" وتوجيه الرابط لـ shop-cart.html -->
+                        <a href="shop-cart.html" class="btn btn-light border btn-sm w-100 fw-bold mb-2 btn-add-cart">Add
+                            To
                             Cart</a>
                         <div class="progress" style="height: 5px;">
                             <div class="progress-bar bg-warning" style="width: 45%;"></div>
@@ -804,7 +1048,9 @@
                     <div class="product-card card p-2 bg-white border">
                         <span class="badge bg-warning position-absolute top-0 start-0 m-2">-17%</span>
                         <div class="hover-actions">
-                            <a href="#" class="action-btn"><i class="bi bi-heart"></i></a>
+                            <!-- 🔴 تعديل: إضافة class="btn-add-wishlist" وتوجيه الرابط لـ shop-wishlist.html -->
+                            <a href="shop-wishlist.html" class="action-btn btn-add-wishlist"><i
+                                    class="bi bi-heart"></i></a>
                             <a href="#" class="action-btn"><i class="bi bi-arrow-repeat"></i></a>
                             <a href="#" class="btn-icon" data-tooltip="Quick View" data-bs-toggle="modal"
                                 data-bs-target="#quickViewModal">
@@ -833,7 +1079,9 @@
                             <span class="fw-bold text-primary fs-6">$2856.3</span>
                             <span class="text-muted text-decoration-line-through small">$3225.6</span>
                         </div>
-                        <a href="#" class="btn btn-light border btn-sm w-100 fw-bold mb-2">Add To
+                        <!-- 🔴 تعديل: إضافة class="btn-add-cart" وتوجيه الرابط لـ shop-cart.html -->
+                        <a href="shop-cart.html" class="btn btn-light border btn-sm w-100 fw-bold mb-2 btn-add-cart">Add
+                            To
                             Cart</a>
                         <div class="progress" style="height: 5px;">
                             <div class="progress-bar bg-warning" style="width: 45%;"></div>
@@ -2871,6 +3119,7 @@
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
