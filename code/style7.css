@@ -1,0 +1,48 @@
+
+
+.category-image {
+    width: 110px;
+    height: 110px;
+    background-color: #f1f4f8;
+    border-radius: 50%;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.category-image img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.green-bg{
+    background-color: rgba(112, 181, 112, 0.23);
+    border-radius: 15px;
+}
+.yellow{
+     background-color: rgba(239, 183, 94, 0.23);
+    border-radius: 15px;
+}
+.blou{
+     background-color: rgba(94, 174, 239, 0.23);
+    border-radius: 15px;
+}
+
+.title{
+    color: rgba(52, 52, 116, 0.809);
+  font-family: "Sintony", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.a-hov{
+    display: inline-block;
+    transition: .2s;
+}
+.a-hov:hover{
+    color: rgb(255, 140, 0) !important;
+    transform: translateX(5px) ;
+}
