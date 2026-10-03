@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work with us</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <style>
+        /* لجعل التمرير سلس للأعلى بدون جافاسكريبت */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .page-title {
+            color: #2b3990;
+        }
+
+        .hero-img {
+            height: 380px;
+            object-fit: cover;
+        }
+
+        /* زر الصعود ثابت بدون جافاسكريبت */
+        .btn-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 40px;
+            height: 40px;
+            background: #2b3990;
+            z-index: 99;
+        }
+
+        .btn-top:hover {
+            background: #1e2765;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body id="top">
+
+
+    <header class="bg-dark text-white py-2">
+        <div class="container-fluid px-3 px-lg-4">
+            <div class="row align-items-center gy-2">
+
+                <div class="col-12 col-md-4 text-center text-md-start">
+                    <a href="#" class="text-white text-decoration-none me-2">About Us</a>
+                    <span class="opacity-50">|</span>
+                    <a href="#" class="text-white text-decoration-none mx-2">Careers</a>
+                    <span class="opacity-50">|</span>
+                    <a href="#" class="text-white text-decoration-none ms-2">Open a shop</a>
+                </div>
+
+                <div class="col-12 col-md-4 text-center">
+                    <span class="text-white-50">Free shipping for all orders over <strong
+                            class="text-info">$75.00</strong></span>
+                </div>
+
+                <div
+                    class="col-12 col-md-4 d-flex justify-content-center justify-content-md-end align-items-center gap-3">
+                    <span class="small">Need help? Call Us: <strong class="text-info">+1 1800 900</strong></span>
+
+                    <div class="dropdown">
+                        <button class="btn btn-link text-white text-decoration-none dropdown-toggle p-0 small"
+                            type="button" data-bs-toggle="dropdown">
+                            English
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end shadow border-0">
+                            <li><a class="dropdown-item" href="#">English</a></li>
+                            <li><a class="dropdown-item" href="#">العربية</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="dropdown">
+                        <button class="btn btn-link text-white text-decoration-none dropdown-toggle p-0 small"
+                            type="button" data-bs-toggle="dropdown">
+                            USD
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end shadow border-0">
+                            <li><a class="dropdown-item" href="#">USD</a></li>
+                            <li><a class="dropdown-item" href="#">EUR</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. قسم اللوجو والبحث والأيقونات -->
+    <div class="py-3 bg-white border-bottom">
+        <div class="container-fluid px-3 px-lg-4">
+            <div class="row align-items-center gy-3">
+
+                <div class="col-6 col-lg-2">
+                    <!-- 🔴 تعديل: ربط اللوجو بالصفحة الرئيسية index.html -->
+                    <a href="index.html" class="navbar-brand fw-bold fs-3 text-primary d-flex align-items-center gap-2">
+                        <i class="bi bi-robot text-info fs-2"></i> Ecom
+                    </a>
+                </div>
+
+                <div class="col-12 col-lg-7 order-3 order-lg-2">
+                    <div class="input-group border rounded-3 bg-light overflow-hidden">
+                        <button class="btn btn-light dropdown-toggle border-end text-muted px-3" type="button"
+                            data-bs-toggle="dropdown">
+                            All categories
+                        </button>
+                        <ul class="dropdown-menu shadow border-0">
+                            <li><a class="dropdown-item" href="#">Electronics</a></li>
+                            <li><a class="dropdown-item" href="#">Fashion</a></li>
+                            <li><a class="dropdown-item" href="#">Home & Garden</a></li>
+                        </ul>
+                        <input type="text" class="form-control bg-transparent border-0 px-3"
+                            placeholder="Search for items...">
+                        <button class="btn btn-white border-0 text-muted px-3" type="button">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </div>
+                </div>
+                <div
+                    class="col-6 col-lg-3 order-2 order-lg-3 d-flex align-items-center justify-content-end gap-3 gap-xl-4 small fw-semibold text-secondary">
+                    <a href="#" class="nav-link d-none d-xl-block">Flash Deals</a>
+                    <a href="#" class="nav-link d-none d-xl-block">Special</a>
+                    <a href="#" class="nav-link d-none d-xl-block">Top Sellers</a>
+
+                    <div class="d-flex align-items-center gap-3 ms-2">
+                        <a href="#" class="text-dark position-relative fs-4">
+                            <i class="bi bi-person"></i>
+                        </a>
+
+                        <!-- 🔴 تعديل: إضافة id="wishlist-count" وربطه برابط صفحة المفضلة shop-wishlist.html -->
+                        <a href="shop-wishlist.html" class="text-dark position-relative fs-4">
+                            <i class="bi bi-heart"></i>
+                            <span id="wishlist-count"
+                                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning text-white">0</span>
+                        </a>
+
+                        <!-- 🔴 تعديل: إضافة id="cart-count" وربطه برابط صفحة السلة shop-cart.html -->
+                        <a href="shop-cart.html" class="text-dark position-relative fs-4">
+                            <i class="bi bi-bag"></i>
+                            <span id="cart-count"
+                                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning text-white">0</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- 3. شريط التنقل الرئيسي والقوائم المنسدلة -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom py-2 sticky-top">
+        <div class="container-fluid px-3 px-lg-4">
+
+            <div class="dropdown me-3">
+                <button
+                    class="btn btn-warning text-white fw-bold px-3 py-2 dropdown-toggle d-flex align-items-center gap-2 rounded-2"
+                    type="button" data-bs-toggle="dropdown">
+                    <i class="bi bi-grid-fill"></i> Shop By Categories
+                </button>
+                <ul class="dropdown-menu shadow border-0 mt-2">
+                    <li><a class="dropdown-item py-2" href="#">Computers & Laptops</a></li>
+                    <li><a class="dropdown-item py-2" href="#">Smartphones & Tablets</a></li>
+                    <li><a class="dropdown-item py-2" href="#">TV & Audio</a></li>
+                    <li><a class="dropdown-item py-2" href="#">Gadgets & Electronics</a></li>
+                </ul>
+            </div>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainMenu">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-lg-2 fw-semibold">
+
+                    <li class="nav-item dropdown">
+                        <!-- 🔴 تعديل: جعل الرابط الرئيسي يوجه لـ index.html -->
+                        <a class="nav-link dropdown-toggle text-dark" href="index.html"
+                            data-bs-toggle="dropdown">Home</a>
+                        <ul class="dropdown-menu shadow border-0">
+                            <li><a class="dropdown-item" href="index.html">Homepage - 1</a></li>
+                            <li><a class="dropdown-item" href="#">Homepage - 2</a></li>
+                            <li><a class="dropdown-item" href="#">Homepage - 3</a></li>
+                            <li><a class="dropdown-item" href="#">Homepage - 4</a></li>
+                            <li><a class="dropdown-item" href="#">Homepage - 5</a></li>
+                            <li><a class="dropdown-item" href="#">Homepage - 6</a></li>
+                            <li><a class="dropdown-item" href="#">Homepage - 7</a></li>
+                            <li><a class="dropdown-item" href="#">Homepage - 8</a></li>
+                            <li><a class="dropdown-item" href="#">Homepage - 9</a></li>
+                            <li><a class="dropdown-item" href="#">Homepage - 10</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-dark" href="#" data-bs-toggle="dropdown">Shop</a>
+                        <ul class="dropdown-menu shadow border-0">
+                            <li><a class="dropdown-item" href="#">Shop Grid</a></li>
+                            <li><a class="dropdown-item" href="#">Shop Grid 2</a></li>
+                            <li><a class="dropdown-item" href="#">Shop list - Left sidebar</a></li>
+                            <li><a class="dropdown-item" href="#">Shop list - Right sidebar</a></li>
+                            <li><a class="dropdown-item" href="#">Shop Fullwidth</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Single Product</a></li>
+                            <li><a class="dropdown-item" href="#">Single Product 2</a></li>
+                            <li><a class="dropdown-item" href="#">Single Product 3</a></li>
+                            <li><a class="dropdown-item" href="#">Single Product 4</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <!-- 🔴 تعديل: ربط روابط السلة بالشاشات الفعلية -->
+                            <li><a class="dropdown-item" href="shop-cart.html">Shop Cart</a></li>
+                            <li><a class="dropdown-item" href="#">Shop Checkout</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-dark" href="#" data-bs-toggle="dropdown">Vendors</a>
+                        <ul class="dropdown-menu shadow border-0">
+                            <li><a class="dropdown-item" href="#">Vendors Listing</a></li>
+                            <li><a class="dropdown-item" href="#">Vendor Single</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-dark" href="#" data-bs-toggle="dropdown">Pages</a>
+                        <ul class="dropdown-menu shadow border-0">
+                            <li><a class="dropdown-item" href="#">About Us</a></li>
+                            <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                            <li><a class="dropdown-item" href="#">Careers</a></li>
+                            <li><a class="dropdown-item" href="#">Term and Condition</a></li>
+                            <li><a class="dropdown-item" href="#">Register</a></li>
+                            <li><a class="dropdown-item" href="#">Login</a></li>
+                            <li><a class="dropdown-item" href="#">Error 404</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-dark" href="#" data-bs-toggle="dropdown">Blog</a>
+                        <ul class="dropdown-menu shadow border-0">
+                            <li><a class="dropdown-item" href="#">Blog - No Sidebar</a></li>
+                            <li><a class="dropdown-item" href="#">Blog - Right Sidebar</a></li>
+                            <li><a class="dropdown-item" href="#">Blog List</a></li>
+                            <li><a class="dropdown-item" href="#">Blog category big</a></li>
+                            <li><a class="dropdown-item" href="#">Blog Single - Left sidebar</a></li>
+                            <li><a class="dropdown-item" href="#">Blog Single - Right sidebar</a></li>
+                            <li><a class="dropdown-item" href="#">Blog Single - No sidebar</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">Contact Us</a>
+                    </li>
+
+                </ul>
+
+                <div class="d-flex align-items-center gap-2 text-danger fw-bold ms-auto">
+                    <i class="bi bi-percent fs-5"></i>
+                    <span>SPECIAL OFFER</span>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="container py-4 col-lg-9">
+        <!-- العنوان -->
+        <h1 class="text-center page-title fw-bold mb-4 display-6">Work with us</h1>
+
+        <!-- الصورة الرئيسية -->
+        <div class="mb-4">
+            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80"
+                alt="Team" class="w-100 rounded hero-img shadow-sm">
+        </div>
+
+        <!-- مقدمة -->
+        <p class="fw-semibold text-dark mb-4">
+            We recognize that poverty has no borders. Neither does excellence. We are continually in search of the
+            brightest, most talented individuals from around the globe.
+        </p>
+
+        <!-- قسم 1 -->
+        <h3 class="fw-bold text-dark h5 mt-4 mb-3">Programs and Internships</h3>
+        <p class="text-secondary mb-3">
+            But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I
+            will give you a complete account of the system, and expound the actual teachings of the great explorer of
+            the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself,
+            because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter
+            consequences that are extremely painful.
+        </p>
+        <p class="text-secondary mb-4">
+            To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some
+            advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has
+            no annoying consequences, or one who avoids a pain that produces no resultant pleasure?
+        </p>
+
+        <!-- قسم 2 -->
+        <h3 class="fw-bold text-dark h5 mt-4 mb-3">Current Openings</h3>
+        <p class="text-secondary mb-3">
+            These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is
+            untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be
+            welcomed and every pain avoided.
+        </p>
+        <p class="text-secondary mb-4">
+            But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I
+            will give you a complete account of the system.
+        </p>
+
+        <!-- قسم 3 -->
+        <h3 class="fw-bold text-dark h5 mt-4 mb-3">Behind the Mission</h3>
+        <p class="text-secondary mb-3">
+            These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is
+            untrammelled and when nothing prevents our being able to do what we like best.
+        </p>
+        <p class="text-secondary mb-3">
+            To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some
+            advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure.
+        </p>
+    </div>
+    <!-- زر الصعود للأعلى (يعمل برابط HTML مباشر id="top") -->
+    <a href="#top"
+        class="btn-top rounded-circle text-white d-flex align-items-center justify-content-center text-decoration-none">
+        <i class="bi bi-arrow-up"></i>
+    </a>
+    <section class="py-4 bg-light border-bottom">
+        <div class="container">
+            <div class="row g-3 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5">
+
+                <!-- Feature 1: Free Delivery -->
+                <div class="col">
+                    <div class="d-flex align-items-center gap-3 p-3 bg-white rounded border h-100">
+                        <div class="flex-shrink-0 d-flex align-items-center justify-content-center bg-primary-subtle text-primary rounded-circle"
+                            style="width: 48px; height: 48px;">
+                            <i class="bi bi-truck fs-4"></i>
+                        </div>
+                        <div>
+                            <h6 class="fw-bold mb-1 fs-7 text-dark">Free Delivery</h6>
+                            <p class="text-muted mb-0 fs-8">From all orders over $10</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature 2: Support 24/7 -->
+                <div class="col">
+                    <div class="d-flex align-items-center gap-3 p-3 bg-white rounded border h-100">
+                        <div class="flex-shrink-0 d-flex align-items-center justify-content-center bg-primary-subtle text-primary rounded-circle"
+                            style="width: 48px; height: 48px;">
+                            <i class="bi bi-headset fs-4"></i>
+                        </div>
+                        <div>
+                            <h6 class="fw-bold mb-1 fs-7 text-dark">Support 24/7</h6>
+                            <p class="text-muted mb-0 fs-8">Shop with an expert</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature 3: Gift Voucher -->
+                <div class="col">
+                    <div class="d-flex align-items-center gap-3 p-3 bg-white rounded border h-100">
+                        <div class="flex-shrink-0 d-flex align-items-center justify-content-center bg-primary-subtle text-primary rounded-circle"
+                            style="width: 48px; height: 48px;">
+                            <i class="bi bi-gift fs-4"></i>
+                        </div>
+                        <div>
+                            <h6 class="fw-bold mb-1 fs-7 text-dark">Gift voucher</h6>
+                            <p class="text-muted mb-0 fs-8">Refer a friend</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature 4: Return & Refund -->
+                <div class="col">
+                    <div class="d-flex align-items-center gap-3 p-3 bg-white rounded border h-100">
+                        <div class="flex-shrink-0 d-flex align-items-center justify-content-center bg-primary-subtle text-primary rounded-circle"
+                            style="width: 48px; height: 48px;">
+                            <i class="bi bi-arrow-counterclockwise fs-4"></i>
+                        </div>
+                        <div>
+                            <h6 class="fw-bold mb-1 fs-7 text-dark">Return & Refund</h6>
+                            <p class="text-muted mb-0 fs-8">Free return over $200</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature 5: Secure Payment -->
+                <div class="col">
+                    <div class="d-flex align-items-center gap-3 p-3 bg-white rounded border h-100">
+                        <div class="flex-shrink-0 d-flex align-items-center justify-content-center bg-primary-subtle text-primary rounded-circle"
+                            style="width: 48px; height: 48px;">
+                            <i class="bi bi-shield-check fs-4"></i>
+                        </div>
+                        <div>
+                            <h6 class="fw-bold mb-1 fs-7 text-dark">Secure payment</h6>
+                            <p class="text-muted mb-0 fs-8">100% Protected</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-4">
+        <div class="container">
+            <div class="card border-0 rounded-4 overflow-hidden text-white" style="background-color: #1a4d8c;">
+                <div class="card-body p-4 p-lg-5">
+                    <div class="row align-items-center g-4">
+
+                        <!-- النص والعنوان جهة اليسار -->
+                        <div class="col-12 col-lg-6">
+                            <h3 class="fw-bold mb-2 fs-2">
+                                Subscribe & Get <span class="text-warning">10% Discount</span>
+                            </h3>
+                            <p class="mb-0 text-white-50 fs-6">
+                                Get E-mail updates about our latest shop and special offers.
+                            </p>
+                        </div>
+
+                        <!-- حقل الإدخال والصورة جهة اليمين -->
+                        <div class="col-12 col-lg-6">
+                            <div class="row align-items-center g-3">
+
+                                <!-- حقل البريد الإلكتروني والزر (فوق الصورة/بجانبها) -->
+                                <div class="col-12 col-sm-8 col-lg-7">
+                                    <div class="input-group">
+                                        <input type="email" class="form-control border-0 py-2 px-3 fs-7"
+                                            placeholder="Your email Address" aria-label="Your email Address">
+                                        <button class="btn btn-warning text-white fw-semibold px-4 py-2 fs-7"
+                                            type="button">Sign Up</button>
+                                    </div>
+                                </div>
+
+                                <!-- صورة المنتجات الإضافية جهة اليمين -->
+                                <div class="col-12 col-sm-4 col-lg-5 text-center text-sm-end">
+                                    <img src="./imgs/iphone-12.png" alt="Gadgets & Devices" class="img-fluid"
+                                        style="max-height: 120px; object-fit: contain;">
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="bg-light pt-5 pb-4 text-dark border-top fs-7">
+        <div class="container">
+            <div class="row g-4">
+
+                <!-- Column 1: Contact -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h5 class="fw-bold mb-3 fs-6">Contact</h5>
+                    <p class="mb-2"><strong class="text-dark">Address:</strong> <span class="text-muted">502 New
+                            Design Str, Melbourne, San Francisco, CA 94110, United States</span></p>
+                    <p class="mb-2"><strong class="text-dark">Phone:</strong> <span class="text-muted">(+01)
+                            123-456-789</span></p>
+                    <p class="mb-2"><strong class="text-dark">E-mail:</strong> <span
+                            class="text-muted">contact@ecom-market.com</span></p>
+                    <p class="mb-3"><strong class="text-dark">Hours:</strong> <span class="text-muted">8:00 - 17:00,
+                            Mon - Sat</span></p>
+
+                    <!-- Social Icons -->
+                    <div class="d-flex gap-2">
+                        <a href="#"
+                            class="btn btn-sm btn-outline-secondary rounded-circle d-flex align-items-center justify-content-center p-0"
+                            style="width: 32px; height: 32px;"><i class="bi bi-facebook"></i></a>
+                        <a href="#"
+                            class="btn btn-sm btn-outline-secondary rounded-circle d-flex align-items-center justify-content-center p-0"
+                            style="width: 32px; height: 32px;"><i class="bi bi-pinterest"></i></a>
+                        <a href="#"
+                            class="btn btn-sm btn-outline-secondary rounded-circle d-flex align-items-center justify-content-center p-0"
+                            style="width: 32px; height: 32px;"><i class="bi bi-twitter"></i></a>
+                        <a href="#"
+                            class="btn btn-sm btn-outline-secondary rounded-circle d-flex align-items-center justify-content-center p-0"
+                            style="width: 32px; height: 32px;"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <!-- Column 2: Make Money with Us -->
+                <div class="col-6 col-md-3 col-lg-2">
+                    <h5 class="fw-bold mb-3 fs-6">Make Money with Us</h5>
+                    <ul class="list-unstyled d-flex flex-column gap-2 text-muted mb-0">
+                        <li><a href="#" class="text-decoration-none text-muted">› Mission & Vision</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">› Our Team</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">› Careers</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">› Press & Media</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">› Advertising</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">› Testimonials</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Company -->
+                <div class="col-6 col-md-3 col-lg-2">
+                    <h5 class="fw-bold mb-3 fs-6">Company</h5>
+                    <ul class="list-unstyled d-flex flex-column gap-2 text-muted mb-0">
+                        <li><a href="#" class="text-decoration-none text-muted">› Our Blog</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">› Plans & Pricing</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">› Knowledge Base</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">› Cookie Policy</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">› Office Center</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">› News & Events</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: My account -->
+                <div class="col-6 col-md-3 col-lg-2">
+                    <h5 class="fw-bold mb-3 fs-6">My account</h5>
+                    <ul class="list-unstyled d-flex flex-column gap-2 text-muted mb-0">
+                        <li><a href="#" class="text-decoration-none text-muted">› FAQs</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">› Editor Help</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">› Community</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">› Live Chatting</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">› Contact Us</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">› Support Center</a></li>
+                    </ul>
+                </div>
+                <!-- Column 5: App & Payment -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h5 class="fw-bold mb-3 fs-6">App & Payment</h5>
+                    <p class="text-muted mb-3 fs-7">Download our Apps and get extra 15% Discount on your first
+                        Order...!</p>
+
+                    <!-- App Badges -->
+                    <div class="d-flex flex-wrap gap-2 mb-4">
+                        <a href="#"><img src="./imgs/appstore.png" alt="App Store"
+                                class="bg-secondary-subtle rounded border"
+                                style="width: 120px; height: 38px; object-fit: contain;"></a>
+                        <a href="#"><img src="./imgs/google-play.png" alt="Google Play"
+                                class="bg-secondary-subtle rounded border"
+                                style="width: 120px; height: 38px; object-fit: contain;"></a>
+                    </div>
+
+                    <p class="text-muted mb-2 fs-7">Secured Payment Gateways</p>
+
+                    <!-- Payment Gateways -->
+                    <div class="d-flex align-items-center gap-2">
+                        <img src="./imgs/toshiba.svg" alt="" class="bg-secondary-subtle rounded border"
+                            style="width: 40px; height: 26px; object-fit: contain;">
+                        <img src="./imgs/microsoft.svg" alt="" class="bg-secondary-subtle rounded border"
+                            style="width: 40px; height: 26px; object-fit: contain;">
+                        <img src="./imgs/acer.svg" alt="" class="bg-secondary-subtle rounded border"
+                            style="width: 40px; height: 26px; object-fit: contain;">
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <div class="bg-light border-top py-4 fs-7 text-muted">
+        <div class="container">
+
+            <!-- Top Row: Logo & Main Domain Links -->
+            <div class="d-flex flex-wrap align-items-center gap-3 mb-3">
+                <!-- Logo Image -->
+                <a href="#"><img src="./imgs/logo-2.svg" alt="Ecom Logo" style="height: 30px; object-fit: contain;"></a>
+
+                <div class="d-flex flex-wrap align-items-center gap-2 text-secondary">
+                    <a href="#" class="text-decoration-none text-muted">EcomMarket.com</a>
+                    <span>|</span>
+                    <a href="#" class="text-decoration-none text-muted">Ecom Partners</a>
+                    <span>|</span>
+                    <a href="#" class="text-decoration-none text-muted">Ecom Business</a>
+                    <span>|</span>
+                    <a href="#" class="text-decoration-none text-muted">Ecom Factory</a>
+                </div>
+            </div>
+
+            <!-- Category Links: Electronic -->
+            <div class="mb-2">
+                <strong class="text-dark">Electronic:</strong>
+                <a href="#" class="text-decoration-none text-muted ms-1">Cell Phones</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Headphones</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Television & Video</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Game Controller</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Apple Watch</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">HTC</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Ipad</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Keyboard</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Samsung</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Wireless Speaker</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Samsung Galaxy</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Gaming Mouse</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">eBook Readers</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Service Plans</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Home Audio</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Office Electronics</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Lenovo</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Macbook Pro M1</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">HD Videos Player</a>
+            </div>
+
+            <!-- Category Links: Furniture -->
+            <div class="mb-4">
+                <strong class="text-dark">Furniture:</strong>
+                <a href="#" class="text-decoration-none text-muted ms-1">Sofa</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Chair</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Dining Table</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Living Room</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Table Lamp</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Night Stand</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Computer Desk</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Bar Table</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Pillow</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Radio</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Clock</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Bad Room</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Stool</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Television</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Wardrobe</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Living Room Tables</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Dressers</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Patio Sofas</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Nursery</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Kitchen</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Accent Furniture</a> |
+                <a href="#" class="text-decoration-none text-muted ms-1">Replacement Parts</a>
+            </div>
+
+            <hr class="my-3 text-secondary opacity-25">
+
+            <!-- Bottom Copyright & Policies -->
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+                <p class="mb-0">Copyright © 2022 Ecom Market. All rights reserved.</p>
+
+                <div class="d-flex align-items-center gap-3">
+                    <a href="#" class="text-decoration-none text-muted">Conditions of Use</a>
+                    <a href="#" class="text-decoration-none text-muted">Privacy Notice</a>
+                    <a href="#" class="text-decoration-none text-muted">Interest-Based Ads</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

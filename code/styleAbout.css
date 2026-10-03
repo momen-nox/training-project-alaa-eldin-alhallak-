@@ -1,0 +1,144 @@
+/* إزاحة الصفحة للجانب لترك مساحة للشريط الثابت */
+body {
+    padding-left: 55px;
+}
+
+/* الشريط الجانبي الثابت بطول الصفحة كاملة */
+.sidebar-categories {
+    width: 55px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background: #fff;
+    border-right: 1px solid #dee2e6;
+    z-index: 1040;
+}
+
+/* ظهور القائمة الفرعية عند تمرير الماوس Hover */
+.sidebar-item {
+    position: relative;
+}
+
+.sidebar-popup {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 55px;
+    width: 220px;
+    background: #fff;
+    border: 1px solid #dee2e6;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 0 6px 6px 0;
+    z-index: 1050;
+}
+
+.sidebar-item:hover .sidebar-popup {
+    display: block;
+}
+
+/* فتح القوائم المنسدلة العلوية عند Hover */
+@media (min-width: 992px) {
+    .navbar .dropdown:hover .dropdown-menu {
+        display: block;
+        margin-top: 0;
+    }
+}
+
+/* تحسين شكل الصورة وانحنائها لتطابق التصميم */
+.img-fluid {
+    border-radius: 12px;
+}
+
+/* محاذاة الأيقونات مع النصوص */
+.bi-check-square-fill {
+    color: #2563eb !important;
+}
+
+/* لون الخلفية الرمادي الفاتح المائل للتصميم وحجم الخط */
+.stats-box {
+    background-color: #e9ecef !important;
+    /* لون رمادي خفيف مطابق للصورة */
+}
+
+.stats-box h3 {
+    color: #1a253f !important;
+    font-size: 1.5rem;
+}
+
+.stats-box p {
+    color: #6c757d;
+    line-height: 1.5;
+}
+
+/* ضبط تناسق صور الفريق وتوحيد أطوالها */
+.team-img-wrapper img {
+    height: 280px;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* تحسين الألوان وتأثير حركي خفيف عند التأشير */
+.team-card {
+    transition: transform 0.2s ease-in-out;
+}
+
+.team-card:hover {
+    transform: translateY(-4px);
+}
+
+/* تنسيق شعارات الشركات لتطابق اللون الرمادي للتصميم */
+.partner-logos .brand-logo {
+    color: #8c93a1 !important;
+    font-family: Arial, sans-serif;
+    letter-spacing: 1px;
+    opacity: 0.7;
+    transition: opacity 0.2s ease-in-out, color 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+/* تأثير التمرير Hover لتوضيح الشعار */
+.partner-logos .col:hover .brand-logo {
+    opacity: 1;
+    color: #1a253f !important;
+}
+
+/* استبدال النص بصورة للشعارات إذا كنتِ تملكين صوراً جاهزة */
+.partner-logos img {
+    max-width: 130px;
+    filter: grayscale(100%);
+    opacity: 0.6;
+    transition: all 0.3s ease;
+}
+
+.partner-logos img:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
+/* تنسيق الألوان وارتفاع السطر للنصوص */
+.location-card h5 {
+    color: #1a253f !important;
+    font-size: 1.15rem;
+}
+
+.location-card p {
+    color: #6c757d;
+    line-height: 1.6;
+    font-size: 0.9rem;
+}
+
+/* تنسيق بسيط لعناصر التواصل */
+.contact-card i {
+    color: #1a253f !important;
+}
+
+.contact-card h5 {
+    color: #1a253f !important;
+}
+
+.contact-card p,
+.contact-card a {
+    font-size: 0.875rem;
+    line-height: 1.5;
+}

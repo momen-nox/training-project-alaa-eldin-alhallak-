@@ -1,0 +1,69 @@
+/* حقول إدخال ناعمة وبسيطة */
+.custom-input {
+    border-radius: 10px;
+    padding: 10px 14px;
+    background-color: #f8fafc;
+}
+
+/* زر بسيط وأنيق */
+.btn-cute {
+    background-color: #2563eb;
+    color: #fff;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+.btn-cute:hover {
+    background-color: #1d4ed8;
+    color: #fff;
+}
+
+/* ضبط ألوان وتناسق النصوص */
+.btn-primary {
+    background-color: #2b569a;
+    border-color: #2b569a;
+}
+
+.btn-primary:hover {
+    background-color: #1d3c6e;
+    border-color: #1d3c6e;
+}
+
+/* ضبط المسافة بين أسطر العنوان والعنوان الجغرافي */
+section p {
+    line-height: 1.5;
+}
+
+/* ضبط المسافات وألوان النصوص */
+section a {
+    color: #555 !important;
+}
+
+section a:hover {
+    color: #000 !important;
+}
+
+
+
+/* لون الخلفية المماثل للتصميم */
+.custom-contact-bg {
+    background-color: #f3f4f6;
+}
+
+/* تكبير الأيقونات وضبط لونها */
+.contact-icon {
+    font-size: 2.5rem;
+    /* حجم كبير وواضح */
+    color: #1a253f;
+    display: inline-block;
+}
+
+/* ضبط روابط البريد والهاتف */
+.custom-contact-bg a {
+    color: #4b5563 !important;
+}
+
+.custom-contact-bg a:hover {
+    color: #111827 !important;
+}
