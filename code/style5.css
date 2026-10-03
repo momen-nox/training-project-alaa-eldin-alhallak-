@@ -1,0 +1,128 @@
+body{
+    color:  midnightblue;
+}
+
+.hero{
+    background: url(./photo_2026-09-29_15-17-54.jpg) center/cover no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: midnightblue; 
+   
+}
+
+.hero::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+    z-index: 0;
+}
+
+.hero * {
+    position: relative;
+    z-index: 1;
+}
+
+.btn{
+    background-color: midnightblue;
+    border: solid 2px;
+    color: white;
+}
+
+.img{
+    width: 50px;
+    height: 50px;
+}
+a{
+    color: midnightblue;
+    font-size: 14px;
+}
+.imgs{
+    width: 150px;
+    height: 150px;
+}
+.text{
+    font-size: 12px;
+    color: slategrey;
+}
+
+.product-box {
+  position: relative;
+}
+
+.product-icons {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.product-icons i {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.product-box:hover .product-icons {
+  opacity: 1;
+}
+
+.row1{
+    background-color: antiquewhite;
+}
+.product-box:hover{
+    transform: scale(1.03);
+}
+
+.row2{
+    background-color: goldenrod;
+}
+
+.card1{
+    background-color: paleturquoise;
+}
+
+.card2{
+    background-color: lightblue;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+   background-color: black;
+}
+
+.small-stars i{
+    font-size: 12px;
+}
+.game1{
+    background-color: lightblue;
+    color: white;
+}
+
+.game2{
+    background-color: antiquewhite;
+     color: white;
+}
+
+.game3{
+    background-color: plum;
+     color: white;
+}
+
+.row3{
+    background-color: midnightblue;
+    color: white;
+}
+
+
