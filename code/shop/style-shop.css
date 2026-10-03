@@ -54,3 +54,16 @@
     color: white;
     font-size: 22px;
 }
+
+.green-bg{
+    background-color: rgba(112, 181, 112, 0.23);
+    border-radius: 15px;
+}
+.yellow{
+     background-color: rgba(239, 183, 94, 0.23);
+    border-radius: 15px;
+}
+.blou{
+     background-color: rgba(94, 174, 239, 0.23);
+    border-radius: 15px;
+}
