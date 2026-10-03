@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecom - Shope Card Layout</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Tabler Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.19.0/dist/tabler-icons.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap" rel="stylesheet">
+    
+    <!-- ملف التنسيقات -->
+    <link rel="stylesheet" href="./style-shope card.css">
+</head>
+<body class="bg-light">
+
+    <!-- ======================================================= -->
+    <!-- 1. الشريط الجانبي الثابت -->
+    <!-- ======================================================= -->
+    <div class="bg-white border-end d-flex flex-column align-items-center py-3 position-fixed top-0 start-0 vh-100 overflow-auto" style="width: 75px; z-index: 1040;">
+        
+        <button class="btn btn-primary p-2 mb-4" type="button" data-bs-toggle="offcanvas" data-bs-target="#fullSidebar" aria-controls="fullSidebar">
+            <i class="bi bi-grid-3x3-gap-fill"></i>
+        </button>
+        
+        <div class="d-flex flex-column gap-2 w-100 align-items-center">
+            <div class="dropdown dropend w-100 text-center">
+                <a href="#" class="btn btn-light p-2 w-75" data-bs-toggle="dropdown"><i class="bi bi-display fs-5 text-secondary"></i></a>
+                <ul class="dropdown-menu shadow-sm border-0">
+                    <li><h6 class="dropdown-header fw-bold text-primary">Computers</h6></li>
+                    <li><a class="dropdown-item" href="#">Computer Cases</a></li>
+                    <li><a class="dropdown-item" href="#">Laptop</a></li>
+                    <li><a class="dropdown-item" href="#">HDD</a></li>
+                    <li><a class="dropdown-item" href="#">RAM</a></li>
+                </ul>
+            </div>
+            <div class="dropdown dropend w-100 text-center">
+                <a href="#" class="btn btn-light p-2 w-75" data-bs-toggle="dropdown"><i class="bi bi-phone fs-5 text-secondary"></i></a>
+                <ul class="dropdown-menu shadow-sm border-0">
+                    <li><h6 class="dropdown-header fw-bold text-primary">Cell Phones</h6></li>
+                    <li><a class="dropdown-item" href="#">Phone Cases</a></li>
+                    <li><a class="dropdown-item" href="#">iPhone</a></li>
+                    <li><a class="dropdown-item" href="#">Samsung Galaxy</a></li>
+                </ul>
+            </div>
+            <div class="dropdown dropend w-100 text-center">
+                <a href="#" class="btn btn-light p-2 w-75" data-bs-toggle="dropdown"><i class="bi bi-joystick fs-5 text-secondary"></i></a>
+                <ul class="dropdown-menu shadow-sm border-0">
+                    <li><h6 class="dropdown-header fw-bold text-primary">Gaming</h6></li>
+                    <li><a class="dropdown-item" href="#">Consoles</a></li>
+                    <li><a class="dropdown-item" href="#">Controllers</a></li>
+                </ul>
+            </div>
+            <div class="dropdown dropend w-100 text-center">
+                <a href="#" class="btn btn-light p-2 w-75" data-bs-toggle="dropdown"><i class="bi bi-smartwatch fs-5 text-secondary"></i></a>
+                <ul class="dropdown-menu shadow-sm border-0">
+                    <li><h6 class="dropdown-header fw-bold text-primary">Smart Watches</h6></li>
+                    <li><a class="dropdown-item" href="#">Apple Watch</a></li>
+                    <li><a class="dropdown-item" href="#">Samsung Watch</a></li>
+                </ul>
+            </div>
+            <div class="dropdown dropend w-100 text-center">
+                <a href="#" class="btn btn-light p-2 w-75" data-bs-toggle="dropdown"><i class="bi bi-headphones fs-5 text-secondary"></i></a>
+                <ul class="dropdown-menu shadow-sm border-0">
+                    <li><h6 class="dropdown-header fw-bold text-primary">Headphones</h6></li>
+                    <li><a class="dropdown-item" href="#">Wired</a></li>
+                    <li><a class="dropdown-item" href="#">Wireless</a></li>
+                </ul>
+            </div>
+            <div class="dropdown dropend w-100 text-center">
+                <a href="#" class="btn btn-light p-2 w-75" data-bs-toggle="dropdown"><i class="bi bi-mouse fs-5 text-secondary"></i></a>
+                <ul class="dropdown-menu shadow-sm border-0">
+                    <li><h6 class="dropdown-header fw-bold text-primary">Accessories</h6></li>
+                    <li><a class="dropdown-item" href="#">Mice</a></li>
+                    <li><a class="dropdown-item" href="#">Keyboards</a></li>
+                </ul>
+            </div>
+            <div class="dropdown dropend w-100 text-center">
+                <a href="#" class="btn btn-light p-2 w-75" data-bs-toggle="dropdown"><i class="bi bi-bluetooth fs-5 text-secondary"></i></a>
+                <ul class="dropdown-menu shadow-sm border-0">
+                    <li><h6 class="dropdown-header fw-bold text-primary">Bluetooth</h6></li>
+                    <li><a class="dropdown-item" href="#">Speakers</a></li>
+                    <li><a class="dropdown-item" href="#">Earbuds</a></li>
+                </ul>
+            </div>
+            <div class="dropdown dropend w-100 text-center">
+                <a href="#" class="btn btn-light p-2 w-75" data-bs-toggle="dropdown"><i class="bi bi-cloud fs-5 text-secondary"></i></a>
+                <ul class="dropdown-menu shadow-sm border-0">
+                    <li><h6 class="dropdown-header fw-bold text-primary">Software</h6></li>
+                    <li><a class="dropdown-item" href="#">Antivirus</a></li>
+                    <li><a class="dropdown-item" href="#">Office</a></li>
+                </ul>
+            </div>
+            <div class="dropdown dropend w-100 text-center">
+                <a href="#" class="btn btn-light p-2 w-75" data-bs-toggle="dropdown"><i class="bi bi-plug fs-5 text-secondary"></i></a>
+                <ul class="dropdown-menu shadow-sm border-0">
+                    <li><h6 class="dropdown-header fw-bold text-primary">Cables</h6></li>
+                    <li><a class="dropdown-item" href="#">Cables</a></li>
+                    <li><a class="dropdown-item" href="#">Adapters</a></li>
+                </ul>
+            </div>
+            <div class="dropdown dropend w-100 text-center">
+                <a href="#" class="btn btn-light p-2 w-75" data-bs-toggle="dropdown"><i class="bi bi-cpu fs-5 text-secondary"></i></a>
+                <ul class="dropdown-menu shadow-sm border-0">
+                    <li><h6 class="dropdown-header fw-bold text-primary">Hardware</h6></li>
+                    <li><a class="dropdown-item" href="#">CPUs</a></li>
+                    <li><a class="dropdown-item" href="#">Motherboards</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================================- 2. المحتوى الرئيسي ======================================================= -->
+    <div style="margin-left: 75px;">
+        
+        <!-- الشريط العلوي -->
+        <div class="bg-light py-2 border-bottom d-none d-lg-block">
+            <div class="container-fluid d-flex justify-content-between align-items-center px-4">
+                <div class="d-flex gap-3">
+                    <a href="#" class="text-secondary text-decoration-none small">About Us</a>
+                    <span class="text-muted">|</span>
+                    <a href="#" class="text-secondary text-decoration-none small">Careers</a>
+                    <span class="text-muted">|</span>
+                    <a href="#" class="text-secondary text-decoration-none small">Open a shop</a>
+                </div>
+                <div class="fw-bold text-success small">Free shipping for all orders over $75.00</div>
+                <div class="d-flex gap-4 align-items-center">
+                    <span class="text-secondary small">Need help? Call Us: <a href="#" class="text-success fw-bold text-decoration-none">+1800 900</a></span>
+                    <div class="dropdown">
+                        <a class="text-secondary text-decoration-none dropdown-toggle small" href="#" role="button" data-bs-toggle="dropdown">🇬🇧 English</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">English</a></li>
+                            <li><a class="dropdown-item" href="#">العربية</a></li>
+                            <li><a class="dropdown-item" href="#">Français</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <a class="text-secondary text-decoration-none dropdown-toggle small" href="#" role="button" data-bs-toggle="dropdown">USD</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">USD</a></li>
+                            <li><a class="dropdown-item" href="#">EUR</a></li>
+                            <li><a class="dropdown-item" href="#">SGP</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- النافبار الرئيسي -->
+        <nav class="navbar navbar-expand-lg bg-white shadow-sm py-3 px-4">
+            <div class="container-fluid">
+                
+                <a class="navbar-brand d-flex align-items-center fw-bold text-primary fs-3 me-3" href="#">
+                    <i class="bi bi-robot me-2"></i> Ecom<sup class="text-muted fs-6">®</sup>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="mainNavbar">
+                    
+                    <form class="d-flex my-3 my-lg-0 me-lg-4" style="width: 100%; max-width: 400px;">
+                        <div class="input-group">
+                            <select class="form-select bg-light border-end-0" style="max-width: 140px; font-size: 0.9rem;">
+                                <option>All categories</option>
+                                <option>Electronics</option>
+                                <option>Fashion</option>
+                                <option>Gaming</option>
+                            </select>
+                            <input type="text" class="form-control bg-light border-start-0 border-end-0" placeholder="Search for items">
+                            <button class="btn btn-light border" type="submit">
+                                <i class="bi bi-search text-secondary"></i>
+                            </button>
+                        </div>
+                    </form>
+
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 fw-medium">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Home</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Homepage-1</a></li>
+                                <li><a class="dropdown-item" href="#">Homepage-2</a></li>
+                                <li><a class="dropdown-item" href="#">Homepage-3</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Shop</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Shop Grid</a></li>
+                                <li><a class="dropdown-item" href="#">Shop List</a></li>
+                                <li><a class="dropdown-item" href="#">Shop Cart</a></li>
+                                <li><a class="dropdown-item" href="#">Shop Wishlist</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Vendors</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Vendor Listing</a></li>
+                                <li><a class="dropdown-item" href="#">Vendor Single</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Pages</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">About Us</a></li>
+                                <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                                <li><a class="dropdown-item" href="#">Register</a></li>
+                                <li><a class="dropdown-item" href="#">Login</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact Us</a>
+                        </li>
+                    </ul>
+
+                    <div class="d-flex align-items-center gap-4 mt-3 mt-lg-0">
+                        <a href="#" class="text-dark text-decoration-none d-flex align-items-center gap-2">
+                            <i class="bi bi-person fs-4"></i>
+                            <span class="fw-medium small d-none d-xl-inline">Account</span>
+                        </a>
+                        <a href="#" class="text-dark text-decoration-none position-relative d-flex align-items-center gap-2">
+                            <i class="bi bi-heart fs-4"></i>
+                            <span class="fw-medium small d-none d-xl-inline">Wishlist</span>
+                            <span class="position-absolute top-0 start-0 translate-middle-y badge rounded-pill bg-warning text-white" style="font-size: 0.6rem; margin-left: 15px;">5</span>
+                        </a>
+                        <a href="#" class="text-dark text-decoration-none position-relative d-flex align-items-center gap-2">
+                            <i class="bi bi-cart fs-4"></i>
+                            <span class="fw-medium small d-none d-xl-inline">Cart</span>
+                            <span class="position-absolute top-0 start-0 translate-middle-y badge rounded-pill bg-warning text-white" style="font-size: 0.6rem; margin-left: 15px;">2</span>
+                        </a>
+                        <a href="#" class="text-dark text-decoration-none d-flex align-items-center gap-2">
+                            <i class="bi bi-arrow-repeat fs-4"></i>
+                            <span class="fw-medium small d-none d-xl-inline">Compare</span>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+
+<div class="cart-container">
+    
+    <!-- ================================== العمود الأيسر======================================= -->
+    <div class="cart-left">
+        <div class="cart-table" id="cartTable">
+            <div class="table-header">
+                <div class="col-check"><input type="checkbox" id="selectAll"></div>
+                <div class="col-product">Product</div>
+                <div class="col-price">Unit Price</div>
+                <div class="col-qty">Quantity</div>
+                <div class="col-subtotal">Subtotal</div>
+                <div class="col-remove">Remove</div>
+            </div>
+
+            <!-- منتج 1 -->
+            <div class="cart-item">
+                <div class="col-check"><input type="checkbox" checked></div>
+                <div class="col-product">
+                    <img src="https://placehold.co/80x80/eef2ff/2c3e6b?text=PC" alt="Dell">
+                    <div class="product-info">
+                        <h4>Dell Optiplex 9020 Small Form Business Desktop Tower PC</h4>
+                        <div class="rating">★★★★★ <span>(65)</span></div>
+                    </div>
+                </div>
+                <div class="col-price" data-price="2.51">$2.51</div>
+                <div class="col-qty">
+                    <div class="qty-selector">
+                        <button class="qty-btn minus" type="button">−</button>
+                        <input type="text" class="qty-input" value="1" readonly>
+                        <button class="qty-btn plus" type="button">+</button>
+                    </div>
+                </div>
+                <div class="col-subtotal">$2.51</div>
+                <div class="col-remove"><button type="button"><i class="bi bi-trash"></i></button></div>
+            </div>
+
+            <!-- منتج 2 -->
+            <div class="cart-item">
+                <div class="col-check"><input type="checkbox" checked></div>
+                <div class="col-product">
+                    <img src="https://placehold.co/80x80/eef2ff/2c3e6b?text=Tablet" alt="HP">
+                    <div class="product-info">
+                        <h4>HP 24 All-in-One PC, Intel Core i3-1115G4, 4GB RAM</h4>
+                        <div class="rating">★★★★★ <span>(65)</span></div>
+                    </div>
+                </div>
+                <div class="col-price" data-price="1.51">$1.51</div>
+                <div class="col-qty">
+                    <div class="qty-selector">
+                        <button class="qty-btn minus" type="button">−</button>
+                        <input type="text" class="qty-input" value="1" readonly>
+                        <button class="qty-btn plus" type="button">+</button>
+                    </div>
+                </div>
+                <div class="col-subtotal">$1.51</div>
+                <div class="col-remove"><button type="button"><i class="bi bi-trash"></i></button></div>
+            </div>      
+            
+            
+            <!-- منتج 23 -->
+            <div class="cart-item">
+                <div class="col-check"><input type="checkbox" checked></div>
+                <div class="col-product">
+                    <img src="https://placehold.co/80x80/eef2ff/2c3e6b?text=Tablet" alt="HP">
+                    <div class="product-info">
+                        <h4>HP 24 All-in-One PC, Intel Core i3-1115G4, 4GB RAM</h4>
+                        <div class="rating">★★★★★ <span>(65)</span></div>
+                    </div>
+                </div>
+                <div class="col-price" data-price="1.51">$1.51</div>
+                <div class="col-qty">
+                    <div class="qty-selector">
+                        <button class="qty-btn minus" type="button">−</button>
+                        <input type="text" class="qty-input" value="1" readonly>
+                        <button class="qty-btn plus" type="button">+</button>
+                    </div>
+                </div>
+                <div class="col-subtotal">$1.51</div>
+                <div class="col-remove"><button type="button"><i class="bi bi-trash"></i></button></div>
+            </div>
+
+                    <!-- منتج 4 -->
+            <div class="cart-item">
+                <div class="col-check"><input type="checkbox" checked></div>
+                <div class="col-product">
+                    <img src="https://placehold.co/80x80/eef2ff/2c3e6b?text=Tablet" alt="HP">
+                    <div class="product-info">
+                        <h4>HP 24 All-in-One PC, Intel Core i3-1115G4, 4GB RAM</h4>
+                        <div class="rating">★★★★★ <span>(65)</span></div>
+                    </div>
+                </div>
+                <div class="col-price" data-price="1.51">$1.51</div>
+                <div class="col-qty">
+                    <div class="qty-selector">
+                        <button class="qty-btn minus" type="button">−</button>
+                        <input type="text" class="qty-input" value="1" readonly>
+                        <button class="qty-btn plus" type="button">+</button>
+                    </div>
+                </div>
+                <div class="col-subtotal">$1.51</div>
+                <div class="col-remove"><button type="button"><i class="bi bi-trash"></i></button></div>
+            </div>
+                    <!-- منتج 5 -->
+            <div class="cart-item">
+                <div class="col-check"><input type="checkbox" checked></div>
+                <div class="col-product">
+                    <img src="https://placehold.co/80x80/eef2ff/2c3e6b?text=Tablet" alt="HP">
+                    <div class="product-info">
+                        <h4>HP 24 All-in-One PC, Intel Core i3-1115G4, 4GB RAM</h4>
+                        <div class="rating">★★★★★ <span>(65)</span></div>
+                    </div>
+                </div>
+                <div class="col-price" data-price="1.51">$1.51</div>
+                <div class="col-qty">
+                    <div class="qty-selector">
+                        <button class="qty-btn minus" type="button">−</button>
+                        <input type="text" class="qty-input" value="1" readonly>
+                        <button class="qty-btn plus" type="button">+</button>
+                    </div>
+                </div>
+                <div class="col-subtotal">$1.51</div>
+                <div class="col-remove"><button type="button"><i class="bi bi-trash"></i></button></div>
+            </div>
+
+            <!-- منتج 6 -->
+            <div class="cart-item">
+                <div class="col-check"><input type="checkbox" checked></div>
+                <div class="col-product">
+                    <img src="https://placehold.co/80x80/eef2ff/2c3e6b?text=Gamepad" alt="Gateway">
+                    <div class="product-info">
+                        <h4>Gateway 23.8" All-in-one Desktop, Fully Adjustable Stand</h4>
+                        <div class="rating">★★★★★ <span>(65)</span></div>
+                    </div>
+                </div>
+                <div class="col-price" data-price="3.51">$3.51</div>
+                <div class="col-qty">
+                    <div class="qty-selector">
+                        <button class="qty-btn minus" type="button">−</button>
+                        <input type="text" class="qty-input" value="1" readonly>
+                        <button class="qty-btn plus" type="button">+</button>
+                    </div>
+                </div>
+                <div class="col-subtotal">$3.51</div>
+                <div class="col-remove"><button type="button"><i class="bi bi-trash"></i></button></div>
+            </div>
+        </div>
+
+        <!-- أزرار التحكم -->
+        <div class="cart-actions">
+            <a href="shop.html" class="btn-action">
+                <i class="bi bi-arrow-left"></i> Continue shopping
+            </a>
+            <button class="btn-action" id="updateCartBtn" type="button">
+                <i class="bi bi-arrow-clockwise"></i> Update cart
+            </button>
+        </div>
+
+        <!-- الأقسام السفلية -->
+        <div class="bottom-sections">
+            <div class="section-box">
+                <h3>Calculate Shipping</h3>
+                <label class="form-label">Flat rate:5%</label>
+                <select class="form-select">
+                    <option>USA</option>
+                    <option>EURO</option>
+                </select>
+                <div class="shipping-inputs">
+                    <input type="text" class="form-input" placeholder="Stage / Country">
+                    <input type="text" class="form-input" placeholder="PostCode / ZIP">
+                </div>
+            </div>
+
+            <div class="section-box">
+                <h3>Apply Coupon</h3>
+                <label class="form-label">Using A Promo Code?</label>
+                <div class="coupon-input-group">
+                    <input type="text" class="form-input" placeholder="Enter Your Coupon">
+                    <button class="btn-apply" type="button">Apply</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- =========================================
+         العمود الأيمن: ملخص الطلب
+         ========================================= -->
+    <div class="cart-right">
+        <div class="order-summary">
+            
+            <!-- Subtotal Header -->
+            <div class="summary-row subtotal-header">
+                <span>Subtotal</span>
+                <span>$2.51</span>
+            </div>
+            
+            <!--  قائمة الأسعار (Scrollable) -->
+            <div class="subtotal-list" id="subtotalList"></div>
+            
+            <!-- Shipping -->
+            <div class="summary-row">
+                <span>Shipping</span>
+                <span class="free-text">Free</span>
+            </div>
+            
+            <!-- Estimate -->
+            <div class="summary-row">
+                <span>Estimate for</span>
+                <span class="value">United Kingdom</span>
+            </div>
+            
+            <!-- Total -->
+            <div class="summary-row total-row">
+                <span>Total</span>
+                <span class="value" id="summaryTotal">$0.00</span>
+            </div>
+            
+            <!-- زر إتمام الشراء -->
+            <a href="checkout.html" class="btn-checkout">Proceed To CheckOut</a>
+        </div>
+    </div>
+
+</div>
+
+
+<!--++++++++++++++++++ قسم: You may also like (5 Products) -=============================================== -->
+        <div class="container-fluid my-5" style="max-width: 1200px; margin-left: auto; margin-right: auto;">
+            <div class="row mt-4 mb-3">
+                <div class="col-12 text-start">
+                    <h2 class="fw-bold">You may also like</h2>
+                </div>
+            </div>
+
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 g-3">
+
+                <!-- Product 1 -->
+                <div class="col">
+                    <div class="product-card card border rounded-3 h-100 position-relative">
+                        <span class="badge position-absolute top-0 start-0 m-3" style="background-color: #f5a623; font-size: .7rem;">-15%</span>
+                        <div class="product-actions">
+                            <a href="#top" class="btn-icon" data-tooltip="Trending Now"><i class="ti ti-bolt"></i></a>
+                            <a href="offers.html" class="btn-icon" data-tooltip="View Offers"><i class="ti ti-heart"></i></a>
+                            <a href="compare.html" class="btn-icon" data-tooltip="Compare Products"><i class="ti ti-arrows-exchange"></i></a>
+                            <a href="#" class="btn-icon quick-view-btn" data-tooltip="Quick View"><i class="ti ti-eye"></i></a>
+                        </div>
+                        <div class="text-center bg-light p-3 product-img-container">
+                            <img src="./imges/img3.png" class="img-fluid" alt="Product" loading="lazy">
+                        </div>
+                        <div class="card-body p-2 p-md-3 d-flex flex-column">
+                            <p class="text-secondary mb-1" style="font-size: .7rem;">Apple</p>
+                            <h6 class="fw-bold mb-2" style="color: #2c3e6b; font-size: .8rem; line-height: 1.3; min-height: 2.6em;">Hamilton Beach Smoothie Electric Blender</h6>
+                            <div class="d-flex align-items-center gap-1 py-1">
+                                <i class="ti ti-star-filled" style="color: #f5a623; font-size: .8rem;"></i>
+                                <i class="ti ti-star-filled" style="color: #f5a623; font-size: .8rem;"></i>
+                                <i class="ti ti-star-filled" style="color: #f5a623; font-size: .8rem;"></i>
+                                <i class="ti ti-star-filled" style="color: #f5a623; font-size: .8rem;"></i>
+                                <i class="ti ti-star-filled" style="color: #f5a623; font-size: .8rem;"></i>
+                                <span class="text-secondary" style="font-size: .65rem;">(65)</span>
+                            </div>
+                            <div class="d-flex align-items-baseline gap-2 mb-2">
+                                <span class="fw-bold" style="color: #2c3e6b; font-size: 1rem;">$2856.3</span>
+                                <span class="text-secondary text-decoration-line-through" style="font-size: .7rem;">$3225.6</span>
+                            </div>
+                            <div class="add-to-cart-btn mt-auto">
+                                <button class="btn w-100 fw-bold btn-add-cart">Add To Cart</button>
+                                <ul class="text-secondary ps-3 pe-0 mb-0 mt-2" style="font-size: 0.6rem; line-height: 1.5;">
+                                    <li>27-inch (diagonal) Retina 5K display</li>
+                                    <li>3.1GHz 6-core 10th-generation Intel Core i5</li>
+                                    <li>AMD Radeon Pro 5300 graphics</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="col">
+                    <div class="product-card card border rounded-3 h-100 bg-white position-relative">
+                        <span class="badge position-absolute top-0 start-0 m-3" style="background-color: #f5a623; font-size: .7rem;">-15%</span>
+                        <div class="product-actions">
+                            <a href="#top" class="btn-icon" data-tooltip="Trending Now"><i class="ti ti-bolt"></i></a>
+                            <a href="offers.html" class="btn-icon" data-tooltip="View Offers"><i class="ti ti-heart"></i></a>
+                            <a href="compare.html" class="btn-icon" data-tooltip="Compare Products"><i class="ti ti-arrows-exchange"></i></a>
+                            <a href="#" class="btn-icon quick-view-btn" data-tooltip="Quick View"><i class="ti ti-eye"></i></a>
+                        </div>
+                        <div class="text-center bg-light p-3 product-img-container">
+                            <img src="./imges/imgsp4.png" class="img-fluid" alt="Product" loading="lazy">
+                        </div>
+                        <div class="card-body p-2 p-md-3 d-flex flex-column">
+                            <p class="text-secondary mb-1" style="font-size: .7rem;">Apple</p>
+                            <h6 class="fw-bold mb-2" style="color: #2c3e6b; font-size: .8rem; line-height: 1.3; min-height: 2.6em;">Hamilton Beach Smoothie Electric Blender</h6>
+                            <div class="d-flex align-items-center gap-1 py-1">
+                                <i class="ti ti-star-filled" style="color: #f5a623; font-size: .8rem;"></i>
+                                <i class="ti ti-star-filled" style="color: #f5a623; font-size: .8rem;"></i>
+                                <i class="ti ti-star-filled" style="color: #f5a623; font-size: .8rem;"></i>
+                                <i class="ti ti-star-filled" style="color: #f5a623; font-size: .8rem;"></i>
+                                <i class="ti ti-star-filled" style="color: #f5a623; font-size: .8rem;"></i>
+                                <span class="text-secondary" style="font-size: .65rem;">(65)</span>
+                            </div>
+                            <div class="d-flex align-items-baseline gap-2 mb-2">
+                                <span class="fw-bold" style="color: #2c3e6b; font-size: 1rem;">$2856.3</span>
+                                <span class="text-secondary text-decoration-line-through" style="font-size: .7rem;">$3225.6</span>
+                            </div>
+                            <div class="add-to-cart-btn mt-auto">
+                                <button class="btn w-100 fw-bold btn-add-cart">Add To Cart</button>
+                                <ul class="text-secondary ps-3 pe-0 mb-0 mt-2" style="font-size: 0.6rem; line-height: 1.5;">
+                                    <li>27-inch (diagonal) Retina 5K display</li>
+                                    <li>3.1GHz 6-core 10th-generation Intel Core i5</li>
+                                    <li>AMD Radeon Pro 5300 graphics</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="col">
+                    <div class="product-card card border rounded-3 h-100 bg-white position-relative">
+                        <span class="badge position-absolute top-0 start-0 m-3" style="background-color: #f5a623; font-size: .7rem;">-15%</span>
+                        <div class="product-actions">
+                            <a href="#top" class="btn-icon" data-tooltip="Trending Now"><i class="ti ti-bolt"></i></a>
+                            <a href="offers.html" class="btn-icon" data-tooltip="View Offers"><i class="ti ti-heart"></i></a>
+                            <a href="compare.html" class="btn-icon" data-tooltip="Compare Products"><i class="ti ti-arrows-exchange"></i></a>
+                            <a href="#" class="btn-icon quick-view-btn" data-tooltip="Quick View"><i class="ti ti-eye"></i></a>
+                        </div>
+                        <div class="text-center bg-light p-3 product-img-container">
+                            <img src="./imges/imgsp5.png" class="img-fluid" alt="Product" loading="lazy">
+                        </div>
+                        <div class="card-body p-2 p-md-3 d-flex flex-column">
+                            <p class="text-secondary mb-1" style="font-size: .7rem;">Apple</p>
+                            <h6 class="fw-bold mb-2" style="color: #2c3e6b; font-size: .8rem; line-height: 1.3; min-height: 2.6em;">Hamilton Beach Smoothie Electric Blender</h6>
+                            <div class="d-flex align-items-center gap-1 py-1">
+                                <i class="ti ti-star-filled" style="color: #f5a623; font-size: .8rem;"></i>
+                                <i class="ti ti-star-filled" style="color: #f5a623; font-size: .8rem;"></i>
+                                <i class="ti ti-star-filled" style="color: #f5a623; font-size: .8rem;"></i>
+                                <i class="ti ti-star-filled" style="color: #f5a623; font-size: .8rem;"></i>
+                                <i class="ti ti-star-filled" style="color: #f5a623; font-size: .8rem;"></i>
+                                <span class="text-secondary" style="font-size: .65rem;">(65)</span>
+                            </div>
+                            <div class="d-flex align-items-baseline gap-2 mb-2">
+                                <span class="fw-bold" style="color: #2c3e6b; font-size: 1rem;">$2856.3</span>
+                                <span class="text-secondary text-decoration-line-through" style="font-size: .7rem;">$3225.6</span>
+                            </div>
+                            <div class="add-to-cart-btn mt-auto">
+                                <button class="btn w-100 fw-bold btn-add-cart">Add To Cart</button>
+                                <ul class="text-secondary ps-3 pe-0 mb-0 mt-2" style="font-size: 0.6rem; line-height: 1.5;">
+                                    <li>27-inch (diagonal) Retina 5K display</li>
+                                    <li>3.1GHz 6-core 10th-generation Intel Core i5</li>
+                                    <li>AMD Radeon Pro 5300 graphics</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="col">
+                    <div class="product-card card border rounded-3 h-100 bg-white position-relative">
+                        <span class="badge position-absolute top-0 start-0 m-3" style="background-color: #f5a623; font-size: .7rem;">-15%</span>
+                        <div class="product-actions">
+                            <a href="#top" class="btn-icon" data-tooltip="Trending Now"><i class="ti ti-bolt"></i></a>
+                            <a href="offers.html" class="btn-icon" data-tooltip="View Offers"><i class="ti ti-heart"></i></a>
+                            <a href="compare.html" class="btn-icon" data-tooltip="Compare Products"><i class="ti ti-arrows-exchange"></i></a>
+                            <a href="#" class="btn-icon quick-view-btn" data-tooltip="Quick View"><i class="ti ti-eye"></i></a>
+                        </div>
+                        <div class="text-center bg-light p-3 product-img-container">
+                            <img src="./imges/imgsp2.png" class="img-fluid" alt="Product" loading="lazy">
+                        </div>
+                        <div class="card-body p-2 p-md-3 d-flex flex-column">
+                            <p class="text-secondary mb-1" style="font-size: .7rem;">Apple</p>
+                            <h6 class="fw-bold mb-2" style="color: #2c3e6b; font-size: .8rem; line-height: 1.3; min-height: 2.6em;">Hamilton Beach Smoothie Electric Blender</h6>
+                            <div class="d-flex align-items-center gap-1 py-1">
+                                <i class="ti ti-star-filled" style="color: #f5a623; font-size: .8rem;"></i>
+                                <i class="ti ti-star-filled" style="color: #f5a623; font-size: .8rem;"></i>
+                                <i class="ti ti-star-filled" style="color: #f5a623; font-size: .8rem;"></i>
+                                <i class="ti ti-star-filled" style="color: #f5a623; font-size: .8rem;"></i>
+                                <i class="ti ti-star-filled" style="color: #f5a623; font-size: .8rem;"></i>
+                                <span class="text-secondary" style="font-size: .65rem;">(65)</span>
+                            </div>
+                            <div class="d-flex align-items-baseline gap-2 mb-2">
+                                <span class="fw-bold" style="color: #2c3e6b; font-size: 1rem;">$2856.3</span>
+                                <span class="text-secondary text-decoration-line-through" style="font-size: .7rem;">$3225.6</span>
+                            </div>
+                            <div class="add-to-cart-btn mt-auto">
+                                <button class="btn w-100 fw-bold btn-add-cart">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="col">
+                    <div class="product-card card border rounded-3 h-100 bg-white position-relative">
+                        <span class="badge position-absolute top-0 start-0 m-3" style="background-color: #f5a623; font-size: .7rem;">-15%</span>
+                        <div class="product-actions">
+                            <a href="#top" class="btn-icon" data-tooltip="Trending Now"><i class="ti ti-bolt"></i></a>
+                            <a href="offers.html" class="btn-icon" data-tooltip="View Offers"><i class="ti ti-heart"></i></a>
+                            <a href="compare.html" class="btn-icon" data-tooltip="Compare Products"><i class="ti ti-arrows-exchange"></i></a>
+                            <a href="#" class="btn-icon quick-view-btn" data-tooltip="Quick View"><i class="ti ti-eye"></i></a>
+                        </div>
+                        <div class="text-center bg-light p-3 product-img-container">
+                            <img src="./imges/imgsp7.png" class="img-fluid" alt="Product" loading="lazy">
+                        </div>
+                        <div class="card-body p-2 p-md-3 d-flex flex-column">
+                            <p class="text-secondary mb-1" style="font-size: .7rem;">Apple</p>
+                            <h6 class="fw-bold mb-2" style="color: #2c3e6b; font-size: .8rem; line-height: 1.3; min-height: 2.6em;">Hamilton Beach Smoothie Electric Blender</h6>
+                            <div class="d-flex align-items-center gap-1 py-1">
+                                <i class="ti ti-star-filled" style="color: #f5a623; font-size: .8rem;"></i>
+                                <i class="ti ti-star-filled" style="color: #f5a623; font-size: .8rem;"></i>
+                                <i class="ti ti-star-filled" style="color: #f5a623; font-size: .8rem;"></i>
+                                <i class="ti ti-star-filled" style="color: #f5a623; font-size: .8rem;"></i>
+                                <i class="ti ti-star-filled" style="color: #f5a623; font-size: .8rem;"></i>
+                                <span class="text-secondary" style="font-size: .65rem;">(65)</span>
+                            </div>
+                            <div class="d-flex align-items-baseline gap-2 mb-2">
+                                <span class="fw-bold" style="color: #2c3e6b; font-size: 1rem;">$2856.3</span>
+                                <span class="text-secondary text-decoration-line-through" style="font-size: .7rem;">$3225.6</span>
+                            </div>
+                            <div class="add-to-cart-btn mt-auto">
+                                <button class="btn w-100 fw-bold btn-add-cart">Add To Cart</button>
+                                <ul class="text-secondary ps-3 pe-0 mb-0 mt-2" style="font-size: 0.6rem; line-height: 1.5;">
+                                    <li>27-inch (diagonal) Retina 5K display</li>
+                                    <li>3.1GHz 6-core 10th-generation Intel Core i5</li>
+                                    <li>AMD Radeon Pro 5300 graphics</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- ======================================================= -->
+        <!-- قسم الكروت الأربعة الصغيرة -->
+        <!-- ======================================================= -->
+        <div class="container-fluid my-5" style="max-width: 1200px; margin-left: auto; margin-right: auto;">
+            <div class="row fw-bold start-0 mt-4">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h2>You may also like</h2>
+                </div>
+            </div>
+            <div class="row g-2 mt-3">
+                
+                <div class="col-12 col-md-6 col-lg-3">
+                    <a href="product-1.html" class="text-decoration-none d-block h-100">
+                        <div class="position-relative p-1">
+                            <div class="row g-3 align-items-center">
+                                <div class="col-4 text-center">
+                                    <img src="./imges/imgsp1.png" class="img-fluid" style="max-height: 110px; object-fit: contain;" alt="Product">
+                                </div>
+                                <div class="col-8">
+                                    <p class="text-secondary small mb-1">Dell</p>
+                                    <h6 class="mb-2" style="color: #2c3e6b; font-size: 0.85rem;">Dell Optiplex 9020 Small Form Business Desktop</h6>
+                                    <div class="mb-2">
+                                        <i class="ti ti-star-filled" style="color: #f5a623; font-size: 0.85rem;"></i>
+                                        <i class="ti ti-star-filled" style="color: #f5a623; font-size: 0.85rem;"></i>
+                                        <i class="ti ti-star-filled" style="color: #f5a623; font-size: 0.85rem;"></i>
+                                        <i class="ti ti-star-filled" style="color: #f5a623; font-size: 0.85rem;"></i>
+                                        <i class="ti ti-star-filled" style="color: #f5a623; font-size: 0.85rem;"></i>
+                                        <span class="text-secondary small ms-1">(65)</span>
+                                    </div>
+                                    <div class="d-flex align-items-baseline gap-2">
+                                        <span class="fw-bold fs-5" style="color: #2c3e6b;">$2556.3</span>
+                                        <span class="text-secondary text-decoration-line-through small">$3225.6</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <a href="product-2.html" class="text-decoration-none d-block h-100">
+                        <div class="position-relative p-1 h-100">
+                            <div class="row g-3 align-items-center">
+                                <div class="col-4 text-center">
+                                    <img src="./imges/imgsp2.png" class="img-fluid" style="max-height: 110px; object-fit: contain;" alt="Product">
+                                </div>
+                                <div class="col-8">
+                                    <p class="text-secondary small mb-1">HP</p>
+                                    <h6 class="mb-2" style="color: #2c3e6b; font-size: 0.85rem;">HP 24 All-in-One PC, Intel Core i3-1115G4, 4GB RAM</h6>
+                                    <div class="mb-2">
+                                        <i class="ti ti-star-filled" style="color: #f5a623; font-size: 0.85rem;"></i>
+                                        <i class="ti ti-star-filled" style="color: #f5a623; font-size: 0.85rem;"></i>
+                                        <i class="ti ti-star-filled" style="color: #f5a623; font-size: 0.85rem;"></i>
+                                        <i class="ti ti-star-filled" style="color: #f5a623; font-size: 0.85rem;"></i>
+                                        <i class="ti ti-star-filled" style="color: #f5a623; font-size: 0.85rem;"></i>
+                                        <span class="text-secondary small ms-1">(65)</span>
+                                    </div>
+                                    <div class="d-flex align-items-baseline gap-2">
+                                        <span class="fw-bold fs-5" style="color: #2c3e6b;">$2556.3</span>
+                                        <span class="text-secondary text-decoration-line-through small">$3225.6</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <a href="product-3.html" class="text-decoration-none d-block h-100">
+                        <div class="position-relative p-1 h-100">
+                            <div class="row g-3 align-items-center">
+                                <div class="col-4 text-center">
+                                    <img src="./imges/imgsp1.png" class="img-fluid" style="max-height: 110px; object-fit: contain;" alt="Product">
+                                </div>
+                                <div class="col-8">
+                                    <p class="text-secondary small mb-1">Gateway</p>
+                                    <h6 class="mb-2" style="color: #2c3e6b; font-size: 0.85rem;">Gateway 23.8" All-in-one Desktop</h6>
+                                    <div class="mb-2">
+                                        <i class="ti ti-star-filled" style="color: #f5a623; font-size: 0.85rem;"></i>
+                                        <i class="ti ti-star-filled" style="color: #f5a623; font-size: 0.85rem;"></i>
+                                        <i class="ti ti-star-filled" style="color: #f5a623; font-size: 0.85rem;"></i>
+                                        <i class="ti ti-star-filled" style="color: #f5a623; font-size: 0.85rem;"></i>
+                                        <i class="ti ti-star-filled" style="color: #f5a623; font-size: 0.85rem;"></i>
+                                        <span class="text-secondary small ms-1">(65)</span>
+                                    </div>
+                                    <div class="d-flex align-items-baseline gap-2">
+                                        <span class="fw-bold fs-5" style="color: #2c3e6b;">$2556.3</span>
+                                        <span class="text-secondary text-decoration-line-through small">$3225.6</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <a href="product-4.html" class="text-decoration-none d-block h-100">
+                        <div class="position-relative p-1 h-100">
+                            <div class="row g-3 align-items-center">
+                                <div class="col-4 text-center">
+                                    <img src="./imges/imgsp2.png" class="img-fluid" style="max-height: 110px; object-fit: contain;" alt="Product">
+                                </div>
+                                <div class="col-8">
+                                    <p class="text-secondary small mb-1">HP</p>
+                                    <h6 class="mb-2" style="color: #2c3e6b; font-size: 0.85rem;">HP 22 All-in-One PC, Intel Pentium Silver J5040</h6>
+                                    <div class="mb-2">
+                                        <i class="ti ti-star-filled" style="color: #f5a623; font-size: 0.85rem;"></i>
+                                        <i class="ti ti-star-filled" style="color: #f5a623; font-size: 0.85rem;"></i>
+                                        <i class="ti ti-star-filled" style="color: #f5a623; font-size: 0.85rem;"></i>
+                                        <i class="ti ti-star-filled" style="color: #f5a623; font-size: 0.85rem;"></i>
+                                        <i class="ti ti-star-filled" style="color: #f5a623; font-size: 0.85rem;"></i>
+                                        <span class="text-secondary small ms-1">(65)</span>
+                                    </div>
+                                    <div class="d-flex align-items-baseline gap-2">
+                                        <span class="fw-bold fs-5" style="color: #2c3e6b;">$2556.3</span>
+                                        <span class="text-secondary text-decoration-line-through small">$3225.6</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- ======================================================= -->
+        <!-- قسم كروت المعلومات -->
+        <!-- ======================================================= -->
+        <div class="container-fluid my-5" style="max-width: 1200px; margin-left: auto; margin-right: auto;">
+            <div class="row g-3">
+                
+                <div class="col-6 col-md-4 col-lg">
+                    <div class="hover-card border rounded-3 p-2 h-100 d-flex align-items-center gap-3">
+                        <i class="bi bi-airplane fs-2 text-secondary"></i>
+                        <div>
+                            <h6 class="fw-bold mb-1" style="color: #1e3a8a;">Free Delivery</h6>
+                            <p class="text-secondary small mb-0">From all orders over $10</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg">
+                    <div class="hover-card border rounded-3 p-3 h-100 d-flex align-items-center gap-3">
+                        <i class="bi bi-headset fs-2 text-secondary"></i>
+                        <div>
+                            <h6 class="fw-bold mb-1" style="color: #1e3a8a;">Support 24/7</h6>
+                            <p class="text-secondary small mb-0">Shop with an expert</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg">
+                    <div class="hover-card border rounded-3 p-3 h-100 d-flex align-items-center gap-3">
+                        <i class="bi bi-gift fs-2 text-secondary"></i>
+                        <div>
+                            <h6 class="fw-bold mb-1" style="color: #1e3a8a;">Gift voucher</h6>
+                            <p class="text-secondary small mb-0">Refer a friend</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg">
+                    <div class="hover-card border rounded-3 p-3 h-100 d-flex align-items-center gap-3">
+                        <i class="bi bi-box-seam fs-2 text-secondary"></i>
+                        <div>
+                            <h6 class="fw-bold mb-1" style="color: #1e3a8a;">Return & Refund</h6>
+                            <p class="text-secondary small mb-0">Free return over $200</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg">
+                    <div class="hover-card border rounded-3 p-3 h-100 d-flex align-items-center gap-3">
+                        <i class="bi bi-shield-check fs-2 text-secondary"></i>
+                        <div>
+                            <h6 class="fw-bold mb-1" style="color: #1e3a8a;">Secure payment</h6>
+                            <p class="text-secondary small mb-0">100% Protected</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div> <!-- نهاية المحتوى -->
+
+    <!-- ======================================================= -->
+    <!-- نافذة Quick View -->
+    <!-- ======================================================= -->
+    <div class="modal fade" id="quickViewModal" tabindex="-1" aria-labelledby="quickViewModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="quickViewModalLabel">Quick View</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <div class="row g-4 align-items-center">
+                        <div class="col-md-5 text-center">
+                            <img src="./imges/sp8.png" alt="Product" class="img-fluid" style="max-height: 250px; object-fit: contain;">
+                        </div>
+                        <div class="col-md-7">
+                            <p class="text-secondary small mb-1">Apple</p>
+                            <h5 class="fw-bold mb-2" style="color: #2c3e6b;">Hamilton Beach Smoothie Electric Blender</h5>
+                            <div class="mb-2">
+                                <i class="ti ti-star-filled" style="color: #f5a623;"></i>
+                                <i class="ti ti-star-filled" style="color: #f5a623;"></i>
+                                <i class="ti ti-star-filled" style="color: #f5a623;"></i>
+                                <i class="ti ti-star-filled" style="color: #f5a623;"></i>
+                                <i class="ti ti-star-filled" style="color: #f5a623;"></i>
+                                <span class="text-secondary small ms-1">(65)</span>
+                            </div>
+                            <div class="d-flex align-items-baseline gap-2 mb-3">
+                                <span class="fw-bold fs-4" style="color: #2c3e6b;">$2856.3</span>
+                                <span class="text-secondary text-decoration-line-through small">$3225.6</span>
+                            </div>
+                            <p class="text-secondary small mb-3">
+                                High-quality electric blender perfect for smoothies, juices, and more. 
+                                Comes with multiple speeds and a durable BPA-free jar.
+                            </p>
+                            <button class="btn fw-bold px-4 py-2" style="background-color: #2c3e6b; color: #fff;">
+                                <i class="ti ti-shopping-cart me-1"></i> Add To Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  
+    <script>
+
+
+
+        /*  4.====================== Quick View Modal ============================= */
+        document.body.addEventListener('click', function (e) {
+            const btn = e.target.closest('.quick-view-btn');
+            if (!btn) return;
+            e.preventDefault();
+            const modal = document.getElementById('quickViewModal');
+            if (modal) bootstrap.Modal.getOrCreateInstance(modal).show();
+        });
+
+    </script>
+</body>
+</html>
