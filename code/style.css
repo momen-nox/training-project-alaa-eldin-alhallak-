@@ -1,28 +1,30 @@
-.green-bg{
+.green-bg {
     background-color: rgba(112, 181, 112, 0.23);
     border-radius: 15px;
 }
-.yellow{
-     background-color: rgba(239, 183, 94, 0.23);
-    border-radius: 15px;
-}
-.blou{
-     background-color: rgba(94, 174, 239, 0.23);
+
+.yellow {
+    background-color: rgba(239, 183, 94, 0.23);
     border-radius: 15px;
 }
 
-.title{
+.blou {
+    background-color: rgba(94, 174, 239, 0.23);
+    border-radius: 15px;
+}
+
+.title {
     color: rgba(52, 52, 116, 0.809);
-  font-family: "Sintony", sans-serif;
-  font-weight: 700;
-  font-style: normal;
+    font-family: "Sintony", sans-serif;
+    font-weight: 700;
+    font-style: normal;
 }
 
-.discription{
+.discription {
     font-size: 14px;
 }
 
-.small-titel{
+.small-titel {
     color: rgba(52, 52, 116, 0.809);
     font-family: "Sintony", sans-serif;
     font-weight: 700;
@@ -30,25 +32,27 @@
     font-size: 25px;
 }
 
-.small-discription{
+.small-discription {
     font-size: 20px;
     color: rgba(52, 52, 116, 0.809);
 }
 
-.btn-b{
+.btn-b {
     background-color: rgba(52, 52, 116, 0.809);
     color: aliceblue;
 
 }
-.btn-b:hover{
+
+.btn-b:hover {
     background-color: rgb(255, 174, 43);
     color: black;
 }
 
-.logo-hover{
+.logo-hover {
     transition: .3s;
 }
-.logo-hover:hover{
+
+.logo-hover:hover {
     transform: scale(1.1);
     opacity: 0.7;
 }
@@ -63,12 +67,12 @@
     transform: translateY(-5px);
 }
 
-.product-card{
+.product-card {
     transition: .5s;
 }
 
-.product-card:hover{
-    border-color: #000000 !important; 
+.product-card:hover {
+    border-color: #000000 !important;
     transform: translateY(-5px);
 }
 
@@ -76,47 +80,95 @@
     background-color: orange;
 }
 
-.a-hov{
+.a-hov {
     display: inline-block;
     transition: .2s;
 }
-.a-hov:hover{
+
+.a-hov:hover {
     color: aqua !important;
-    transform: translateX(5px) ;
+    transform: translateX(5px);
 }
 
 .product-card {
-      position: relative;
-      background-color: #ffffff;
-      border: 1px solid #e5e7eb;
-      border-radius: 12px;
-      padding: 16px;
-      transition: all 0.3s ease-in-out;
-      overflow: hidden;
-  }
+    position: relative;
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 16px;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+}
 
-  .product-card:hover {
-      border-color: #0d6efd;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-  }
+.product-card:hover {
+    border-color: #0d6efd;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
 
-   .hover-actions {
-      position: absolute;
-      top: 15px;
-      right: 15px;
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-      opacity: 0;
-      visibility: hidden;
-      transform: translateX(15px);
-      transition: all 0.3s ease-in-out;
-      z-index: 3;
-  }
+.hover-actions {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(15px);
+    transition: all 0.3s ease-in-out;
+    z-index: 3;
+}
 
-  .product-card:hover .hover-actions {
-      opacity: 1;
-      visibility: visible;
-      transform: translateX(0);
+.product-card:hover .hover-actions {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
 
-  }
+}
+
+/* إزاحة الصفحة للجانب لترك مساحة للشريط الثابت */
+body {
+    padding-left: 55px;
+}
+
+/* الشريط الجانبي الثابت بطول الصفحة كاملة */
+.sidebar-categories {
+    width: 55px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background: #fff;
+    border-right: 1px solid #dee2e6;
+    z-index: 1040;
+}
+
+/* ظهور القائمة الفرعية عند تمرير الماوس Hover */
+.sidebar-item {
+    position: relative;
+}
+
+.sidebar-popup {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 55px;
+    width: 220px;
+    background: #fff;
+    border: 1px solid #dee2e6;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 0 6px 6px 0;
+    z-index: 1050;
+}
+
+.sidebar-item:hover .sidebar-popup {
+    display: block;
+}
+
+/* فتح القوائم المنسدلة العلوية عند Hover */
+@media (min-width: 992px) {
+    .navbar .dropdown:hover .dropdown-menu {
+        display: block;
+        margin-top: 0;
+    }
+}

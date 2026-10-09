@@ -1,0 +1,925 @@
+/* ============================================================
+   ECOM - STYLE.CSS
+   ملف التنسيقات الرئيسي المتوافق مع كود HTML
+   ============================================================ */
+
+/* ============================================================
+   01. ROOT VARIABLES - متغيرات الألوان
+   ============================================================ */
+:root {
+  --ecom-primary: #2c3e6b;
+  --ecom-primary-dark: #1e2c52;
+  --ecom-accent: #f5a623;
+  --ecom-accent-dark: #e09612;
+  --ecom-danger: #dc3545;
+  --ecom-secondary: #6c757d;
+  --ecom-border: #e9ecef;
+  --ecom-bg-light: #f8f9fa;
+  --ecom-shadow-sm: 0 2px 8px rgba(0, 0, 0, .08);
+  --ecom-shadow-md: 0 8px 24px rgba(44, 62, 107, .12);
+  --ecom-shadow-lg: 0 10px 30px rgba(44, 62, 107, .12);
+  --ecom-radius-sm: 4px;
+  --ecom-radius-md: 8px;
+  --ecom-radius-lg: 12px;
+}
+
+/* ============================================================
+   02. RESET & GENERAL - إعادة الضبط والعام
+   ============================================================ */
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "DM Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  overflow-x: hidden;
+  color: #333;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.text-primary {
+  color: var(--ecom-primary) !important;
+}
+
+.bg-primary {
+  background-color: var(--ecom-primary) !important;
+}
+
+.btn-primary {
+  background-color: var(--ecom-primary);
+  border-color: var(--ecom-primary);
+  transition: all .2s ease;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: var(--ecom-primary-dark);
+  border-color: var(--ecom-primary-dark);
+}
+
+/* ============================================================
+   03. LAYOUT - تخطيط الصفحة العام
+   ============================================================ */
+[style*="margin-left: 75px"] {
+  margin-left: 75px;
+  transition: margin-left .2s ease;
+}
+
+.container-fluid[style*="max-width: 1200px"] {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* ============================================================
+   04. SIDEBAR - الشريط الجانبي
+   ============================================================ */
+.position-fixed.top-0.start-0.vh-100 {
+  width: 75px;
+  scrollbar-width: thin;
+}
+
+.position-fixed.top-0.start-0.vh-100::-webkit-scrollbar {
+  width: 4px;
+}
+
+.position-fixed.top-0.start-0.vh-100::-webkit-scrollbar-thumb {
+  background: var(--ecom-border);
+  border-radius: 2px;
+}
+
+.position-fixed .btn-primary {
+  width: 44px;
+  height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dropdown.dropend {
+  width: 100%;
+}
+
+.dropdown.dropend .btn-light {
+  transition: all .2s ease;
+  color: var(--ecom-secondary);
+  background: transparent;
+  border: none;
+}
+
+.dropdown.dropend .btn-light:hover {
+  background: var(--ecom-border);
+  color: var(--ecom-primary);
+}
+
+.dropdown.dropend .dropdown-menu {
+  border: none;
+  border-radius: var(--ecom-radius-md);
+  box-shadow: var(--ecom-shadow-md);
+  padding: 8px 0;
+  margin-left: 8px;
+}
+
+.dropdown.dropend .dropdown-header {
+  color: var(--ecom-primary);
+  font-size: .75rem;
+  font-weight: 700;
+  padding: 8px 16px;
+  text-transform: uppercase;
+}
+
+.dropdown.dropend .dropdown-item {
+  font-size: .85rem;
+  padding: 6px 16px;
+  transition: all .2s ease;
+}
+
+.dropdown.dropend .dropdown-item:hover {
+  background: #f0f4ff;
+  color: var(--ecom-primary);
+}
+
+/* ============================================================
+   05. TOP BAR & NAVBAR
+   ============================================================ */
+.bg-light.py-2.border-bottom {
+  font-size: .85rem;
+}
+
+.bg-light.py-2.border-bottom a {
+  transition: color .2s ease;
+}
+
+.bg-light.py-2.border-bottom a:hover {
+  color: var(--ecom-primary) !important;
+}
+
+.bg-light.py-2.border-bottom .text-success {
+  color: #28a745 !important;
+}
+
+.navbar {
+  transition: box-shadow .3s ease;
+}
+
+.navbar-brand {
+  color: var(--ecom-primary) !important;
+  transition: all .2s ease;
+}
+
+.navbar-brand:hover {
+  color: var(--ecom-primary-dark) !important;
+}
+
+.navbar-brand sup {
+  font-size: .5rem !important;
+  vertical-align: super;
+  font-weight: 400;
+}
+
+.navbar .nav-link {
+  color: #333;
+  font-size: .9rem;
+  font-weight: 500;
+  padding: 8px 12px;
+  transition: color .2s ease;
+  position: relative;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus,
+.navbar .nav-link.active {
+  color: var(--ecom-primary);
+}
+
+.navbar .input-group {
+  border: 1px solid var(--ecom-border);
+  border-radius: var(--ecom-radius-sm);
+  overflow: hidden;
+  background: #f8f9fa;
+}
+
+.navbar .input-group .form-select,
+.navbar .input-group .form-control {
+  border: none;
+  background: transparent;
+  box-shadow: none;
+  font-size: .9rem;
+}
+
+.navbar .input-group .form-control:focus,
+.navbar .input-group .form-select:focus {
+  box-shadow: none;
+  background: #fff;
+}
+
+.navbar .input-group .btn {
+  border: none;
+  background: transparent;
+}
+
+.navbar .d-flex.align-items-center.gap-4>a {
+  color: #333;
+  transition: color .2s ease;
+}
+
+.navbar .d-flex.align-items-center.gap-4>a:hover {
+  color: var(--ecom-primary) !important;
+}
+
+.navbar .badge.bg-warning {
+  background-color: var(--ecom-accent) !important;
+  font-size: .6rem;
+  padding: 3px 6px;
+  min-width: 18px;
+  height: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ============================================================
+   06. HERO SECTION & CAROUSEL
+   ============================================================ */
+.card.h-100.position-relative.overflow-hidden[style*="background-image"] {
+  border-radius: var(--ecom-radius-lg);
+  transition: transform .3s ease, box-shadow .3s ease;
+  min-height: 300px;
+}
+
+.card.h-100.position-relative.overflow-hidden[style*="background-image"]:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--ecom-shadow-md);
+}
+
+.card .position-absolute.bottom-0.start-0.m-2.bg-white {
+  border-radius: var(--ecom-radius-sm);
+  box-shadow: var(--ecom-shadow-sm);
+  padding: 10px 12px;
+}
+
+.card .position-absolute.bottom-0.start-0.m-2.bg-white p {
+  color: #050505;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.card .position-absolute.bottom-0.start-0.m-2.bg-white a {
+  color: #f97316;
+  font-weight: 600;
+  transition: all .2s ease;
+}
+
+.card .position-absolute.bottom-0.start-0.m-2.bg-white a:hover {
+  color: var(--ecom-primary);
+}
+
+#heroCarousel {
+  border-radius: var(--ecom-radius-lg);
+  overflow: hidden;
+}
+
+#heroCarousel .carousel-inner {
+  border-radius: var(--ecom-radius-lg);
+}
+
+#heroCarousel .carousel-item>div {
+  position: relative;
+}
+
+#heroCarousel .btn-light {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0;
+  border: 1px solid var(--ecom-border);
+  font-size: 1.3rem;
+  line-height: 1;
+  background: #fff;
+  color: var(--ecom-primary);
+  transition: all .2s ease;
+}
+
+#heroCarousel .btn-light:hover {
+  background: var(--ecom-primary);
+  color: #fff;
+  border-color: var(--ecom-primary);
+}
+
+/* ============================================================
+   07. INFO CARDS (Free Delivery, etc.)
+   ============================================================ */
+.hover-card {
+  background: #fff;
+  transition: all .3s ease;
+  cursor: pointer;
+  border-radius: var(--ecom-radius-md) !important;
+}
+
+.hover-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--ecom-shadow-md);
+  border-color: var(--ecom-primary) !important;
+}
+
+.hover-card i {
+  color: var(--ecom-secondary);
+  transition: color .2s ease;
+}
+
+.hover-card:hover i {
+  color: var(--ecom-primary) !important;
+}
+
+.hover-card h6 {
+  color: #1e3a8a;
+  font-size: .95rem;
+}
+
+/* ============================================================
+   08. PRODUCT CARD (للصفحة الرئيسية - You may also like)
+   ============================================================ */
+.product-card {
+  position: relative !important;
+  overflow: visible !important;
+  transition: box-shadow .3s ease, transform .3s ease;
+  border-radius: var(--ecom-radius-md) !important;
+  background: #fff;
+}
+
+.product-card:hover {
+  box-shadow: var(--ecom-shadow-lg);
+  transform: translateY(-3px);
+}
+
+.product-card>.badge {
+  background-color: var(--ecom-accent) !important;
+  color: #fff;
+  font-size: .7rem;
+  padding: 5px 8px;
+  border-radius: var(--ecom-radius-sm);
+  z-index: 2;
+}
+
+.product-card>.text-center {
+  overflow: hidden;
+}
+
+.product-card>.text-center img {
+  transition: transform .3s ease;
+}
+
+.product-card:hover>.text-center img {
+  transform: scale(1.05);
+}
+
+.product-card h6 {
+  line-height: 1.4;
+  min-height: 2.2em;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+.product-card p {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+.product-card .fs-5 {
+  font-size: 1.1rem !important;
+}
+
+.product-card>.text-center img {
+  transition: transform .3s ease;
+  min-height: 180px;
+}
+
+.product-card .product-actions {
+  position: absolute !important;
+  top: 0 !important;
+  right: 0 !important;
+  left: auto !important;
+  bottom: auto !important;
+  width: auto !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  gap: 8px !important;
+  padding: 12px !important;
+  margin: 0 !important;
+  opacity: 0;
+  transform: translateX(15px);
+  transition: opacity .3s ease, transform .3s ease;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.product-card:hover .product-actions {
+  opacity: 1;
+  transform: translateX(0);
+  pointer-events: auto;
+}
+
+/* ============================================================
+   09. ICON BUTTONS & TOOLTIPS
+   ============================================================ */
+.btn-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #adb5bd;
+  border: 1px solid var(--ecom-border);
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 0;
+  transition: all .2s ease;
+  position: relative;
+}
+
+.btn-icon:hover {
+  background: #ffffff;
+  border-color: var(--ecom-primary);
+  transform: translateY(-2px);
+}
+
+.btn-icon:hover i {
+  color: var(--ecom-primary);
+}
+
+.btn-icon:hover .ti-heart {
+  color: #dc3545;
+}
+
+.trend-wrapper .btn-icon {
+  background: #ffffff;
+  color: #adb5bd;
+  border-color: var(--ecom-border);
+}
+
+.trend-wrapper .btn-icon:hover {
+  background: #ffffff;
+  border-color: var(--ecom-primary);
+}
+
+.trend-wrapper .btn-icon:hover i {
+  color: var(--ecom-primary);
+}
+
+[data-tooltip] {
+  position: relative;
+}
+
+[data-tooltip]::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  right: calc(100% + 8px);
+  top: 50%;
+  transform: translateY(-50%) translateX(6px);
+  background: #f0f0f0;
+  color: #333;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: .5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .2s ease, transform .2s ease;
+  z-index: 10;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .06);
+}
+
+[data-tooltip]:hover::after {
+  opacity: 1;
+  transform: translateY(-50%) translateX(0);
+}
+
+.add-to-cart-btn .btn {
+  transition: all .2s ease;
+  font-size: .85rem;
+  padding: 8px 12px;
+  border-radius: var(--ecom-radius-sm);
+}
+
+.add-to-cart-btn .btn:hover {
+  background: var(--ecom-primary) !important;
+  color: #fff !important;
+  border-color: var(--ecom-primary) !important;
+}
+
+/* ============================================================
+   10. WISHLIST PAGE - صفحة قائمة الأمنيات (معزولة بالكامل)
+   ============================================================ */
+
+/* الحاوية الرئيسية للويش ليست */
+.wishlist-container {
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 20px 15px;
+}
+
+/* رأس الجدول (للكمبيوتر) */
+.wishlist-header {
+  display: flex;
+  background-color: #f1f3f5;
+  padding: 15px;
+  border-radius: 8px;
+  font-weight: bold;
+  color: #495057;
+  margin-bottom: 15px;
+}
+
+/* بطاقة المنتج داخل الويش ليست فقط */
+.wishlist-container .product-card {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+  transition: box-shadow 0.3s ease;
+}
+
+.wishlist-container .product-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* عرض الأعمدة (للكمبيوتر) */
+.wishlist-container .col-check {
+  width: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.wishlist-container .col-product {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.wishlist-container .col-price {
+  width: 100px;
+  font-weight: bold;
+  color: #1e3a8a;
+  font-size: 16px;
+}
+
+.wishlist-container .col-stock {
+  width: 120px;
+}
+
+.wishlist-container .col-action {
+  width: 230px;
+  display: flex;
+  gap: 8px;
+}
+
+.wishlist-container .col-remove {
+  width: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+/* تنسيق العناصر الداخلية */
+.wishlist-container .product-link img {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.wishlist-container .product-title {
+  color: #212529;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 15px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.wishlist-container .product-title:hover {
+  color: #1e3a8a;
+  text-decoration: underline;
+}
+
+.wishlist-container .rating {
+  color: #f59e0b;
+  font-size: 13px;
+}
+
+.wishlist-container .rating span {
+  color: #6c757d;
+}
+
+/* شارة المخزون داخل الويش ليست فقط */
+.wishlist-container .badge {
+  background-color: #e2e8f0;
+  color: #475569;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+/* تنسيق أزرار الإجراءات */
+.wishlist-container .btn-add,
+.wishlist-container .btn-unlock {
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 13px;
+  text-align: center;
+  transition: all 0.2s;
+  flex: 1;
+}
+
+.wishlist-container .btn-add {
+  background-color: #fff;
+  color: #1e3a8a;
+  border: 1px solid #cbd5e1;
+}
+
+.wishlist-container .btn-add:hover {
+  background-color: #f8fafc;
+  border-color: #94a3b8;
+}
+
+.wishlist-container .btn-unlock {
+  background-color: #1e3a8a;
+  color: #fff;
+  border: 1px solid #1e3a8a;
+}
+
+.wishlist-container .btn-unlock:hover {
+  background-color: #152c6b;
+}
+
+.wishlist-container .btn-remove-single,
+.btn-delete-selected {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #64748b;
+  font-size: 18px;
+  transition: color 0.2s;
+}
+
+.wishlist-container .btn-remove-single:hover {
+  color: #ef4444;
+}
+
+/* زر حذف المحدد */
+.bulk-actions {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.btn-delete-selected {
+  background-color: #fee2e2;
+  color: #b91c1c;
+  padding: 10px 15px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.btn-delete-selected:hover {
+  background-color: #fecaca;
+}
+
+.wishlist-container input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  accent-color: #1e3a8a;
+}
+
+/* =========================================
+   تنسيق الموبايل للويش ليست (أقل من 768px)
+   ========================================= */
+@media (max-width: 768px) {
+  .wishlist-header {
+    display: none;
+  }
+
+  .wishlist-container .product-card {
+    flex-wrap: wrap;
+    padding: 15px;
+    position: relative;
+    align-items: flex-start;
+  }
+
+  .wishlist-container .col-check {
+    order: 1;
+    width: 30px;
+    margin-top: 5px;
+  }
+
+  .wishlist-container .col-product {
+    order: 2;
+    width: calc(100% - 30px);
+    flex-direction: row;
+  }
+
+  .wishlist-container .col-product img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .wishlist-container .col-price {
+    order: 3;
+    width: 50%;
+    margin-top: 15px;
+    font-size: 18px;
+  }
+
+  .wishlist-container .col-stock {
+    order: 4;
+    width: 50%;
+    margin-top: 15px;
+    text-align: left;
+  }
+
+  .wishlist-container .col-action {
+    order: 5;
+    width: calc(100% - 50px);
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+  }
+
+  .wishlist-container .col-remove {
+    order: 6;
+    width: 50px;
+    margin-top: 15px;
+    justify-content: flex-end;
+  }
+}
+
+/* ============================================================
+   11. RESPONSIVE - MEDIA QUERIES (للموقع بشكل عام)
+   ============================================================ */
+@media (max-width: 991.98px) {
+  .position-fixed.top-0.start-0.vh-100 {
+    display: none !important;
+  }
+
+  [style*="margin-left: 75px"] {
+    margin-left: 0 !important;
+  }
+
+  [data-tooltip]::after {
+    display: none;
+  }
+
+  .btn-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .product-actions {
+    opacity: 1;
+    transform: translateX(0);
+    pointer-events: auto;
+  }
+
+  .navbar-nav {
+    padding-top: 15px;
+    border-top: 1px solid var(--ecom-border);
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  #WeeklyTabs .nav-link {
+    font-size: .7rem;
+    padding: 6px 10px;
+  }
+
+  .scroll-arrow-btn {
+    width: 32px;
+    height: 32px;
+    font-size: .85rem;
+  }
+
+  #heroCarousel .btn-light {
+    width: 32px;
+    height: 32px;
+    font-size: 1rem;
+  }
+
+  .card .position-absolute.bottom-0.start-0.m-2.bg-white {
+    width: 110px !important;
+  }
+
+  .card .position-absolute.bottom-0.start-0.m-2.bg-white p {
+    font-size: .7rem;
+  }
+
+  .card .position-absolute.bottom-0.start-0.m-2.bg-white a {
+    font-size: .7rem;
+  }
+
+  .product-card h6 {
+    font-size: .75rem !important;
+  }
+}
+
+/* ============================================================
+   12. QUICK VIEW MODAL
+   ============================================================ */
+#quickViewModal .modal-content {
+  border: none;
+  border-radius: var(--ecom-radius-lg);
+  overflow: hidden;
+}
+
+#quickViewModal .modal-header {
+  border-bottom: 1px solid var(--ecom-border);
+  padding: 16px 20px;
+}
+
+#quickViewModal .modal-title {
+  color: var(--ecom-primary);
+  font-weight: 700;
+}
+
+#quickViewModal .modal-body {
+  padding: 24px;
+}
+
+#quickViewModal img {
+  max-height: 300px;
+  object-fit: contain;
+}
+
+
+body {
+  padding-left: 55px;
+}
+
+/* الشريط الجانبي الثابت بطول الصفحة كاملة */
+.sidebar-categories {
+  width: 55px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background: #fff;
+  border-right: 1px solid #dee2e6;
+  z-index: 1040;
+}
+
+/* ظهور القائمة الفرعية عند تمرير الماوس Hover */
+.sidebar-item {
+  position: relative;
+}
+
+.sidebar-popup {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 55px;
+  width: 220px;
+  background: #fff;
+  border: 1px solid #dee2e6;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 0 6px 6px 0;
+  z-index: 1050;
+}
+
+.sidebar-item:hover .sidebar-popup {
+  display: block;
+}
