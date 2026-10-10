@@ -1,0 +1,124 @@
+/* إزاحة الصفحة للجانب لترك مساحة للشريط الثابت */
+body {
+    padding-left: 55px;
+}
+
+/* الشريط الجانبي الثابت بطول الصفحة كاملة */
+.sidebar-categories {
+    width: 55px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background: #fff;
+    border-right: 1px solid #dee2e6;
+    z-index: 1040;
+}
+
+.sidebar-item {
+    position: relative;
+}
+
+.sidebar-popup {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 55px;
+    width: 220px;
+    background: #fff;
+    border: 1px solid #dee2e6;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 0 6px 6px 0;
+    z-index: 1050;
+}
+
+.sidebar-item:hover .sidebar-popup {
+    display: block;
+}
+
+/* فتح القوائم المنسدلة العلوية عند Hover */
+@media (min-width: 992px) {
+    .navbar .dropdown:hover .dropdown-menu {
+        display: block;
+        margin-top: 0;
+    }
+}
+
+body {
+    background-color: #f7f8f9;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Custom Select Dropdowns */
+.custom-select {
+    border-color: #e0e0e0;
+    font-size: 0.875rem;
+    cursor: pointer;
+    background-color: #ffffff;
+}
+
+/* Blog Cards styling */
+.blog-card {
+    background-color: #ffffff;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border: 1px solid #edf0f2 !important;
+}
+
+.blog-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.06) !important;
+}
+
+/* Tag Blue Dot */
+.dot {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    margin-right: 4px;
+    vertical-align: middle;
+}
+
+/* Read More hover effect */
+.read-more {
+    transition: color 0.2s ease;
+}
+
+.read-more:hover {
+    color: #0d6efd !important;
+}
+
+/* Pagination Styling */
+.pagination .page-link {
+    border: 1px solid #e2e8f0;
+    color: #4a5568;
+    background-color: #fff;
+    min-width: 38px;
+    text-align: center;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: #fd7e14;
+    /* البرتقالي الخاص بالصفحة النشطة كما في الصورة */
+    border-color: #fd7e14;
+    color: #fff;
+}
+
+/* Floating Scroll to Top button */
+.scroll-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2b59c3;
+    border: none;
+    z-index: 999;
+}
+
+.scroll-to-top:hover {
+    background-color: #1a419b;
+}

@@ -5,9 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+        <!-- 1. Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- 2. Bootstrap Icons (لأيقونات bi bi-*) -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+<!-- 3. Tabler Icons (لأيقونات ti ti-*) -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+
+
+
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,19 +23,23 @@
     
 </head>
 <body>
+
+
+
+    
     <!-- ================================= الناف بار يلي فوق ====================== -->
-    <div class="border-bottom mt-2">
+    <div class="border-bottom mt-2 d-none d-sm-block">
 
     <div class="container">
         <div class="row align-items-center">
 
             <!-- ========================= الروابط على اليسار =====================-->
             <div class="col-4 text-start small">
-                <a href="" class="text-decoration-none text-secondary">About Us</a>
+                <a href="/code/page/about.html" class="text-decoration-none text-secondary">About Us</a>
                 <span>|</span>
-                <a href="" class="text-decoration-none text-secondary">Careers</a>
+                <a href="/code/page/careers.html" class="text-decoration-none text-secondary">Careers</a>
                 <span>|</span>
-                <a href="" class="text-decoration-none text-secondary">Open a shop</a>
+                <a href="/code/shop/shop.html" class="text-decoration-none text-secondary">Open a shop</a>
             </div>
 
             <!-- CENTER -->
@@ -55,6 +67,7 @@
     </div>
 
 
+
     <!--================================== الناف الرئيسية يلي تحت ======================== -->
     <!-- ================= NAVBAR ================= -->
 
@@ -62,7 +75,7 @@
 
 <nav class="navbar navbar-expand-md bg-light border-bottom sticky-top">
 
-    <div class="container-fluid px-4">
+    <div class="container px-1">
 
         <!-- LOGO -->
         <a class="navbar-brand" href="">
@@ -76,7 +89,7 @@
         <!-- ============ الزر المخصص للهاتف=========== -->
         <button class="navbar-toggler"
                 type="button"
-                data-bs-toggle="collapse"
+               data-bs-toggle="collapse"
                 data-bs-target="#mainNavbar"
                 aria-controls="mainNavbar"
                 aria-expanded="false"
@@ -111,13 +124,13 @@
                         <ul class="dropdown-menu">
 
                             <li>
-                                <a href="" class="dropdown-item">
+                                <a href="/code/page/about.html" class="dropdown-item">
                                     ABOUT
                                 </a>
                             </li>
 
                             <li>
-                                <a href="" class="dropdown-item">
+                                <a href="/code/blog/blog.html" class="dropdown-item">
                                     BLOG
                                 </a>
                             </li>
@@ -129,7 +142,7 @@
                             </li>
 
                             <li>
-                                <a href="" class="dropdown-item">
+                                <a href="/code/shop/cart.html" class="dropdown-item">
                                     CART
                                 </a>
                             </li>
@@ -179,7 +192,7 @@
                     <ul class="dropdown-menu">
 
                         <li>
-                            <a href="" class="dropdown-item">
+                            <a href="index.html" class="dropdown-item">
                                 Home 1
                             </a>
                         </li>
@@ -191,25 +204,25 @@
                         </li>
 
                         <li>
-                            <a href="" class="dropdown-item">
+                            <a href="home3.html" class="dropdown-item">
                                 Home 3
                             </a>
                         </li>
 
                         <li>
-                            <a href="" class="dropdown-item">
+                            <a href="home4.html" class="dropdown-item">
                                 Home 4
                             </a>
                         </li>
 
                         <li>
-                            <a href="" class="dropdown-item">
+                            <a href="home5.html" class="dropdown-item">
                                 Home 5
                             </a>
                         </li>
 
                         <li>
-                            <a href="" class="dropdown-item">
+                            <a href="home6.html" class="dropdown-item">
                                 Home 6
                             </a>
                         </li>
@@ -221,14 +234,20 @@
                         </li>
 
                         <li>
-                            <a href="" class="dropdown-item">
+                            <a href="home8.html" class="dropdown-item">
                                 Home 8
                             </a>
                         </li>
 
                         <li>
-                            <a href="" class="dropdown-item">
+                            <a href="home9.html" class="dropdown-item">
                                 Home 9
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="home10.html" class="dropdown-item">
+                                Home 10
                             </a>
                         </li>
 
@@ -257,14 +276,68 @@
                         </li>
 
                         <li>
-                            <a href="" class="dropdown-item">
+                            <a href="shop/shop.html" class="dropdown-item">
                                 Shop Grid
                             </a>
                         </li>
 
                         <li>
-                            <a href="" class="dropdown-item">
+                            <a href="shop/shop2.html" class="dropdown-item">
                                 Shop Grid 2
+                            </a>
+                        </li>
+
+                         <li>
+                            <a href="shop/shop3.html" class="dropdown-item">
+                                Shop List left
+                            </a>
+                        </li>
+
+                         <li>
+                            <a href="shop/shop4.html" class="dropdown-item">
+                                Shop List right
+                            </a>
+                        </li>
+
+                         <li>
+                            <a href="shop/product1.html" class="dropdown-item">
+                                Shop Products
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="shop/product2.html" class="dropdown-item">
+                                Shop Products 2
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="shop/product3.html" class="dropdown-item">
+                                Shop Products 3
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="shop/product4.html" class="dropdown-item">
+                                Shop Products 4
+                            </a>
+                        </li>
+
+                         <li>
+                            <a href="shop/cart.html" class="dropdown-item">
+                                Shopping Cart
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="shop/wishlist.html" class="dropdown-item">
+                                Shopping WishList
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="shop/shop-compare.html" class="dropdown-item">
+                                Shopping Compare
                             </a>
                         </li>
 
@@ -276,7 +349,7 @@
                 <!-- VENDORS -->
                 <li class="nav-item dropdown">
 
-                    <a href=""
+                    <a href="/code/imges/vendors-single.html"
                        class="nav-link dropdown-toggle"
                        data-bs-toggle="dropdown">
 
@@ -287,13 +360,13 @@
                     <ul class="dropdown-menu">
 
                         <li>
-                            <a href="" class="dropdown-item">
+                            <a href="/code/imges/vendors-single.html" class="dropdown-item">
                                 Vendor singel
                             </a>
                         </li>
 
                         <li>
-                            <a href="" class="dropdown-item">
+                            <a href="/code/imges/vendors-listing.html" class="dropdown-item">
                                 Vendor listing
                             </a>
                         </li>
@@ -317,31 +390,31 @@
                     <ul class="dropdown-menu">
 
                         <li>
-                            <a href="" class="dropdown-item">
+                            <a href="/code/about.html" class="dropdown-item">
                                 About us
                             </a>
                         </li>
 
                         <li>
-                            <a href="" class="dropdown-item">
-                                Blog
+                            <a href="/code/page/contact.html" class="dropdown-item">
+                                Contatct us
                             </a>
                         </li>
 
                         <li>
-                            <a href="" class="dropdown-item">
+                            <a href="/code/page/career.html" class="dropdown-item">
                                 Careers
                             </a>
                         </li>
 
                         <li>
-                            <a href="" class="dropdown-item">
+                            <a href="/code/page/register.html" class="dropdown-item">
                                 Register
                             </a>
                         </li>
 
                         <li>
-                            <a href="" class="dropdown-item">
+                            <a href="/code/page/login.html" class="dropdown-item">
                                 Login
                             </a>
                         </li>
@@ -371,13 +444,13 @@
                     <ul class="dropdown-menu">
 
                         <li>
-                            <a href="" class="dropdown-item">
+                            <a href="/code/blog/blog-r.html" class="dropdown-item">
                                 Blog
                             </a>
                         </li>
 
                         <li>
-                            <a href="" class="dropdown-item">
+                            <a href="/code/blog/blog.html" class="dropdown-item">
                                 Blog Grid
                             </a>
                         </li>
@@ -396,7 +469,7 @@
                 <!-- CONTACT US -->
                 <li class="nav-item">
 
-                    <a href=""
+                    <a href="/code/page/contact.html"
                        class="nav-link">
 
                         Contact Us
@@ -416,7 +489,7 @@
 
 
                 <!-- ACCOUNT -->
-                <a href=""
+                <a href="/code/account/mycount.html"
                    class="text-secondary text-decoration-none
                           d-inline-flex align-items-center gap-1">
 
@@ -428,31 +501,38 @@
 
 
                 <!-- WISHLIST -->
-                <a href=""
-                   class="text-secondary text-decoration-none
+                <a href="/code/shop/wishlist.html"
+                   class="text-secondary position-relative text-decoration-none
                           d-inline-flex align-items-center gap-1">
 
                     <i class="bi bi-heart-fill"></i>
-
+                    <span id="wish-count"
+                            class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning text-light">
+                            0
+                    </span>
                     <span>Wishlist</span>
 
                 </a>
 
 
                 <!-- CART -->
-                <a href=""
-                   class="text-secondary text-decoration-none
+                <a href="/code/shop/cart.html"
+                   class="text-secondary position-relative text-decoration-none
                           d-inline-flex align-items-center gap-1">
 
                     <i class="bi bi-cart-fill"></i>
 
+                    <span id="cart-count"
+                        class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning text-light">
+                        0
+                    </span>
                     <span>Cart</span>
 
                 </a>
 
 
                 <!-- COMPARE -->
-                <a href=""
+                <a href="/code/shop/shop-compare.html"
                    class="text-secondary text-decoration-none
                           d-inline-flex align-items-center gap-1">
 
@@ -469,6 +549,128 @@
     </div>
 
 </nav>
+
+<aside class="sidebar-categories d-none d-lg-flex d-sm-block flex-column align-items-center pt-2">
+        <div class="sidebar-item w-100">
+            <a href="#" class="d-flex justify-content-center align-items-center py-2 text-primary fs-5"><i
+                    class="bi bi-grid-fill"></i></a>
+            <div class="sidebar-popup p-2">
+                <a class="dropdown-item py-1" href="#">All Categories</a>
+                <a class="dropdown-item py-1" href="#">Featured Products</a>
+            </div>
+        </div>
+
+        <div class="sidebar-item w-100">
+            <a href="#" class="d-flex justify-content-center align-items-center py-2 text-secondary fs-5"><i
+                    class="bi bi-display"></i></a>
+            <div class="sidebar-popup p-2">
+                <a class="dropdown-item py-1" href="#">Computers & Laptops</a>
+                <a class="dropdown-item py-1" href="#">Cumputer Accessories</a>
+                <a class="dropdown-item py-1" href="#">Laptops</a>
+                <a class="dropdown-item py-1" href="#">HDD</a>
+                <a class="dropdown-item py-1" href="#">SSD</a>
+                <a class="dropdown-item py-1" href="#">Headphones</a>
+            </div>
+        </div>
+
+        <div class="sidebar-item w-100">
+            <a href="#" class="d-flex justify-content-center align-items-center py-2 text-secondary fs-5"><i
+                    class="bi bi-smartwatch"></i></a>
+            <div class="sidebar-popup p-2">
+                <a class="dropdown-item py-1" href="#">Smart Watches</a>
+                <a class="dropdown-item py-1" href="#">Fashion Smart Watches</a>
+                <a class="dropdown-item py-1" href="#">Smart Bracelets</a>
+                <a class="dropdown-item py-1" href="#">Pocket Watches</a>
+                <a class="dropdown-item py-1" href="#">Smart Rings</a>
+                <a class="dropdown-item py-1" href="#">Other Watches</a>
+            </div>
+        </div>
+
+        <div class="sidebar-item w-100">
+            <a href="#" class="d-flex justify-content-center align-items-center py-2 text-secondary fs-5">
+                <i class="bi bi-mouse2-fill"></i>
+            </a>
+            <div class="sidebar-popup p-2">
+                <a class="dropdown-item py-1" href="#">Logitech</a>
+                <a class="dropdown-item py-1" href="#">RedDragon</a>
+                <a class="dropdown-item py-1" href="#">Amazon Basics</a>
+                <a class="dropdown-item py-1" href="#">Microsoft</a>
+            </div>
+        </div>
+
+        <div class="sidebar-item w-100">
+            <a href="#" class="d-flex justify-content-center align-items-center py-2 text-secondary fs-5"><i
+                    class="bi bi-headphones"></i></a>
+            <div class="sidebar-popup p-2">
+                <a class="dropdown-item py-1" href="#">Headphones</a>
+                <a class="dropdown-item py-1" href="#">Earbuds</a>
+                <a class="dropdown-item py-1" href="#">DJ Headphones</a>
+                <a class="dropdown-item py-1" href="#">PC Accessories</a>
+            </div>
+        </div>
+
+        <div class="sidebar-item w-100">
+            <a href="#" class="d-flex justify-content-center align-items-center py-2 text-secondary fs-5"><i
+                    class="bi bi-bluetooth"></i></a>
+            <div class="sidebar-popup p-2">
+                <a class="dropdown-item py-1" href="#">Bluetooth Devices</a>
+                <a class="dropdown-item py-1" href="#">Player Accessories</a>
+                <a class="dropdown-item py-1" href="#">Speakers & Audio</a>
+                <a class="dropdown-item py-1" href="#">Computers Networking</a>
+            </div>
+        </div>
+
+        <div class="sidebar-item w-100">
+            <a href="#" class="d-flex justify-content-center align-items-center py-2 text-secondary fs-5">
+                <i class="bi bi-tree-fill"></i>
+            </a>
+            <div class="sidebar-popup p-2">
+                <a class="dropdown-item py-1" href="#">Android</a>
+                <a class="dropdown-item py-1" href="#">Linux</a>
+                <a class="dropdown-item py-1" href="#">Macintosh</a>
+                <a class="dropdown-item py-1" href="#">iPhone & IOS
+
+                </a>
+            </div>
+        </div>
+
+        <div class="sidebar-item w-100">
+            <a href="#" class="d-flex justify-content-center align-items-center py-2 text-secondary fs-5">
+                <i class="bi bi-plug-fill"></i>
+            </a>
+            <div class="sidebar-popup p-2">
+                <a class="dropdown-item py-1" href="#">Antenna Topres</a>
+                <a class="dropdown-item py-1" href="#">Automotive body</a>
+                <a class="dropdown-item py-1" href="#">Gas Tank Door</a>
+                <a class="dropdown-item py-1" href="#">Hood Scoops & Vent</a>
+            </div>
+        </div>
+
+        <div class="sidebar-item w-100">
+            <a href="#" class="d-flex justify-content-center align-items-center py-2 text-secondary fs-5">
+                <i class="bi bi-cpu"></i>
+            </a>
+            <div class="sidebar-popup p-2">
+                <a class="dropdown-item py-1" href="#">Computer CPU </a>
+                <a class="dropdown-item py-1" href="#">Internal Fans</a>
+                <a class="dropdown-item py-1" href="#">Speakers & Audio</a>
+                <a class="dropdown-item py-1" href="#">Graphics Card</a>
+            </div>
+        </div>
+
+        <div class="sidebar-item w-100">
+            <a href="#" class="d-flex justify-content-center align-items-center py-2 text-secondary fs-5">
+                <i class="bi bi-hdd-rack"></i>
+            </a>
+            <div class="sidebar-popup p-2">
+                <a class="dropdown-item py-1" href="#">JBL </a>
+                <a class="dropdown-item py-1" href="#">Anker</a>
+                <a class="dropdown-item py-1" href="#">Bose</a>
+                <a class="dropdown-item py-1" href="#">Logitch</a>
+            </div>
+        </div>
+    </aside>
+
 
     <!-- ==================== القسم الاوي يلي فيه سلايدر ================= -->
 
@@ -512,10 +714,10 @@
                             blandit.
                         </p>
 
-                        <div>
-                            <button class="btn btn-warning px-3 btn-outline-dark">
+                        <div><a class="text-decoration-none" href=""><button class="btn btn-warning px-3 btn-outline-dark">
                                 Shop Now
-                            </button>
+                            </button></a>
+                            
 
                             <a class="ms-2 text-decoration-none fw-light"
                                style="color: rgb(52, 52, 116);"
@@ -558,9 +760,9 @@
                         </p>
 
                         <div>
-                            <button class="btn btn-warning px-3 btn-outline-dark">
+                            <a class="text-decoration-none" href=""><button class="btn btn-warning px-3 btn-outline-dark">
                                 Shop Now
-                            </button>
+                            </button></a>
 
                             <a class="ms-2 text-decoration-none fw-light"
                                style="color: rgb(52, 52, 116);"
@@ -603,9 +805,9 @@
                         </p>
 
                         <div>
-                            <button class="btn btn-warning px-3 btn-outline-dark">
+                            <a class="text-decoration-none" href=""><button class="btn btn-warning px-3 btn-outline-dark">
                                 Shop Now
-                            </button>
+                            </button></a>
 
                             <a class="ms-2 text-decoration-none fw-light"
                                style="color: rgb(52, 52, 116);"
@@ -674,7 +876,9 @@
                         
                             <p class="w-50  small-discription">don't miss the last opportunity</p>
                             <div >
-                            <button class="btn btn-b  px-3 rounded-1 ">shop now</button>
+                            <a class="text-decoration-none" href=""><button class="btn btn-warning px-3 btn-outline-dark">
+                                Shop Now
+                            </button></a>
                         </div> 
                         
 
@@ -702,7 +906,9 @@
                         
                             <p class="w-50  small-discription">don't miss the last opportunity</p>
                             <div >
-                            <button class="btn btn-warning btn-outline-dark  px-3 rounded-1 ">shop now</button>
+                            <a class="text-decoration-none" href=""><button class="btn btn-warning px-3 btn-outline-dark">
+                                Shop Now
+                            </button></a>
                         </div> 
 
                         <img src="/assets/img/banner-small-2.png"
@@ -744,40 +950,38 @@
         <div class="col-md-7">
 
             <div class="border rounded p-3">
+    <div class="row row-cols-2 row-cols-sm-3 row-cols-lg-4 g-3 align-items-center">
 
-                <div class="d-flex justify-content-between align-items-center">
+        <div class="col text-center">
+            <a href="#"><img src="/assets/img/sliderlogo/acer.svg" class="img-fluid logo-hover" alt="Acer"></a>
+        </div>
 
-                    <a href="#" class=" link-dark text-decoration-none text-secondary ">
-                        <img src="/assets/img/sliderlogo/acer.svg" class="img-fuld logo-hover">
-                    </a>
+        <div class="col text-center">
+            <a href="#"><img src="/assets/img/sliderlogo/assus.svg" class="img-fluid logo-hover" alt="Asus"></a>
+        </div>
 
-                    <a href="#" class=" link-dark text-decoration-none text-secondary">
-                        <img src="/assets/img/sliderlogo/assus.svg" class="img-fuld logo-hover">
-                    </a>
+        <div class="col text-center">
+            <a href="#"><img src="/assets/img/sliderlogo/casio.svg" class="img-fluid logo-hover" alt="Casio"></a>
+        </div>
 
-                    <a href="#" class="link-dark text-decoration-none text-secondary">
-                        <img src="/assets/img/sliderlogo/casio.svg" class="img-fuld logo-hover">
-                    </a>
+        <div class="col text-center">
+            <a href="#"><img src="/assets/img/sliderlogo/dell.svg" class="img-fluid logo-hover" alt="Dell"></a>
+        </div>
 
-                    <a href="#" class="link-dark text-decoration-none text-secondary">
-                        <img src="/assets/img/sliderlogo/dell.svg" class="img-fuld logo-hover">
-                    </a>
+        <div class="col text-center">
+            <a href="#"><img src="/assets/img/sliderlogo/nokia.svg" class="img-fluid logo-hover" alt="Nokia"></a>
+        </div>
 
-                    <a href="#" class="link-dark text-decoration-none text-secondary">
-                        <img src="/assets/img/sliderlogo/nokia.svg" class="img-fuld logo-hover">
-                    </a>
+        <div class="col text-center">
+            <a href="#"><img src="/assets/img/sliderlogo/panasonic.svg" class="img-fluid logo-hover" alt="Panasonic"></a>
+        </div>
 
-                    <a href="#" class="link-dark text-decoration-none text-secondary">
-                        <img src="/assets/img/sliderlogo/panasonic.svg" class="img-fuld logo-hover">
-                    </a>
+        <div class="col text-center">
+            <a href="#"><img src="/assets/img/sliderlogo/vaio.svg" class="img-fluid logo-hover" alt="Vaio"></a>
+        </div>
 
-                    <a href="#" class="link-dark text-decoration-none text-secondary">
-                       <img src="/assets/img/sliderlogo/vaio.svg" class="img-fuld logo-hover">
-                    </a>
-
-                </div>
-
-            </div>
+    </div>
+</div>
 
         </div>
 
@@ -1258,7 +1462,8 @@
                     <h2 class="fw-bold title">Samsung <br>
                     2022 led TV</h2>
                     <p class="text-secondary">Special sale</p>
-                    <button class="btn btn-warning mt-3 btn-outline-dark">LEARN MORE</button>
+                    <a href="" class="text-direction-non"><button class="btn btn-warning mt-3 btn-outline-dark">LEARN MORE</button></a>
+                    
                 </div>
 
             </div>
@@ -1275,7 +1480,8 @@
                     <h2 class="fw-bold title">Drone Quadcopter<br>
                     UAV - DJI Air 2S</h2>
                     <p class="text-info">UAV - DJI Air 2S</p>
-                    <button class="btn btn-warning btn-outline-dark mt-3">LEARN MORE</button>
+                    <a href="" class="text-direction-non"><button class="btn btn-warning btn-outline-dark mt-3">LEARN MORE</button></a>
+                    
                 </div>
 
             </div>
@@ -1350,10 +1556,20 @@
                 </span>
 
                 <div class="hover-actions">
-                    <a href="#" class="text-danger border rounded-2 px-1 action-btn"><i class="bi bi-heart"></i></a>
-                    <a href="#" class="text-dark border rounded-2 px-1 action-btn"><i class="bi bi-arrow-repeat"></i>
-                    </a>
-                    <a href="#" class="text-dark border rounded-2 px-1 action-btn"><i class="bi bi-eye"></i></a>
+                    <button class="text-danger add-to-cart border rounded-2 px-1 action-btn"
+                        data-id="imac-kjdfvbhn"
+                    data-name="2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB"
+                    data-price="2856.3"
+                    data-brand="Apple"
+                    data-rating="5"
+                    data-reviews="65"
+                    data-stock="In Stock"
+                    data-image="/assets/img/seal product/imgsp3.png"
+
+                    ><i class="bi bi-heart  "></i></button>
+                    <button class="text-dark border rounded-2 px-1 action-btn"><i class="bi bi-arrow-repeat"></i>
+                    </button>
+                    <button class="text-dark border rounded-2 px-1 action-btn"><i class="bi bi-eye"></i></button>
                 </div>
 
                 <div class="text-center my-3">
@@ -1383,7 +1599,17 @@
                     </span>
                 </div>
 
-                <button class="btn btn-outline-secondary w-100 mt-3">
+                <button class="btn btn-outline-secondary add-to-cart w-100 mt-3"
+
+                    data-id="imac-kjdfvbhn"
+                    data-name="2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB"
+                    data-price="2856.3"
+                    data-brand="Apple"
+                    data-rating="5"
+                    data-reviews="65"
+                    data-stock="In Stock"
+                    data-image="/assets/img/seal product/imgsp3.png">
+                    
                     Add To Cart
                 </button>
 
@@ -1408,10 +1634,20 @@
                 </span>
 
                 <div class="hover-actions">
-                    <a href="#" class="text-danger border rounded-2 px-1 action-btn"><i class="bi bi-heart"></i></a>
-                    <a href="#" class="text-dark border rounded-2 px-1 action-btn"><i class="bi bi-arrow-repeat"></i>
-                    </a>
-                    <a href="#" class="text-dark border rounded-2 px-1 action-btn"><i class="bi bi-eye"></i></a>
+                    <button class="text-danger add-to-cart border rounded-2 px-1 action-btn"
+                        data-id="aa"
+                    data-name="2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB"
+                    data-price="2856.3"
+                    data-brand="Apple"
+                    data-rating="5"
+                    data-reviews="65"
+                    data-stock="In Stock"
+                    data-image="/assets/img/seal product/imgsp3.png"
+
+                    ><i class="bi bi-heart  "></i></button>
+                    <button class="text-dark border rounded-2 px-1 action-btn"><i class="bi bi-arrow-repeat"></i>
+                    </button>
+                    <button class="text-dark border rounded-2 px-1 action-btn"><i class="bi bi-eye"></i></button>
                 </div>
 
                 <div class="text-center my-3">
@@ -1442,7 +1678,16 @@
                     </span>
                 </div>
 
-                <button class="btn btn-outline-secondary w-100 mt-3">
+                <button class="btn btn-outline-secondary add-to-cart w-100 mt-3"
+                
+                    data-id="aa"
+                    data-name="2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB"
+                    data-price="2856.3"
+                    data-brand="Apple"
+                    data-rating="5"
+                    data-reviews="65"
+                    data-stock="In Stock"
+                    data-image="/assets/img/seal product/imgsp3.png">
                     Add To Cart
                 </button>
 
@@ -1467,10 +1712,20 @@
                 </span>
 
                 <div class="hover-actions">
-                    <a href="#" class="text-danger border rounded-2 px-1 action-btn"><i class="bi bi-heart"></i></a>
-                    <a href="#" class="text-dark border rounded-2 px-1 action-btn"><i class="bi bi-arrow-repeat"></i>
-                    </a>
-                    <a href="#" class="text-dark border rounded-2 px-1 action-btn"><i class="bi bi-eye"></i></a>
+                    <button class="text-danger add-to-cart border rounded-2 px-1 action-btn"
+                        data-id="imac-pohoighghghgh"
+                    data-name="2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB"
+                    data-price="2856.3"
+                    data-brand="Apple"
+                    data-rating="5"
+                    data-reviews="65"
+                    data-stock="In Stock"
+                    data-image="/assets/img/seal product/imgsp3.png"
+
+                    ><i class="bi bi-heart  "></i></button>
+                    <button class="text-dark border rounded-2 px-1 action-btn"><i class="bi bi-arrow-repeat"></i>
+                    </button>
+                    <button class="text-dark border rounded-2 px-1 action-btn"><i class="bi bi-eye"></i></button>
                 </div>
 
                 <div class="text-center my-3">
@@ -1501,7 +1756,15 @@
                     </span>
                 </div>
 
-                <button class="btn btn-outline-secondary w-100 mt-3">
+                <button class="btn btn-outline-secondary add-to-cart w-100 mt-3" 
+                data-id="imac-pohoighghghgh"
+                    data-name="2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB"
+                    data-price="2856.3"
+                    data-brand="Apple"
+                    data-rating="5"
+                    data-reviews="65"
+                    data-stock="In Stock"
+                    data-image="/assets/img/seal product/imgsp3.png">
                     Add To Cart
                 </button>
 
@@ -1526,10 +1789,20 @@
                 </span>
 
                 <div class="hover-actions">
-                    <a href="#" class="text-danger border rounded-2 px-1 action-btn"><i class="bi bi-heart"></i></a>
-                    <a href="#" class="text-dark border rounded-2 px-1 action-btn"><i class="bi bi-arrow-repeat"></i>
-                    </a>
-                    <a href="#" class="text-dark border rounded-2 px-1 action-btn"><i class="bi bi-eye"></i></a>
+                    <button class="text-danger add-to-cart border rounded-2 px-1 action-btn"
+                        data-id="shfgdf"
+                    data-name="2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB"
+                    data-price="2856.3"
+                    data-brand="Apple"
+                    data-rating="5"
+                    data-reviews="65"
+                    data-stock="In Stock"
+                    data-image="/assets/img/seal product/imgsp3.png"
+
+                    ><i class="bi bi-heart  "></i></button>
+                    <button class="text-dark border rounded-2 px-1 action-btn"><i class="bi bi-arrow-repeat"></i>
+                    </button>
+                    <button class="text-dark border rounded-2 px-1 action-btn"><i class="bi bi-eye"></i></button>
                 </div>
 
                 <div class="text-center my-3">
@@ -1560,7 +1833,15 @@
                     </span>
                 </div>
 
-                <button class="btn btn-outline-secondary w-100 mt-3">
+                <button class="btn btn-outline-secondary add-to-cart w-100 mt-3"
+                        data-id="shfgdf"
+                        data-name="Apple Watch Series 8 [GPS 45mm] Smart Watch"
+                        data-price="530.3"
+                        data-brand="Apple"
+                        data-rating="5"
+                        data-reviews="65"
+                        data-stock="In Stock"
+                        data-image="/assets/img/seal product/imgsp6.png">
                     Add To Cart
                 </button>
 
@@ -1585,10 +1866,20 @@
                 </span>
 
                 <div class="hover-actions">
-                    <a href="#" class="text-danger border rounded-2 px-1 action-btn"><i class="bi bi-heart"></i></a>
-                    <a href="#" class="text-dark border rounded-2 px-1 action-btn"><i class="bi bi-arrow-repeat"></i>
-                    </a>
-                    <a href="#" class="text-dark border rounded-2 px-1 action-btn"><i class="bi bi-eye"></i></a>
+                    <button class="text-danger add-to-cart border rounded-2 px-1 action-btn"
+                        data-id="gfdhj457"
+                    data-name="2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB"
+                    data-price="2856.3"
+                    data-brand="Apple"
+                    data-rating="5"
+                    data-reviews="65"
+                    data-stock="In Stock"
+                    data-image="/assets/img/seal product/imgsp3.png"
+
+                    ><i class="bi bi-heart  "></i></button>
+                    <button class="text-dark border rounded-2 px-1 action-btn"><i class="bi bi-arrow-repeat"></i>
+                    </button>
+                    <button class="text-dark border rounded-2 px-1 action-btn"><i class="bi bi-eye"></i></button>
                 </div>
 
                 <div class="text-center my-3">
@@ -1619,7 +1910,15 @@
                     </span>
                 </div>
 
-                <button class="btn btn-outline-secondary w-100 mt-3">
+                <button class="btn btn-outline-secondary add-to-cart w-100 mt-3"
+                        data-id="gfdhj457"
+                        data-name="Kami by YI 4pc 1080p Home Security Cameras"
+                        data-price="156.3"
+                        data-brand="Kami"
+                        data-rating="5"
+                        data-reviews="65"
+                        data-stock="In Stock"
+                        data-image="/assets/img/seal product/imgsp7.png">
                     Add To Cart
                 </button>
 
@@ -1697,10 +1996,20 @@
                 </span>
 
                 <div class="hover-actions">
-                    <a href="#" class="text-danger border rounded-2 px-1 action-btn"><i class="bi bi-heart"></i></a>
-                    <a href="#" class="text-dark border rounded-2 px-1 action-btn"><i class="bi bi-arrow-repeat"></i>
-                    </a>
-                    <a href="#" class="text-dark border rounded-2 px-1 action-btn"><i class="bi bi-eye"></i></a>
+                    <button class="text-danger add-to-cart border rounded-2 px-1 action-btn"
+                        data-id="gfdhj457"
+                    data-name="2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB"
+                    data-price="2856.3"
+                    data-brand="Apple"
+                    data-rating="5"
+                    data-reviews="65"
+                    data-stock="In Stock"
+                    data-image="/assets/img/seal product/imgsp3.png"
+
+                    ><i class="bi bi-heart  "></i></button>
+                    <button class="text-dark border rounded-2 px-1 action-btn"><i class="bi bi-arrow-repeat"></i>
+                    </button>
+                    <button class="text-dark border rounded-2 px-1 action-btn"><i class="bi bi-eye"></i></button>
                 </div>
 
                 <div id="dealSlider" class="carousel slide" data-bs-ride="carousel"
@@ -1863,10 +2172,21 @@
                 </span>
 
                 <div class="hover-actions">
-                    <a href="#" class="text-danger border rounded-2 px-1 action-btn"><i class="bi bi-heart"></i></a>
-                    <a href="#" class="text-dark border rounded-2 px-1 action-btn"><i class="bi bi-arrow-repeat"></i>
-                    </a>
-                    <a href="#" class="text-dark border rounded-2 px-1 action-btn"><i class="bi bi-eye"></i></a>
+                    <button 
+                    data-id="imac-njnj090"
+                    data-name="2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB"
+                    data-price="2856.3"
+                    data-brand="Apple"
+                    data-rating="5"
+                    data-reviews="65"
+                    data-stock="In Stock"
+                    data-image="/assets/img/seal product/imgsp3.png"
+
+                    class="text-danger add-to-cart border rounded-2 px-1 action-btn"><i class="bi bi-heart"></i></button>
+
+                    <button class="text-dark border rounded-2 px-1 action-btn"><i class="bi bi-arrow-repeat"></i>
+                    </button>
+                    <button class="text-dark border rounded-2 px-1 action-btn"><i class="bi bi-eye"></i></button>
                 </div>
 
                 <div class="text-center my-3">
@@ -1895,7 +2215,15 @@
                     </span>
                 </div>
 
-                <button class="btn btn-outline-secondary w-100 mt-3">
+                <button class="btn btn-outline-secondary add-to-cart w-100 mt-3"
+                data-id="imac-njnj090"
+                    data-name="2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB"
+                    data-price="2856.3"
+                    data-brand="Apple"
+                    data-rating="5"
+                    data-reviews="65"
+                    data-stock="In Stock"
+                    data-image="/assets/img/seal product/imgsp3.png">
                     Add To Cart
                 </button>
 
@@ -1920,10 +2248,21 @@
                 </span>
 
                 <div class="hover-actions">
-                    <a href="#" class="text-danger border rounded-2 px-1 action-btn"><i class="bi bi-heart"></i></a>
-                    <a href="#" class="text-dark border rounded-2 px-1 action-btn"><i class="bi bi-arrow-repeat"></i>
-                    </a>
-                    <a href="#" class="text-dark border rounded-2 px-1 action-btn"><i class="bi bi-eye"></i></a>
+                    <button
+                    data-id="97987"
+                    data-name="2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB"
+                    data-price="2856.3"
+                    data-brand="Apple"
+                    data-rating="5"
+                    data-reviews="65"
+                    data-stock="In Stock"
+                    data-image="/assets/img/seal product/imgsp3.png"
+
+                    class="text-danger add-to-cart border rounded-2 px-1 action-btn"><i class="bi bi-heart"></i></button>
+
+                    <button class="text-dark border rounded-2 px-1 action-btn"><i class="bi bi-arrow-repeat"></i>
+                    </button>
+                    <button class="text-dark border rounded-2 px-1 action-btn"><i class="bi bi-eye"></i></button>
                 </div>
 
                 <div class="text-center my-3">
@@ -1952,7 +2291,15 @@
                     </span>
                 </div>
 
-                <button class="btn btn-outline-secondary w-100 mt-3">
+                <button class="btn btn-outline-secondary add-to-cart w-100 mt-3"
+                        data-id="97987"
+                        data-name="Lenovo Legion 5i 15.6 Laptop, Intel Core i5"
+                        data-price="2856.3"
+                        data-brand="Lenovo"
+                        data-rating="5"
+                        data-reviews="65"
+                        data-stock="In Stock"
+                        data-image="/assets/img/seal product/imgsp5.png">
                     Add To Cart
                 </button>
 
@@ -1977,10 +2324,21 @@
                 </span>
 
                 <div class="hover-actions">
-                    <a href="#" class="text-danger border rounded-2 px-1 action-btn"><i class="bi bi-heart"></i></a>
-                    <a href="#" class="text-dark border rounded-2 px-1 action-btn"><i class="bi bi-arrow-repeat"></i>
-                    </a>
-                    <a href="#" class="text-dark border rounded-2 px-1 action-btn"><i class="bi bi-eye"></i></a>
+                    <button 
+                    data-id="ksrtjuws"
+                    data-name="2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB"
+                    data-price="2856.3"
+                    data-brand="Apple"
+                    data-rating="5"
+                    data-reviews="65"
+                    data-stock="In Stock"
+                    data-image="/assets/img/seal product/imgsp3.png"
+
+                    class="text-danger add-to-cart border rounded-2 px-1 action-btn"><i class="bi bi-heart"></i></button>
+
+                    <button class="text-dark border rounded-2 px-1 action-btn"><i class="bi bi-arrow-repeat"></i>
+                    </button>
+                    <button class="text-dark border rounded-2 px-1 action-btn"><i class="bi bi-eye"></i></button>
                 </div>
 
                 <div class="text-center my-3">
@@ -2009,7 +2367,15 @@
                     </span>
                 </div>
 
-                <button class="btn btn-outline-secondary w-100 mt-3">
+                <button class="btn btn-outline-secondary add-to-cart w-100 mt-3"
+                        data-id="ksrtjuws"
+                        data-name="Apple AirPods Pro with MagSafe Charging Case"
+                        data-price="2856.3"
+                        data-brand="Apple"
+                        data-rating="5"
+                        data-reviews="65"
+                        data-stock="In Stock"
+                        data-image="/assets/img/seal product/imgsp6.png">
                     Add To Cart
                 </button>
 
@@ -2034,10 +2400,21 @@
                 </span>
 
                 <div class="hover-actions">
-                    <a href="#" class="text-danger border rounded-2 px-1 action-btn"><i class="bi bi-heart"></i></a>
-                    <a href="#" class="text-dark border rounded-2 px-1 action-btn"><i class="bi bi-arrow-repeat"></i>
-                    </a>
-                    <a href="#" class="text-dark border rounded-2 px-1 action-btn"><i class="bi bi-eye"></i></a>
+                    <button 
+                    data-id="324q5sdfhg"
+                    data-name="2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB"
+                    data-price="2856.3"
+                    data-brand="Apple"
+                    data-rating="5"
+                    data-reviews="65"
+                    data-stock="In Stock"
+                    data-image="/assets/img/seal product/imgsp3.png"
+
+                    class="text-danger add-to-cart border rounded-2 px-1 action-btn"><i class="bi bi-heart"></i></button>
+
+                    <button href="#" class="text-dark border rounded-2 px-1 action-btn"><i class="bi bi-arrow-repeat"></i>
+                    </button>
+                    <button class="text-dark border rounded-2 px-1 action-btn"><i class="bi bi-eye"></i></button>
                 </div>
 
                 <div class="text-center my-3">
@@ -2066,7 +2443,15 @@
                     </span>
                 </div>
 
-                <button class="btn btn-outline-secondary w-100 mt-3">
+                <button class="btn btn-outline-secondary add-to-cart w-100 mt-3"
+                        data-id="324q5sdfhg"
+                        data-name="Razer Power Up Gaming Bundle V2"
+                        data-price="2856.3"
+                        data-brand="Razer"
+                        data-rating="5"
+                        data-reviews="65"
+                        data-stock="In Stock"
+                        data-image="/assets/img/seal product/imgsp7.png">
                     Add To Cart
                 </button>
 
@@ -2091,10 +2476,21 @@
                 </span>
 
                 <div class="hover-actions">
-                    <a href="#" class="text-danger border rounded-2 px-1 action-btn"><i class="bi bi-heart"></i></a>
-                    <a href="#" class="text-dark border rounded-2 px-1 action-btn"><i class="bi bi-arrow-repeat"></i>
-                    </a>
-                    <a href="#" class="text-dark border rounded-2 px-1 action-btn"><i class="bi bi-eye"></i></a>
+                    <button 
+                    data-id="imac-njnj090"
+                    data-name="2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB"
+                    data-price="2856.3"
+                    data-brand="Apple"
+                    data-rating="5"
+                    data-reviews="65"
+                    data-stock="In Stock"
+                    data-image="/assets/img/seal product/imgsp3.png"
+
+                    class="text-danger add-to-cart border rounded-2 px-1 action-btn"><i class="bi bi-heart"></i></button>
+
+                    <button href="#" class="text-dark border rounded-2 px-1 action-btn"><i class="bi bi-arrow-repeat"></i>
+                    </button>
+                    <button class="text-dark border rounded-2 px-1 action-btn"><i class="bi bi-eye"></i></button>
                 </div>
 
                 <div class="text-center my-3">
@@ -2123,7 +2519,15 @@
                     </span>
                 </div>
 
-                <button class="btn btn-outline-secondary w-100 mt-3">
+                <button class="btn btn-outline-secondary add-to-cart w-100 mt-3"
+                        data-id=",lmknjbh"
+                        data-name="ASUS ROG Strix Gaming Desktop, AMD Ryzen 5"
+                        data-price="2856.3"
+                        data-brand="ASUS"
+                        data-rating="5"
+                        data-reviews="65"
+                        data-stock="In Stock"
+                        data-image="/assets/img/seal product/imgsp3.png">
                     Add To Cart
                 </button>
 
@@ -2148,10 +2552,21 @@
                 </span>
 
                 <div class="hover-actions">
-                    <a href="#" class="text-danger border rounded-2 px-1 action-btn"><i class="bi bi-heart"></i></a>
-                    <a href="#" class="text-dark border rounded-2 px-1 action-btn"><i class="bi bi-arrow-repeat"></i>
-                    </a>
-                    <a href="#" class="text-dark border rounded-2 px-1 action-btn"><i class="bi bi-eye"></i></a>
+                    <button 
+                    data-id="kskslap"
+                    data-name="2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB"
+                    data-price="2856.3"
+                    data-brand="Apple"
+                    data-rating="5"
+                    data-reviews="65"
+                    data-stock="In Stock"
+                    data-image="/assets/img/seal product/imgsp3.png"
+
+                    class="text-danger add-to-cart border rounded-2 px-1 action-btn"><i class="bi bi-heart"></i></button>
+
+                    <button href="#" class="text-dark border rounded-2 px-1 action-btn"><i class="bi bi-arrow-repeat"></i>
+                    </button>
+                    <button class="text-dark border rounded-2 px-1 action-btn"><i class="bi bi-eye"></i></button>
                 </div>
 
                 <div class="text-center my-3">
@@ -2180,7 +2595,15 @@
                     </span>
                 </div>
 
-                <button class="btn btn-outline-secondary w-100 mt-3">
+                <button class="btn btn-outline-secondary add-to-cart w-100 mt-3"
+                        data-id="kskslap"
+                        data-name="Fujifilm INSTAX Mini Link 2 Smartphone Printer"
+                        data-price="2856.3"
+                        data-brand="Fujifilm"
+                        data-rating="5"
+                        data-reviews="65"
+                        data-stock="In Stock"
+                        data-image="/assets/img/seal product/imgsp1.png">
                     Add To Cart
                 </button>
 
@@ -2214,10 +2637,21 @@
                 </span>
 
                 <div class="hover-actions">
-                    <a href="#" class="text-danger border rounded-2 px-1 action-btn"><i class="bi bi-heart"></i></a>
-                    <a href="#" class="text-dark border rounded-2 px-1 action-btn"><i class="bi bi-arrow-repeat"></i>
-                    </a>
-                    <a href="#" class="text-dark border rounded-2 px-1 action-btn"><i class="bi bi-eye"></i></a>
+                    <button 
+                    data-id="zaxfnj"
+                    data-name="2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB"
+                    data-price="2856.3"
+                    data-brand="Apple"
+                    data-rating="5"
+                    data-reviews="65"
+                    data-stock="In Stock"
+                    data-image="/assets/img/seal product/imgsp3.png"
+
+                    class="text-danger add-to-cart border rounded-2 px-1 action-btn"><i class="bi bi-heart"></i></button>
+
+                    <button href="#" class="text-dark border rounded-2 px-1 action-btn"><i class="bi bi-arrow-repeat"></i>
+                    </button>
+                    <button class="text-dark border rounded-2 px-1 action-btn"><i class="bi bi-eye"></i></button>
                 </div>
 
                 <div class="text-center my-3">
@@ -2247,7 +2681,15 @@
                     </span>
                 </div>
 
-                <button class="btn btn-outline-secondary w-100 mt-3">
+                <button class="btn btn-outline-secondary add-to-cart w-100 mt-3"
+                        data-id="zaxfnj"
+                        data-name="2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB"
+                        data-price="2856.3"
+                        data-brand="Apple"
+                        data-rating="5"
+                        data-reviews="65"
+                        data-stock="In Stock"
+                        data-image="/assets/img/seal product/imgsp3.png">
                     Add To Cart
                 </button>
 
@@ -2272,10 +2714,21 @@
                 </span>
 
                 <div class="hover-actions">
-                    <a href="#" class="text-danger border rounded-2 px-1 action-btn"><i class="bi bi-heart"></i></a>
-                    <a href="#" class="text-dark border rounded-2 px-1 action-btn"><i class="bi bi-arrow-repeat"></i>
-                    </a>
-                    <a href="#" class="text-dark border rounded-2 px-1 action-btn"><i class="bi bi-eye"></i></a>
+                    <button 
+                    data-id="imac-njnj090"
+                    data-name="2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB"
+                    data-price="2856.3"
+                    data-brand="Apple"
+                    data-rating="5"
+                    data-reviews="65"
+                    data-stock="In Stock"
+                    data-image="/assets/img/seal product/imgsp3.png"
+
+                    class="text-danger add-to-cart border rounded-2 px-1 action-btn"><i class="bi bi-heart"></i></button>
+
+                    <button href="#" class="text-dark border rounded-2 px-1 action-btn"><i class="bi bi-arrow-repeat"></i>
+                    </button>
+                    <button class="text-dark border rounded-2 px-1 action-btn"><i class="bi bi-eye"></i></button>
                 </div>
 
                 <div class="text-center my-3">
@@ -2306,7 +2759,15 @@
                     </span>
                 </div>
 
-                <button class="btn btn-outline-secondary w-100 mt-3">
+                <button class="btn btn-outline-secondary add-to-cart w-100 mt-3"
+                        data-id="4556ji"
+                        data-name="Philips H4205 On-Ear Wireless Headphones with 32mm"
+                        data-price="154.0"
+                        data-brand="Philips"
+                        data-rating="5"
+                        data-reviews="65"
+                        data-stock="In Stock"
+                        data-image="/assets/img/seal product/imgsp4.png">
                     Add To Cart
                 </button>
 
@@ -2331,10 +2792,21 @@
                 </span>
 
                 <div class="hover-actions">
-                    <a href="#" class="text-danger border rounded-2 px-1 action-btn"><i class="bi bi-heart"></i></a>
-                    <a href="#" class="text-dark border rounded-2 px-1 action-btn"><i class="bi bi-arrow-repeat"></i>
-                    </a>
-                    <a href="#" class="text-dark border rounded-2 px-1 action-btn"><i class="bi bi-eye"></i></a>
+                    <button 
+                    data-id="mkgvfskg"
+                    data-name="2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB"
+                    data-price="2856.3"
+                    data-brand="Apple"
+                    data-rating="5"
+                    data-reviews="65"
+                    data-stock="In Stock"
+                    data-image="/assets/img/seal product/imgsp3.png"
+
+                    class="text-danger add-to-cart border rounded-2 px-1 action-btn"><i class="bi bi-heart"></i></button>
+
+                    <button href="#" class="text-dark border rounded-2 px-1 action-btn"><i class="bi bi-arrow-repeat"></i>
+                    </button>
+                    <button class="text-dark border rounded-2 px-1 action-btn"><i class="bi bi-eye"></i></button>
                 </div>
 
                 <div class="text-center my-3">
@@ -2365,7 +2837,15 @@
                     </span>
                 </div>
 
-                <button class="btn btn-outline-secondary w-100 mt-3">
+                <button class="btn btn-outline-secondary add-to-cart w-100 mt-3"
+                        data-id="mkgvfskg"
+                        data-name="2020 Apple MacBook Air Laptop: Apple M1 Chip, 13"
+                        data-price="2325.3"
+                        data-brand="Apple"
+                        data-rating="5"
+                        data-reviews="65"
+                        data-stock="In Stock"
+                        data-image="/assets/img/seal product/imgsp5.png">
                     Add To Cart
                 </button>
 
@@ -2390,10 +2870,21 @@
                 </span>
 
                 <div class="hover-actions">
-                    <a href="#" class="text-danger border rounded-2 px-1 action-btn"><i class="bi bi-heart"></i></a>
-                    <a href="#" class="text-dark border rounded-2 px-1 action-btn"><i class="bi bi-arrow-repeat"></i>
-                    </a>
-                    <a href="#" class="text-dark border rounded-2 px-1 action-btn"><i class="bi bi-eye"></i></a>
+                    <button 
+                    data-id="imac-njnj090"
+                    data-name="2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB"
+                    data-price="2856.3"
+                    data-brand="Apple"
+                    data-rating="5"
+                    data-reviews="65"
+                    data-stock="In Stock"
+                    data-image="/assets/img/seal product/imgsp3.png"
+
+                    class="text-danger add-to-cart border rounded-2 px-1 action-btn"><i class="bi bi-heart"></i></button>
+
+                    <button href="#" class="text-dark border rounded-2 px-1 action-btn"><i class="bi bi-arrow-repeat"></i>
+                    </button>
+                    <button class="text-dark border rounded-2 px-1 action-btn"><i class="bi bi-eye"></i></button>
                 </div>
 
                 <div class="text-center my-3">
@@ -2424,7 +2915,15 @@
                     </span>
                 </div>
 
-                <button class="btn btn-outline-secondary w-100 mt-3">
+                <button class="btn btn-outline-secondary add-to-cart w-100 mt-3"
+                        data-id="apple-watch-series-8"
+                        data-name="Apple Watch Series 8 [GPS 45mm] Smart Watch"
+                        data-price="530.3"
+                        data-brand="Apple"
+                        data-rating="5"
+                        data-reviews="65"
+                        data-stock="In Stock"
+                        data-image="/assets/img/seal product/imgsp6.png">
                     Add To Cart
                 </button>
 
@@ -2449,10 +2948,21 @@
                 </span>
 
                 <div class="hover-actions">
-                    <a href="#" class="text-danger border rounded-2 px-1 action-btn"><i class="bi bi-heart"></i></a>
-                    <a href="#" class="text-dark border rounded-2 px-1 action-btn"><i class="bi bi-arrow-repeat"></i>
-                    </a>
-                    <a href="#" class="text-dark border rounded-2 px-1 action-btn"><i class="bi bi-eye"></i></a>
+                    <button 
+                    data-id="kami-tech0398u76-"
+                    data-name="2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB"
+                    data-price="2856.3"
+                    data-brand="Apple"
+                    data-rating="5"
+                    data-reviews="65"
+                    data-stock="In Stock"
+                    data-image="/assets/img/seal product/imgsp3.png"
+
+                    class="text-danger add-to-cart border rounded-2 px-1 action-btn"><i class="bi bi-heart"></i></button>
+
+                    <button href="#" class="text-dark border rounded-2 px-1 action-btn"><i class="bi bi-arrow-repeat"></i>
+                    </button>
+                    <button class="text-dark border rounded-2 px-1 action-btn"><i class="bi bi-eye"></i></button>
                 </div>
 
                 <div class="text-center my-3">
@@ -2483,7 +2993,15 @@
                     </span>
                 </div>
 
-                <button class="btn btn-outline-secondary w-100 mt-3">
+                <button class="btn btn-outline-secondary add-to-cart w-100 mt-3"
+                        data-id="kami-tech0398u76-"
+                        data-name="Kami by YI 4pc 1080p Home Security Cameras"
+                        data-price="156.3"
+                        data-brand="Kami Tech"
+                        data-rating="5"
+                        data-reviews="65"
+                        data-stock="In Stock"
+                        data-image="/assets/img/seal product/imgsp7.png">
                     Add To Cart
                 </button>
 
@@ -2532,9 +3050,11 @@
                         From $3500.00
                     </p>
 
-                    <button class="btn btn-outline-dark btn-warning">
+                    <a href="" class="text-direction-non"><button class="btn btn-outline-dark btn-warning">
                         Shop Now
-                    </button>
+                    </button></a>
+
+                    
 
                 </div>
 
@@ -2571,9 +3091,11 @@
                                 Aqua Shift Special Edition
                             </p>
 
-                            <button class="btn btn-info btn-outline-secondary text-white">
+                            <a href="" class="text-direction-non"><button class="btn btn-info btn-outline-secondary text-white">
                                 Shop Now
-                            </button>
+                            </button></a>
+
+                            
 
                         </div>
 
@@ -2669,9 +3191,11 @@
                                 Use discount code in checkout page
                             </p>
 
-                            <button class="btn btn-outline-dark btn-warning">
+                            <a href="" class="text-direction-non"><button class="btn btn-outline-dark btn-warning">
                                 Shop Now
-                            </button>
+                            </button></a>
+
+                            
 
                         </div>
 
@@ -2760,10 +3284,21 @@
                 </span>
 
                 <div class="hover-actions">
-                    <a href="#" class="text-danger border rounded-2 px-1 action-btn"><i class="bi bi-heart"></i></a>
-                    <a href="#" class="text-dark border rounded-2 px-1 action-btn"><i class="bi bi-arrow-repeat"></i>
-                    </a>
-                    <a href="#" class="text-dark border rounded-2 px-1 action-btn"><i class="bi bi-eye"></i></a>
+                    <button 
+                    data-id="imac-njnj090"
+                    data-name="2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB"
+                    data-price="2856.3"
+                    data-brand="Apple"
+                    data-rating="5"
+                    data-reviews="65"
+                    data-stock="In Stock"
+                    data-image="/assets/img/seal product/imgsp3.png"
+
+                    class="text-danger add-to-cart border rounded-2 px-1 action-btn"><i class="bi bi-heart"></i></button>
+
+                    <button href="#" class="text-dark border rounded-2 px-1 action-btn"><i class="bi bi-arrow-repeat"></i>
+                    </button>
+                    <button class="text-dark border rounded-2 px-1 action-btn"><i class="bi bi-eye"></i></button>
                 </div>
 
                 <div class="text-center my-3">
@@ -2793,7 +3328,16 @@
                     </span>
                 </div>
 
-                <button class="btn btn-outline-secondary w-100 mt-3">
+                <button class="btn btn-outline-secondary add-to-cart w-100 mt-3"
+                
+                    data-id="aa"
+                    data-name="2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB"
+                    data-price="2856.3"
+                    data-brand="Apple"
+                    data-rating="5"
+                    data-reviews="65"
+                    data-stock="In Stock"
+                    data-image="/assets/img/seal product/imgsp3.png">
                     Add To Cart
                 </button>
 
@@ -2818,10 +3362,21 @@
                 </span>
 
                 <div class="hover-actions">
-                    <a href="#" class="text-danger border rounded-2 px-1 action-btn"><i class="bi bi-heart"></i></a>
-                    <a href="#" class="text-dark border rounded-2 px-1 action-btn"><i class="bi bi-arrow-repeat"></i>
-                    </a>
-                    <a href="#" class="text-dark border rounded-2 px-1 action-btn"><i class="bi bi-eye"></i></a>
+                    <button 
+                    data-id="kami-techhghgh"
+                    data-name="2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB"
+                    data-price="2856.3"
+                    data-brand="Apple"
+                    data-rating="5"
+                    data-reviews="65"
+                    data-stock="In Stock"
+                    data-image="/assets/img/seal product/imgsp3.png"
+
+                    class="text-danger add-to-cart border rounded-2 px-1 action-btn"><i class="bi bi-heart"></i></button>
+
+                    <button href="#" class="text-dark border rounded-2 px-1 action-btn"><i class="bi bi-arrow-repeat"></i>
+                    </button>
+                    <button class="text-dark border rounded-2 px-1 action-btn"><i class="bi bi-eye"></i></button>
                 </div>
 
                 <div class="text-center my-3">
@@ -2852,7 +3407,15 @@
                     </span>
                 </div>
 
-                <button class="btn btn-outline-secondary w-100 mt-3">
+                <button class="btn btn-outline-secondary add-to-cart w-100 mt-3"
+                        data-id="kami-techhghgh"
+                        data-name="Kami by YI 4pc 1080p Home Security Cameras"
+                        data-price="156.3"
+                        data-brand="Kami Tech"
+                        data-rating="5"
+                        data-reviews="65"
+                        data-stock="In Stock"
+                        data-image="/assets/img/seal product/imgsp7.png">
                     Add To Cart
                 </button>
 
@@ -2877,10 +3440,20 @@
                 </span>
 
                 <div class="hover-actions">
-                    <a href="#" class="text-danger border rounded-2 px-1 action-btn"><i class="bi bi-heart"></i></a>
-                    <a href="#" class="text-dark border rounded-2 px-1 action-btn"><i class="bi bi-arrow-repeat"></i>
-                    </a>
-                    <a href="#" class="text-dark border rounded-2 px-1 action-btn"><i class="bi bi-eye"></i></a>
+                    <button class="text-danger add-to-cart border rounded-2 px-1 action-btn"
+                        data-id="gfdhj457"
+                    data-name="2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB"
+                    data-price="2856.3"
+                    data-brand="Apple"
+                    data-rating="5"
+                    data-reviews="65"
+                    data-stock="In Stock"
+                    data-image="/assets/img/seal product/imgsp3.png"
+
+                    ><i class="bi bi-heart  "></i></button>
+                    <button class="text-dark border rounded-2 px-1 action-btn"><i class="bi bi-arrow-repeat"></i>
+                    </button>
+                    <button class="text-dark border rounded-2 px-1 action-btn"><i class="bi bi-eye"></i></button>
                 </div>
 
                 <div class="text-center my-3">
@@ -2911,7 +3484,15 @@
                     </span>
                 </div>
 
-                <button class="btn btn-outline-secondary w-100 mt-3">
+                <button class="btn btn-outline-secondary add-to-cart w-100 mt-3"
+                        data-id="kami-tech"
+                        data-name="Kami by YI 4pc 1080p Home Security Cameras"
+                        data-price="156.3"
+                        data-brand="Kami Tech"
+                        data-rating="5"
+                        data-reviews="65"
+                        data-stock="In Stock"
+                        data-image="/assets/img/seal product/imgsp7.png">
                     Add To Cart
                 </button>
 
@@ -2936,10 +3517,21 @@
                 </span>
 
                 <div class="hover-actions">
-                    <a href="#" class="text-danger border rounded-2 px-1 action-btn"><i class="bi bi-heart"></i></a>
-                    <a href="#" class="text-dark border rounded-2 px-1 action-btn"><i class="bi bi-arrow-repeat"></i>
-                    </a>
-                    <a href="#" class="text-dark border rounded-2 px-1 action-btn"><i class="bi bi-eye"></i></a>
+                    <button 
+                    data-id="kami-tech"
+                    data-name="2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB"
+                    data-price="2856.3"
+                    data-brand="Apple"
+                    data-rating="5"
+                    data-reviews="65"
+                    data-stock="In Stock"
+                    data-image="/assets/img/seal product/imgsp3.png"
+
+                    class="text-danger add-to-cart border rounded-2 px-1 action-btn"><i class="bi bi-heart"></i></button>
+
+                    <button href="#" class="text-dark border rounded-2 px-1 action-btn"><i class="bi bi-arrow-repeat"></i>
+                    </button>
+                    <button class="text-dark border rounded-2 px-1 action-btn"><i class="bi bi-eye"></i></button>
                 </div>
 
                 <div class="text-center my-3">
@@ -2970,7 +3562,15 @@
                     </span>
                 </div>
 
-                <button class="btn btn-outline-secondary w-100 mt-3">
+                <button class="btn btn-outline-secondary add-to-cart w-100 mt-3"
+                        data-id="kami-tech"
+                        data-name="Kami by YI 4pc 1080p Home Security Cameras"
+                        data-price="156.3"
+                        data-brand="Kami Tech"
+                        data-rating="5"
+                        data-reviews="65"
+                        data-stock="In Stock"
+                        data-image="/assets/img/seal product/imgsp7.png">
                     Add To Cart
                 </button>
 
@@ -2995,10 +3595,21 @@
                 </span>
 
                 <div class="hover-actions">
-                    <a href="#" class="text-danger border rounded-2 px-1 action-btn"><i class="bi bi-heart"></i></a>
-                    <a href="#" class="text-dark border rounded-2 px-1 action-btn"><i class="bi bi-arrow-repeat"></i>
-                    </a>
-                    <a href="#" class="text-dark border rounded-2 px-1 action-btn"><i class="bi bi-eye"></i></a>
+                    <button 
+                    data-id="imac-njnj090"
+                    data-name="2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB"
+                    data-price="2856.3"
+                    data-brand="Apple"
+                    data-rating="5"
+                    data-reviews="65"
+                    data-stock="In Stock"
+                    data-image="/assets/img/seal product/imgsp3.png"
+
+                    class="text-danger add-to-cart border rounded-2 px-1 action-btn"><i class="bi bi-heart"></i></button>
+
+                    <button href="#" class="text-dark border rounded-2 px-1 action-btn"><i class="bi bi-arrow-repeat"></i>
+                    </button>
+                    <button class="text-dark border rounded-2 px-1 action-btn"><i class="bi bi-eye"></i></button>
                 </div>
 
                 <div class="text-center my-3">
@@ -3029,7 +3640,15 @@
                     </span>
                 </div>
 
-                <button class="btn btn-outline-secondary w-100 mt-3">
+                <button class="btn btn-outline-secondary add-to-cart w-100 mt-3"
+                        data-id="kami-tech"
+                        data-name="Kami by YI 4pc 1080p Home Security Cameras"
+                        data-price="156.3"
+                        data-brand="Kami Tech"
+                        data-rating="5"
+                        data-reviews="65"
+                        data-stock="In Stock"
+                        data-image="/assets/img/seal product/imgsp7.png">
                     Add To Cart
                 </button>
 
@@ -4488,7 +5107,6 @@
 
 
 
-<a href=""></a>
 
 
 
@@ -4499,7 +5117,13 @@
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="script-wish.js"></script>
 </body>
 </html>

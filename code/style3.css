@@ -1,0 +1,445 @@
+
+/* ============================================================
+   1. BUTTONS - الأزرار العامة
+   ============================================================ */
+
+/* 1.1 زر أيقوني (btn-icon) - يُستخدم في بطاقات المنتجات */
+.btn-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    background: #ffffff;
+    color: #adb5bd;
+    border: 1px solid var(--ecom-border);
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0;
+    transition: all .2s ease;
+    position: relative;
+}
+
+.btn-icon:hover {
+    background: #ffffff;
+    border-color: var(--ecom-primary);
+    transform: translateY(-2px);
+}
+
+.btn-icon:hover i {
+    color: var(--ecom-primary);
+}
+
+.btn-icon:hover .ti-heart {
+    color: #dc3545;
+}
+
+/* 1.2 زر أسهم التمرير */
+.scroll-arrow-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: #fff;
+    border: 1px solid var(--ecom-border);
+    color: var(--ecom-primary);
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 0;
+    transition: all .2s ease;
+}
+.scroll-arrow-btn:hover {
+    background: var(--ecom-primary);
+    color: #fff;
+    border-color: var(--ecom-primary);
+    transform: scale(1.05);
+}
+.scroll-arrow-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(44, 62, 107, .15);
+}
+.scroll-arrow-btn:active { transform: scale(.95); }
+.scroll-arrow-btn:disabled { opacity: .4; cursor: not-allowed; }
+
+/* 1.3 زر Shop Now */
+.btn-shop {
+    display: inline-block;
+    background: var(--ecom-primary);
+    color: #fff;
+    border: none;
+    border-radius: var(--ecom-radius-sm);
+    padding: 8px 24px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all .2s ease;
+}
+.btn-shop:hover {
+    background: var(--ecom-primary-dark);
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: var(--ecom-shadow-sm);
+}
+
+/* 1.4 زر Add To Cart */
+.add-to-cart-btn {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: all .3s ease;
+}
+.product-card:hover .add-to-cart-btn {
+    opacity: 1;
+    max-height: 60px;
+    margin-top: 12px;
+}
+.add-to-cart-btn .btn {
+    background-color: #ffffff;
+    color: var(--ecom-primary);
+    border: 1px solid var(--ecom-primary);
+    transition: all .2s ease;
+    font-size: .85rem;
+    padding: 8px 12px;
+    border-radius: var(--ecom-radius-sm);
+}
+.add-to-cart-btn .btn:hover {
+    background: var(--ecom-primary) !important;
+    color: #fff !important;
+    border-color: var(--ecom-primary) !important;
+}
+
+/* ============================================================
+   2. PRODUCT CARD - بطاقة المنتج
+   ============================================================ */
+.product-card {
+    position: relative !important;
+    overflow: visible !important;
+    border-radius: var(--ecom-radius-md) !important;
+    background: #fff;
+    transition: box-shadow .3s ease, transform .3s ease;
+}
+.product-card:hover {
+    box-shadow: var(--ecom-shadow-lg);
+    transform: translateY(-3px);
+}
+
+/* Badge الخصم */
+.product-card > .badge {
+    background-color: var(--ecom-accent) !important;
+    color: #fff;
+    font-size: .7rem;
+    padding: 5px 8px;
+    border-radius: var(--ecom-radius-sm);
+    z-index: 2;
+}
+
+/* صورة المنتج */
+.product-card > .text-center { overflow: hidden; }
+.product-card > .text-center img {
+    transition: transform .3s ease;
+    min-height: 180px;
+}
+.product-card:hover > .text-center img { transform: scale(1.05); }
+
+/* عنوان المنتج */
+.product-card h6 {
+    line-height: 1.4;
+    min-height: 2.2em;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+.product-card p {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+.product-card .fs-5 { font-size: 1.1rem !important; }
+
+/* ============================================================
+   3. PRODUCT ACTIONS - أزرار العين/القلب فوق صورة المنتج
+   ============================================================ */
+.product-card .product-actions {
+    position: absolute !important;
+    top: 0 !important;
+    right: 0 !important;
+    left: auto !important;
+    bottom: auto !important;
+    width: auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 8px !important;
+    padding: 12px !important;
+    margin: 0 !important;
+    opacity: 0;
+    transform: translateX(15px);
+    transition: opacity .3s ease, transform .3s ease;
+    z-index: 10;
+    pointer-events: none;
+}
+.product-card:hover .product-actions {
+    opacity: 1;
+    transform: translateX(0);
+    pointer-events: auto;
+}
+
+/* ============================================================
+   4. HOVER CARD - الكروت الخمسة
+   ============================================================ */
+.hover-card {
+    background-color: #ffffff;
+    transition: background-color 0.3s ease;
+}
+.hover-card:hover { background-color: #e9ecef; }
+
+/* ============================================================
+   5. TOOLTIP - تلميح مخصص بـ CSS
+   (⚠️ ملاحظة: عندك أيضًا Bootstrap Tooltip في JS - اختر واحد فقط!)
+   ============================================================ */
+[data-tooltip] { position: relative; }
+
+[data-tooltip]::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    right: calc(100% + 8px);
+    top: 50%;
+    transform: translateY(-50%) translateX(6px);
+    background: #f0f0f0;
+    color: #333;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: .5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .2s ease, transform .2s ease;
+    z-index: 10;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .06);
+}
+[data-tooltip]:hover::after {
+    opacity: 1;
+    transform: translateY(-50%) translateX(0);
+}
+
+/* Bootstrap Tooltip (اختياري - إذا كنت تستخدمه بدلاً من المخصص) */
+.tooltip { font-family: inherit; }
+.tooltip-inner {
+    background-color: #6c757d;
+    color: #ffffff;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.7rem;
+    font-weight: 500;
+}
+.tooltip.bs-tooltip-start .tooltip-arrow::before {
+    border-left-color: #6c757d;
+}
+
+/* ============================================================
+   6. PROGRESS BAR - شريط التقدم
+   ============================================================ */
+.progress-thin { height: 4px; }
+
+/* ============================================================
+   7. PRODUCT SCROLL - التمرير الأفقي للمنتجات
+   ============================================================ */
+.product-scroll {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 1rem;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding-bottom: .5rem;
+    scrollbar-width: none;
+}
+.product-scroll::-webkit-scrollbar { display: none; }
+.product-scroll > * { flex: 0 0 auto; width: 232px; }
+
+/* ============================================================
+   8. BRANDS LOGOS - شعارات العلامات
+   ============================================================ */
+.brand-logo {
+    filter: grayscale(100%);
+    opacity: 0.6;
+    max-height: 50px;
+    width: auto;
+    transition: all 0.3s ease;
+}
+.brand-logo:hover { filter: grayscale(0%); opacity: 1; }
+
+/* ============================================================
+   9. SUBSCRIBE - قسم الاشتراك
+   ============================================================ */
+.subscribe-box { background-color: #1a2b5c; min-height: 220px; }
+.subscribe-form {
+    display: flex;
+    align-items: stretch;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+.subscribe-input {
+    border: none !important;
+    border-radius: 0 !important;
+    padding: 14px 20px;
+    font-size: 0.95rem;
+    color: #2c3e6b;
+    box-shadow: none !important;
+    min-width: 0;
+}
+.subscribe-input::placeholder { color: #adb5bd; font-style: italic; }
+.subscribe-input:focus { outline: none; box-shadow: none !important; }
+.subscribe-btn {
+    background-color: #f5a623;
+    border: none !important;
+    border-radius: 0 !important;
+    padding: 14px 30px;
+    font-size: 0.95rem;
+    white-space: nowrap;
+    flex-shrink: 0;
+    transition: background-color 0.25s ease;
+}
+.subscribe-btn:hover { background-color: #e0951b; color: #ffffff; }
+.subscribe-image {
+    max-height: 200px;
+    width: auto;
+    object-fit: contain;
+    display: inline-block;
+    margin-bottom: -10px;
+}
+
+/* ============================================================
+   10. TABS - إخفاء شريط التمرير
+   ============================================================ */
+#trendingTabs,
+#fridgeTabs,
+#newSectionTabs,
+#fifthTabs,
+#WeeklyTabs {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+#trendingTabs::-webkit-scrollbar,
+#fridgeTabs::-webkit-scrollbar,
+#newSectionTabs::-webkit-scrollbar,
+#fifthTabs::-webkit-scrollbar,
+#WeeklyTabs::-webkit-scrollbar { display: none; }
+
+/* ============================================================
+   11. CAROUSEL DOTS - نقاط الكاروسيل
+   ============================================================ */
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: none;
+    padding: 0;
+    background-color: rgba(245, 166, 35, 0.35);
+    cursor: pointer;
+    transition: all .2s ease;
+    appearance: none;
+    -webkit-appearance: none;
+}
+.dot:hover { background-color: rgba(245, 166, 35, 0.6); }
+.dot.active { background-color: #f5a623; transform: scale(1.2); }
+
+/* ============================================================
+   12. COUNTDOWN BADGE - شارة العد التنازلي
+   ============================================================ */
+.rounded-pill[style*="background-color: #2c3e6b"] {
+    background-color: var(--ecom-primary) !important;
+}
+.rounded-pill .fw-bold { line-height: 1; font-size: .7rem; }
+.rounded-pill .text-white-50 { line-height: 1; font-size: .5rem; }
+
+/* ============================================================
+   13. QUICK VIEW MODAL - نافذة العرض السريع
+   ============================================================ */
+#quickViewModal .modal-content {
+    border: none;
+    border-radius: var(--ecom-radius-lg);
+    overflow: hidden;
+}
+#quickViewModal .modal-header {
+    border-bottom: 1px solid var(--ecom-border);
+    padding: 16px 20px;
+}
+#quickViewModal .modal-title {
+    color: var(--ecom-primary);
+    font-weight: 700;
+}
+#quickViewModal .modal-body { padding: 24px; }
+#quickViewModal img { max-height: 300px; object-fit: contain; }
+
+/* ============================================================
+   14. HELPERS - كلاسات مساعدة
+   ============================================================ */
+.z-1 { z-index: 1; }
+
+.news-title { color: #212529; transition: color .2s ease; }
+.news-title:hover { color: #0d6efd; }
+
+/* ============================================================
+   15. RESPONSIVE - MEDIA QUERIES
+   ============================================================ */
+
+/* Tablet وأصغر (< 992px) */
+@media (max-width: 991.98px) {
+
+    .position-fixed.top-0.start-0.vh-100 { display: none !important; }
+    [style*="margin-left: 75px"] { margin-left: 0 !important; }
+
+    [data-tooltip]::after { display: none; }
+
+    .btn-icon { width: 40px; height: 40px; }
+
+    .product-actions {
+        opacity: 1;
+        transform: translateX(0);
+        pointer-events: auto;
+    }
+
+    .navbar-nav {
+        padding-top: 15px;
+        border-top: 1px solid var(--ecom-border);
+        margin-top: 15px;
+    }
+
+    .subscribe-box { text-align: center; }
+    .subscribe-form { margin-left: auto; margin-right: auto; }
+    .subscribe-image { max-height: 150px; margin: 10px auto 0; }
+    .subscribe-box .text-end { text-align: center !important; }
+}
+
+/* Mobile (< 576px) */
+@media (max-width: 575.98px) {
+
+    .product-scroll > * { width: 78%; }
+
+    .subscribe-form { flex-direction: column; }
+    .subscribe-input,
+    .subscribe-btn { width: 100%; border-radius: 0 !important; }
+    .subscribe-image { max-height: 120px; }
+
+    .scroll-arrow-btn { width: 32px; height: 32px; font-size: .85rem; }
+
+    #trendingTabs .nav-link,
+    #fridgeTabs .nav-link,
+    #newSectionTabs .nav-link,
+    #fifthTabs .nav-link,
+    #WeeklyTabs .nav-link { font-size: .7rem; padding: 6px 10px; }
+
+    #heroCarousel .btn-light { width: 32px; height: 32px; font-size: 1rem; }
+
+    .card .position-absolute.bottom-0.start-0.m-2.bg-white { width: 110px !important; }
+    .card .position-absolute.bottom-0.start-0.m-2.bg-white p,
+    .card .position-absolute.bottom-0.start-0.m-2.bg-white a { font-size: .7rem; }
+
+    .product-card h6 { font-size: .75rem !important; }
+}

@@ -782,3 +782,9 @@
       color: #fff !important;
       border-color: #0d6efd !important;
   }
+
+  @media screen and (max-width: 768px)  {
+    .sid-bar {
+        display: none;
+    } 
+}
