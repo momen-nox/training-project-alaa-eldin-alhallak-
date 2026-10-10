@@ -10,14 +10,14 @@
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="./style4.css">
-    <link rel="stylesheet" href="/code/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 
 <body>
 
 
-       <!-- ================================= الناف بار يلي فوق ====================== -->
+           <!-- ================================= الناف بار يلي فوق ====================== -->
     <div class="border-bottom mt-2 d-none d-sm-block">
 
     <div class="container">
@@ -651,12 +651,8 @@
 
 
 
-
-
-
-
     <section class="py-4 bg-light">
-        <div class="container-fluid px-3 px-lg-4">
+        <div class="container px-3 px-lg-4">
             <div class="row g-3">
 
                 <!-- 1. البانر الرئيسي الكبير (Carousel مع 3 عناصر Slide) -->
@@ -820,7 +816,7 @@
     </section>
     <!-- قسم شعارات العلامات التجارية (Brands Carousel) -->
     <section class="py-4 bg-white border-top border-bottom">
-        <div class="container-fluid px-3 px-lg-4">
+        <div class="container px-3 px-lg-4">
 
             <div id="brandsCarousel" class="carousel slide" data-bs-ride="carousel">
 
@@ -900,7 +896,7 @@
 
 
     <section class="category-cards-section py-4">
-        <div class="container-fluid px-3">
+        <div class="container px-3">
             <div class="row g-3">
 
                 <!-- Card 1: Smart Phone -->
@@ -1022,7 +1018,7 @@
 
 
     <section class="py-5 bg-light">
-        <div class="container-fluid px-3">
+        <div class="container px-3">
             <div class="row g-2 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5">
 
                 <!-- كارت 1 -->
@@ -1032,15 +1028,15 @@
                         <span class="badge bg-warning position-absolute top-0 start-0 m-2">-17%</span>
 
                         <div class="hover-actions">
-                            <!-- 🔴 تعديل: إضافة class="btn-add-wishlist" وتوجيه الرابط لـ shop-wishlist.html -->
-                            <a href="shop-wishlist.html" class="action-btn btn-add-wishlist"><i
-                                    class="bi bi-heart"></i></a>
+
+                            <button class="action-btn w-100 add-to-cart mt-3" data-id="51"
+                                data-name="2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB" data-price="2856.3"
+                                data-brand="Apple" data-rating="5" data-reviews="65" data-stock="In Stock"
+                                data-image="/assets/img/seal product/imgsp3.png"> <i class="bi bi-heart"></i>
+                                 </button>
                             <a href="#" class="action-btn"><i class="bi bi-arrow-repeat"></i></a>
-                            <!-- <a href="#" class="action-btn"><i class="bi bi-eye"></i></a> -->
-                            <a href="#" class="btn-icon" data-tooltip="Quick View" data-bs-toggle="modal"
-                                data-bs-target="#quickViewModal">
-                                <i class="bi bi-eye"></i>
-                            </a>
+                            <a href="#" class="action-btn"><i class="bi bi-eye"></i></a>
+
                         </div>
 
                         <div class="text-center py-2">
@@ -1072,10 +1068,11 @@
                             <span class="text-muted text-decoration-line-through small">$3225.6</span>
                         </div>
 
-                        <!-- 🔴 تعديل: إضافة class="btn-add-cart" وتوجيه الرابط لـ shop-cart.html -->
-                        <a href="shop-cart.html" class="btn btn-light border btn-sm w-100 fw-bold mb-2 btn-add-cart">Add
-                            To
-                            Cart</a>
+
+                        <button class="btn btn-outline-secondary add-to-cart w-100 mt-3 mb-3" data-id="51"
+                            data-name="2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB" data-price="2856.3"
+                            data-brand="Apple" data-rating="5" data-reviews="65" data-stock="In Stock"
+                            data-image="/assets/img/seal product/imgsp3.png"> Add To Cart </button>
 
                         <div class="progress" style="height: 5px;">
                             <div class="progress-bar bg-warning" style="width: 45%;"></div>
@@ -1093,14 +1090,13 @@
                     <div class="product-card card p-2 bg-white border">
                         <span class="badge bg-warning position-absolute top-0 start-0 m-2">-17%</span>
                         <div class="hover-actions">
-                            <!-- 🔴 تعديل: إضافة class="btn-add-wishlist" وتوجيه الرابط لـ shop-wishlist.html -->
-                            <a href="shop-wishlist.html" class="action-btn btn-add-wishlist"><i
-                                    class="bi bi-heart"></i></a>
+                            <button class="action-btn w-100 add-to-cart mt-3" data-id="52"
+                                data-name="2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB" data-price="2856.3"
+                                data-brand="Apple" data-rating="5" data-reviews="65" data-stock="In Stock"
+                                data-image="/assets/img/seal product/imgsp3.png"> <i class="bi bi-heart"></i>
+                                 </button>
                             <a href="#" class="action-btn"><i class="bi bi-arrow-repeat"></i></a>
-                            <a href="#" class="btn-icon" data-tooltip="Quick View" data-bs-toggle="modal"
-                                data-bs-target="#quickViewModal">
-                                <i class="bi bi-eye"></i>
-                            </a>
+                            <a href="#" class="action-btn"><i class="bi bi-eye"></i></a>
                         </div>
                         <div class="text-center py-2">
                             <img src="./imgs/television.png" class="img-fluid overflow-hidden"
@@ -1124,10 +1120,11 @@
                             <span class="fw-bold text-primary fs-6">$2856.3</span>
                             <span class="text-muted text-decoration-line-through small">$3225.6</span>
                         </div>
-                        <!-- 🔴 تعديل: إضافة class="btn-add-cart" وتوجيه الرابط لـ shop-cart.html -->
-                        <a href="shop-cart.html" class="btn btn-light border btn-sm w-100 fw-bold mb-2 btn-add-cart">Add
-                            To
-                            Cart</a>
+
+                        <button class="btn btn-outline-secondary add-to-cart w-100 mt-3 mb-3" data-id="52"
+                            data-name="2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB" data-price="2856.3"
+                            data-brand="Apple" data-rating="5" data-reviews="65" data-stock="In Stock"
+                            data-image="/assets/img/seal product/imgsp3.png"> Add To Cart </button>
                         <div class="progress" style="height: 5px;">
                             <div class="progress-bar bg-warning" style="width: 45%;"></div>
                         </div>
@@ -1143,14 +1140,13 @@
                     <div class="product-card card p-2 bg-white border">
                         <span class="badge bg-warning position-absolute top-0 start-0 m-2">-17%</span>
                         <div class="hover-actions">
-                            <!-- 🔴 تعديل: إضافة class="btn-add-wishlist" وتوجيه الرابط لـ shop-wishlist.html -->
-                            <a href="shop-wishlist.html" class="action-btn btn-add-wishlist"><i
-                                    class="bi bi-heart"></i></a>
+                            <button class="action-btn w-100 add-to-cart mt-3" data-id="53"
+                                data-name="2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB" data-price="2856.3"
+                                data-brand="Apple" data-rating="5" data-reviews="65" data-stock="In Stock"
+                                data-image="/assets/img/seal product/imgsp3.png"> <i class="bi bi-heart"></i>
+                                 </button>
                             <a href="#" class="action-btn"><i class="bi bi-arrow-repeat"></i></a>
-                            <a href="#" class="btn-icon" data-tooltip="Quick View" data-bs-toggle="modal"
-                                data-bs-target="#quickViewModal">
-                                <i class="bi bi-eye"></i>
-                            </a>
+                            <a href="#" class="action-btn"><i class="bi bi-eye"></i></a>
                         </div>
                         <div class="text-center py-2">
                             <img src="./imgs/screen-2.png" class="img-fluid overflow-hidden"
@@ -1174,10 +1170,11 @@
                             <span class="fw-bold text-primary fs-6">$2856.3</span>
                             <span class="text-muted text-decoration-line-through small">$3225.6</span>
                         </div>
-                        <!-- 🔴 تعديل: إضافة class="btn-add-cart" وتوجيه الرابط لـ shop-cart.html -->
-                        <a href="shop-cart.html" class="btn btn-light border btn-sm w-100 fw-bold mb-2 btn-add-cart">Add
-                            To
-                            Cart</a>
+
+                        <button class="btn btn-outline-secondary add-to-cart w-100 mt-3 mb-3" data-id="53"
+                            data-name="2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB" data-price="2856.3"
+                            data-brand="Apple" data-rating="5" data-reviews="65" data-stock="In Stock"
+                            data-image="/assets/img/seal product/imgsp3.png"> Add To Cart </button>
                         <div class="progress" style="height: 5px;">
                             <div class="progress-bar bg-warning" style="width: 45%;"></div>
                         </div>
@@ -1193,14 +1190,13 @@
                     <div class="product-card card p-2 bg-white border">
                         <span class="badge bg-warning position-absolute top-0 start-0 m-2">-17%</span>
                         <div class="hover-actions">
-                            <!-- 🔴 تعديل: إضافة class="btn-add-wishlist" وتوجيه الرابط لـ shop-wishlist.html -->
-                            <a href="shop-wishlist.html" class="action-btn btn-add-wishlist"><i
-                                    class="bi bi-heart"></i></a>
+                            <button class="action-btn w-100 add-to-cart mt-3" data-id="54"
+                                data-name="2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB" data-price="2856.3"
+                                data-brand="Apple" data-rating="5" data-reviews="65" data-stock="In Stock"
+                                data-image="/assets/img/seal product/imgsp3.png"> <i class="bi bi-heart"></i>
+                                 </button>
                             <a href="#" class="action-btn"><i class="bi bi-arrow-repeat"></i></a>
-                            <a href="#" class="btn-icon" data-tooltip="Quick View" data-bs-toggle="modal"
-                                data-bs-target="#quickViewModal">
-                                <i class="bi bi-eye"></i>
-                            </a>
+                            <a href="#" class="action-btn"><i class="bi bi-eye"></i></a>
                         </div>
                         <div class="text-center py-2">
                             <img src="./imgs/screen-2.png" class="img-fluid overflow-hidden"
@@ -1224,10 +1220,11 @@
                             <span class="fw-bold text-primary fs-6">$2856.3</span>
                             <span class="text-muted text-decoration-line-through small">$3225.6</span>
                         </div>
-                        <!-- 🔴 تعديل: إضافة class="btn-add-cart" وتوجيه الرابط لـ shop-cart.html -->
-                        <a href="shop-cart.html" class="btn btn-light border btn-sm w-100 fw-bold mb-2 btn-add-cart">Add
-                            To
-                            Cart</a>
+
+                        <button class="btn btn-outline-secondary add-to-cart w-100 mt-3 mb-3" data-id="54"
+                            data-name="2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB" data-price="2856.3"
+                            data-brand="Apple" data-rating="5" data-reviews="65" data-stock="In Stock"
+                            data-image="/assets/img/seal product/imgsp3.png"> Add To Cart </button>
                         <div class="progress" style="height: 5px;">
                             <div class="progress-bar bg-warning" style="width: 45%;"></div>
                         </div>
@@ -1243,14 +1240,13 @@
                     <div class="product-card card p-2 bg-white border">
                         <span class="badge bg-warning position-absolute top-0 start-0 m-2">-17%</span>
                         <div class="hover-actions">
-                            <!-- 🔴 تعديل: إضافة class="btn-add-wishlist" وتوجيه الرابط لـ shop-wishlist.html -->
-                            <a href="shop-wishlist.html" class="action-btn btn-add-wishlist"><i
-                                    class="bi bi-heart"></i></a>
+                            <button class="action-btn w-100 add-to-cart mt-3" data-id="55"
+                                data-name="2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB" data-price="2856.3"
+                                data-brand="Apple" data-rating="5" data-reviews="65" data-stock="In Stock"
+                                data-image="/assets/img/seal product/imgsp3.png"> <i class="bi bi-heart"></i>
+                                 </button>
                             <a href="#" class="action-btn"><i class="bi bi-arrow-repeat"></i></a>
-                            <a href="#" class="btn-icon" data-tooltip="Quick View" data-bs-toggle="modal"
-                                data-bs-target="#quickViewModal">
-                                <i class="bi bi-eye"></i>
-                            </a>
+                            <a href="#" class="action-btn"><i class="bi bi-eye"></i></a>
                         </div>
                         <div class="text-center py-2">
                             <img src="./imgs/apple-day.png" class="img-fluid overflow-hidden"
@@ -1274,10 +1270,11 @@
                             <span class="fw-bold text-primary fs-6">$2856.3</span>
                             <span class="text-muted text-decoration-line-through small">$3225.6</span>
                         </div>
-                        <!-- 🔴 تعديل: إضافة class="btn-add-cart" وتوجيه الرابط لـ shop-cart.html -->
-                        <a href="shop-cart.html" class="btn btn-light border btn-sm w-100 fw-bold mb-2 btn-add-cart">Add
-                            To
-                            Cart</a>
+
+                        <button class="btn btn-outline-secondary add-to-cart w-100 mt-3 mb-3" data-id="55"
+                            data-name="2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB" data-price="2856.3"
+                            data-brand="Apple" data-rating="5" data-reviews="65" data-stock="In Stock"
+                            data-image="/assets/img/seal product/imgsp3.png"> Add To Cart </button>
                         <div class="progress" style="height: 5px;">
                             <div class="progress-bar bg-warning" style="width: 45%;"></div>
                         </div>
@@ -1331,9 +1328,12 @@
                                             class="hover-actions position-absolute top-0 end-0 m-2 d-flex flex-column gap-1 z-3">
                                             <a href="#" class="btn btn-light btn-sm shadow-sm p-1 rounded border"
                                                 title="Quick View"><i class="bi bi-lightning"></i></a>
-                                            <a href="shop-wishlist.html"
-                                                class="btn btn-light btn-sm shadow-sm p-1 rounded border btn-add-wishlist"
-                                                title="Wishlist"><i class="bi bi-heart"></i></a>
+                                            <button class="action-btn w-100 add-to-cart mt-3" data-id="56"
+                                                data-name="2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB"
+                                                data-price="2856.3" data-brand="Apple" data-rating="5" data-reviews="65"
+                                                data-stock="In Stock" data-image="/assets/img/seal product/imgsp3.png">
+                                                <i class="bi bi-heart"></i>
+                                                 </button>
                                             <a href="#" class="btn btn-light btn-sm shadow-sm p-1 rounded border"
                                                 title="Compare"><i class="bi bi-arrow-repeat"></i></a>
                                             <a href="#" class="btn btn-light btn-sm shadow-sm p-1 rounded border"
@@ -1357,9 +1357,12 @@
                                                 <span
                                                     class="text-muted text-decoration-line-through small">$3225.6</span>
                                             </div>
-                                            <a href="shop-cart.html"
-                                                class="btn btn-light btn-sm text-primary w-100 mt-auto border mb-2 btn-add-cart">Add
-                                                To Cart</a>
+                                            <button class="btn btn-outline-secondary add-to-cart w-100 mt-3 mb-3"
+                                                data-id="56"
+                                                data-name="2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB"
+                                                data-price="2856.3" data-brand="Apple" data-rating="5" data-reviews="65"
+                                                data-stock="In Stock" data-image="/assets/img/seal product/imgsp3.png">
+                                                Add To Cart </button>
                                             <ul class="list-unstyled small text-muted mb-0 border-top pt-2"
                                                 style="font-size: 0.75rem;">
                                                 <li>• 27-inch (diagonal) Retina 5K display</li>
@@ -1381,9 +1384,12 @@
                                             class="hover-actions position-absolute top-0 end-0 m-2 d-flex flex-column gap-1 z-3">
                                             <a href="#" class="btn btn-light btn-sm shadow-sm p-1 rounded border"
                                                 title="Quick View"><i class="bi bi-lightning"></i></a>
-                                            <a href="shop-wishlist.html"
-                                                class="btn btn-light btn-sm shadow-sm p-1 rounded border btn-add-wishlist"
-                                                title="Wishlist"><i class="bi bi-heart"></i></a>
+                                            <button class="action-btn w-100 add-to-cart mt-3" data-id="57"
+                                                data-name="2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB"
+                                                data-price="2856.3" data-brand="Apple" data-rating="5" data-reviews="65"
+                                                data-stock="In Stock" data-image="/assets/img/seal product/imgsp3.png">
+                                                <i class="bi bi-heart"></i>
+                                                 </button>
                                             <a href="#" class="btn btn-light btn-sm shadow-sm p-1 rounded border"
                                                 title="Compare"><i class="bi bi-arrow-repeat"></i></a>
                                             <a href="#" class="btn btn-light btn-sm shadow-sm p-1 rounded border"
@@ -1407,9 +1413,13 @@
                                                 <span
                                                     class="text-muted text-decoration-line-through small">$3225.6</span>
                                             </div>
-                                            <a href="shop-cart.html"
-                                                class="btn btn-light btn-sm text-primary w-100 mt-auto border mb-2 btn-add-cart">Add
-                                                To Cart</a>
+                                            <button class="btn btn-outline-secondary add-to-cart w-100 mt-3 mb-3"
+                                                data-id="57"
+                                                data-name="2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB"
+                                                data-price="2856.3" data-brand="Apple" data-rating="5" data-reviews="65"
+                                                data-stock="In Stock" data-image="/assets/img/seal product/imgsp3.png">
+                                                Add To Cart </button>
+
                                             <ul class="list-unstyled small text-muted mb-0 border-top pt-2"
                                                 style="font-size: 0.75rem;">
                                                 <li>• 27-inch (diagonal) Retina 5K display</li>
@@ -1430,9 +1440,12 @@
                                             class="hover-actions position-absolute top-0 end-0 m-2 d-flex flex-column gap-1 z-3">
                                             <a href="#" class="btn btn-light btn-sm shadow-sm p-1 rounded border"
                                                 title="Quick View"><i class="bi bi-lightning"></i></a>
-                                            <a href="shop-wishlist.html"
-                                                class="btn btn-light btn-sm shadow-sm p-1 rounded border btn-add-wishlist"
-                                                title="Wishlist"><i class="bi bi-heart"></i></a>
+                                            <button class="action-btn w-100 add-to-cart mt-3" data-id="58"
+                                                data-name="2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB"
+                                                data-price="2856.3" data-brand="Apple" data-rating="5" data-reviews="65"
+                                                data-stock="In Stock" data-image="/assets/img/seal product/imgsp3.png">
+                                                <i class="bi bi-heart"></i>
+                                                 </button>
                                             <a href="#" class="btn btn-light btn-sm shadow-sm p-1 rounded border"
                                                 title="Compare"><i class="bi bi-arrow-repeat"></i></a>
                                             <a href="#" class="btn btn-light btn-sm shadow-sm p-1 rounded border"
@@ -1456,9 +1469,12 @@
                                                 <span
                                                     class="text-muted text-decoration-line-through small">$3225.6</span>
                                             </div>
-                                            <a href="shop-cart.html"
-                                                class="btn btn-light btn-sm text-primary w-100 mt-auto border mb-2 btn-add-cart">Add
-                                                To Cart</a>
+                                            <button class="btn btn-outline-secondary add-to-cart w-100 mt-3 mb-3"
+                                                data-id="58"
+                                                data-name="2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB"
+                                                data-price="2856.3" data-brand="Apple" data-rating="5" data-reviews="65"
+                                                data-stock="In Stock" data-image="/assets/img/seal product/imgsp3.png">
+                                                Add To Cart </button>
                                             <ul class="list-unstyled small text-muted mb-0 border-top pt-2"
                                                 style="font-size: 0.75rem;">
                                                 <li>• 27-inch (diagonal) Retina 5K display</li>
@@ -1480,9 +1496,12 @@
                                             class="hover-actions position-absolute top-0 end-0 m-2 d-flex flex-column gap-1 z-3">
                                             <a href="#" class="btn btn-light btn-sm shadow-sm p-1 rounded border"
                                                 title="Quick View"><i class="bi bi-lightning"></i></a>
-                                            <a href="shop-wishlist.html"
-                                                class="btn btn-light btn-sm shadow-sm p-1 rounded border btn-add-wishlist"
-                                                title="Wishlist"><i class="bi bi-heart"></i></a>
+                                            <button class="action-btn w-100 add-to-cart mt-3" data-id="59"
+                                                data-name="2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB"
+                                                data-price="2856.3" data-brand="Apple" data-rating="5" data-reviews="65"
+                                                data-stock="In Stock" data-image="/assets/img/seal product/imgsp3.png">
+                                                <i class="bi bi-heart"></i>
+                                                 </button>
                                             <a href="#" class="btn btn-light btn-sm shadow-sm p-1 rounded border"
                                                 title="Compare"><i class="bi bi-arrow-repeat"></i></a>
                                             <a href="#" class="btn btn-light btn-sm shadow-sm p-1 rounded border"
@@ -1506,9 +1525,12 @@
                                                 <span
                                                     class="text-muted text-decoration-line-through small">$3225.6</span>
                                             </div>
-                                            <a href="shop-cart.html"
-                                                class="btn btn-light btn-sm text-primary w-100 mt-auto border mb-2 btn-add-cart">Add
-                                                To Cart</a>
+                                            <button class="btn btn-outline-secondary add-to-cart w-100 mt-3 mb-3"
+                                                data-id="59"
+                                                data-name="2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB"
+                                                data-price="2856.3" data-brand="Apple" data-rating="5" data-reviews="65"
+                                                data-stock="In Stock" data-image="/assets/img/seal product/imgsp3.png">
+                                                Add To Cart </button>
                                             <ul class="list-unstyled small text-muted mb-0 border-top pt-2"
                                                 style="font-size: 0.75rem;">
                                                 <li>• 27-inch (diagonal) Retina 5K display</li>
@@ -1537,9 +1559,12 @@
                                             class="hover-actions position-absolute top-0 end-0 m-2 d-flex flex-column gap-1 z-3">
                                             <a href="#" class="btn btn-light btn-sm shadow-sm p-1 rounded border"
                                                 title="Quick View"><i class="bi bi-lightning"></i></a>
-                                            <a href="shop-wishlist.html"
-                                                class="btn btn-light btn-sm shadow-sm p-1 rounded border btn-add-wishlist"
-                                                title="Wishlist"><i class="bi bi-heart"></i></a>
+                                            <button class="action-btn w-100 add-to-cart mt-3" data-id="60"
+                                                data-name="2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB"
+                                                data-price="2856.3" data-brand="Apple" data-rating="5" data-reviews="65"
+                                                data-stock="In Stock" data-image="/assets/img/seal product/imgsp3.png">
+                                                <i class="bi bi-heart"></i>
+                                                 </button>
                                             <a href="#" class="btn btn-light btn-sm shadow-sm p-1 rounded border"
                                                 title="Compare"><i class="bi bi-arrow-repeat"></i></a>
                                             <a href="#" class="btn btn-light btn-sm shadow-sm p-1 rounded border"
@@ -1563,9 +1588,12 @@
                                                 <span
                                                     class="text-muted text-decoration-line-through small">$3225.6</span>
                                             </div>
-                                            <a href="shop-cart.html"
-                                                class="btn btn-light btn-sm text-primary w-100 mt-auto border mb-2 btn-add-cart">Add
-                                                To Cart</a>
+                                            <button class="btn btn-outline-secondary add-to-cart w-100 mt-3 mb-3"
+                                                data-id="60"
+                                                data-name="2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB"
+                                                data-price="2856.3" data-brand="Apple" data-rating="5" data-reviews="65"
+                                                data-stock="In Stock" data-image="/assets/img/seal product/imgsp3.png">
+                                                Add To Cart </button>
                                             <ul class="list-unstyled small text-muted mb-0 border-top pt-2"
                                                 style="font-size: 0.75rem;">
                                                 <li>• 27-inch (diagonal) Retina 5K display</li>
@@ -1586,9 +1614,12 @@
                                             class="hover-actions position-absolute top-0 end-0 m-2 d-flex flex-column gap-1 z-3">
                                             <a href="#" class="btn btn-light btn-sm shadow-sm p-1 rounded border"
                                                 title="Quick View"><i class="bi bi-lightning"></i></a>
-                                            <a href="shop-wishlist.html"
-                                                class="btn btn-light btn-sm shadow-sm p-1 rounded border btn-add-wishlist"
-                                                title="Wishlist"><i class="bi bi-heart"></i></a>
+                                            <button class="action-btn w-100 add-to-cart mt-3" data-id="61"
+                                                data-name="2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB"
+                                                data-price="2856.3" data-brand="Apple" data-rating="5" data-reviews="65"
+                                                data-stock="In Stock" data-image="/assets/img/seal product/imgsp3.png">
+                                                <i class="bi bi-heart"></i>
+                                                 </button>
                                             <a href="#" class="btn btn-light btn-sm shadow-sm p-1 rounded border"
                                                 title="Compare"><i class="bi bi-arrow-repeat"></i></a>
                                             <a href="#" class="btn btn-light btn-sm shadow-sm p-1 rounded border"
@@ -1613,9 +1644,12 @@
                                                 <span
                                                     class="text-muted text-decoration-line-through small">$3225.6</span>
                                             </div>
-                                            <a href="shop-cart.html"
-                                                class="btn btn-light btn-sm text-primary w-100 mt-auto border mb-2 btn-add-cart">Add
-                                                To Cart</a>
+                                            <button class="btn btn-outline-secondary add-to-cart w-100 mt-3 mb-3"
+                                                data-id="61"
+                                                data-name="2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB"
+                                                data-price="2856.3" data-brand="Apple" data-rating="5" data-reviews="65"
+                                                data-stock="In Stock" data-image="/assets/img/seal product/imgsp3.png">
+                                                Add To Cart </button>
                                             <ul class="list-unstyled small text-muted mb-0 border-top pt-2"
                                                 style="font-size: 0.75rem;">
                                                 <li>• 27-inch (diagonal) Retina 5K display</li>
@@ -1636,9 +1670,12 @@
                                             class="hover-actions position-absolute top-0 end-0 m-2 d-flex flex-column gap-1 z-3">
                                             <a href="#" class="btn btn-light btn-sm shadow-sm p-1 rounded border"
                                                 title="Quick View"><i class="bi bi-lightning"></i></a>
-                                            <a href="shop-wishlist.html"
-                                                class="btn btn-light btn-sm shadow-sm p-1 rounded border btn-add-wishlist"
-                                                title="Wishlist"><i class="bi bi-heart"></i></a>
+                                            <button class="action-btn w-100 add-to-cart mt-3" data-id="62"
+                                                data-name="2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB"
+                                                data-price="2856.3" data-brand="Apple" data-rating="5" data-reviews="65"
+                                                data-stock="In Stock" data-image="/assets/img/seal product/imgsp3.png">
+                                                <i class="bi bi-heart"></i>
+                                                 </button>
                                             <a href="#" class="btn btn-light btn-sm shadow-sm p-1 rounded border"
                                                 title="Compare"><i class="bi bi-arrow-repeat"></i></a>
                                             <a href="#" class="btn btn-light btn-sm shadow-sm p-1 rounded border"
@@ -1662,9 +1699,12 @@
                                                 <span
                                                     class="text-muted text-decoration-line-through small">$3225.6</span>
                                             </div>
-                                            <a href="shop-cart.html"
-                                                class="btn btn-light btn-sm text-primary w-100 mt-auto border mb-2 btn-add-cart">Add
-                                                To Cart</a>
+                                            <button class="btn btn-outline-secondary add-to-cart w-100 mt-3 mb-3"
+                                                data-id="62"
+                                                data-name="2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB"
+                                                data-price="2856.3" data-brand="Apple" data-rating="5" data-reviews="65"
+                                                data-stock="In Stock" data-image="/assets/img/seal product/imgsp3.png">
+                                                Add To Cart </button>
                                             <ul class="list-unstyled small text-muted mb-0 border-top pt-2"
                                                 style="font-size: 0.75rem;">
                                                 <li>• 27-inch (diagonal) Retina 5K display</li>
@@ -1685,7 +1725,12 @@
                                             class="hover-actions position-absolute top-0 end-0 m-2 d-flex flex-column gap-1 z-3">
                                             <a href="#" class="btn btn-light btn-sm shadow-sm p-1 rounded border"
                                                 title="Quick View"><i class="bi bi-lightning"></i></a>
-                                            <a href="shop-wishlist.html"
+                                            <button class="action-btn w-100 add-to-cart mt-3" data-id="63"
+                                                data-name="2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB"
+                                                data-price="2856.3" data-brand="Apple" data-rating="5" data-reviews="65"
+                                                data-stock="In Stock" data-image="/assets/img/seal product/imgsp3.png">
+                                                <i class="bi bi-heart"></i>
+                                                 </button><a href="shop-wishlist.html"
                                                 class="btn btn-light btn-sm shadow-sm p-1 rounded border btn-add-wishlist"
                                                 title="Wishlist"><i class="bi bi-heart"></i></a>
                                             <a href="#" class="btn btn-light btn-sm shadow-sm p-1 rounded border"
@@ -1711,9 +1756,12 @@
                                                 <span
                                                     class="text-muted text-decoration-line-through small">$3225.6</span>
                                             </div>
-                                            <a href="shop-cart.html"
-                                                class="btn btn-light btn-sm text-primary w-100 mt-auto border mb-2 btn-add-cart">Add
-                                                To Cart</a>
+                                            <button class="btn btn-outline-secondary add-to-cart w-100 mt-3 mb-3"
+                                                data-id="63"
+                                                data-name="2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB"
+                                                data-price="2856.3" data-brand="Apple" data-rating="5" data-reviews="65"
+                                                data-stock="In Stock" data-image="/assets/img/seal product/imgsp3.png">
+                                                Add To Cart </button>
                                             <ul class="list-unstyled small text-muted mb-0 border-top pt-2"
                                                 style="font-size: 0.75rem;">
                                                 <li>• 27-inch (diagonal) Retina 5K display</li>
@@ -1869,10 +1917,12 @@
                                                 class="btn btn-light btn-sm rounded-circle shadow-sm p-1 d-flex align-items-center justify-content-center"
                                                 style="width:28px; height:28px;"><i
                                                     class="bi bi-lightning small"></i></button>
-                                            <button
-                                                class="btn btn-light btn-sm rounded-circle shadow-sm p-1 d-flex align-items-center justify-content-center"
-                                                style="width:28px; height:28px;"><i
-                                                    class="bi bi-heart small"></i></button>
+                                            <button class="action-btn w-100 add-to-cart mt-3" data-id="65"
+                                                data-name="2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB"
+                                                data-price="2856.3" data-brand="Apple" data-rating="5" data-reviews="65"
+                                                data-stock="In Stock" data-image="/assets/img/seal product/imgsp3.png">
+                                                <i class="bi bi-heart"></i>
+                                                 </button>
                                             <button
                                                 class="btn btn-light btn-sm rounded-circle shadow-sm p-1 d-flex align-items-center justify-content-center"
                                                 style="width:28px; height:28px;"><i
@@ -1900,9 +1950,12 @@
                                                 <span
                                                     class="text-muted text-decoration-line-through small">$3225.6</span>
                                             </div>
-                                            <button
-                                                class="btn btn-light btn-sm text-primary w-100 mt-auto border mb-2">Add
-                                                To Cart</button>
+                                            <button class="btn btn-outline-secondary add-to-cart w-100 mt-3 mb-3"
+                                                data-id="65"
+                                                data-name="2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB"
+                                                data-price="2856.3" data-brand="Apple" data-rating="5" data-reviews="65"
+                                                data-stock="In Stock" data-image="/assets/img/seal product/imgsp3.png">
+                                                Add To Cart </button>
                                             <ul class="list-unstyled small text-muted mb-0 border-top pt-2"
                                                 style="font-size: 0.7rem;">
                                                 <li>• 27-inch Retina 5K display</li>
@@ -1923,10 +1976,12 @@
                                                 class="btn btn-light btn-sm rounded-circle shadow-sm p-1 d-flex align-items-center justify-content-center"
                                                 style="width:28px; height:28px;"><i
                                                     class="bi bi-lightning small"></i></button>
-                                            <button
-                                                class="btn btn-light btn-sm rounded-circle shadow-sm p-1 d-flex align-items-center justify-content-center"
-                                                style="width:28px; height:28px;"><i
-                                                    class="bi bi-heart small"></i></button>
+                                            <button class="action-btn w-100 add-to-cart mt-3" data-id="66"
+                                                data-name="2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB"
+                                                data-price="2856.3" data-brand="Apple" data-rating="5" data-reviews="65"
+                                                data-stock="In Stock" data-image="/assets/img/seal product/imgsp3.png">
+                                                <i class="bi bi-heart"></i>
+                                                 </button>
                                             <button
                                                 class="btn btn-light btn-sm rounded-circle shadow-sm p-1 d-flex align-items-center justify-content-center"
                                                 style="width:28px; height:28px;"><i
@@ -1953,9 +2008,12 @@
                                                 <span
                                                     class="text-muted text-decoration-line-through small">$3225.6</span>
                                             </div>
-                                            <button
-                                                class="btn btn-light btn-sm text-primary w-100 mt-auto border mb-2">Add
-                                                To Cart</button>
+                                            <button class="btn btn-outline-secondary add-to-cart w-100 mt-3 mb-3"
+                                                data-id="66"
+                                                data-name="2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB"
+                                                data-price="2856.3" data-brand="Apple" data-rating="5" data-reviews="65"
+                                                data-stock="In Stock" data-image="/assets/img/seal product/imgsp3.png">
+                                                Add To Cart </button>
                                             <ul class="list-unstyled small text-muted mb-0 border-top pt-2"
                                                 style="font-size: 0.7rem;">
                                                 <li>• 27-inch Retina 5K display</li>
@@ -1977,10 +2035,12 @@
                                                 class="btn btn-light btn-sm rounded-circle shadow-sm p-1 d-flex align-items-center justify-content-center"
                                                 style="width:28px; height:28px;"><i
                                                     class="bi bi-lightning small"></i></button>
-                                            <button
-                                                class="btn btn-light btn-sm rounded-circle shadow-sm p-1 d-flex align-items-center justify-content-center"
-                                                style="width:28px; height:28px;"><i
-                                                    class="bi bi-heart small"></i></button>
+                                            <button class="action-btn w-100 add-to-cart mt-3" data-id="67"
+                                                data-name="2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB"
+                                                data-price="2856.3" data-brand="Apple" data-rating="5" data-reviews="65"
+                                                data-stock="In Stock" data-image="/assets/img/seal product/imgsp3.png">
+                                                <i class="bi bi-heart"></i>
+                                                 </button>
                                             <button
                                                 class="btn btn-light btn-sm rounded-circle shadow-sm p-1 d-flex align-items-center justify-content-center"
                                                 style="width:28px; height:28px;"><i
@@ -2007,9 +2067,12 @@
                                                 <span
                                                     class="text-muted text-decoration-line-through small">$3225.6</span>
                                             </div>
-                                            <button
-                                                class="btn btn-light btn-sm text-primary w-100 mt-auto border mb-2">Add
-                                                To Cart</button>
+                                            <button class="btn btn-outline-secondary add-to-cart w-100 mt-3 mb-3"
+                                                data-id="67"
+                                                data-name="2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB"
+                                                data-price="2856.3" data-brand="Apple" data-rating="5" data-reviews="65"
+                                                data-stock="In Stock" data-image="/assets/img/seal product/imgsp3.png">
+                                                Add To Cart </button>
                                             <ul class="list-unstyled small text-muted mb-0 border-top pt-2"
                                                 style="font-size: 0.7rem;">
                                                 <li>• 27-inch Retina 5K display</li>
@@ -2031,10 +2094,12 @@
                                                 class="btn btn-light btn-sm rounded-circle shadow-sm p-1 d-flex align-items-center justify-content-center"
                                                 style="width:28px; height:28px;"><i
                                                     class="bi bi-lightning small"></i></button>
-                                            <button
-                                                class="btn btn-light btn-sm rounded-circle shadow-sm p-1 d-flex align-items-center justify-content-center"
-                                                style="width:28px; height:28px;"><i
-                                                    class="bi bi-heart small"></i></button>
+                                            <button class="action-btn w-100 add-to-cart mt-3" data-id="68"
+                                                data-name="2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB"
+                                                data-price="2856.3" data-brand="Apple" data-rating="5" data-reviews="65"
+                                                data-stock="In Stock" data-image="/assets/img/seal product/imgsp3.png">
+                                                <i class="bi bi-heart"></i>
+                                                 </button>
                                             <button
                                                 class="btn btn-light btn-sm rounded-circle shadow-sm p-1 d-flex align-items-center justify-content-center"
                                                 style="width:28px; height:28px;"><i
@@ -2062,9 +2127,12 @@
                                                 <span
                                                     class="text-muted text-decoration-line-through small">$3225.6</span>
                                             </div>
-                                            <button
-                                                class="btn btn-light btn-sm text-primary w-100 mt-auto border mb-2">Add
-                                                To Cart</button>
+                                            <button class="btn btn-outline-secondary add-to-cart w-100 mt-3 mb-3"
+                                                data-id="68"
+                                                data-name="2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB"
+                                                data-price="2856.3" data-brand="Apple" data-rating="5" data-reviews="65"
+                                                data-stock="In Stock" data-image="/assets/img/seal product/imgsp3.png">
+                                                Add To Cart </button>
                                             <ul class="list-unstyled small text-muted mb-0 border-top pt-2"
                                                 style="font-size: 0.7rem;">
                                                 <li>• 27-inch Retina 5K display</li>
@@ -2086,10 +2154,12 @@
                                                 class="btn btn-light btn-sm rounded-circle shadow-sm p-1 d-flex align-items-center justify-content-center"
                                                 style="width:28px; height:28px;"><i
                                                     class="bi bi-lightning small"></i></button>
-                                            <button
-                                                class="btn btn-light btn-sm rounded-circle shadow-sm p-1 d-flex align-items-center justify-content-center"
-                                                style="width:28px; height:28px;"><i
-                                                    class="bi bi-heart small"></i></button>
+                                            <button class="action-btn w-100 add-to-cart mt-3" data-id="69"
+                                                data-name="2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB"
+                                                data-price="2856.3" data-brand="Apple" data-rating="5" data-reviews="65"
+                                                data-stock="In Stock" data-image="/assets/img/seal product/imgsp3.png">
+                                                <i class="bi bi-heart"></i>
+                                                 </button>
                                             <button
                                                 class="btn btn-light btn-sm rounded-circle shadow-sm p-1 d-flex align-items-center justify-content-center"
                                                 style="width:28px; height:28px;"><i
@@ -2117,9 +2187,12 @@
                                                 <span
                                                     class="text-muted text-decoration-line-through small">$3225.6</span>
                                             </div>
-                                            <button
-                                                class="btn btn-light btn-sm text-primary w-100 mt-auto border mb-2">Add
-                                                To Cart</button>
+                                            <button class="btn btn-outline-secondary add-to-cart w-100 mt-3 mb-3"
+                                                data-id="69"
+                                                data-name="2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB"
+                                                data-price="2856.3" data-brand="Apple" data-rating="5" data-reviews="65"
+                                                data-stock="In Stock" data-image="/assets/img/seal product/imgsp3.png">
+                                                Add To Cart </button>
                                             <ul class="list-unstyled small text-muted mb-0 border-top pt-2"
                                                 style="font-size: 0.7rem;">
                                                 <li>• 27-inch Retina 5K display</li>
@@ -2141,10 +2214,12 @@
                                                 class="btn btn-light btn-sm rounded-circle shadow-sm p-1 d-flex align-items-center justify-content-center"
                                                 style="width:28px; height:28px;"><i
                                                     class="bi bi-lightning small"></i></button>
-                                            <button
-                                                class="btn btn-light btn-sm rounded-circle shadow-sm p-1 d-flex align-items-center justify-content-center"
-                                                style="width:28px; height:28px;"><i
-                                                    class="bi bi-heart small"></i></button>
+                                            <button class="action-btn w-100 add-to-cart mt-3" data-id="70"
+                                                data-name="2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB"
+                                                data-price="2856.3" data-brand="Apple" data-rating="5" data-reviews="65"
+                                                data-stock="In Stock" data-image="/assets/img/seal product/imgsp3.png">
+                                                <i class="bi bi-heart"></i>
+                                                 </button>
                                             <button
                                                 class="btn btn-light btn-sm rounded-circle shadow-sm p-1 d-flex align-items-center justify-content-center"
                                                 style="width:28px; height:28px;"><i
@@ -2172,9 +2247,12 @@
                                                 <span
                                                     class="text-muted text-decoration-line-through small">$3225.6</span>
                                             </div>
-                                            <button
-                                                class="btn btn-light btn-sm text-primary w-100 mt-auto border mb-2">Add
-                                                To Cart</button>
+                                            <button class="btn btn-outline-secondary add-to-cart w-100 mt-3 mb-3"
+                                                data-id="70"
+                                                data-name="2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB"
+                                                data-price="2856.3" data-brand="Apple" data-rating="5" data-reviews="65"
+                                                data-stock="In Stock" data-image="/assets/img/seal product/imgsp3.png">
+                                                Add To Cart </button>
                                             <ul class="list-unstyled small text-muted mb-0 border-top pt-2"
                                                 style="font-size: 0.7rem;">
                                                 <li>• 27-inch Retina 5K display</li>
@@ -2196,10 +2274,12 @@
                                                 class="btn btn-light btn-sm rounded-circle shadow-sm p-1 d-flex align-items-center justify-content-center"
                                                 style="width:28px; height:28px;"><i
                                                     class="bi bi-lightning small"></i></button>
-                                            <button
-                                                class="btn btn-light btn-sm rounded-circle shadow-sm p-1 d-flex align-items-center justify-content-center"
-                                                style="width:28px; height:28px;"><i
-                                                    class="bi bi-heart small"></i></button>
+                                            <button class="action-btn w-100 add-to-cart mt-3" data-id="71"
+                                                data-name="2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB"
+                                                data-price="2856.3" data-brand="Apple" data-rating="5" data-reviews="65"
+                                                data-stock="In Stock" data-image="/assets/img/seal product/imgsp3.png">
+                                                <i class="bi bi-heart"></i>
+                                                 </button>
                                             <button
                                                 class="btn btn-light btn-sm rounded-circle shadow-sm p-1 d-flex align-items-center justify-content-center"
                                                 style="width:28px; height:28px;"><i
@@ -2226,9 +2306,12 @@
                                                 <span
                                                     class="text-muted text-decoration-line-through small">$3225.6</span>
                                             </div>
-                                            <button
-                                                class="btn btn-light btn-sm text-primary w-100 mt-auto border mb-2">Add
-                                                To Cart</button>
+                                            <button class="btn btn-outline-secondary add-to-cart w-100 mt-3 mb-3"
+                                                data-id="71"
+                                                data-name="2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB"
+                                                data-price="2856.3" data-brand="Apple" data-rating="5" data-reviews="65"
+                                                data-stock="In Stock" data-image="/assets/img/seal product/imgsp3.png">
+                                                Add To Cart </button>
                                             <ul class="list-unstyled small text-muted mb-0 border-top pt-2"
                                                 style="font-size: 0.7rem;">
                                                 <li>• 27-inch Retina 5K display</li>
@@ -2250,10 +2333,12 @@
                                                 class="btn btn-light btn-sm rounded-circle shadow-sm p-1 d-flex align-items-center justify-content-center"
                                                 style="width:28px; height:28px;"><i
                                                     class="bi bi-lightning small"></i></button>
-                                            <button
-                                                class="btn btn-light btn-sm rounded-circle shadow-sm p-1 d-flex align-items-center justify-content-center"
-                                                style="width:28px; height:28px;"><i
-                                                    class="bi bi-heart small"></i></button>
+                                            <button class="action-btn w-100 add-to-cart mt-3" data-id="72"
+                                                data-name="2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB"
+                                                data-price="2856.3" data-brand="Apple" data-rating="5" data-reviews="65"
+                                                data-stock="In Stock" data-image="/assets/img/seal product/imgsp3.png">
+                                                <i class="bi bi-heart"></i>
+                                                 </button>
                                             <button
                                                 class="btn btn-light btn-sm rounded-circle shadow-sm p-1 d-flex align-items-center justify-content-center"
                                                 style="width:28px; height:28px;"><i
@@ -2280,9 +2365,12 @@
                                                 <span
                                                     class="text-muted text-decoration-line-through small">$3225.6</span>
                                             </div>
-                                            <button
-                                                class="btn btn-light btn-sm text-primary w-100 mt-auto border mb-2">Add
-                                                To Cart</button>
+                                            <button class="btn btn-outline-secondary add-to-cart w-100 mt-3 mb-3"
+                                                data-id="72"
+                                                data-name="2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB"
+                                                data-price="2856.3" data-brand="Apple" data-rating="5" data-reviews="65"
+                                                data-stock="In Stock" data-image="/assets/img/seal product/imgsp3.png">
+                                                Add To Cart </button>
                                             <ul class="list-unstyled small text-muted mb-0 border-top pt-2"
                                                 style="font-size: 0.7rem;">
                                                 <li>• 27-inch Retina 5K display</li>
@@ -2298,7 +2386,484 @@
                         <!-- ================= الشريحة الثانية (Slide 2 عند ضغط الأسهم) ================= -->
                         <div class="carousel-item">
                             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
-                                <!-- يمكن تكرار الكروت هنا لتحديث الشريحة الثانية -->
+
+                                <!-- كرت 1 -->
+                                <div class="col">
+                                    <div
+                                        class="card h-100 border-light-subtle shadow-sm product-card position-relative overflow-hidden">
+                                        <span
+                                            class="badge bg-danger position-absolute top-0 start-0 m-2 z-1">-17%</span>
+
+                                        <!-- القائمة التفاعلية الجانبية (تظهر فقط عند الـ Hover) -->
+                                        <div
+                                            class="product-actions position-absolute top-0 end-0 m-2 d-flex flex-column gap-1 z-2">
+                                            <button
+                                                class="btn btn-light btn-sm rounded-circle shadow-sm p-1 d-flex align-items-center justify-content-center"
+                                                style="width:28px; height:28px;"><i
+                                                    class="bi bi-lightning small"></i></button>
+                                            <button class="action-btn w-100 add-to-cart mt-3" data-id="73"
+                                                data-name="2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB"
+                                                data-price="2856.3" data-brand="Apple" data-rating="5" data-reviews="65"
+                                                data-stock="In Stock" data-image="/assets/img/seal product/imgsp3.png">
+                                                <i class="bi bi-heart"></i>
+                                                 </button>
+                                            <button
+                                                class="btn btn-light btn-sm rounded-circle shadow-sm p-1 d-flex align-items-center justify-content-center"
+                                                style="width:28px; height:28px;"><i
+                                                    class="bi bi-arrow-repeat small"></i></button>
+                                            <button
+                                                class="btn btn-light btn-sm rounded-circle shadow-sm p-1 d-flex align-items-center justify-content-center"
+                                                style="width:28px; height:28px;"><i
+                                                    class="bi bi-eye small"></i></button>
+                                        </div>
+
+                                        <div
+                                            class="product-img-holder d-flex align-items-center justify-content-center p-3 bg-light">
+                                            <img src="./imgs/headphone.png" alt="Product" class="img-fluid product-img"
+                                                style="height: 120px; object-fit: contain;">
+                                        </div>
+                                        <div class="card-body d-flex flex-column p-2 text-start">
+                                            <small class="text-muted">Apple</small>
+                                            <h6 class="card-title fs-6 fw-semibold text-truncate mb-1">Apple AirPods Pro
+                                                with MagSafe Charging Case</h6>
+                                            <div class="text-warning small mb-1"><i class="bi bi-star-fill"></i><i
+                                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i> <span
+                                                    class="text-muted">(65)</span></div>
+                                            <div class="mb-2"><span class="fw-bold text-primary fs-6">$2856.3</span>
+                                                <span
+                                                    class="text-muted text-decoration-line-through small">$3225.6</span>
+                                            </div>
+                                            <button class="btn btn-outline-secondary add-to-cart w-100 mt-3 mb-3"
+                                                data-id="73"
+                                                data-name="2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB"
+                                                data-price="2856.3" data-brand="Apple" data-rating="5" data-reviews="65"
+                                                data-stock="In Stock" data-image="/assets/img/seal product/imgsp3.png">
+                                                Add To Cart </button>
+                                            <ul class="list-unstyled small text-muted mb-0 border-top pt-2"
+                                                style="font-size: 0.7rem;">
+                                                <li>• 27-inch Retina 5K display</li>
+                                                <li>• 3.1GHz 6-core Intel Core i5</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- كرت 2 -->
+                                <div class="col">
+                                    <div
+                                        class="card h-100 border-light-subtle shadow-sm product-card position-relative overflow-hidden">
+                                        <span
+                                            class="badge bg-danger position-absolute top-0 start-0 m-2 z-1">-17%</span>
+                                        <div
+                                            class="product-actions position-absolute top-0 end-0 m-2 d-flex flex-column gap-1 z-2">
+                                            <button
+                                                class="btn btn-light btn-sm rounded-circle shadow-sm p-1 d-flex align-items-center justify-content-center"
+                                                style="width:28px; height:28px;"><i
+                                                    class="bi bi-lightning small"></i></button>
+                                            <button class="action-btn w-100 add-to-cart mt-3" data-id="74"
+                                                data-name="2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB"
+                                                data-price="2856.3" data-brand="Apple" data-rating="5" data-reviews="65"
+                                                data-stock="In Stock" data-image="/assets/img/seal product/imgsp3.png">
+                                                <i class="bi bi-heart"></i>
+                                                 </button>
+                                            <button
+                                                class="btn btn-light btn-sm rounded-circle shadow-sm p-1 d-flex align-items-center justify-content-center"
+                                                style="width:28px; height:28px;"><i
+                                                    class="bi bi-arrow-repeat small"></i></button>
+                                            <button
+                                                class="btn btn-light btn-sm rounded-circle shadow-sm p-1 d-flex align-items-center justify-content-center"
+                                                style="width:28px; height:28px;"><i
+                                                    class="bi bi-eye small"></i></button>
+                                        </div>
+                                        <div
+                                            class="product-img-holder d-flex align-items-center justify-content-center p-3 bg-light">
+                                            <img src="./imgs/laptop.png" alt="Product" class="img-fluid product-img"
+                                                style="height: 120px; object-fit: contain;">
+                                        </div>
+                                        <div class="card-body d-flex flex-column p-2 text-start">
+                                            <small class="text-muted">Apple</small>
+                                            <h6 class="card-title fs-6 fw-semibold text-truncate mb-1">2022 Apple iMac
+                                                with Retina 5K Display</h6>
+                                            <div class="text-warning small mb-1"><i class="bi bi-star-fill"></i><i
+                                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i> <span
+                                                    class="text-muted">(65)</span></div>
+                                            <div class="mb-2"><span class="fw-bold text-primary fs-6">$2856.3</span>
+                                                <span
+                                                    class="text-muted text-decoration-line-through small">$3225.6</span>
+                                            </div>
+                                            <button class="btn btn-outline-secondary add-to-cart w-100 mt-3 mb-3"
+                                                data-id="74"
+                                                data-name="2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB"
+                                                data-price="2856.3" data-brand="Apple" data-rating="5" data-reviews="65"
+                                                data-stock="In Stock" data-image="/assets/img/seal product/imgsp3.png">
+                                                Add To Cart </button>
+                                            <ul class="list-unstyled small text-muted mb-0 border-top pt-2"
+                                                style="font-size: 0.7rem;">
+                                                <li>• 27-inch Retina 5K display</li>
+                                                <li>• 3.1GHz 6-core Intel Core i5</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- كرت 3 -->
+                                <div class="col">
+                                    <div
+                                        class="card h-100 border-light-subtle shadow-sm product-card position-relative overflow-hidden">
+                                        <span
+                                            class="badge bg-danger position-absolute top-0 start-0 m-2 z-1">-17%</span>
+                                        <div
+                                            class="product-actions position-absolute top-0 end-0 m-2 d-flex flex-column gap-1 z-2">
+                                            <button
+                                                class="btn btn-light btn-sm rounded-circle shadow-sm p-1 d-flex align-items-center justify-content-center"
+                                                style="width:28px; height:28px;"><i
+                                                    class="bi bi-lightning small"></i></button>
+                                            <button class="action-btn w-100 add-to-cart mt-3" data-id="75"
+                                                data-name="2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB"
+                                                data-price="2856.3" data-brand="Apple" data-rating="5" data-reviews="65"
+                                                data-stock="In Stock" data-image="/assets/img/seal product/imgsp3.png">
+                                                <i class="bi bi-heart"></i>
+                                                 </button>
+                                            <button
+                                                class="btn btn-light btn-sm rounded-circle shadow-sm p-1 d-flex align-items-center justify-content-center"
+                                                style="width:28px; height:28px;"><i
+                                                    class="bi bi-arrow-repeat small"></i></button>
+                                            <button
+                                                class="btn btn-light btn-sm rounded-circle shadow-sm p-1 d-flex align-items-center justify-content-center"
+                                                style="width:28px; height:28px;"><i
+                                                    class="bi bi-eye small"></i></button>
+                                        </div>
+                                        <div
+                                            class="product-img-holder d-flex align-items-center justify-content-center p-3 bg-light">
+                                            <img src="./imgs/television.png" alt="Product" class="img-fluid product-img"
+                                                style="height: 120px; object-fit: contain;">
+                                        </div>
+                                        <div class="card-body d-flex flex-column p-2 text-start">
+                                            <small class="text-muted">Apple</small>
+                                            <h6 class="card-title fs-6 fw-semibold text-truncate mb-1">Chromecast with
+                                                Google TV - Streaming</h6>
+                                            <div class="text-warning small mb-1"><i class="bi bi-star-fill"></i><i
+                                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i> <span
+                                                    class="text-muted">(65)</span></div>
+                                            <div class="mb-2"><span class="fw-bold text-primary fs-6">$2856.3</span>
+                                                <span
+                                                    class="text-muted text-decoration-line-through small">$3225.6</span>
+                                            </div>
+                                            <button class="btn btn-outline-secondary add-to-cart w-100 mt-3 mb-3"
+                                                data-id="75"
+                                                data-name="2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB"
+                                                data-price="2856.3" data-brand="Apple" data-rating="5" data-reviews="65"
+                                                data-stock="In Stock" data-image="/assets/img/seal product/imgsp3.png">
+                                                Add To Cart </button>
+                                            <ul class="list-unstyled small text-muted mb-0 border-top pt-2"
+                                                style="font-size: 0.7rem;">
+                                                <li>• 27-inch Retina 5K display</li>
+                                                <li>• 3.1GHz 6-core Intel Core i5</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- كرت 4 -->
+                                <div class="col">
+                                    <div
+                                        class="card h-100 border-light-subtle shadow-sm product-card position-relative overflow-hidden">
+                                        <span
+                                            class="badge bg-danger position-absolute top-0 start-0 m-2 z-1">-17%</span>
+                                        <div
+                                            class="product-actions position-absolute top-0 end-0 m-2 d-flex flex-column gap-1 z-2">
+                                            <button
+                                                class="btn btn-light btn-sm rounded-circle shadow-sm p-1 d-flex align-items-center justify-content-center"
+                                                style="width:28px; height:28px;"><i
+                                                    class="bi bi-lightning small"></i></button>
+                                            <button class="action-btn w-100 add-to-cart mt-3" data-id="76"
+                                                data-name="2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB"
+                                                data-price="2856.3" data-brand="Apple" data-rating="5" data-reviews="65"
+                                                data-stock="In Stock" data-image="/assets/img/seal product/imgsp3.png">
+                                                <i class="bi bi-heart"></i>
+                                                 </button>
+                                            <button
+                                                class="btn btn-light btn-sm rounded-circle shadow-sm p-1 d-flex align-items-center justify-content-center"
+                                                style="width:28px; height:28px;"><i
+                                                    class="bi bi-arrow-repeat small"></i></button>
+                                            <button
+                                                class="btn btn-light btn-sm rounded-circle shadow-sm p-1 d-flex align-items-center justify-content-center"
+                                                style="width:28px; height:28px;"><i
+                                                    class="bi bi-eye small"></i></button>
+                                        </div>
+                                        <div
+                                            class="product-img-holder d-flex align-items-center justify-content-center p-3 bg-light">
+                                            <img src="./imgs/smartwatches.png" alt="Product"
+                                                class="img-fluid product-img"
+                                                style="height: 120px; object-fit: contain;">
+                                        </div>
+                                        <div class="card-body d-flex flex-column p-2 text-start">
+                                            <small class="text-muted">Apple</small>
+                                            <h6 class="card-title fs-6 fw-semibold text-truncate mb-1">2HDR Smart
+                                                Portable Projector - SP-LSP3BL</h6>
+                                            <div class="text-warning small mb-1"><i class="bi bi-star-fill"></i><i
+                                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i> <span
+                                                    class="text-muted">(65)</span></div>
+                                            <div class="mb-2"><span class="fw-bold text-primary fs-6">$2856.3</span>
+                                                <span
+                                                    class="text-muted text-decoration-line-through small">$3225.6</span>
+                                            </div>
+                                            <button class="btn btn-outline-secondary add-to-cart w-100 mt-3 mb-3"
+                                                data-id="76"
+                                                data-name="2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB"
+                                                data-price="2856.3" data-brand="Apple" data-rating="5" data-reviews="65"
+                                                data-stock="In Stock" data-image="/assets/img/seal product/imgsp3.png">
+                                                Add To Cart </button>
+                                            <ul class="list-unstyled small text-muted mb-0 border-top pt-2"
+                                                style="font-size: 0.7rem;">
+                                                <li>• 27-inch Retina 5K display</li>
+                                                <li>• 3.1GHz 6-core Intel Core i5</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- كرت 5 (السطر الثاني) -->
+                                <div class="col">
+                                    <div
+                                        class="card h-100 border-light-subtle shadow-sm product-card position-relative overflow-hidden">
+                                        <span
+                                            class="badge bg-danger position-absolute top-0 start-0 m-2 z-1">-17%</span>
+                                        <div
+                                            class="product-actions position-absolute top-0 end-0 m-2 d-flex flex-column gap-1 z-2">
+                                            <button
+                                                class="btn btn-light btn-sm rounded-circle shadow-sm p-1 d-flex align-items-center justify-content-center"
+                                                style="width:28px; height:28px;"><i
+                                                    class="bi bi-lightning small"></i></button>
+                                            <button class="action-btn w-100 add-to-cart mt-3" data-id="77"
+                                                data-name="2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB"
+                                                data-price="2856.3" data-brand="Apple" data-rating="5" data-reviews="65"
+                                                data-stock="In Stock" data-image="/assets/img/seal product/imgsp3.png">
+                                                <i class="bi bi-heart"></i>
+                                                 </button>
+                                            <button
+                                                class="btn btn-light btn-sm rounded-circle shadow-sm p-1 d-flex align-items-center justify-content-center"
+                                                style="width:28px; height:28px;"><i
+                                                    class="bi bi-arrow-repeat small"></i></button>
+                                            <button
+                                                class="btn btn-light btn-sm rounded-circle shadow-sm p-1 d-flex align-items-center justify-content-center"
+                                                style="width:28px; height:28px;"><i
+                                                    class="bi bi-eye small"></i></button>
+                                        </div>
+                                        <div
+                                            class="product-img-holder d-flex align-items-center justify-content-center p-3 bg-light">
+                                            <img src="./imgs/smartwatches.png" alt="Product"
+                                                class="img-fluid product-img"
+                                                style="height: 120px; object-fit: contain;">
+                                        </div>
+                                        <div class="card-body d-flex flex-column p-2 text-start">
+                                            <small class="text-muted">Apple</small>
+                                            <h6 class="card-title fs-6 fw-semibold text-truncate mb-1">SAMSUNG Galaxy
+                                                Tab A7 Lite, 8.7" Tablet</h6>
+                                            <div class="text-warning small mb-1"><i class="bi bi-star-fill"></i><i
+                                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i> <span
+                                                    class="text-muted">(65)</span></div>
+                                            <div class="mb-2"><span class="fw-bold text-primary fs-6">$2856.3</span>
+                                                <span
+                                                    class="text-muted text-decoration-line-through small">$3225.6</span>
+                                            </div>
+                                            <button class="btn btn-outline-secondary add-to-cart w-100 mt-3 mb-3"
+                                                data-id="77"
+                                                data-name="2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB"
+                                                data-price="2856.3" data-brand="Apple" data-rating="5" data-reviews="65"
+                                                data-stock="In Stock" data-image="/assets/img/seal product/imgsp3.png">
+                                                Add To Cart </button>
+                                            <ul class="list-unstyled small text-muted mb-0 border-top pt-2"
+                                                style="font-size: 0.7rem;">
+                                                <li>• 27-inch Retina 5K display</li>
+                                                <li>• 3.1GHz 6-core Intel Core i5</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- كرت 6 (السطر الثاني) -->
+                                <div class="col">
+                                    <div
+                                        class="card h-100 border-light-subtle shadow-sm product-card position-relative overflow-hidden">
+                                        <span
+                                            class="badge bg-danger position-absolute top-0 start-0 m-2 z-1">-17%</span>
+                                        <div
+                                            class="product-actions position-absolute top-0 end-0 m-2 d-flex flex-column gap-1 z-2">
+                                            <button
+                                                class="btn btn-light btn-sm rounded-circle shadow-sm p-1 d-flex align-items-center justify-content-center"
+                                                style="width:28px; height:28px;"><i
+                                                    class="bi bi-lightning small"></i></button>
+                                            <button class="action-btn w-100 add-to-cart mt-3" data-id="78"
+                                                data-name="2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB"
+                                                data-price="2856.3" data-brand="Apple" data-rating="5" data-reviews="65"
+                                                data-stock="In Stock" data-image="/assets/img/seal product/imgsp3.png">
+                                                <i class="bi bi-heart"></i>
+                                                 </button>
+                                            <button
+                                                class="btn btn-light btn-sm rounded-circle shadow-sm p-1 d-flex align-items-center justify-content-center"
+                                                style="width:28px; height:28px;"><i
+                                                    class="bi bi-arrow-repeat small"></i></button>
+                                            <button
+                                                class="btn btn-light btn-sm rounded-circle shadow-sm p-1 d-flex align-items-center justify-content-center"
+                                                style="width:28px; height:28px;"><i
+                                                    class="bi bi-eye small"></i></button>
+                                        </div>
+                                        <div
+                                            class="product-img-holder d-flex align-items-center justify-content-center p-3 bg-light ">
+                                            <img src="./imgs/television.png" alt="Product"
+                                                class="img-fluid product-img "
+                                                style="height: 100px; object-fit: contain;">
+                                        </div>
+                                        <div class="card-body d-flex flex-column p-2 text-start">
+                                            <small class="text-muted">Apple</small>
+                                            <h6 class="card-title fs-6 fw-semibold text-truncate mb-1">Class 4K UHD
+                                                (2160P) LED Roku Smart TV</h6>
+                                            <div class="text-warning small mb-1"><i class="bi bi-star-fill"></i><i
+                                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i> <span
+                                                    class="text-muted">(65)</span></div>
+                                            <div class="mb-2"><span class="fw-bold text-primary fs-6">$2856.3</span>
+                                                <span
+                                                    class="text-muted text-decoration-line-through small">$3225.6</span>
+                                            </div>
+                                            <button class="btn btn-outline-secondary add-to-cart w-100 mt-3 mb-3"
+                                                data-id="78"
+                                                data-name="2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB"
+                                                data-price="2856.3" data-brand="Apple" data-rating="5" data-reviews="65"
+                                                data-stock="In Stock" data-image="/assets/img/seal product/imgsp3.png">
+                                                Add To Cart </button>
+                                            <ul class="list-unstyled small text-muted mb-0 border-top pt-2"
+                                                style="font-size: 0.7rem;">
+                                                <li>• 27-inch Retina 5K display</li>
+                                                <li>• 3.1GHz 6-core Intel Core i5</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- كرت 7 (السطر الثاني) -->
+                                <div class="col">
+                                    <div
+                                        class="card h-100 border-light-subtle shadow-sm product-card position-relative overflow-hidden">
+                                        <span
+                                            class="badge bg-danger position-absolute top-0 start-0 m-2 z-1">-17%</span>
+                                        <div
+                                            class="product-actions position-absolute top-0 end-0 m-2 d-flex flex-column gap-1 z-2">
+                                            <button
+                                                class="btn btn-light btn-sm rounded-circle shadow-sm p-1 d-flex align-items-center justify-content-center"
+                                                style="width:28px; height:28px;"><i
+                                                    class="bi bi-lightning small"></i></button>
+                                            <button class="action-btn w-100 add-to-cart mt-3" data-id="79"
+                                                data-name="2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB"
+                                                data-price="2856.3" data-brand="Apple" data-rating="5" data-reviews="65"
+                                                data-stock="In Stock" data-image="/assets/img/seal product/imgsp3.png">
+                                                <i class="bi bi-heart"></i>
+                                                 </button>
+                                            <button
+                                                class="btn btn-light btn-sm rounded-circle shadow-sm p-1 d-flex align-items-center justify-content-center"
+                                                style="width:28px; height:28px;"><i
+                                                    class="bi bi-arrow-repeat small"></i></button>
+                                            <button
+                                                class="btn btn-light btn-sm rounded-circle shadow-sm p-1 d-flex align-items-center justify-content-center"
+                                                style="width:28px; height:28px;"><i
+                                                    class="bi bi-eye small"></i></button>
+                                        </div>
+                                        <div
+                                            class="product-img-holder d-flex align-items-center justify-content-center p-3 bg-light">
+                                            <img src="./imgs/headphone.png" alt="Product" class="img-fluid product-img"
+                                                style="height: 120px; object-fit: contain;">
+                                        </div>
+                                        <div class="card-body d-flex flex-column p-2 text-start">
+                                            <small class="text-muted">Apple</small>
+                                            <h6 class="card-title fs-6 fw-semibold text-truncate mb-1">HP 24 All-in-One
+                                                PC, Intel Core i3-1115G4</h6>
+                                            <div class="text-warning small mb-1"><i class="bi bi-star-fill"></i><i
+                                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i> <span
+                                                    class="text-muted">(65)</span></div>
+                                            <div class="mb-2"><span class="fw-bold text-primary fs-6">$2856.3</span>
+                                                <span
+                                                    class="text-muted text-decoration-line-through small">$3225.6</span>
+                                            </div>
+                                            <button class="btn btn-outline-secondary add-to-cart w-100 mt-3 mb-3"
+                                                data-id="79"
+                                                data-name="2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB"
+                                                data-price="2856.3" data-brand="Apple" data-rating="5" data-reviews="65"
+                                                data-stock="In Stock" data-image="/assets/img/seal product/imgsp3.png">
+                                                Add To Cart </button>
+                                            <ul class="list-unstyled small text-muted mb-0 border-top pt-2"
+                                                style="font-size: 0.7rem;">
+                                                <li>• 27-inch Retina 5K display</li>
+                                                <li>• 3.1GHz 6-core Intel Core i5</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- كرت 8 (السطر الثاني) -->
+                                <div class="col">
+                                    <div
+                                        class="card h-100 border-light-subtle shadow-sm product-card position-relative overflow-hidden">
+                                        <span
+                                            class="badge bg-danger position-absolute top-0 start-0 m-2 z-1">-17%</span>
+                                        <div
+                                            class="product-actions position-absolute top-0 end-0 m-2 d-flex flex-column gap-1 z-2">
+                                            <button
+                                                class="btn btn-light btn-sm rounded-circle shadow-sm p-1 d-flex align-items-center justify-content-center"
+                                                style="width:28px; height:28px;"><i
+                                                    class="bi bi-lightning small"></i></button>
+                                            <button class="action-btn w-100 add-to-cart mt-3" data-id="80"
+                                                data-name="2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB"
+                                                data-price="2856.3" data-brand="Apple" data-rating="5" data-reviews="65"
+                                                data-stock="In Stock" data-image="/assets/img/seal product/imgsp3.png">
+                                                <i class="bi bi-heart"></i>
+                                                 </button>
+                                            <button
+                                                class="btn btn-light btn-sm rounded-circle shadow-sm p-1 d-flex align-items-center justify-content-center"
+                                                style="width:28px; height:28px;"><i
+                                                    class="bi bi-arrow-repeat small"></i></button>
+                                            <button
+                                                class="btn btn-light btn-sm rounded-circle shadow-sm p-1 d-flex align-items-center justify-content-center"
+                                                style="width:28px; height:28px;"><i
+                                                    class="bi bi-eye small"></i></button>
+                                        </div>
+                                        <div
+                                            class="product-img-holder d-flex align-items-center justify-content-center p-3 bg-light">
+                                            <img src="./imgs/laptop.png" alt="Product" class="img-fluid product-img"
+                                                style="height: 120px; object-fit: contain;">
+                                        </div>
+                                        <div class="card-body d-flex flex-column p-2 text-start">
+                                            <small class="text-muted">Apple</small>
+                                            <h6 class="card-title fs-6 fw-semibold text-truncate mb-1">Dell Optiplex
+                                                9020 Small Form Business Desktop</h6>
+                                            <div class="text-warning small mb-1"><i class="bi bi-star-fill"></i><i
+                                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i> <span
+                                                    class="text-muted">(65)</span></div>
+                                            <div class="mb-2"><span class="fw-bold text-primary fs-6">$2856.3</span>
+                                                <span
+                                                    class="text-muted text-decoration-line-through small">$3225.6</span>
+                                            </div>
+                                            <button class="btn btn-outline-secondary add-to-cart w-100 mt-3 mb-3"
+                                                data-id="80"
+                                                data-name="2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB"
+                                                data-price="2856.3" data-brand="Apple" data-rating="5" data-reviews="65"
+                                                data-stock="In Stock" data-image="/assets/img/seal product/imgsp3.png">
+                                                Add To Cart </button>
+                                            <ul class="list-unstyled small text-muted mb-0 border-top pt-2"
+                                                style="font-size: 0.7rem;">
+                                                <li>• 27-inch Retina 5K display</li>
+                                                <li>• 3.1GHz 6-core Intel Core i5</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
 
@@ -3433,7 +3998,6 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
-    <script src="script-wish.js"></script>
 </body>
 
 </html>

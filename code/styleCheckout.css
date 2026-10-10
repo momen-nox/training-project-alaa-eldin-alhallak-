@@ -1,0 +1,108 @@
+/* إزاحة الصفحة للجانب لترك مساحة للشريط الثابت */
+body {
+    padding-left: 55px;
+}
+
+/* الشريط الجانبي الثابت بطول الصفحة كاملة */
+.sidebar-categories {
+    width: 55px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background: #fff;
+    border-right: 1px solid #dee2e6;
+    z-index: 1040;
+}
+
+/* ظهور القائمة الفرعية عند تمرير الماوس Hover */
+.sidebar-item {
+    position: relative;
+}
+
+.sidebar-popup {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 55px;
+    width: 220px;
+    background: #fff;
+    border: 1px solid #dee2e6;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 0 6px 6px 0;
+    z-index: 1050;
+}
+
+.sidebar-item:hover .sidebar-popup {
+    display: block;
+}
+
+/* فتح القوائم المنسدلة العلوية عند Hover */
+@media (min-width: 992px) {
+    .navbar .dropdown:hover .dropdown-menu {
+        display: block;
+        margin-top: 0;
+    }
+}
+
+/* تنسيق الكارد الرئيسي بأسلوب لطيف وناعم */
+.card {
+    border: 2px solid #e0e7ff !important;
+    /* بوردَر بنفسجي فاتح وناعم */
+    border-radius: 20px !important;
+    /* حواف مدورة ومريحة */
+    box-shadow: 0 10px 25px rgba(103, 114, 229, 0.08) !important;
+    /* ظل خفيف وكيوت */
+    background-color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+/* تأثير حركة ناعمة عند تحريك الماوس فوق الكارد */
+.card:hover {
+    box-shadow: 0 15px 30px rgba(103, 114, 229, 0.12) !important;
+    transform: translateY(-2px);
+}
+
+/* تحسين شكل حقول الإدخال لتتناسب مع الستايل */
+.form-control,
+.form-select {
+    border: 1.5px solid #e2e8f0 !important;
+    border-radius: 12px !important;
+    padding: 0.75rem 1rem !important;
+    transition: all 0.2s ease-in-out;
+}
+
+/* تأثير التحديد عند الضغط على أي حقل */
+.form-control:focus,
+.form-select:focus {
+    border-color: #818cf8 !important;
+    box-shadow: 0 0 0 0.25rem rgba(129, 140, 248, 0.2) !important;
+    background-color: #fff !important;
+}
+
+/* أزرار الدفع السريع العلوية */
+.btn-light {
+    border: 1.5px solid #e2e8f0 !important;
+    border-radius: 12px !important;
+    transition: all 0.2s ease;
+}
+
+.btn-light:hover {
+    background-color: #f8fafc !important;
+    border-color: #cbd5e1 !important;
+}
+
+/* زر إرسال الطلب الرئيسي */
+.btn-primary {
+    background-color: #4f46e5 !important;
+    border: none !important;
+    border-radius: 12px !important;
+    box-shadow: 0 4px 12px rgba(79, 70, 229, 0.3) !important;
+    transition: all 0.2s ease;
+}
+
+.btn-primary:hover {
+    background-color: #4338ca !important;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 15px rgba(79, 70, 229, 0.4) !important;
+}
