@@ -1,0 +1,794 @@
+
+   /* 01. ROOT VARIABLES - متغيرات الألوان */
+:root {
+  --ecom-primary: #2c3e6b;
+  --ecom-primary-dark: #1e2c52;
+  --ecom-accent: #f5a623;
+  --ecom-accent-dark: #e09612;
+  --ecom-danger: #dc3545;
+  --ecom-secondary: #6c757d;
+  --ecom-border: #e9ecef;
+  --ecom-bg-light: #f8f9fa;
+  --ecom-shadow-sm: 0 2px 8px rgba(0, 0, 0, .08);
+  --ecom-shadow-md: 0 8px 24px rgba(44, 62, 107, .12);
+  --ecom-shadow-lg: 0 10px 30px rgba(44, 62, 107, .12);
+  --ecom-radius-sm: 4px;
+  --ecom-radius-md: 8px;
+  --ecom-radius-lg: 12px;
+}
+
+
+   /* 02. RESET & GENERAL - إعادة الضبط والعام */
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "DM Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  overflow-x: hidden;
+  color: #333;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+
+/* الألوان المخصصة */
+.text-primary {
+  color: var(--ecom-primary) !important;
+}
+.bg-primary {
+  background-color: var(--ecom-primary) !important;
+}
+.btn-primary {
+  background-color: var(--ecom-primary);
+  border-color: var(--ecom-primary);
+  transition: all .2s ease;
+}
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: var(--ecom-primary-dark);
+  border-color: var(--ecom-primary-dark);
+}
+
+
+   /* 03. LAYOUT - تخطيط الصفحة العام */
+
+[style*="margin-left: 75px"] {
+  margin-left: 75px;
+  transition: margin-left .2s ease;
+}
+
+.container-fluid[style*="max-width: 1200px"] {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+
+   /* 04. SIDEBAR - الشريط الجانبي الثابت (Icon Rail) */
+  
+.position-fixed.top-0.start-0.vh-100 {
+  width: 75px;
+  scrollbar-width: thin;
+}
+.position-fixed.top-0.start-0.vh-100::-webkit-scrollbar {
+  width: 4px;
+}
+.position-fixed.top-0.start-0.vh-100::-webkit-scrollbar-thumb {
+  background: var(--ecom-border);
+  border-radius: 2px;
+}
+
+.position-fixed .btn-primary {
+  width: 44px;
+  height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dropdown.dropend {
+  width: 100%;
+}
+.dropdown.dropend .btn-light {
+  transition: all .2s ease;
+  color: var(--ecom-secondary);
+  background: transparent;
+  border: none;
+}
+.dropdown.dropend .btn-light:hover {
+  background: var(--ecom-border);
+  color: var(--ecom-primary);
+}
+.dropdown.dropend .dropdown-menu {
+  border: none;
+  border-radius: var(--ecom-radius-md);
+  box-shadow: var(--ecom-shadow-md);
+  padding: 8px 0;
+  margin-left: 8px;
+}
+.dropdown.dropend .dropdown-header {
+  color: var(--ecom-primary);
+  font-size: .75rem;
+  font-weight: 700;
+  padding: 8px 16px;
+  text-transform: uppercase;
+}
+.dropdown.dropend .dropdown-item {
+  font-size: .85rem;
+  padding: 6px 16px;
+  transition: all .2s ease;
+}
+.dropdown.dropend .dropdown-item:hover {
+  background: #f0f4ff;
+  color: var(--ecom-primary);
+}
+
+
+   /* 05. TOP BAR - الشريط العلوي */
+.bg-light.py-2.border-bottom {
+  font-size: .85rem;
+}
+.bg-light.py-2.border-bottom a {
+  transition: color .2s ease;
+}
+.bg-light.py-2.border-bottom a:hover {
+  color: var(--ecom-primary) !important;
+}
+.bg-light.py-2.border-bottom .text-success {
+  color: #28a745 !important;
+}
+
+
+   /* 06. NAVBAR - الشريط الرئيسي */
+.navbar {
+  transition: box-shadow .3s ease;
+}
+.navbar-brand {
+  color: var(--ecom-primary) !important;
+  transition: all .2s ease;
+}
+.navbar-brand:hover {
+  color: var(--ecom-primary-dark) !important;
+}
+.navbar-brand sup {
+  font-size: .5rem !important;
+  vertical-align: super;
+  font-weight: 400;
+}
+
+.navbar .nav-link {
+  color: #333;
+  font-size: .9rem;
+  font-weight: 500;
+  padding: 8px 12px;
+  transition: color .2s ease;
+  position: relative;
+}
+.navbar .nav-link:hover,
+.navbar .nav-link:focus,
+.navbar .nav-link.active {
+  color: var(--ecom-primary);
+}
+
+/* شريط البحث */
+.navbar .input-group {
+  border: 1px solid var(--ecom-border);
+  border-radius: var(--ecom-radius-sm);
+  overflow: hidden;
+  background: #f8f9fa;
+}
+.navbar .input-group .form-select,
+.navbar .input-group .form-control {
+  border: none;
+  background: transparent;
+  box-shadow: none;
+  font-size: .9rem;
+}
+.navbar .input-group .form-control:focus,
+.navbar .input-group .form-select:focus {
+  box-shadow: none;
+  background: #fff;
+}
+.navbar .input-group .btn {
+  border: none;
+  background: transparent;
+}
+
+/* الأيقونات */
+.navbar .d-flex.align-items-center.gap-4 > a {
+  color: #333;
+  transition: color .2s ease;
+}
+.navbar .d-flex.align-items-center.gap-4 > a:hover {
+  color: var(--ecom-primary) !important;
+}
+
+.navbar .badge.bg-warning {
+  background-color: var(--ecom-accent) !important;
+  font-size: .6rem;
+  padding: 3px 6px;
+  min-width: 18px;
+  height: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+   /* 07. HERO SECTION - قسم السلايدر والكروت الجانبية */
+
+.card.h-100.position-relative.overflow-hidden[style*="background-image"] {
+  border-radius: var(--ecom-radius-lg);
+  transition: transform .3s ease, box-shadow .3s ease;
+  min-height: 300px;
+}
+.card.h-100.position-relative.overflow-hidden[style*="background-image"]:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--ecom-shadow-md);
+}
+
+.card .position-absolute.bottom-0.start-0.m-2.bg-white {
+  border-radius: var(--ecom-radius-sm);
+  box-shadow: var(--ecom-shadow-sm);
+  padding: 10px 12px;
+}
+.card .position-absolute.bottom-0.start-0.m-2.bg-white p {
+  color: #050505;
+  font-weight: 600;
+  line-height: 1.3;
+}
+.card .position-absolute.bottom-0.start-0.m-2.bg-white a {
+  color: #f97316;
+  font-weight: 600;
+  transition: all .2s ease;
+}
+.card .position-absolute.bottom-0.start-0.m-2.bg-white a:hover {
+  color: var(--ecom-primary);
+}
+
+/* السلايدر */
+#heroCarousel {
+  border-radius: var(--ecom-radius-lg);
+  overflow: hidden;
+}
+#heroCarousel .carousel-inner {
+  border-radius: var(--ecom-radius-lg);
+}
+#heroCarousel .carousel-item > div {
+  position: relative;
+}
+
+/* أسهم السلايدر */
+#heroCarousel .btn-light {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0;
+  border: 1px solid var(--ecom-border);
+  font-size: 1.3rem;
+  line-height: 1;
+  background: #fff;
+  color: var(--ecom-primary);
+  transition: all .2s ease;
+}
+#heroCarousel .btn-light:hover {
+  background: var(--ecom-primary);
+  color: #fff;
+  border-color: var(--ecom-primary);
+}
+
+
+
+   /* 08. INFO CARDS - الكروت الخمسة (Free Delivery, ...) */
+
+.hover-card {
+  background: #fff;
+  transition: all .3s ease;
+  cursor: pointer;
+  border-radius: var(--ecom-radius-md) !important;
+}
+.hover-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--ecom-shadow-md);
+  border-color: var(--ecom-primary) !important;
+}
+.hover-card i {
+  color: var(--ecom-secondary);
+  transition: color .2s ease;
+}
+.hover-card:hover i {
+  color: var(--ecom-primary) !important;
+}
+.hover-card h6 {
+  color: #1e3a8a;
+  font-size: .95rem;
+}
+
+
+
+   /* 09. MOST POPULAR CATEGORIES - كروت التصنيفات */
+
+.row-cols-2.row-cols-md-3.row-cols-lg-5 .col > .d-flex {
+  transition: transform .2s ease;
+  padding: 10px 0;
+}
+.row-cols-2.row-cols-md-3.row-cols-lg-5 .col > .d-flex:hover {
+  transform: translateY(-4px);
+}
+
+.row-cols-2.row-cols-md-3.row-cols-lg-5 img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform .3s ease;
+}
+.row-cols-2.row-cols-md-3.row-cols-lg-5 .col > .d-flex:hover img {
+  transform: scale(1.05);
+}
+
+
+
+   /* 10. WEEKLY SELECTION - حاوية التبويبات */
+
+#WeeklyTabs {
+  gap: 4px;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#WeeklyTabs .nav-link {
+  color: var(--ecom-secondary);
+  border: none;
+  background: transparent;
+  padding: 8px 14px;
+  position: relative;
+  transition: color .2s ease;
+  border-radius: 0;
+  font-size: .8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .3px;
+}
+#WeeklyTabs .nav-link:hover {
+  color: var(--ecom-primary);
+  background: transparent;
+}
+#WeeklyTabs .nav-link.active {
+  color: var(--ecom-primary);
+  background: transparent;
+}
+#WeeklyTabs .nav-link.active::after {
+  content: '';
+  position: absolute;
+  left: 14px;
+  right: 14px;
+  bottom: 0;
+  height: 2px;
+  background: var(--ecom-primary);
+  border-radius: 1px;
+}
+
+#WeeklyTabContent {
+  margin-top: 20px;
+}
+#WeeklyTabContent .tab-pane {
+  animation: fadeIn .3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+
+
+   /* 11. SCROLL ARROW BUTTONS - أسهم التمرير */
+
+.scroll-arrow-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #fff;
+  border: 1px solid var(--ecom-border);
+  color: var(--ecom-primary);
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0;
+  transition: all .2s ease;
+}
+.scroll-arrow-btn:hover {
+  background: var(--ecom-primary);
+  color: #fff;
+  border-color: var(--ecom-primary);
+  transform: scale(1.05);
+}
+.scroll-arrow-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(44, 62, 107, .15);
+}
+.scroll-arrow-btn:active {
+  transform: scale(.95);
+}
+.scroll-arrow-btn:disabled {
+  opacity: .4;
+  cursor: not-allowed;
+}
+
+
+
+   /* 12. PRODUCT CARD - كرت المنتج */
+
+.product-card {
+  position: relative !important;
+  overflow: visible !important;
+  transition: box-shadow .3s ease, transform .3s ease;
+  border-radius: var(--ecom-radius-md) !important;
+  background: #fff;
+}
+.product-card:hover {
+  box-shadow: var(--ecom-shadow-lg);
+  transform: translateY(-3px);
+}
+
+/* Badge الخصم */
+.product-card > .badge {
+  background-color: var(--ecom-accent) !important;
+  color: #fff;
+  font-size: .7rem;
+  padding: 5px 8px;
+  border-radius: var(--ecom-radius-sm);
+  z-index: 2;
+}
+
+/* صورة المنتج */
+.product-card > .text-center {
+  overflow: hidden;
+}
+.product-card > .text-center img {
+  transition: transform .3s ease;
+}
+.product-card:hover > .text-center img {
+  transform: scale(1.05);
+}
+
+/* عنوان المنتج */
+.product-card h6 {
+  line-height: 1.4;
+  min-height: 2.2em;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+.product-card p {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+/* السعر */
+.product-card .fs-5 {
+  font-size: 1.1rem !important;
+}
+.product-card > .text-center img {
+  transition: transform .3s ease;
+  min-height: 180px;          /* يضمن حد أدنى للارتفاع */
+}
+
+
+   /* 13. PRODUCT ACTIONS - أزرار المنتج (قلب، عين، ...) */
+-
+.product-card .product-actions {
+  position: absolute !important;
+  top: 0 !important;
+  right: 0 !important;
+  left: auto !important;
+  bottom: auto !important;
+  width: auto !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  gap: 8px !important;
+  padding: 12px !important;
+  margin: 0 !important;
+  opacity: 0;
+  transform: translateX(15px);
+  transition: opacity .3s ease, transform .3s ease;
+  z-index: 10;
+  pointer-events: none;
+}
+.product-card:hover .product-actions {
+  opacity: 1;
+  transform: translateX(0);
+  pointer-events: auto;
+}
+
+
+   /* 14. ICON BUTTONS */
+
+.btn-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #adb5bd;                      /* رمادي افتراضيًا */
+  border: 1px solid var(--ecom-border);
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 0;
+  transition: all .2s ease;
+  position: relative;
+}
+
+.btn-icon:hover {
+  background: #ffffff;
+  border-color: var(--ecom-primary);
+  transform: translateY(-2px);
+}
+
+.btn-icon:hover i {
+  color: var(--ecom-primary);        
+}
+
+.btn-icon:hover .ti-heart {
+  color: #dc3545;                   
+}
+
+/* أيقونة الرعد */
+.trend-wrapper .btn-icon {
+  background: #ffffff;
+  color: #adb5bd;
+  border-color: var(--ecom-border);
+}
+.trend-wrapper .btn-icon:hover {
+  background: #ffffff;
+  border-color: var(--ecom-primary);
+}
+.trend-wrapper .btn-icon:hover i {
+  color: var(--ecom-primary);
+}
+
+
+   15. TOOLTIPS - التلميحات ([data-tooltip])
+
+[data-tooltip] {
+  position: relative;
+}
+
+[data-tooltip]::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  right: calc(100% + 8px);          
+  top: 50%;
+  transform: translateY(-50%) translateX(6px);
+  background: #f0f0f0;               
+  color: #333;
+  padding: 2px 6px;                
+  border-radius: 4px;
+  font-size: .5rem;                
+  font-weight: 500;
+  line-height: 1.2;              
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .2s ease, transform .2s ease;
+  z-index: 10;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .06);  
+}
+
+[data-tooltip]:hover::after {
+  opacity: 1;
+  transform: translateY(-50%) translateX(0);
+}
+
+-
+   /* 16. ADD TO CART BUTTON  زر الإضافة للسلة */
+-
+.add-to-cart-btn .btn {
+  transition: all .2s ease;
+  font-size: .85rem;
+  padding: 8px 12px;
+  border-radius: var(--ecom-radius-sm);
+}
+.add-to-cart-btn .btn:hover {
+  background: var(--ecom-primary) !important;
+  color: #fff !important;
+  border-color: var(--ecom-primary) !important;
+}
+
+
+
+   /* 17. SHOP NOW BUTTON - زر التسوق */
+
+.btn-shop {
+  display: inline-block;
+  background: var(--ecom-primary);
+  color: #fff;
+  border: none;
+  border-radius: var(--ecom-radius-sm);
+  padding: 8px 24px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all .2s ease;
+}
+.btn-shop:hover {
+  background: var(--ecom-primary-dark);
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: var(--ecom-shadow-sm);
+}
+
+
+
+   /* 18. COUNTDOWN BADGE - شارة العد التنازلي */
+
+.rounded-pill[style*="background-color: #2c3e6b"] {
+  background-color: var(--ecom-primary) !important;
+}
+.rounded-pill .fw-bold {
+  line-height: 1;
+  font-size: .7rem;
+}
+.rounded-pill .text-white-50 {
+  line-height: 1;
+  font-size: .5rem;
+}
+
+
+
+   /* 19. Z-INDEX HELPER */
+
+.z-1 {
+  z-index: 1;
+}
+
+
+
+   /* 20. QUICK VIEW MODAL - (#quickViewModal) */
+
+#quickViewModal .modal-content {
+  border: none;
+  border-radius: var(--ecom-radius-lg);
+  overflow: hidden;
+}
+#quickViewModal .modal-header {
+  border-bottom: 1px solid var(--ecom-border);
+  padding: 16px 20px;
+}
+#quickViewModal .modal-title {
+  color: var(--ecom-primary);
+  font-weight: 700;
+}
+#quickViewModal .modal-body {
+  padding: 24px;
+}
+#quickViewModal img {
+  max-height: 300px;
+  object-fit: contain;
+}
+
+
+
+   /* 21. RESPONSIVE - MEDIA QUERIES */
+
+
+/* الشاشات المتوسطة وأصغر (أقل من 992px) */
+@media (max-width: 991.98px) {
+
+  /* إخفاء الشريط الجانبي وإلغاء الهامش */
+  .position-fixed.top-0.start-0.vh-100 {
+    display: none !important;
+  }
+  [style*="margin-left: 75px"] {
+    margin-left: 0 !important;
+  }
+
+  /* إخفاء الـ tooltips على اللمس */
+  [data-tooltip]::after {
+    display: none;
+  }
+
+  /* تكبير أزرار الأيقونات */
+  .btn-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  /* إظهار أزرار المنتج دائمًا */
+  .product-actions {
+    opacity: 1;
+    transform: translateX(0);
+    pointer-events: auto;
+  }
+
+  /* النافبار */
+  .navbar-nav {
+    padding-top: 15px;
+    border-top: 1px solid var(--ecom-border);
+    margin-top: 15px;
+  }
+}
+
+/* الموبايل الصغير (أقل من 576px) */
+@media (max-width: 575.98px) {
+
+  #WeeklyTabs .nav-link {
+    font-size: .7rem;
+    padding: 6px 10px;
+  }
+
+  .scroll-arrow-btn {
+    width: 32px;
+    height: 32px;
+    font-size: .85rem;
+  }
+
+  #heroCarousel .btn-light {
+    width: 32px;
+    height: 32px;
+    font-size: 1rem;
+  }
+
+  .card .position-absolute.bottom-0.start-0.m-2.bg-white {
+    width: 110px !important;
+  }
+  .card .position-absolute.bottom-0.start-0.m-2.bg-white p {
+    font-size: .7rem;
+  }
+  .card .position-absolute.bottom-0.start-0.m-2.bg-white a {
+    font-size: .7rem;
+  }
+
+  .product-card h6 {
+    font-size: .75rem !important;
+  }
+}
+
+
+
+   /* 22. HIDE SCROLLBAR - إخفاء شريط التمرير */
+
+#WeeklyTabs::-webkit-scrollbar {
+  display: none;
+}
+#WeeklyTabs {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+
+   /* 23. hover  */
+
+
+.news-title {
+  color: #212529;
+  transition: color .2s ease;
+}
+.news-title:hover {
+  color: #0d6efd;
+}

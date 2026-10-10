@@ -1,0 +1,123 @@
+/* إزاحة الصفحة للجانب لترك مساحة للشريط الثابت */
+body {
+    padding-left: 55px;
+}
+
+/* الشريط الجانبي الثابت بطول الصفحة كاملة */
+.sidebar-categories {
+    width: 55px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background: #fff;
+    border-right: 1px solid #dee2e6;
+    z-index: 1040;
+}
+
+/* ظهور القائمة الفرعية عند تمرير الماوس Hover */
+.sidebar-item {
+    position: relative;
+}
+
+.sidebar-popup {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 55px;
+    width: 220px;
+    background: #fff;
+    border: 1px solid #dee2e6;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 0 6px 6px 0;
+    z-index: 1050;
+}
+
+.sidebar-item:hover .sidebar-popup {
+    display: block;
+}
+
+/* فتح القوائم المنسدلة العلوية عند Hover */
+@media (min-width: 992px) {
+    .navbar .dropdown:hover .dropdown-menu {
+        display: block;
+        margin-top: 0;
+    }
+}
+
+/* لون العنوان الأزرق الغامق المماثل للقالب */
+.text-navy {
+    color: #1a3254;
+}
+
+/* التنسيق الخاص بالمسار Breadcrumb */
+.breadcrumb-item+.breadcrumb-item::before {
+    content: ">";
+    color: #6c757d;
+}
+
+.breadcrumb-item a:hover {
+    color: #0d6efd !important;
+}
+
+/* للتأكد من تناسق حواف الصورة على الشاشات الصغار */
+.object-fit-cover {
+    object-fit: cover;
+}
+
+
+
+/* ألوان الأقسام والعناوين */
+.section-title {
+    color: #1a3254;
+    font-size: 1.35rem;
+    font-weight: 700;
+    margin-top: 1.5rem;
+    margin-bottom: 0.8rem;
+}
+
+.sub-title {
+    color: #2b4263;
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.term-text,
+.term-list li {
+    color: #556070;
+    font-size: 0.93rem;
+    line-height: 1.65;
+    margin-bottom: 0.8rem;
+}
+
+.term-list li strong {
+    color: #2b4263;
+}
+
+/* تحسينات إضافية */
+.term-list {
+    padding-left: 0;
+    /* لإزالة الهامش الافتراضي للقوائم */
+}
+
+/* تجاوب الصفحة على الموبايل والشاشات الصغيرة */
+@media (max-width: 768px) {
+    .terms-container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .section-title {
+        font-size: 1.2rem;
+    }
+
+    .sub-title {
+        font-size: 1rem;
+    }
+
+    .sub-block {
+        margin-left: 0 !important;
+    }
+}

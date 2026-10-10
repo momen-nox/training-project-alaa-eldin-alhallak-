@@ -9,6 +9,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style-shop.css">
+    <link rel="stylesheet" href="/code/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Chelsea+Market&family=Parisienne&family=Sintony:wght@400;700&display=swap" rel="stylesheet">
@@ -16,18 +17,18 @@
 </head>
 <body>
 
-    <div class="border-bottom mt-2">
+    <div class="border-bottom mt-2 d-none d-sm-block">
 
     <div class="container">
         <div class="row align-items-center">
 
             <!-- ========================= الروابط على اليسار =====================-->
             <div class="col-4 text-start small">
-                <a href="" class="text-decoration-none text-secondary">About Us</a>
+                <a href="/code/page/about.html" class="text-decoration-none text-secondary">About Us</a>
                 <span>|</span>
-                <a href="" class="text-decoration-none text-secondary">Careers</a>
+                <a href="/code/page/careers.html" class="text-decoration-none text-secondary">Careers</a>
                 <span>|</span>
-                <a href="" class="text-decoration-none text-secondary">Open a shop</a>
+                <a href="/code/shop/shop.html" class="text-decoration-none text-secondary">Open a shop</a>
             </div>
 
             <!-- CENTER -->
@@ -53,14 +54,18 @@
     </div>
 
     </div>
-    <!-- ===============الناف بار يلي تحت=============== -->
 
-    <nav class="navbar navbar-expand-xl bg-light border-bottom sticky-top">
 
-    <div class="container-fluid px-4">
+
+
+    <!-- ================================================= -->
+
+ <nav class="navbar navbar-expand-md bg-light border-bottom sticky-top">
+
+    <div class="container px-1">
 
         <!-- LOGO -->
-        <a class="navbar-brand me-5" href="">
+        <a class="navbar-brand" href="">
             <div class="d-flex align-items-center text-primary">
                 <i class="bi bi-shop fs-4"></i>
                 <span class="fw-bold ms-1">Ecom</span>
@@ -71,7 +76,7 @@
         <!-- ============ الزر المخصص للهاتف=========== -->
         <button class="navbar-toggler"
                 type="button"
-                data-bs-toggle="collapse"
+               data-bs-toggle="collapse"
                 data-bs-target="#mainNavbar"
                 aria-controls="mainNavbar"
                 aria-expanded="false"
@@ -82,7 +87,7 @@
         </button>
 
 
-        <!-- ====================الكولابسات========================= -->
+        <!-- ====================كل الكولابسات===================== -->
         <div class="collapse navbar-collapse" id="mainNavbar">
 
 
@@ -106,25 +111,25 @@
                         <ul class="dropdown-menu">
 
                             <li>
-                                <a href="" class="dropdown-item">
+                                <a href="/code/page/about.html" class="dropdown-item">
                                     ABOUT
                                 </a>
                             </li>
 
                             <li>
-                                <a href="" class="dropdown-item">
+                                <a href="/code/blog/blog.html" class="dropdown-item">
                                     BLOG
                                 </a>
                             </li>
 
                             <li>
-                                <a href="" class="dropdown-item">
+                                <a href="shop.html" class="dropdown-item">
                                     SHOP
                                 </a>
                             </li>
 
                             <li>
-                                <a href="" class="dropdown-item">
+                                <a href="/code/shop/cart.html" class="dropdown-item">
                                     CART
                                 </a>
                             </li>
@@ -163,7 +168,7 @@
                 <!-- HOME -->
                 <li class="nav-item dropdown">
 
-                    <a href="index.html"
+                    <a href="/code/index.html"
                        class="nav-link dropdown-toggle"
                        data-bs-toggle="dropdown">
 
@@ -180,50 +185,56 @@
                         </li>
 
                         <li>
-                            <a href="home2.html" class="dropdown-item">
+                            <a href="/code/home2.html" class="dropdown-item">
                                 Home 2
                             </a>
                         </li>
 
                         <li>
-                            <a href="" class="dropdown-item">
+                            <a href="/code/home3.html" class="dropdown-item">
                                 Home 3
                             </a>
                         </li>
 
                         <li>
-                            <a href="" class="dropdown-item">
+                            <a href="/code/home4.html" class="dropdown-item">
                                 Home 4
                             </a>
                         </li>
 
                         <li>
-                            <a href="" class="dropdown-item">
+                            <a href="/code/home5.html" class="dropdown-item">
                                 Home 5
                             </a>
                         </li>
 
                         <li>
-                            <a href="" class="dropdown-item">
+                            <a href="/code/home6.html" class="dropdown-item">
                                 Home 6
                             </a>
                         </li>
 
                         <li>
-                            <a href="home7.html" class="dropdown-item">
+                            <a href="/code/home7.html" class="dropdown-item">
                                 Home 7
                             </a>
                         </li>
 
                         <li>
-                            <a href="" class="dropdown-item">
+                            <a href="/code/home8.html" class="dropdown-item">
                                 Home 8
                             </a>
                         </li>
 
                         <li>
-                            <a href="" class="dropdown-item">
+                            <a href="/code/home9.html" class="dropdown-item">
                                 Home 9
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="/code/home10.html" class="dropdown-item">
+                                Home 10
                             </a>
                         </li>
 
@@ -235,7 +246,7 @@
                 <!-- SHOP -->
                 <li class="nav-item dropdown">
 
-                    <a href=""
+                    <a href="/code/shop/shop.html"
                        class="nav-link dropdown-toggle"
                        data-bs-toggle="dropdown">
 
@@ -246,20 +257,74 @@
                     <ul class="dropdown-menu">
 
                         <li>
-                            <a href="" class="dropdown-item">
+                            <a href="/code/shop/shop.html" class="dropdown-item">
                                 Shop
                             </a>
                         </li>
 
                         <li>
-                            <a href="" class="dropdown-item">
+                            <a href="/code/shop/shop.html" class="dropdown-item">
                                 Shop Grid
                             </a>
                         </li>
 
                         <li>
-                            <a href="" class="dropdown-item">
+                            <a href="/code/shop/shop2.html" class="dropdown-item">
                                 Shop Grid 2
+                            </a>
+                        </li>
+
+                         <li>
+                            <a href="/code/shop/shop3.html" class="dropdown-item">
+                                Shop List left
+                            </a>
+                        </li>
+
+                         <li>
+                            <a href="/code/shop/shop4.html" class="dropdown-item">
+                                Shop List right
+                            </a>
+                        </li>
+
+                         <li>
+                            <a href="/code/shop/product1.html" class="dropdown-item">
+                                Shop Products
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="/code/shop/product2.html" class="dropdown-item">
+                                Shop Products 2
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="/code/shop/product3.html" class="dropdown-item">
+                                Shop Products 3
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="/code/shop/product4.html" class="dropdown-item">
+                                Shop Products 4
+                            </a>
+                        </li>
+
+                         <li>
+                            <a href="/code/shop/cart.html" class="dropdown-item">
+                                Shopping Cart
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="/code/shop/wishlist.html" class="dropdown-item">
+                                Shopping WishList
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="/code/shop/shop-compare.html" class="dropdown-item">
+                                Shopping Compare
                             </a>
                         </li>
 
@@ -271,7 +336,7 @@
                 <!-- VENDORS -->
                 <li class="nav-item dropdown">
 
-                    <a href=""
+                    <a href="/code/imges/vendors-single.html"
                        class="nav-link dropdown-toggle"
                        data-bs-toggle="dropdown">
 
@@ -282,13 +347,13 @@
                     <ul class="dropdown-menu">
 
                         <li>
-                            <a href="" class="dropdown-item">
+                            <a href="/code/imges/vendors-single.html" class="dropdown-item">
                                 Vendor singel
                             </a>
                         </li>
 
                         <li>
-                            <a href="" class="dropdown-item">
+                            <a href="/code/imges/vendors-listing.html" class="dropdown-item">
                                 Vendor listing
                             </a>
                         </li>
@@ -312,31 +377,31 @@
                     <ul class="dropdown-menu">
 
                         <li>
-                            <a href="" class="dropdown-item">
+                            <a href="/code/about.html" class="dropdown-item">
                                 About us
                             </a>
                         </li>
 
                         <li>
-                            <a href="" class="dropdown-item">
-                                Blog
+                            <a href="/code/page/contact.html" class="dropdown-item">
+                                Contatct us
                             </a>
                         </li>
 
                         <li>
-                            <a href="" class="dropdown-item">
+                            <a href="/code/page/career.html" class="dropdown-item">
                                 Careers
                             </a>
                         </li>
 
                         <li>
-                            <a href="" class="dropdown-item">
+                            <a href="/code/page/register.html" class="dropdown-item">
                                 Register
                             </a>
                         </li>
 
                         <li>
-                            <a href="" class="dropdown-item">
+                            <a href="/code/page/login.html" class="dropdown-item">
                                 Login
                             </a>
                         </li>
@@ -366,13 +431,13 @@
                     <ul class="dropdown-menu">
 
                         <li>
-                            <a href="" class="dropdown-item">
+                            <a href="/code/blog/blog-r.html" class="dropdown-item">
                                 Blog
                             </a>
                         </li>
 
                         <li>
-                            <a href="" class="dropdown-item">
+                            <a href="/code/blog/blog.html" class="dropdown-item">
                                 Blog Grid
                             </a>
                         </li>
@@ -391,7 +456,7 @@
                 <!-- CONTACT US -->
                 <li class="nav-item">
 
-                    <a href=""
+                    <a href="/code/page/contact.html"
                        class="nav-link">
 
                         Contact Us
@@ -411,7 +476,7 @@
 
 
                 <!-- ACCOUNT -->
-                <a href=""
+                <a href="/code/account/mycount.html"
                    class="text-secondary text-decoration-none
                           d-inline-flex align-items-center gap-1">
 
@@ -423,31 +488,38 @@
 
 
                 <!-- WISHLIST -->
-                <a href=""
-                   class="text-secondary text-decoration-none
+                <a href="/code/shop/wishlist.html"
+                   class="text-secondary position-relative text-decoration-none
                           d-inline-flex align-items-center gap-1">
 
                     <i class="bi bi-heart-fill"></i>
-
+                    <span id="wish-count"
+                            class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning text-light">
+                            0
+                    </span>
                     <span>Wishlist</span>
 
                 </a>
 
 
                 <!-- CART -->
-                <a href=""
-                   class="text-secondary text-decoration-none
+                <a href="/code/shop/cart.html"
+                   class="text-secondary position-relative text-decoration-none
                           d-inline-flex align-items-center gap-1">
 
                     <i class="bi bi-cart-fill"></i>
 
+                    <span id="cart-count"
+                        class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning text-light">
+                        0
+                    </span>
                     <span>Cart</span>
 
                 </a>
 
 
                 <!-- COMPARE -->
-                <a href=""
+                <a href="/code/shop/shop-compare.html"
                    class="text-secondary text-decoration-none
                           d-inline-flex align-items-center gap-1">
 
@@ -464,6 +536,127 @@
     </div>
 
 </nav>
+
+<aside class="sidebar-categories d-none d-lg-flex d-sm-block flex-column align-items-center pt-2">
+        <div class="sidebar-item w-100">
+            <a href="#" class="d-flex justify-content-center align-items-center py-2 text-primary fs-5"><i
+                    class="bi bi-grid-fill"></i></a>
+            <div class="sidebar-popup p-2">
+                <a class="dropdown-item py-1" href="#">All Categories</a>
+                <a class="dropdown-item py-1" href="#">Featured Products</a>
+            </div>
+        </div>
+
+        <div class="sidebar-item w-100">
+            <a href="#" class="d-flex justify-content-center align-items-center py-2 text-secondary fs-5"><i
+                    class="bi bi-display"></i></a>
+            <div class="sidebar-popup p-2">
+                <a class="dropdown-item py-1" href="#">Computers & Laptops</a>
+                <a class="dropdown-item py-1" href="#">Cumputer Accessories</a>
+                <a class="dropdown-item py-1" href="#">Laptops</a>
+                <a class="dropdown-item py-1" href="#">HDD</a>
+                <a class="dropdown-item py-1" href="#">SSD</a>
+                <a class="dropdown-item py-1" href="#">Headphones</a>
+            </div>
+        </div>
+
+        <div class="sidebar-item w-100">
+            <a href="#" class="d-flex justify-content-center align-items-center py-2 text-secondary fs-5"><i
+                    class="bi bi-smartwatch"></i></a>
+            <div class="sidebar-popup p-2">
+                <a class="dropdown-item py-1" href="#">Smart Watches</a>
+                <a class="dropdown-item py-1" href="#">Fashion Smart Watches</a>
+                <a class="dropdown-item py-1" href="#">Smart Bracelets</a>
+                <a class="dropdown-item py-1" href="#">Pocket Watches</a>
+                <a class="dropdown-item py-1" href="#">Smart Rings</a>
+                <a class="dropdown-item py-1" href="#">Other Watches</a>
+            </div>
+        </div>
+
+        <div class="sidebar-item w-100">
+            <a href="#" class="d-flex justify-content-center align-items-center py-2 text-secondary fs-5">
+                <i class="bi bi-mouse2-fill"></i>
+            </a>
+            <div class="sidebar-popup p-2">
+                <a class="dropdown-item py-1" href="#">Logitech</a>
+                <a class="dropdown-item py-1" href="#">RedDragon</a>
+                <a class="dropdown-item py-1" href="#">Amazon Basics</a>
+                <a class="dropdown-item py-1" href="#">Microsoft</a>
+            </div>
+        </div>
+
+        <div class="sidebar-item w-100">
+            <a href="#" class="d-flex justify-content-center align-items-center py-2 text-secondary fs-5"><i
+                    class="bi bi-headphones"></i></a>
+            <div class="sidebar-popup p-2">
+                <a class="dropdown-item py-1" href="#">Headphones</a>
+                <a class="dropdown-item py-1" href="#">Earbuds</a>
+                <a class="dropdown-item py-1" href="#">DJ Headphones</a>
+                <a class="dropdown-item py-1" href="#">PC Accessories</a>
+            </div>
+        </div>
+
+        <div class="sidebar-item w-100">
+            <a href="#" class="d-flex justify-content-center align-items-center py-2 text-secondary fs-5"><i
+                    class="bi bi-bluetooth"></i></a>
+            <div class="sidebar-popup p-2">
+                <a class="dropdown-item py-1" href="#">Bluetooth Devices</a>
+                <a class="dropdown-item py-1" href="#">Player Accessories</a>
+                <a class="dropdown-item py-1" href="#">Speakers & Audio</a>
+                <a class="dropdown-item py-1" href="#">Computers Networking</a>
+            </div>
+        </div>
+
+        <div class="sidebar-item w-100">
+            <a href="#" class="d-flex justify-content-center align-items-center py-2 text-secondary fs-5">
+                <i class="bi bi-tree-fill"></i>
+            </a>
+            <div class="sidebar-popup p-2">
+                <a class="dropdown-item py-1" href="#">Android</a>
+                <a class="dropdown-item py-1" href="#">Linux</a>
+                <a class="dropdown-item py-1" href="#">Macintosh</a>
+                <a class="dropdown-item py-1" href="#">iPhone & IOS
+
+                </a>
+            </div>
+        </div>
+
+        <div class="sidebar-item w-100">
+            <a href="#" class="d-flex justify-content-center align-items-center py-2 text-secondary fs-5">
+                <i class="bi bi-plug-fill"></i>
+            </a>
+            <div class="sidebar-popup p-2">
+                <a class="dropdown-item py-1" href="#">Antenna Topres</a>
+                <a class="dropdown-item py-1" href="#">Automotive body</a>
+                <a class="dropdown-item py-1" href="#">Gas Tank Door</a>
+                <a class="dropdown-item py-1" href="#">Hood Scoops & Vent</a>
+            </div>
+        </div>
+
+        <div class="sidebar-item w-100">
+            <a href="#" class="d-flex justify-content-center align-items-center py-2 text-secondary fs-5">
+                <i class="bi bi-cpu"></i>
+            </a>
+            <div class="sidebar-popup p-2">
+                <a class="dropdown-item py-1" href="#">Computer CPU </a>
+                <a class="dropdown-item py-1" href="#">Internal Fans</a>
+                <a class="dropdown-item py-1" href="#">Speakers & Audio</a>
+                <a class="dropdown-item py-1" href="#">Graphics Card</a>
+            </div>
+        </div>
+
+        <div class="sidebar-item w-100">
+            <a href="#" class="d-flex justify-content-center align-items-center py-2 text-secondary fs-5">
+                <i class="bi bi-hdd-rack"></i>
+            </a>
+            <div class="sidebar-popup p-2">
+                <a class="dropdown-item py-1" href="#">JBL </a>
+                <a class="dropdown-item py-1" href="#">Anker</a>
+                <a class="dropdown-item py-1" href="#">Bose</a>
+                <a class="dropdown-item py-1" href="#">Logitch</a>
+            </div>
+        </div>
+    </aside>
 
 <!-- ================================ -->
 
@@ -525,35 +718,46 @@
                 <h6 class="border-bottom fw-bold text-secondary px-5 py-2">Product Categories</h6>
 
 
-                <h6 class="fw-bold text-secondary">Price</h6>
+<h6 class="fw-bold text-secondary">Price</h6>
 
-                <div class="progress mx-2 mb-4 mt-4" style="height: 10px;">
-                    <div class="progress-bar bg-warning"
-                    role="progressbar"
-                    aria-valuenow="57"
-                    aria-valuemin="0"
-                    aria-valuemax="200" style="width: 60%;">
-                    </div>
-                </div>
+<!-- ============ السلايدر المزدوج ============ -->
+<div class="price-slider-container mx-2 mt-4 mb-2" id="price-slider-container">
+    <div class="price-slider-track"></div>
+    <div class="price-slider-range" id="price-slider-range"></div>
+    <input type="range" id="price-min-slider" min="0" max="3000" value="0" step="10">
+    <input type="range" id="price-max-slider" min="0" max="3000" value="3000" step="10">
+</div>
 
-                <p class=" fw-bold text-secondary" style="font-size: 14px;">Price Range: <span class="fs-6 fw-bold text-dark">$16 - $173</span></p>
+<p class="fw-bold text-secondary mb-1" style="font-size: 14px;">
+    Price Range:
+    <span class="fs-6 fw-bold text-dark">
+        $<span id="price-min-value">0</span> - $<span id="price-max-value">3000</span>
+    </span>
+</p>
 
-                <ul class="list-goup mb-4">
-                    
+<small class="text-muted d-block mb-3" id="price-hint" style="min-height: 16px;"></small>
 
-                    <li class="mb-3 list-unstyled fw-bold text-secondary list-goup-item"><input type="checkbox" class="me-3 form-check-input me-1">Free-100$</li>
-
-                    <li class="mb-3 list-unstyled fw-bold text-secondary list-goup-item"><input type="checkbox" class="me-3 form-check-input me-1">100$-200$</li>
-
-                    <li class="mb-3 list-unstyled fw-bold text-secondary list-goup-item"><input type="checkbox" class="me-3 form-check-input me-1">200$-400$</li>
-
-                    <li class="mb-3 list-unstyled fw-bold text-secondary list-goup-item"><input type="checkbox" class="me-3 form-check-input me-1">400$-600$</li>
-
-                    <li class="mb-3 list-unstyled fw-bold text-secondary list-goup-item"><input type="checkbox" class="me-3 form-check-input me-1">600$-800$</li>
-                    
-                    <li class="mb-3 list-unstyled fw-bold text-secondary list-goup-item"><input type="checkbox" class="me-3 form-check-input me-1">over 1000$</li>
-                </ul>
-
+<!-- ============ قائمة المجالات السعرية ============ -->
+<ul class="list-goup mb-4" id="price-ranges-list">
+    <li class="mb-3 list-unstyled fw-bold text-secondary list-goup-item" data-range-id="r1" data-min="0"    data-max="100">
+        <input type="checkbox" class="me-3 form-check-input me-1"> Free - $100
+    </li>
+    <li class="mb-3 list-unstyled fw-bold text-secondary list-goup-item" data-range-id="r2" data-min="100"  data-max="200">
+        <input type="checkbox" class="me-3 form-check-input me-1"> $100 - $200
+    </li>
+    <li class="mb-3 list-unstyled fw-bold text-secondary list-goup-item" data-range-id="r3" data-min="200"  data-max="400">
+        <input type="checkbox" class="me-3 form-check-input me-1"> $200 - $400
+    </li>
+    <li class="mb-3 list-unstyled fw-bold text-secondary list-goup-item" data-range-id="r4" data-min="400"  data-max="600">
+        <input type="checkbox" class="me-3 form-check-input me-1"> $400 - $600
+    </li>
+    <li class="mb-3 list-unstyled fw-bold text-secondary list-goup-item" data-range-id="r5" data-min="600"  data-max="800">
+        <input type="checkbox" class="me-3 form-check-input me-1"> $600 - $800
+    </li>
+    <li class="mb-3 list-unstyled fw-bold text-secondary list-goup-item" data-range-id="r6" data-min="800"  data-max="999999">
+        <input type="checkbox" class="me-3 form-check-input me-1"> Over $800
+    </li>
+</ul>
 
 
                 <h6 class="pb-3 Brands fw-bold text-dark px-5 py-2">Brands</h6> 
@@ -576,69 +780,67 @@
 
                 <div class=" p-4">
 
-                 <h4 class="fw-bold text-primary mb-4">
-                 Color
-                 </h4>
+                 <h4 class="fw-bold text-primary mb-4">            Color         </h4>
 
                     <div class="row row-cols-5 g-3 text-center">
 
                         <div class="col">
-                          <a class="text-decoration-none text-dark" href=""><div class="color-circle  bg-danger"></div>
+                          <a class="text-decoration-none text-dark" href=""><div class="color-circle  bg-danger" data-color="red"></div>
                          <small>Red</small></a>
             
                         </div>
 
                         <div class="col">
-                           <a class="text-decoration-none text-dark" href=""><div class="color-circle bg-success"></div>
+                           <a class="text-decoration-none text-dark" href=""><div class="color-circle bg-success" data-color="green"></div>
                            <small>Green</small></a>
             
                         </div>
 
         
                         <div class="col">
-                         <a class="text-decoration-none text-dark" href=""><div class="color-circle bg-info"></div>
+                         <a class="text-decoration-none text-dark" href=""><div class="color-circle bg-info" data-color="blue"></div>
                          <small>Blue</small></a>
 
                         </div>
 
   
                         <div class="col">
-                         <a class="text-decoration-none text-dark" href=""><div class="color-circle bg-primary"></div>
+                         <a class="text-decoration-none text-dark" href=""><div class="color-circle bg-primary" data-color="purple"></div>
                          <small>Purple</small></a>
             
                         </div>
 
 
                         <div class="col">
-                         <a class="text-decoration-none text-dark" href=""><div class="color-circle bg-dark"></div>
+                         <a class="text-decoration-none text-dark" href=""><div class="color-circle bg-dark" data-color="black"></div>
                          <small>Black</small></a>
             
                         </div>
 
 
                         <div class="col">
-                          <a  class="text-decoration-none text-dark"href=""><div                  class="color-circle bg-secondary"></div>
+                          <a  class="text-decoration-none text-dark"href=""><div                  class="color-circle bg-secondary" data-color="gray"></div>
                             <small>Gray</small></a>
             
                         </div>
 
 
                         <div class="col">
-                          <a class="text-decoration-none text-dark" href=""><div class="color-circle" style="background-color: deeppink;"></div>
+                          <a class="text-decoration-none text-dark" href=""><div class="color-circle" style="background-color: deeppink;" data-color="pink"></div>
                          <small>Pink</small></a>
             
                         </div>
 
 
                         <div class="col">
-                          <a class="text-decoration-none text-dark" href=""><div class="color-circle" style="background-color: brown;"></div>
+                          <a class="text-decoration-none text-dark" href=""><div class="color-circle" style="background-color: brown;" data-color="brown"></div>
                             <small>Brown</small></a>
             
                         </div>
 
 
                         <div class="col">
-                          <a class="text-decoration-none text-dark" href=""><div          class="color-circle bg-warning"></div></a>
+                          <a class="text-decoration-none text-dark" href=""><div          class="color-circle bg-warning" data-color="yellow"></div></a>
                             
                           <small>Yellow</small>
                         </div>
@@ -710,9 +912,11 @@
 
                 <div class="mt-4">
 
+                    <p id="result-count" class="text-secondary"></p>
+
 
                     <!-- المنتج 1 -->
-                    <div class="row mb-3">
+                    <div class="row mb-3" >
 
                         <div class="col-5">
 
@@ -755,7 +959,7 @@
 
 
                     <!-- Product 2 -->
-                    <div class="row mb-3">
+                    <div class="row mb-3" >
 
                         <div class="col-5">
 
@@ -798,7 +1002,7 @@
 
 
                     <!-- Product 3 -->
-                    <div class="row mb-3">
+                    <div class="row mb-3" >
 
                         <div class="col-5">
 
@@ -841,7 +1045,7 @@
 
 
                     <!-- Product 4 -->
-                    <div class="row mb-3">
+                    <div class="row mb-3" >
 
                         <div class="col-5">
 
@@ -888,7 +1092,7 @@
 
 
             <!-- Slide 2 -->
-            <div class="carousel-item">
+            <div class="carousel-item" >
 
                 <div class="mt-4">
 
@@ -935,7 +1139,7 @@
 
 
                     <!-- Product 2 -->
-                    <div class="row mb-3">
+                    <div class="row mb-3" >
 
                         <div class="col-5">
 
@@ -978,7 +1182,7 @@
 
 
                     <!-- Product 3 -->
-                    <div class="row mb-3">
+                    <div class="row mb-3" >
 
                         <div class="col-5">
 
@@ -1021,7 +1225,7 @@
 
 
                     <!-- Product 4 -->
-                    <div class="row mb-3">
+                    <div class="row mb-3" >
 
                         <div class="col-5">
 
@@ -1061,6 +1265,8 @@
                         </div>
 
                     </div>
+
+                    
 
                 </div>
 
@@ -1232,7 +1438,7 @@
             <!--============== العامود الاول=============== -->
             <div class="col-md-3">
 
-            <div class="border product-card rounded p-3 product-card">
+            <div class="border  rounded p-3 product-card" data-color="red">
 
                 <span class="px-1 rounded-3 bg-warning text-dark">
                     -17%
@@ -1249,7 +1455,7 @@
 
                     <img src="/assets/img/seal product/imgsp3.png"
                          class="img-fluid"
-                         style="height: 150px; "alt="">
+                         style="height: 150px; " alt="">
 
                 </div>
 
@@ -1290,7 +1496,7 @@
         <!--=======================العامود الثاني ==============-->
         <div class="col-md-3">
 
-            <div class="border rounded p-3 product-card">
+            <div class="border rounded p-3 product-card" data-color="blou">
 
                 <span class="px-1 rounded-3  bg-warning text-dark">
                     -17%
@@ -1349,7 +1555,7 @@
         <!-- ===================العامود الثالث =================-->
         <div class="col-md-3">
 
-            <div class="border rounded p-3 product-card">
+            <div class="border rounded p-3 product-card" data-color="gtreen">
 
                 <span class="px-1 rounded-3 bg-warning text-dark">
                     -17%
@@ -1408,7 +1614,7 @@
         <!-- =================العامود الرابع================ -->
         <div class="col-md-3">
 
-            <div class="border rounded p-3 product-card">
+            <div class="border rounded p-3 product-card" data-color="yellow">
 
                 <span class="px-1 rounded-3 bg-warning text-dark">
                     -17%
@@ -1475,7 +1681,7 @@
             <!--============== العامود الاول=============== -->
             <div class="col-md-3">
 
-            <div class="border rounded p-3 product-card">
+            <div class="border rounded p-3 product-card" data-color="purple">
 
                 <span class="px-1 rounded-3 bg-warning text-dark">
                     -17%
@@ -1533,7 +1739,7 @@
         <!--=======================العامود الثاني ==============-->
         <div class="col-md-3">
 
-            <div class="border rounded p-3 product-card">
+            <div class="border rounded p-3 product-card" data-color="red">
 
                 <span class="px-1 rounded-3  bg-warning text-dark">
                     -17%
@@ -1592,7 +1798,7 @@
         <!-- ===================العامود الثالث =================-->
         <div class="col-md-3">
 
-            <div class="border rounded p-3 product-card">
+            <div class="border rounded p-3 product-card" data-color="brown">
 
                 <span class="px-1 rounded-3 bg-warning text-dark">
                     -17%
@@ -1651,7 +1857,7 @@
         <!-- =================العامود الرابع================ -->
         <div class="col-md-3">
 
-            <div class="border rounded p-3 product-card">
+            <div class="border rounded p-3 product-card" data-color="pink">
 
                 <span class="px-1 rounded-3 bg-warning text-dark">
                     -17%
@@ -1713,12 +1919,12 @@
             <!-- ===================================== -->
             <!-- ===================================== -->
 
-            <div class="row  row-cols-md-5 g-3 mt-3">
+            <div class="row  row-cols-md-5 g-3 mt-3" data-color="yellow">
 
             <!--============== العامود الاول=============== -->
             <div class="col-md-3">
 
-            <div class="border rounded p-3 product-card">
+            <div class="border rounded p-3 product-card" data-color="green">
 
                 <span class="px-1 rounded-3 bg-warning text-dark">
                     -17%
@@ -1776,7 +1982,7 @@
         <!--=======================العامود الثاني ==============-->
         <div class="col-md-3">
 
-            <div class="border rounded p-3 product-card">
+            <div class="border rounded p-3 product-card" data-color="blue" >
 
                 <span class="px-1 rounded-3  bg-warning text-dark">
                     -17%
@@ -1835,7 +2041,7 @@
         <!-- ===================العامود الثالث =================-->
         <div class="col-md-3">
 
-            <div class="border rounded p-3 product-card">
+            <div class="border rounded p-3 product-card" data-color="blak">
 
                 <span class="px-1 rounded-3 bg-warning text-dark">
                     -17%
@@ -1894,7 +2100,7 @@
         <!-- =================العامود الرابع================ -->
         <div class="col-md-3">
 
-            <div class="border rounded p-3 product-card">
+            <div class="border rounded p-3 product-card" data-color="brown">
 
                 <span class="px-1 rounded-3 bg-warning text-dark">
                     -17%
@@ -1962,250 +2168,7 @@
             <!--============== العامود الاول=============== -->
             <div class="col-md-3">
 
-            <div class="border rounded p-3 product-card">
-
-                <span class="px-1 rounded-3 bg-warning text-dark">
-                    -17%
-                </span>
-
-                <div class="hover-actions">
-                    <a href="#" class="text-danger border rounded-2 px-1 action-btn"><i class="bi bi-heart"></i></a>
-                    <a href="#" class="text-dark border rounded-2 px-1 action-btn"><i class="bi bi-arrow-repeat"></i>
-                    </a>
-                    <a href="#" class="text-dark border rounded-2 px-1 action-btn"><i class="bi bi-eye"></i></a>
-                </div>
-
-                <div class="text-center my-3">
-
-                    <img src="/assets/img/seal product/imgsp3.png"
-                         class="img-fluid"
-                         style="height: 150px; "alt="">
-
-                </div>
-
-                <p class="text-secondary">
-                    Apple
-                </p>
-
-                <h6 class="fw-bold">
-                    2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB
-                </h6>
-
-                <div class="text-warning d-inline-flex">
-                    ★★★★★
-                    <p class="text-secondary">(65)</p>
-                </div>
-
-                <div class="mt-2">
-                    <span class="fs-5 fw-bold">
-                        $2856.3
-                    </span>
-                </div>
-
-                <button class="btn btn-outline-secondary w-100 mt-3">
-                    Add To Cart
-                </button>
-
-                <ul class=" text-secondary mt-3" style="font-size: 13px;">
-                    <li>27-inch (diagonal) Retina 5K display</li>
-                    <li>3.1GHz 6-core 10th-generation Intel Core i5</li>
-                    <li>AMD Radeon Pro 5300 graphics</li>
-                </ul>
-
-            </div>
-
-        </div>
-
-
-        <!--=======================العامود الثاني ==============-->
-        <div class="col-md-3">
-
-            <div class="border rounded p-3 product-card">
-
-                <span class="px-1 rounded-3  bg-warning text-dark">
-                    -17%
-                </span>
-
-                <div class="hover-actions">
-                    <a href="#" class="text-danger border rounded-2 px-1 action-btn"><i class="bi bi-heart"></i></a>
-                    <a href="#" class="text-dark border rounded-2 px-1 action-btn"><i class="bi bi-arrow-repeat"></i>
-                    </a>
-                    <a href="#" class="text-dark border rounded-2 px-1 action-btn"><i class="bi bi-eye"></i></a>
-                </div>
-
-                <div class="text-center my-3">
-
-                    <img src="/assets/img/seal product/imgsp4.png"
-                         class="img-fluid"
-                         style="height: 150px; "
-                         alt="">
-
-                </div>
-
-                <p class="text-secondary">
-                    Philips
-                </p>
-
-                <h6 class="fw-bold">
-                    Philips H4205 On-Ear Wireless Headphones with 32mm
-                </h6>
-
-                <div class="text-warning d-inline-flex">
-                    ★★★★★
-                    <p class="text-secondary">(65)</p>
-                </div>
-
-                <div class="mt-2">
-                    <span class="fs-5 fw-bold">
-                        $154.0
-                    </span>
-                </div>
-
-                <button class="btn btn-outline-secondary w-100 mt-3">
-                    Add To Cart
-                </button>
-
-                <ul class="text-secondary mt-3" style="font-size: 13px;">
-                    <li>27-inch (diagonal) Retina 5K display</li>
-                    <li>3.1GHz 6-core 10th-generation Intel Core i5</li>
-                    <li>AMD Radeon Pro 5300 graphics</li>
-                </ul>
-
-            </div>
-
-        </div>
-
-
-        <!-- ===================العامود الثالث =================-->
-        <div class="col-md-3">
-
-            <div class="border rounded p-3 product-card">
-
-                <span class="px-1 rounded-3 bg-warning text-dark">
-                    -17%
-                </span>
-
-                <div class="hover-actions">
-                    <a href="#" class="text-danger border rounded-2 px-1 action-btn"><i class="bi bi-heart"></i></a>
-                    <a href="#" class="text-dark border rounded-2 px-1 action-btn"><i class="bi bi-arrow-repeat"></i>
-                    </a>
-                    <a href="#" class="text-dark border rounded-2 px-1 action-btn"><i class="bi bi-eye"></i></a>
-                </div>
-
-                <div class="text-center my-3">
-
-                    <img src="/assets/img/seal product/imgsp5.png"
-                         class="img-fluid"
-                         style="height: 150px;"
-                         alt="">
-
-                </div>
-
-                <p="text-secondary">
-                    Apple
-                </p>
-
-                <h6 class="fw-bold">
-                    2020 Apple MacBook Air Laptop: Apple M1 Chip, 13"
-                </h6>
-
-                <div class="text-warning d-inline-flex">
-                    ★★★★★
-                    <p class="text-secondary">(65)</p>
-                </div>
-
-                <div class="mt-2">
-                    <span class="fs-5 fw-bold">
-                        $2325.3
-                    </span>
-                </div>
-
-                <button class="btn btn-outline-secondary w-100 mt-3">
-                    Add To Cart
-                </button>
-
-                <ul class=" text-secondary mt-3 " style="font-size: 13px;">
-                    <li>27-inch (diagonal) Retina 5K display</li>
-                    <li>3.1GHz 6-core 10th-generation Intel Core i5</li>
-                    <li>AMD Radeon Pro 5300 graphics</li>
-                </ul>
-
-            </div>
-
-        </div>
-
-
-        <!-- =================العامود الرابع================ -->
-        <div class="col-md-3">
-
-            <div class="border rounded p-3 product-card">
-
-                <span class="px-1 rounded-3 bg-warning text-dark">
-                    -17%
-                </span>
-
-                <div class="hover-actions">
-                    <a href="#" class="text-danger border rounded-2 px-1 action-btn"><i class="bi bi-heart"></i></a>
-                    <a href="#" class="text-dark border rounded-2 px-1 action-btn"><i class="bi bi-arrow-repeat"></i>
-                    </a>
-                    <a href="#" class="text-dark border rounded-2 px-1 action-btn"><i class="bi bi-eye"></i></a>
-                </div>
-
-                <div class="text-center my-3">
-
-                    <img src="/assets/img/seal product/imgsp6.png"
-                         class="img-fluid"
-                         style="height: 150px; "
-                         alt="">
-
-                </div>
-
-                <p class="text-secondary">
-                    Apple
-                </p>
-
-                <h6 class="fw-bold">
-                    Apple Watch Series 8 [GPS 45mm] Smart Watch
-                </h6>
-
-                <div class="text-warning d-inline-flex" >
-                    ★★★★★
-                    <p class="text-secondary">(65)</p>
-                </div>
-
-                <div class="mt-2">
-                    <span class="fs-5 fw-bold">
-                        $530.3
-                    </span>
-                </div>
-
-                <button class="btn btn-outline-secondary w-100 mt-3">
-                    Add To Cart
-                </button>
-
-                <ul class=" text-secondary mt-3" style="font-size: 13px;">
-                    <li>27-inch (diagonal) Retina 5K display</li>
-                    <li>3.1GHz 6-core 10th-generation Intel Core i5</li>
-                    <li>AMD Radeon Pro 5300 graphics</li>
-                </ul>
-
-            </div>
-
-        </div>
-
-            </div>
-
-
-            <!-- ===================================== -->
-            <!-- ===================================== -->
-            <!-- ===================================== -->
-
-            <div class="row  row-cols-md-5 g-3 mt-3">
-
-            <!--============== العامود الاول=============== -->
-            <div class="col-md-3">
-
-            <div class="border rounded p-3 product-card">
+            <div class="border rounded p-3 product-card" data-color="purple">
 
                 <span class="px-1 rounded-3 bg-warning text-dark">
                     -17%
@@ -2680,6 +2643,7 @@
         </div>
 
             </div>
+
 
             <!-- ===================================== -->
             <!-- ===================================== -->
@@ -3165,9 +3129,253 @@
 
             </div>
 
+            <!-- ===================================== -->
+            <!-- ===================================== -->
+            <!-- ===================================== -->
+
+            <div class="row  row-cols-md-5 g-3 mt-3">
+
+            <!--============== العامود الاول=============== -->
+            <div class="col-md-3">
+
+            <div class="border rounded p-3 product-card">
+
+                <span class="px-1 rounded-3 bg-warning text-dark">
+                    -17%
+                </span>
+
+                <div class="hover-actions">
+                    <a href="#" class="text-danger border rounded-2 px-1 action-btn"><i class="bi bi-heart"></i></a>
+                    <a href="#" class="text-dark border rounded-2 px-1 action-btn"><i class="bi bi-arrow-repeat"></i>
+                    </a>
+                    <a href="#" class="text-dark border rounded-2 px-1 action-btn"><i class="bi bi-eye"></i></a>
+                </div>
+
+                <div class="text-center my-3">
+
+                    <img src="/assets/img/seal product/imgsp3.png"
+                         class="img-fluid"
+                         style="height: 150px; "alt="">
+
+                </div>
+
+                <p class="text-secondary">
+                    Apple
+                </p>
+
+                <h6 class="fw-bold">
+                    2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB
+                </h6>
+
+                <div class="text-warning d-inline-flex">
+                    ★★★★★
+                    <p class="text-secondary">(65)</p>
+                </div>
+
+                <div class="mt-2">
+                    <span class="fs-5 fw-bold">
+                        $2856.3
+                    </span>
+                </div>
+
+                <button class="btn btn-outline-secondary w-100 mt-3">
+                    Add To Cart
+                </button>
+
+                <ul class=" text-secondary mt-3" style="font-size: 13px;">
+                    <li>27-inch (diagonal) Retina 5K display</li>
+                    <li>3.1GHz 6-core 10th-generation Intel Core i5</li>
+                    <li>AMD Radeon Pro 5300 graphics</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+
+        <!--=======================العامود الثاني ==============-->
+        <div class="col-md-3">
+
+            <div class="border rounded p-3 product-card">
+
+                <span class="px-1 rounded-3  bg-warning text-dark">
+                    -17%
+                </span>
+
+                <div class="hover-actions">
+                    <a href="#" class="text-danger border rounded-2 px-1 action-btn"><i class="bi bi-heart"></i></a>
+                    <a href="#" class="text-dark border rounded-2 px-1 action-btn"><i class="bi bi-arrow-repeat"></i>
+                    </a>
+                    <a href="#" class="text-dark border rounded-2 px-1 action-btn"><i class="bi bi-eye"></i></a>
+                </div>
+
+                <div class="text-center my-3">
+
+                    <img src="/assets/img/seal product/imgsp4.png"
+                         class="img-fluid"
+                         style="height: 150px; "
+                         alt="">
+
+                </div>
+
+                <p class="text-secondary">
+                    Philips
+                </p>
+
+                <h6 class="fw-bold">
+                    Philips H4205 On-Ear Wireless Headphones with 32mm
+                </h6>
+
+                <div class="text-warning d-inline-flex">
+                    ★★★★★
+                    <p class="text-secondary">(65)</p>
+                </div>
+
+                <div class="mt-2">
+                    <span class="fs-5 fw-bold">
+                        $154.0
+                    </span>
+                </div>
+
+                <button class="btn btn-outline-secondary w-100 mt-3">
+                    Add To Cart
+                </button>
+
+                <ul class="text-secondary mt-3" style="font-size: 13px;">
+                    <li>27-inch (diagonal) Retina 5K display</li>
+                    <li>3.1GHz 6-core 10th-generation Intel Core i5</li>
+                    <li>AMD Radeon Pro 5300 graphics</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+
+        <!-- ===================العامود الثالث =================-->
+        <div class="col-md-3">
+
+            <div class="border rounded p-3 product-card">
+
+                <span class="px-1 rounded-3 bg-warning text-dark">
+                    -17%
+                </span>
+
+                <div class="hover-actions">
+                    <a href="#" class="text-danger border rounded-2 px-1 action-btn"><i class="bi bi-heart"></i></a>
+                    <a href="#" class="text-dark border rounded-2 px-1 action-btn"><i class="bi bi-arrow-repeat"></i>
+                    </a>
+                    <a href="#" class="text-dark border rounded-2 px-1 action-btn"><i class="bi bi-eye"></i></a>
+                </div>
+
+                <div class="text-center my-3">
+
+                    <img src="/assets/img/seal product/imgsp5.png"
+                         class="img-fluid"
+                         style="height: 150px;"
+                         alt="">
+
+                </div>
+
+                <p="text-secondary">
+                    Apple
+                </p>
+
+                <h6 class="fw-bold">
+                    2020 Apple MacBook Air Laptop: Apple M1 Chip, 13"
+                </h6>
+
+                <div class="text-warning d-inline-flex">
+                    ★★★★★
+                    <p class="text-secondary">(65)</p>
+                </div>
+
+                <div class="mt-2">
+                    <span class="fs-5 fw-bold">
+                        $2325.3
+                    </span>
+                </div>
+
+                <button class="btn btn-outline-secondary w-100 mt-3">
+                    Add To Cart
+                </button>
+
+                <ul class=" text-secondary mt-3 " style="font-size: 13px;">
+                    <li>27-inch (diagonal) Retina 5K display</li>
+                    <li>3.1GHz 6-core 10th-generation Intel Core i5</li>
+                    <li>AMD Radeon Pro 5300 graphics</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+
+        <!-- =================العامود الرابع================ -->
+        <div class="col-md-3">
+
+            <div class="border rounded p-3 product-card">
+
+                <span class="px-1 rounded-3 bg-warning text-dark">
+                    -17%
+                </span>
+
+                <div class="hover-actions">
+                    <a href="#" class="text-danger border rounded-2 px-1 action-btn"><i class="bi bi-heart"></i></a>
+                    <a href="#" class="text-dark border rounded-2 px-1 action-btn"><i class="bi bi-arrow-repeat"></i>
+                    </a>
+                    <a href="#" class="text-dark border rounded-2 px-1 action-btn"><i class="bi bi-eye"></i></a>
+                </div>
+
+                <div class="text-center my-3">
+
+                    <img src="/assets/img/seal product/imgsp6.png"
+                         class="img-fluid"
+                         style="height: 150px; "
+                         alt="">
+
+                </div>
+
+                <p class="text-secondary">
+                    Apple
+                </p>
+
+                <h6 class="fw-bold">
+                    Apple Watch Series 8 [GPS 45mm] Smart Watch
+                </h6>
+
+                <div class="text-warning d-inline-flex" >
+                    ★★★★★
+                    <p class="text-secondary">(65)</p>
+                </div>
+
+                <div class="mt-2">
+                    <span class="fs-5 fw-bold">
+                        $530.3
+                    </span>
+                </div>
+
+                <button class="btn btn-outline-secondary w-100 mt-3">
+                    Add To Cart
+                </button>
+
+                <ul class=" text-secondary mt-3" style="font-size: 13px;">
+                    <li>27-inch (diagonal) Retina 5K display</li>
+                    <li>3.1GHz 6-core 10th-generation Intel Core i5</li>
+                    <li>AMD Radeon Pro 5300 graphics</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+            </div>
 
 
 
+            <div id="empty-message" class="d-none text-center text-secondary py-5">
+  لا توجد منتجات بهذا اللون 😕
+</div>
 
         </div>
 
@@ -4178,6 +4386,9 @@
 
 
 
+<script src="./filter-color.js"></script>
+<script src="./filter-price.js"></script>
+<script src="./filter-brand.js"></script> 
 
     
 </body>

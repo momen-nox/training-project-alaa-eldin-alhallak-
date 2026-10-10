@@ -118,5 +118,136 @@
       opacity: 1;
       visibility: visible;
       transform: translateX(0);
+    
+    }
 
-  }
+
+
+.sidebar-categories {
+    width: 55px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background: #fff;
+    border-right: 1px solid #dee2e6;
+    z-index: 1040;
+}
+
+.sidebar-item {
+position: relative;
+}
+
+.sidebar-popup {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 55px;
+    width: 220px;
+    background: #fff;
+    border: 1px solid #dee2e6;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 0 6px 6px 0;
+    z-index: 1050;
+}
+
+.sidebar-item:hover .sidebar-popup {
+    display: block;
+}
+
+.dropdown-item:hover  {
+    color:rgb(40, 112, 255);
+}
+
+
+
+@media screen and (max-width: 768px)  {
+    .sid-bar {
+        display: none;
+    } 
+}
+
+
+/* الصور الصغيرة على اليسار */
+.thumb {
+  cursor: pointer;
+  width: 70px;
+  flex-shrink: 0;
+  transition: border-color .2s;
+}
+.thumb:hover { border-color: #adb5bd !important; }
+.thumb.active { border-color: #ff8a00 !important; }
+
+.thumbs { overflow-x: auto; }
+
+/* أزرار الألوان تحت Color */
+.swatch {
+  cursor: pointer;
+  width: 56px;
+  height: 56px;
+  transition: border-color .2s, transform .2s;
+}
+.swatch img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.swatch:hover {
+  border-color: #adb5bd !important;
+  transform: translateY(-2px);
+}
+.swatch.active { border-color: #ff8a00 !important; }
+
+/* الصورة الكبيرة */
+.main-image-box img {
+  max-height: 420px;
+  object-fit: contain;
+}
+
+@media (min-width: 768px) {
+  .thumb { width: 100%; }
+  .thumbs { overflow: visible; }
+}
+
+/* عشان الشريط الجانبي الثابت ما يغطي المحتوى */
+@media (min-width: 769px) {
+  .page-wrapper { padding-left: 75px; }
+}
+
+
+.fbt-box {
+  border-color: #dbe0f5 !important;
+  transition: opacity .2s;
+}
+.fbt-box img {
+  height: 110px;
+  object-fit: contain;
+}
+
+@media (max-width: 575.98px) {
+  .fbt-box img { height: 60px; }
+}
+
+
+.product-tabs { gap: 1.5rem; }
+
+.product-tabs .nav-link {
+  padding: 0;
+  border: 0;
+  font-size: 1.4rem;
+  font-weight: 700;
+  white-space: nowrap;
+  color: rgba(52, 52, 116, 0.4);   /* باهت للتابات غير النشطة */
+  background: none;
+}
+.product-tabs .nav-link:hover {
+  color: rgba(52, 52, 116, 0.75);
+}
+.product-tabs .nav-link.active {
+  color: rgba(52, 52, 116, 0.95);  /* غامق للتاب المختار */
+  background: none;
+}
+
+@media (max-width: 575.98px) {
+  .product-tabs .nav-link { font-size: 1.1rem; }
+}
